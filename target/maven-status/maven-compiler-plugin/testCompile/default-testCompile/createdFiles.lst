@@ -1,0 +1,6 @@
+stepdefinitions\UITestSteps.class
+stepdefinitions\E2COTestSteps.class
+stepdefinitions\APITestSteps.class
+stepdefinitions\CommonSteps.class
+stepdefinitions\SelfHealTestSteps.class
+runner\TestRunner.class
