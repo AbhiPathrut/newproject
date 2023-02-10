@@ -1,0 +1,374 @@
+package com.sogeti.automation.test.pageFactory;
+
+import java.time.Duration;
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import com.epam.healenium.SelfHealingDriver;
+import com.sogeti.automation.framework.constants.FrameworkConstants;
+
+public class E2CO_EdgesPage extends PageClass {
+	
+SelfHealingDriver objDriver;
+SelfHealingDriver driver;
+String currentworkingDirectory;
+	
+	@FindBy(xpath = "//a[@href='/MEC/edges/edge-list']")
+	private WebElement edges;
+	
+	@FindBy(xpath = "//button[contains(text(),'Add new edge')]")
+	private WebElement addNewEdgeBtn;
+	
+	@FindBy(xpath = "//button[@class='e2co-import-btn d-flex align-items-center']")
+	private WebElement importBtn;
+	
+	@FindBy(xpath = "//button[contains(text(),'Submit')]")
+	private WebElement submitBtn;
+	
+	@FindBy(xpath="//span[normalize-space()='memory']")
+	private WebElement SelectEdgeMenu;
+	
+	@FindBy(xpath="//button[@class='e2co-secondary-btn']")
+	private WebElement PreProvisionButton;
+
+	@FindBy(xpath="//input[@id='floatingEdgeID']")
+	 private WebElement EdgeIdText;
+	 
+	 @FindBy (xpath="//select[@formcontrolname='zoneId']")
+	 private WebElement ZoneIdSelect;
+	 
+	 @FindBy (xpath="//select[@formcontrolname='countryCode']")
+	 private WebElement CountrySelect;
+	 
+	 @FindBy(xpath="//select[@formcontrolname='latencyConstraints']")
+	 private WebElement LatencySelect;
+	 
+	 @FindBy (xpath="//input[@id='floatingEnterpriseID']")
+	 private WebElement EnterpriseIdText;
+	 
+	 @FindBy (xpath= "//input[@id='floatingOperatorID']")
+	 private WebElement OperatorIdText;
+	 
+	 @FindBy (xpath="//select[@formcontrolname='bandwidth']")
+	 private WebElement BandwidthSelect;
+	 
+	 @FindBy (xpath="//textarea[@id='floatingTextarea2']")
+	 private WebElement DescriptionText;
+	 
+	 @FindBy(xpath="//input[@id='floatingCity']")
+	 private WebElement CityText;
+	 
+	 @FindBy(xpath="//input[@id='floatingState']")
+	 private WebElement StateText;
+	 
+	 @FindBy(xpath="//input[@id='floatingLocality']")
+	 private WebElement LocalityText;
+	 
+	 @FindBy(xpath="//select[@formcontrolname='radio']")
+	 private WebElement RadioSelect;
+	 
+	 @FindBy (xpath="//input[@id='floatingMCC']")
+	 private WebElement MCCText;
+	 
+	 @FindBy (xpath="//input[@id='floatingMNC']")
+	 private WebElement MNCText;
+	 
+	 @FindBy(xpath="//input[@id='floatingCGI']")
+	 private WebElement CGIText;
+	 
+	 @FindBy(xpath="//input[@id='floatingTAC']")
+	 private WebElement TACText;
+	 
+	 @FindBy(xpath="//select[@formcontrolname='appAvailability']")
+	 private WebElement Appavailabilty;
+	 
+	 @FindBy(xpath="//select[@formcontrolname='loadFilter']")
+	 private WebElement SelectLoad;
+	 
+	 @FindBy(xpath="//input[@id='floatingKubernetesDetails']")
+	 private WebElement ClusterName;
+	 
+	 @FindBy(xpath="//input[@id='floatingLatitude']")
+	 private WebElement LatitudeText;
+	 
+	 @FindBy(xpath="//input[@id='floatingLongitude']")
+	 private WebElement LongitudeText;
+	 
+	 @FindBy(xpath="//button[@type='submit']")
+	 private WebElement SubmitButton;
+	 
+	 @FindBy(xpath = "//button[@class='accordion-button pre-provision-heading custom-accordion-highlight general-text-color']")
+	 private WebElement minimizeBtn;
+	 
+	 @FindBy(xpath = "//button[contains(text(),'Close')]")
+	 private WebElement CloseButton;		
+
+		@FindBy(xpath = "//a[@href=\"/MEC/edges/edge-list\"]")
+	    WebElement edgeicon;
+		
+		private String edgeslist="//table[@class='table edge-table mb-0']//tbody//tr";
+		
+		@FindBy(xpath = "//button[text()=' Add new edge ']")
+	    WebElement addnewedgebttn;
+		
+		@FindBy(xpath = "//input[@type='file']")
+	    WebElement fileupload;
+		
+		@FindBy(xpath = "//button[normalize-space()='Submit']")
+	    WebElement submitedgesfile;
+		
+		@FindBy(xpath="//div[text()=' Edge ID is required ']")
+		WebElement verierrormsg;
+		
+
+	public E2CO_EdgesPage(SelfHealingDriver driver) {
+		super(driver);
+		this.objDriver = driver;
+		this.driver = driver;
+		wait = new WebDriverWait(driver, Duration.ofSeconds(FrameworkConstants.MEDIUM_WAIT));
+        PageFactory.initElements(driver, this);
+	}
+	
+	public void navigateToEdgesPage() {
+		this.edges.click();
+		log.info("Clicked on edges");
+		}
+	
+	public void clickOnAddNewEdge() {
+		this.addNewEdgeBtn.click();
+		log.info("Clicked on Add New Edge");
+	
+	}
+	
+	public void ImportYamlFile() {
+		this.importBtn.sendKeys("C:\\Users\\APathrut\\Downloads\\edgeonboard.yaml");
+		log.info("Importing of yaml file is done");
+	}
+	
+	public void edgesList() {
+		List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']//tbody//tr//th"));
+		 for (WebElement element : allUserNameElements) {
+		String linkText = element.getText();
+		System.out.println(linkText);
+	}
+
+	}
+	public void submitDetailsOfEdge() {
+		this.submitBtn.click();
+		log.info("Clicked on submit button");
+	}
+	
+	public void EdgeMenu() {
+		 this.SelectEdgeMenu.click();
+		 log.info("Click on Edge menu");
+		
+	 }
+	 
+	 public void PreprovisionOption() {
+		 this.PreProvisionButton.click();
+		 log.info("Click on preprovision option");
+	 }
+	 
+	 public void EdgeIdTextIsVisible() {
+		 Assert.assertTrue(EdgeIdText.isDisplayed());
+	 }
+	 
+	 
+	 public void EdgeIdText(String EdgeId) {
+		 this.EdgeIdText.click();
+		 this.EdgeIdText.sendKeys(EdgeId);
+		 log.info("Enter EdgeId");
+	 }
+	 
+	 public void ZoneIdSelect(String Option) {
+		 Select select = new Select(ZoneIdSelect);
+	        select.selectByVisibleText(Option);
+	        log.info("Zone Id selected");
+	 }
+	 
+	 public void CountrySelect(String Option) {
+		 Select select = new Select(CountrySelect);
+	        select.selectByVisibleText(Option);
+	        log.info("Country is selected");
+		 
+	 }
+	 
+	 public void LatencySelect(String Option) {
+		 Select select = new Select(LatencySelect);
+	        select.selectByVisibleText(Option);
+	        log.info("Latency is selected");
+		  }
+	 
+	 public void EnterpriseIdText(String EnterpriseId) {
+		 this.EnterpriseIdText.click();
+		 this.EnterpriseIdText.sendKeys(EnterpriseId);
+	        log.info("Enter EnterPrise Id");
+	 }
+
+	 public void BandwidthSelect(String Option) {
+		 Select select = new Select(BandwidthSelect);
+		 select.selectByVisibleText(Option);
+		 log.info("Bandwidth is selected");
+	 }
+	 public void DescriptionText(String Description) {
+		 this.DescriptionText.click();
+		 this.DescriptionText.sendKeys(Description);
+		 log.info("Enter Edge description");
+	 }
+	 public void CityText(String City) {
+		 this.CityText.click();
+		 this.CityText.sendKeys(City);
+		 log.info("Enter city name");
+	 }
+	 public void StateText(String State) {
+		 this.StateText.click();
+		 this.StateText.sendKeys(State);
+		 log.info("Enter city name");
+	 }
+	 public void LocalityText(String Locality) {
+		 this.LocalityText.click();
+		 this.LocalityText.sendKeys(Locality);
+		 log.info("Enter the locality name");
+	 }
+	 public void RadioSelect(String Option) {
+		 Select select = new Select(RadioSelect);
+		 select.selectByVisibleText(Option);
+		 log.info("Radio is selected");
+	 }
+	 public void MCCText(String MCCValue) {
+		 this.MCCText.sendKeys(MCCValue);
+		 log.info("Enter MCC value");
+	 }
+	 public void MNCText(String MNCValue) {
+		 this.MNCText.sendKeys(MNCValue);
+		 log.info("Enter MNC value");
+	 }
+	 public void CGIText(String CGIValue) {
+		 this.CGIText.sendKeys(CGIValue);
+		 log.info("Enter CGI value");
+	 }
+	 public void TACText(String TACValue) {
+		 this.TACText.sendKeys(TACValue);
+		 log.info("Enter TAC value");
+	 }
+	 public void Appavailabilty(String Option) {
+		 Select select = new Select(Appavailabilty);
+		 select.selectByVisibleText(Option);
+		 log.info("App availability is selected"); 
+	 }
+	 public void SelectLoad(String Option) {
+		 Select select = new Select(SelectLoad);
+		 select.selectByVisibleText(Option);
+		 log.info("Load is selected");
+	 }
+	 public void ClusterName(String cluster) {
+		 this.ClusterName.sendKeys(cluster);
+		 log.info("Enter cluster name");
+	 }
+	 public void LatitudeText(String Latitude) {
+		 this.LatitudeText.sendKeys(Latitude);
+		 log.info("Enter Latitude value");
+	 }
+	 public void LongitudeText(String Longitude) {
+		 this.LongitudeText.sendKeys(Longitude);
+		 log.info("Enter Longitude value");
+	 }
+	 public void scrollDownPage() {
+		 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		  js.executeScript("window.scrollBy(0, 400)");
+		 
+	 }
+	 public void SubmitButton() throws Exception {
+		 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		  js.executeScript("arguments[0].scrollIntoView()",SubmitButton);
+		  js.executeScript("arguments[0].click()", SubmitButton);
+		 log.info("Click on submit button");
+		 this.CloseButton.click();
+		 Thread.sleep(2000);
+	 }
+	 
+	 public boolean verifyEdgeIsPreProvisioned(String EdgeId) {
+		 boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']//tbody//tr//td[1]"));
+			 for (WebElement element : allUserNameElements) {
+			String linkText = element.getText();
+			System.out.println(linkText);
+			if(EdgeId.equals(linkText)) {
+				System.out.println("The edgeid is: "+ EdgeId);
+				log.info("EdgeId is displayed");
+				validationFlag = true;
+			}
+		}
+			 return validationFlag;
+	 } 
+	 
+	 public void clikEdgeIcon() {
+	       this.edgeicon.click();
+	       
+	   }
+	   
+	   public  void veriEdgelist() {
+			  
+		   List<WebElement> displayedgeslist= driver.findElements(By.xpath(edgeslist));
+		   for(WebElement element:displayedgeslist) {
+			   String edgesname=element.getText();
+			   System.out.println(edgesname);
+			   
+		   }
+	   }
+		   
+	   public void clikAddNewEdgebttn() {
+	       this.addnewedgebttn.click();
+	       
+	   }
+	   public void clikImportbttn() throws Exception  {
+		   this.submitedgesfile.click();
+		   Thread.sleep(2000);
+//		   boolean isEnabled= submitedgesfile.isEnabled();
+//		     String actual_errormsg= verierrormsg.getAttribute("innerHTML");
+//	     	 System.out.println(actual_errormsg);
+//	         String expected_errormsg="Edge ID is required";
+//	         Assert.assertEquals(actual_errormsg,expected_errormsg );
+//		   driver.navigate().refresh();
+		   Thread.sleep(2000);
+		   System.out.println("refreah");
+		   
+		   driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\edge_onboard.yaml");
+	   }
+	   
+	 //public void submitEdgesdetails() {
+		  //ubmitedgesfile.click();
+//		   try {
+//			   assertEquals("Value is required and can't be empty", driver.findElement(By.xpath("")).getText());
+//			 } catch (Error e) {
+//			  //code for the case when the texts are not same
+//			   verificationErrors.append(e.toString());
+//			 }
+		   
+//		   StringBuffer verificationErrors = new StringBuffer();
+//
+//		   try {
+//		         assertTrue(driver.findElement(By.xpath("//div[text()=' Edge ID is required ']")).getText().matches("^[\\s\\S]*required[\\s\\S]*$"));
+//		         //assertTrue(driver.findElement(By.xpath("//div[text()=' Edge ID is required ']")).getText().matches(currentworkingDirectory);
+//		   } catch (Error e) {
+//		         verificationErrors.append(e.toString());
+//		       }
+//		     }
+	    	  public void submitedgedetails() {
+	    		  submitedgesfile.click();
+	   	       
+	   	   }
+	    	  
+
+	   
+}
+	 
+
+	

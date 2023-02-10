@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -20,7 +20,7 @@
       <![CDATA[| Received parameter 'TestBrowser' = chrome| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login| ]]>
+      <![CDATA[| Received parameter 'UI_BASE_URL' = https://10.139.9.7:31012/MEC/login| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'GRID_HUB_PORT' = 4444| ]]>
@@ -53,6 +53,243 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
+      <![CDATA[| Scenario Name: preprovision the edge| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on edges| ]]>
+    </line>
+    <line>
+      <![CDATA[| Click on preprovision option| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter EdgeId| ]]>
+    </line>
+    <line>
+      <![CDATA[| Zone Id selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Country is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Latency is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter EnterPrise Id| ]]>
+    </line>
+    <line>
+      <![CDATA[| Bandwidth is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter Edge description| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter city name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter city name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter the locality name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Radio is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter MCC value| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter MNC value| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter CGI value| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter TAC value| ]]>
+    </line>
+    <line>
+      <![CDATA[| App availability is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Load is selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter cluster name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter Latitude value| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enter Longitude value| ]]>
+    </line>
+    <line>
+      <![CDATA[| Click on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| EdgeId is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Check edge functionality| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Create new Admin user and verify login| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked the user management| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked the add new user| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered first name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered last name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Role selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered EmailId| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered UserName| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered Password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered RetypePassword| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered ContactNo| ]]>
+    </line>
+    <line>
+      <![CDATA[| Max invalid attempt selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Max validity selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Submit Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked popup message of user created successfully| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on user| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked logout button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Developer is not able to create new user| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
       <![CDATA[| Scenario Name: Admin is able to delete user| ]]>
     </line>
     <line>
@@ -74,41 +311,203 @@
       <![CDATA[| Clicked confirm button| ]]>
     </line>
     <line>
-      <![CDATA[| Element is not deleted| ]]>
+      <![CDATA[| Element is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Admin is able to inactive the user| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked the user management| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked locked button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on user| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked logout button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is inactivated| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Create new zone and Check the functionality| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered zone name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered zone name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered zone name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered zone name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered zone name| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-19T11:08:40 IST" name="Surefire suite" finished-at="2023-01-19T11:08:49 IST" duration-ms="9147">
+  <suite started-at="2023-02-09T23:52:59 IST" name="Surefire suite" finished-at="2023-02-09T23:55:30 IST" duration-ms="150950">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-01-19T11:08:40 IST" name="Surefire test" finished-at="2023-01-19T11:08:49 IST" duration-ms="9147">
+    <test started-at="2023-02-09T23:52:59 IST" name="Surefire test" finished-at="2023-02-09T23:55:30 IST" duration-ms="150950">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-01-19T11:08:40 IST" name="setUpClass" finished-at="2023-01-19T11:08:40 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:52:59 IST" name="setUpClass" finished-at="2023-02-09T23:53:00 IST" duration-ms="646" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3611153f]]>
+                <![CDATA[org.testng.TestRunner@647ce968]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-01-19T11:08:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-19T11:08:49 IST" duration-ms="8667" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:53:30 IST" duration-ms="30792" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin is able to delete user"]]>
+                <![CDATA["preprovision the edge"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[User Management]"]]>
+                <![CDATA["Optional[Edges Feature]"]]>
               </value>
             </param>
           </params>
@@ -132,7 +531,7 @@
               <![CDATA[| Received parameter 'TestBrowser' = chrome| ]]>
             </line>
             <line>
-              <![CDATA[| Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login| ]]>
+              <![CDATA[| Received parameter 'UI_BASE_URL' = https://10.139.9.7:31012/MEC/login| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'GRID_HUB_PORT' = 4444| ]]>
@@ -165,6 +564,307 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
+              <![CDATA[| Scenario Name: preprovision the edge| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on edges| ]]>
+            </line>
+            <line>
+              <![CDATA[| Click on preprovision option| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter EdgeId| ]]>
+            </line>
+            <line>
+              <![CDATA[| Zone Id selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Country is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Latency is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter EnterPrise Id| ]]>
+            </line>
+            <line>
+              <![CDATA[| Bandwidth is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter Edge description| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter city name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter city name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter the locality name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Radio is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter MCC value| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter MNC value| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter CGI value| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter TAC value| ]]>
+            </line>
+            <line>
+              <![CDATA[| App availability is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Load is selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter cluster name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter Latitude value| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enter Longitude value| ]]>
+            </line>
+            <line>
+              <![CDATA[| Click on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| EdgeId is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:53:52 IST" duration-ms="21787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check edge functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Edges Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Check edge functionality| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:54:09 IST" duration-ms="16726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create new Admin user and verify login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Management Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Create new Admin user and verify login| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked the user management| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked the add new user| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered first name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered last name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Role selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered EmailId| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered UserName| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered Password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered RetypePassword| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered ContactNo| ]]>
+            </line>
+            <line>
+              <![CDATA[| Max invalid attempt selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Max validity selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Submit Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked popup message of user created successfully| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on user| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked logout button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:54:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:54:49 IST" duration-ms="39769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Developer is not able to create new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Management Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Developer is not able to create new user| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:54:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:04 IST" duration-ms="15332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin is able to delete user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Management Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
               <![CDATA[| Scenario Name: Admin is able to delete user| ]]>
             </line>
             <line>
@@ -186,14 +886,208 @@
               <![CDATA[| Clicked confirm button| ]]>
             </line>
             <line>
-              <![CDATA[| Element is not deleted| ]]>
+              <![CDATA[| Element is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-01-19T11:08:49 IST" name="tearDownClass" finished-at="2023-01-19T11:08:49 IST" duration-ms="70" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:15 IST" duration-ms="11323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin is able to inactive the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Management Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Admin is able to inactive the user| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked the user management| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked locked button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on user| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked logout button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is inactivated| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:30 IST" duration-ms="14339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create new zone and Check the functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Zones Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Create new zone and Check the functionality| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered zone name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered zone name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered zone name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered zone name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered zone name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:30 IST" name="tearDownClass" finished-at="2023-02-09T23:55:30 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

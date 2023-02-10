@@ -11,6 +11,8 @@ public class PageObjectManager {
     SelfHealDemoPage selfHealDemoPage;
     E2CO_LoginPage e2co_loginpage;
     E2CO_UserManagement e2co_usermanagement;
+    E2CO_EdgesPage e2co_edgespage;
+    E2CO_ZonesPage e2co_zonespage;
 
     public PageObjectManager(SelfHealingDriver driver) {
         this.healingDriver = driver;
@@ -38,5 +40,13 @@ public class PageObjectManager {
     
     public E2CO_UserManagement getE2CO_UserManagement() {
         return (e2co_usermanagement == null) ? e2co_usermanagement = new E2CO_UserManagement(healingDriver) : e2co_usermanagement;
+    }
+    
+    public E2CO_EdgesPage geE2co_EdgesPage() {
+    	return((e2co_edgespage == null)? e2co_edgespage = new E2CO_EdgesPage(healingDriver) : e2co_edgespage);
+    }
+    public E2CO_ZonesPage gete2co_zonespage() {
+    	return ( e2co_zonespage == null) ?  e2co_zonespage = new E2CO_ZonesPage(healingDriver) : e2co_zonespage;
+    	
     }
 }

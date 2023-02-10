@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 19 11:08:40 IST 2023</td>
+<td>Started on:</td><td>Thu Feb 09 23:52:59 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9147 ms)</td>
+<tr><td>Total time:</td><td>150 seconds (150950 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,118 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is able to delete user", "Optional[User Management]"<br/>
-<a href="#Output-389464548" onClick='toggleBox("Output-389464548", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is able to inactive the user", "Optional[User Management Feature]"<br/>
+<a href="#Output-1084772008" onClick='toggleBox("Output-1084772008", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-389464548" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-389464548">
+<a href="#Output-1084772008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1084772008">
 | Received parameter 'TestEnvironment' = QA| <br/>
-| Received parameter 'ExecutionServer' = Local| <br/>
-| Received parameter 'InterfaceType' = Web| <br/>
-| Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads| <br/>
-| Received parameter 'AZURE_KEYVAULT_URL' = | <br/>
-| Received parameter 'TestBrowser' = chrome| <br/>
-| Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login| <br/>
-| Received parameter 'GRID_HUB_PORT' = 4444| <br/>
-| Received parameter 'GRID_HUB_IP' = localhost| <br/>
-| Received parameter 'UI_USERNAME' = admin| <br/>
-| Received parameter 'UI_PASSWORD' = Admin@1234| <br/>
-| Received parameter 'UI_DEVUSERNAME' = dev01| <br/>
-| Received parameter 'UI_DEVPASSWORD' = Admin@1234| <br/>
-| Received parameter 'ScreenshotEnable' = true| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Admin is able to inactive the user| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Clicked the user management| <br/>
+| Clicked locked button| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| User is inactivated| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new Admin user and verify login", "Optional[User Management Feature]"<br/>
+<a href="#Output-649913869" onClick='toggleBox("Output-649913869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-649913869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-649913869">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Create new Admin user and verify login| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Clicked the user management| <br/>
+| Clicked the add new user| <br/>
+| Entered first name| <br/>
+| Entered last name| <br/>
+| Role selected| <br/>
+| Entered EmailId| <br/>
+| Entered UserName| <br/>
+| Entered Password| <br/>
+| Entered RetypePassword| <br/>
+| Entered ContactNo| <br/>
+| Max invalid attempt selected| <br/>
+| Max validity selected| <br/>
+| Clicked Submit Button| <br/>
+| Clicked popup message of user created successfully| <br/>
+| User is displayed| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Developer is not able to create new user", "Optional[User Management Feature]"<br/>
+<a href="#Output-466322841" onClick='toggleBox("Output-466322841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-466322841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-466322841">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Developer is not able to create new user| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check edge functionality", "Optional[Edges Feature]"<br/>
+<a href="#Output-107577149" onClick='toggleBox("Output-107577149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107577149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107577149">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Check edge functionality| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is able to delete user", "Optional[User Management Feature]"<br/>
+<a href="#Output-527482085" onClick='toggleBox("Output-527482085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-527482085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-527482085">
+| Received parameter 'TestEnvironment' = QA| <br/>
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
@@ -104,12 +197,118 @@ function toggleAllBoxes() {
 | Clicked the user management| <br/>
 | Clicked delete button| <br/>
 | Clicked confirm button| <br/>
-| Element is not deleted| <br/>
+| Element is deleted| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
+| User is not displayed| <br/>
 | Execution status is: PASSED| <br/>
 </div>
 </td>
 <td></td>
-<td>8</td>
+<td>15</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new zone and Check the functionality", "Optional[Zones Feature]"<br/>
+<a href="#Output-590035788" onClick='toggleBox("Output-590035788", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-590035788" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-590035788">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Create new zone and Check the functionality| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered zone name| <br/>
+| Entered zone name| <br/>
+| Entered zone name| <br/>
+| Entered zone name| <br/>
+| Entered zone name| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>runner.TestRunner@670002</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "preprovision the edge", "Optional[Edges Feature]"<br/>
+<a href="#Output-212740759" onClick='toggleBox("Output-212740759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-212740759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-212740759">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Received parameter 'ExecutionServer' = Local| <br/>
+| Received parameter 'InterfaceType' = Web| <br/>
+| Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads| <br/>
+| Received parameter 'AZURE_KEYVAULT_URL' = | <br/>
+| Received parameter 'TestBrowser' = chrome| <br/>
+| Received parameter 'UI_BASE_URL' = https://10.139.9.7:31012/MEC/login| <br/>
+| Received parameter 'GRID_HUB_PORT' = 4444| <br/>
+| Received parameter 'GRID_HUB_IP' = localhost| <br/>
+| Received parameter 'UI_USERNAME' = admin| <br/>
+| Received parameter 'UI_PASSWORD' = Admin@1234| <br/>
+| Received parameter 'UI_DEVUSERNAME' = dev01| <br/>
+| Received parameter 'UI_DEVPASSWORD' = Admin@1234| <br/>
+| Received parameter 'ScreenshotEnable' = true| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: preprovision the edge| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Clicked on edges| <br/>
+| Click on preprovision option| <br/>
+| Enter EdgeId| <br/>
+| Zone Id selected| <br/>
+| Country is selected| <br/>
+| Latency is selected| <br/>
+| Enter EnterPrise Id| <br/>
+| Bandwidth is selected| <br/>
+| Enter Edge description| <br/>
+| Enter city name| <br/>
+| Enter city name| <br/>
+| Enter the locality name| <br/>
+| Radio is selected| <br/>
+| Enter MCC value| <br/>
+| Enter MNC value| <br/>
+| Enter CGI value| <br/>
+| Enter TAC value| <br/>
+| App availability is selected| <br/>
+| Load is selected| <br/>
+| Enter cluster name| <br/>
+| Enter Latitude value| <br/>
+| Enter Longitude value| <br/>
+| Click on submit button| <br/>
+| EdgeId is displayed| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
 <td>runner.TestRunner@670002</td></tr>
 </table><p>
 </body>
