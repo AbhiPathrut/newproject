@@ -340,7 +340,10 @@ String currentworkingDirectory;
 		   Thread.sleep(2000);
 		   System.out.println("refreah");
 		   
-		   driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\edge_onboard.yaml");
+		   //driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\edge_onboard.yaml");
+		   currentworkingDirectory = System.getProperty("user.dir");
+		String	inputFile= currentworkingDirectory + "/input-data/inputFiles/edge_onboard.yaml";
+		driver.findElement(By.xpath("//input[@type='file']")).sendKeys(inputFile);
 	   }
 	   
 	 //public void submitEdgesdetails() {

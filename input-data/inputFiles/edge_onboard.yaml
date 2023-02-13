@@ -1,0 +1,78 @@
+---
+description: edge description
+edgeId: edge1
+zoneId: NorthZone
+edgeName: firstedge
+enterpriseId: default
+city: Hyderabad
+state: TN
+locality: Charminar
+bandwidth: "10"
+radioCellData:
+  geo_location: 55.22,22.11
+  lte_celldata:
+  - radio: LTE
+    MCC: 404
+    MNC: 04
+    CellId: 1
+    TAC: 4
+  - radio: LTE
+    MCC: 404
+    MNC: 10
+    CellId: 45
+    TAC: 12
+latitude: "12.4168"
+longitude: "-34.7038"
+operatorId: AirtelCorp
+countryCode: IN
+latencyConstraints: low
+resourceCapacity:
+  cpu: 100
+  memory: 100
+  storage: 1024
+serviceEndpoints:
+- serviceId: probe
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31006'
+    protocol: tcp
+- serviceId: appmanager
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31008'
+    protocol: tcp
+- serviceId: imagemanager
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31007'
+    protocol: tcp
+- serviceId: monitoringmanager
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31024'
+    protocol: tcp
+- serviceId: eventgw
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31112'
+    protocol: http
+- serviceId: troubleshootingmanager
+  endPoints:
+  - ip: 10.139.2.79
+    port: '31022'
+    protocol: http
+k8sClusterInfo:
+- name: clusterone
+  kubernetesDetails:
+    ip: 10.139.2.80
+    port: '31200'
+    userName: root
+    password: abc123
+    ambassadorPort: '32755'
+  dockerDetails:
+    dockerIp: 10.139.2.79
+    dockerPort: '2376'
+    dockerRegistryPort: '31109'
+  eventAPIGatewayDetails:
+  - serverIp: 10.139.2.79
+    serverPort: '31112'

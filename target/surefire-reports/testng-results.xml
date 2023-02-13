@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -152,7 +152,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Check edge functionality| ]]>
+      <![CDATA[| Scenario Name: Onbaording edge using yaml file| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -162,6 +162,66 @@
     </line>
     <line>
       <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Create new artifactId| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on create new artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered artifact name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enetered componenetID| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered componenet image name| ]]>
+    </line>
+    <line>
+      <![CDATA[| zip file is imported| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact created successfully| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -386,6 +446,18 @@
       <![CDATA[| User is not displayed| ]]>
     </line>
     <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| User is not displayed| ]]>
+    </line>
+    <line>
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
     <line>
@@ -479,26 +551,26 @@
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-09T23:52:59 IST" name="Surefire suite" finished-at="2023-02-09T23:55:30 IST" duration-ms="150950">
+  <suite started-at="2023-02-13T11:55:33 IST" name="Surefire suite" finished-at="2023-02-13T11:58:42 IST" duration-ms="189481">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-09T23:52:59 IST" name="Surefire test" finished-at="2023-02-09T23:55:30 IST" duration-ms="150950">
+    <test started-at="2023-02-13T11:55:33 IST" name="Surefire test" finished-at="2023-02-13T11:58:42 IST" duration-ms="189481">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:52:59 IST" name="setUpClass" finished-at="2023-02-09T23:53:00 IST" duration-ms="646" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:55:33 IST" name="setUpClass" finished-at="2023-02-13T11:55:33 IST" duration-ms="494" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@647ce968]]>
+                <![CDATA[org.testng.TestRunner@4889fbba]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:53:30 IST" duration-ms="30792" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:55:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:56:00 IST" duration-ms="26188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -652,11 +724,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:53:52 IST" duration-ms="21787" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:56:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:56:17 IST" duration-ms="17770" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check edge functionality"]]>
+                <![CDATA["Onbaording edge using yaml file"]]>
               </value>
             </param>
             <param index="1">
@@ -679,7 +751,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Check edge functionality| ]]>
+              <![CDATA[| Scenario Name: Onbaording edge using yaml file| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -695,7 +767,83 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:53:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:54:09 IST" duration-ms="16726" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:56:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:57:17 IST" duration-ms="59700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create new artifactId"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Create new artifactId| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on create new artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered artifact name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enetered componenetID| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered componenet image name| ]]>
+            </line>
+            <line>
+              <![CDATA[| zip file is imported| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact created successfully| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:57:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:57:29 IST" duration-ms="12337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -795,7 +943,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:54:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:54:49 IST" duration-ms="39769" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:57:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:07 IST" duration-ms="37694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -838,7 +986,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:54:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:04 IST" duration-ms="15332" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:21 IST" duration-ms="13965" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -961,11 +1109,23 @@
               <![CDATA[| User is not displayed| ]]>
             </line>
             <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| User is not displayed| ]]>
+            </line>
+            <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:15 IST" duration-ms="11323" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:30 IST" duration-ms="8697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1029,7 +1189,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-09T23:55:30 IST" duration-ms="14339" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:42 IST" duration-ms="12432" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1087,7 +1247,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-09T23:55:30 IST" name="tearDownClass" finished-at="2023-02-09T23:55:30 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:42 IST" name="tearDownClass" finished-at="2023-02-13T11:58:42 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

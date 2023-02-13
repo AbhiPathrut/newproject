@@ -14,6 +14,7 @@ com\sogeti\automation\framework\driver\GlobalDriver.class
 com\sogeti\automation\framework\utils\PropertyReader.class
 com\sogeti\automation\test\pageFactory\SwagLabsDemo_LoginPage.class
 com\sogeti\automation\framework\constants\FrameworkConstants.class
+com\sogeti\automation\test\pageFactory\E2CO_MyApplicationPage.class
 com\sogeti\automation\framework\constants\AppConstants$Api$AuthenticationType.class
 com\sogeti\automation\framework\utils\APIUtils$1.class
 com\sogeti\automation\test\pageFactory\SwagLabsDemo_ProductsPage.class

@@ -6,6 +6,7 @@ import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
 import com.sogeti.automation.test.pageFactory.E2CO_EdgesPage;
 import com.sogeti.automation.test.pageFactory.E2CO_LoginPage;
+import com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
 import com.sogeti.automation.test.pageFactory.E2CO_ZonesPage;
 
@@ -29,11 +30,13 @@ public class E2COTestSteps extends TestClass {
     E2CO_UserManagement e2co_usermanagement;
     E2CO_EdgesPage e2co_edgespage;
     E2CO_ZonesPage e2co_zonespage;
+    E2CO_MyApplicationPage e2co_myapplication;
     String dynamicUserName;
     int previousNumRow;
     int afterNumRow;
     String dynamicEdgeId;
     String dynamicCluster;
+    String dynamicArtifactName;
   
    
 
@@ -44,6 +47,7 @@ public class E2COTestSteps extends TestClass {
         e2co_usermanagement = testContext.getPageObjectManager().getE2CO_UserManagement();
         e2co_edgespage = testContext.getPageObjectManager().geE2co_EdgesPage();
         e2co_zonespage= testContext.getPageObjectManager().gete2co_zonespage();
+        e2co_myapplication = testContext.getPageObjectManager().gete2co_myapplication();
         ThreadContext.pop();
         ThreadContext.push(this.getClass().getSimpleName());
     }
@@ -334,7 +338,7 @@ public class E2COTestSteps extends TestClass {
 	@And ("^user clicks on zone button$")
 	public void clicksOnZoneIcon() {
 		e2co_zonespage.clikZoneIcon();
-		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is not loaded.");
+		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is loaded.");
 		System.out.println("user is on zone page");
 	}
 	
@@ -398,5 +402,84 @@ public class E2COTestSteps extends TestClass {
 	@Then ("^user is clicks close icon$")
 	public void clickClosebttn() {
 		e2co_zonespage.closeIcon();
+	}
+	
+	@And("^user clicks on my application$")
+	public void clickOnMyApplication() throws Exception {
+		e2co_myapplication.clickOnMyApplication();
+		
+	}
+	
+	@Then("^user is on my application page$")
+	public void verifyUserIsOnMyApplicationPage() {
+		Assert.assertTrue(e2co_myapplication.applicationsTitleIsDisplayed(),"Application page is loaded.");
+	}
+	
+	@When("^user clicks on new application$")
+	public void clickOnNewApplication() throws Exception {
+		e2co_myapplication.clickOnNewApplication();
+	}
+	
+	@Then("^user is on new application page$")
+	public void verifyUserIsOnNewApplicationPage() {
+		Assert.assertTrue(e2co_myapplication.applicationNewPageIsDisplayed(),"New Application page is loaded.");
+		
+	}
+	
+	@When("^user selects where to onboard application$")
+	public void selectOnboarding() {
+		e2co_myapplication.selectContainer();
+	}
+	
+	@Then("^user is able to see that name$")
+	public void verifySelectedMenuIsVisible() {
+		Assert.assertTrue(e2co_myapplication.containerIsSelected(),"Container is selected");
+		
+	}
+	
+	@When("^user clicks on create new artifact$")
+	public void createNewArtifact() {
+		e2co_myapplication.clickOnCreateNewArtifact();
+	}
+	
+	@Then("^user is on artifact page$")
+	public void verifyUserIsOnArtifactPage() {
+		Assert.assertTrue(e2co_myapplication.verifyuserisOnArtifactPage(),"User is on artifact page");
+		
+	}
+	
+	@When("^user enters the details to create artifact (.*), (.*), (.*)")
+	public void enterTheDetailsOfArtifact(String ArtifactName, String ComponentID, String ComponentImageName) throws Exception {
+		String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+		dynamicArtifactName = ArtifactName + s;
+		System.out.println(dynamicArtifactName);
+		e2co_myapplication.enterArtifactName(dynamicArtifactName);
+		e2co_myapplication.enterComponenetID(ComponentID);
+		e2co_myapplication.enterComponenetImageName(ComponentImageName);
+		e2co_myapplication.browseZipFile();
+		Thread.sleep(2000);
+		
+	}
+	
+	@Then("^user submits the details and able to see successful message$")
+	public void submitDetailsAndVerifyArtifact() throws Exception {
+		e2co_myapplication.clickOnSubmitButton();
+		Thread.sleep(2000);
+		Assert.assertTrue(e2co_myapplication.verifyArtifactIsCreated(),"Artifact is created successfully");
+		Thread.sleep(2000);
+		e2co_myapplication.closeTheDialogBox();
+	}
+	
+	@When("^user clicks on select artifact$")
+	public void selectArtifact() throws Exception {
+		e2co_myapplication.clickOnSelectArtifact();
+		Thread.sleep(2000);
+	}
+	
+	@Then("^user able to see created artifact$")
+	public void verifyArtifactIsCreated() throws Exception {
+		e2co_myapplication.verifyArtifactCreatedIsDisplayed(dynamicArtifactName);
+		Thread.sleep(2000);;
+		
 	}
 }
