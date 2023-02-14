@@ -38,3 +38,17 @@ Scenario Outline: Onbaording edge using yaml file
 	 		Examples:
  		| user | 
  		| Admin | 
+ 		
+#Scenario Outline: Edge deboarding
+    #When user logs into MEC portal<user>
+    #And user is on dashboard page
+    #And click on Zone menu
+    #And click on any one zone
+    #And click on edge
+    #Then Edge details are diasplayed
+    #When user click on manage option
+    #And click on deboard option
+    #Then Edge is deboarded successfully
+    #Examples:
+    #| user |
+    #|Admin| 		

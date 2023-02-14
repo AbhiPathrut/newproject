@@ -2,6 +2,8 @@ package com.sogeti.automation.test.pageFactory;
 
 import java.time.Duration;
 import java.util.List;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -127,6 +129,21 @@ String currentworkingDirectory;
 		@FindBy(xpath="//div[text()=' Edge ID is required ']")
 		WebElement verierrormsg;
 		
+		
+		 @FindBy(xpath="//span[normalize-space()='location_on']")
+		 private WebElement ZoneMenuButton;
+		 
+		 @FindBy(xpath="//td[normalize-space()='SouthZone']")
+		 private WebElement ClickOnZone;
+		 
+		 @FindBy(xpath="//td[normalize-space()='edge3']")
+		 private WebElement ClickONEdge;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Manage Edge']")
+		 private WebElement ManageButton;
+		 
+		 @FindBy(xpath="//button[normalize-space()='Deboard']")
+		 private WebElement DeboardButton;
 
 	public E2CO_EdgesPage(SelfHealingDriver driver) {
 		super(driver);
@@ -369,6 +386,78 @@ String currentworkingDirectory;
 	   	       
 	   	   }
 	    	  
+	    	 
+	    		 
+	    		 public void ZoneMenuButton()  {
+	    			 this.ZoneMenuButton.click();
+	    			 log.info("Click on zone menu");
+	    			 
+	    			
+	    		 }
+//	    		 
+	    		 
+	    	///*******************************************/////	 
+	    		 public void ClickOnZone() {
+//	    	      this.ClickOnZone.click();
+//	    		   log.info("Click on selected zone");
+	    			 
+	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+	    			 js.executeScript("scrollBy(0, 1000+document.body.scrollHeight)");
+	    			 this.ClickOnZone.click();
+	    			 log.info("Click on selected zone");
+	    		 //js.executeScript("arguments[0].scrollIntoView()",ClickOnZone );
+//	    			 js.executeScript("arguments[0].click()",ClickOnZone );
+	    			 
+	    		 }
+	    		 
+	    		 public void EdgeIsVisible() {
+	    			 Assert.assertTrue(ClickONEdge.isDisplayed());
+	    		 }
+	    		 
+//	    		 public void ClickONEdge() throws InterruptedException  {
+//	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+//	    			 js.executeScript("scrollBy(0,document.body.scrollHeight)");
+//	    			 Thread.sleep(3000);
+//	    			this.ClickONEdge.click();
+//	    			log.info("Click on Edge");
+//	    			
+//	    		 }
+	    		 public void ClickONEdge() {
+	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+	    			 js.executeScript("arguments[0].scrollIntoView()",ClickONEdge);
+	    			 js.executeScript("arguments[0].click()", ClickONEdge);
+	    			 log.info("Click on Edge");
+	    			 
+	    		 }
+	    		 
+	    		 public void ManageButtonIsVisible() {
+	    			 Assert.assertTrue(ManageButton.isDisplayed());
+	    			 
+	    		 }
+	    		 
+	    		 
+//	    		 public void CkickOnManageButton() {
+//	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+//	    			 js.executeScript("scrollBy(0,document.body.scrollHeight");
+//	    			 this.ManageButton.click();
+//	    			 log.info("Click on Manage option");
+//	    		 }
+	    		 
+	    		 public void clickOnManageEdgeBtn() {
+	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+	    			 js.executeScript("arguments[0].scrollIntoView()",ManageButton);
+	    			 js.executeScript("arguments[0].click()", ManageButton);
+	    			 log.info("Click on Manage button");
+	    		 }
+	    		 
+	    		 public void ClickOnDeboardButton() throws Exception {
+	    			 this.DeboardButton.click();
+	    			 Thread.sleep(2000);
+	    			 Alert Confirmationalert = objDriver.switchTo().alert();
+	    			 String alertText = Confirmationalert.getText();
+	    			 Confirmationalert.accept();
+	    			 log.info("Click on deboard button");
+	    		 }
 
 	   
 }

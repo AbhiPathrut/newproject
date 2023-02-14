@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 
+import com.ctc.wstx.shaded.msv_core.grammar.xmlschema.XPath;
 import com.sogeti.automation.framework.basetest.TestClass;
 import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
@@ -426,15 +427,29 @@ public class E2COTestSteps extends TestClass {
 		
 	}
 	
-	@When("^user selects where to onboard application$")
-	public void selectOnboarding() {
+	@When("^user selects where to onboard application (.*)")
+	public void selectOnboarding(String service) {
+		if(service.equals("container")) {
 		e2co_myapplication.selectContainer();
+		log.info("Container as service selected");
+		}else if (service.equals("VM")){
+			e2co_myapplication.selectVM();
+			log.info("Vm as service selected");
+			}else {
+				e2co_myapplication.selectKuberenetes();
+				log.info("Kuberenetes as a service selected");
+			}
 	}
 	
-	@Then("^user is able to see that name$")
-	public void verifySelectedMenuIsVisible() {
+	@Then("^user is able to see that service (.*)")
+	public void verifySelectedMenuIsVisible(String service ) {
+		if(service.equals("container")) {
 		Assert.assertTrue(e2co_myapplication.containerIsSelected(),"Container is selected");
-		
+		}else if (service.equals("VM")){
+			Assert.assertTrue(e2co_myapplication.applicationNewPageIsDisplayed(),"VM is selected.");
+		}else {
+			Assert.assertTrue(e2co_myapplication.kubernetesIsSelected(),"Kubernetes is selected.");
+		}
 	}
 	
 	@When("^user clicks on create new artifact$")
@@ -448,16 +463,31 @@ public class E2COTestSteps extends TestClass {
 		
 	}
 	
-	@When("^user enters the details to create artifact (.*), (.*), (.*)")
-	public void enterTheDetailsOfArtifact(String ArtifactName, String ComponentID, String ComponentImageName) throws Exception {
+	@When("^user enters the details to create artifact (.*), (.*), (.*), (.*)")
+	public void enterTheDetailsOfArtifact(String service, String ArtifactName, String ComponentID, String ComponentImageName) throws Exception {
+		if(service.equals("container")) {
 		String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
 		dynamicArtifactName = ArtifactName + s;
 		System.out.println(dynamicArtifactName);
 		e2co_myapplication.enterArtifactName(dynamicArtifactName);
 		e2co_myapplication.enterComponenetID(ComponentID);
 		e2co_myapplication.enterComponenetImageName(ComponentImageName);
-		e2co_myapplication.browseZipFile();
+		e2co_myapplication.browseZipFileContainer();
 		Thread.sleep(2000);
+		
+		}else if(service.equals("VM")) {
+			String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+			dynamicArtifactName = ArtifactName + s;
+			System.out.println(dynamicArtifactName);
+			e2co_myapplication.enterArtifactName(dynamicArtifactName);
+			e2co_myapplication.enterVMID(ComponentID);
+			e2co_myapplication.enterVMImageName(ComponentImageName);
+			e2co_myapplication.browseZipFileVM();
+			Thread.sleep(2000);
+		}
+		else {
+			
+		}
 		
 	}
 	
@@ -482,4 +512,97 @@ public class E2COTestSteps extends TestClass {
 		Thread.sleep(2000);;
 		
 	}
+	
+	 @When("^user selects from where to artifact is to delete (.*)")
+	    public void selectService(String service) {
+		 if(service.equals("container")) {
+			e2co_myapplication.selectContainer();
+			log.info("Container as service selected");
+		 }else if (service.equals("VM")){
+			e2co_myapplication.selectVM();
+			log.info("Vm as service selected");
+		}else {
+			e2co_myapplication.selectKuberenetes();
+			log.info("Kuberenetes as a service selected");
+					}
+			}
+		 
+	 @Then("^user able to see artifacts uploaded$")
+	 public void userIsAbleTOSeeArtifact() throws Exception {
+		 Assert.assertTrue(e2co_myapplication.verifyUserIsAbleToSeeArtifactList(),"Artifact list is getting displayed");
+		 previousNumRow = e2co_myapplication.SizeOfArtifactTable();
+		 Thread.sleep(2000);
+	 }
+	 
+	 @When("^user selects the artifactid for delete$")
+	 public void selectTheArtifactId() throws Exception {
+		 e2co_myapplication.deleteArtifactSelect();
+		 
+	 }
+	 
+	 @And("^user clicks on delete button$")
+	 public void clicksOnDeleteButton() throws Exception {
+		 e2co_myapplication.clickOnDeleteButton();
+		 Thread.sleep(2000);
+	 }
+	 
+	 @Then("^user is not able to find the deleted artifactId$")
+	 public void verifyUserNotAbleToSeeDeletedArtifact() throws Exception {
+		 Assert.assertTrue(e2co_myapplication.verifyArtifactIsDeletedMessage(),"Artifact deleted successful message is displayed");
+		 Thread.sleep(2000);
+		 e2co_myapplication.closeTheDialogBox();
+		 Thread.sleep(2000);
+		 afterNumRow = e2co_myapplication.SizeOfArtifactTable();
+		    	Thread.sleep(3000);
+		    	if(previousNumRow>afterNumRow) {
+		    		log.info("Artifact is deleted");
+		    		
+		    	}else {
+		    		log.info("Artifact is not deleted");
+		    	}
+		    	
+		  Assert.assertTrue(e2co_myapplication.verifyDeletedArtifactIsNotPresentInTable(),"Artifact is deleted successfully.");
+		    
+	 }
+	
+	////************
+	
+	@And("^click on Zone menu$")
+    public void NavigateToZoneMenu() {
+		e2co_edgespage.ZoneMenuButton();
+    }
+    
+    @And("^click on any one zone$")
+    public void SelectTheZone() throws Exception {
+    	e2co_edgespage.ClickOnZone();
+    	//e2co_deboardedge.SubmitButton();
+    }
+    
+    @And("^click on edge$")
+    public void SelectTheEdge() throws Exception {
+    	e2co_edgespage.ClickONEdge();
+    }
+    
+    @Then("^Edge details are diasplayed$")
+    public void VerifyEdgeDetailsAreDisplayed() {
+    	e2co_edgespage.ManageButtonIsVisible();
+    	
+    }
+    
+    @When("^user click on manage option$")
+    public void ClickOnManageOption() {
+    	e2co_edgespage.clickOnManageEdgeBtn();
+    }
+    
+    @And("^click on deboard option$")
+    public void ClickOnDeboardOption() throws Exception {
+    	e2co_edgespage.ClickOnDeboardButton();
+    }
+    
+    @Then("^Edge is deboarded successfully$")
+    public void VerifyEdgeDeobarded() {
+    	
+    }
+	
+   
 }

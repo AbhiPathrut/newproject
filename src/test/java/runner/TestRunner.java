@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = "stepdefinitions",
         monochrome = true,
         dryRun = false,
-        tags = "@myapplication or @Edges or @Zones or @usermanagement", 
+        tags = "@myapplication or @Edges or @usermanagement or @Zones", 
         plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber-reports/cucumber.json"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -53,133 +53,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: preprovision the edge| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered username| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered password| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edges| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on preprovision option| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EdgeId| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone Id selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Country is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Latency is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EnterPrise Id| ]]>
-    </line>
-    <line>
-      <![CDATA[| Bandwidth is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Edge description| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter the locality name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Radio is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MCC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MNC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter CGI value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter TAC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| App availability is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Load is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter cluster name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Latitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Longitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| EdgeId is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Initializing self healing driver| ]]>
-    </line>
-    <line>
-      <![CDATA[| New driver instantiated.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Scenario Name: Onbaording edge using yaml file| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered username| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered password| ]]>
-    </line>
-    <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Initializing self healing driver| ]]>
-    </line>
-    <line>
-      <![CDATA[| New driver instantiated.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Scenario Name: Create new artifactId| ]]>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -197,34 +71,22 @@
       <![CDATA[| Selected container| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on create new artifact| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered artifact name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enetered componenetID| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered componenet image name| ]]>
-    </line>
-    <line>
-      <![CDATA[| zip file is imported| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Artifact created successfully| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on close| ]]>
+      <![CDATA[| Container as service selected| ]]>
     </line>
     <line>
       <![CDATA[| Clicked on select artifact| ]]>
     </line>
     <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: FAILED| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -239,7 +101,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Create new Admin user and verify login| ]]>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -251,64 +113,28 @@
       <![CDATA[| Entered password| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked the user management| ]]>
+      <![CDATA[| Clicked on my application menu| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked the add new user| ]]>
+      <![CDATA[| Selected container| ]]>
     </line>
     <line>
-      <![CDATA[| Entered first name| ]]>
+      <![CDATA[| Container as service selected| ]]>
     </line>
     <line>
-      <![CDATA[| Entered last name| ]]>
+      <![CDATA[| Clicked on select artifact| ]]>
     </line>
     <line>
-      <![CDATA[| Role selected| ]]>
+      <![CDATA[| Artifact List is displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Entered EmailId| ]]>
+      <![CDATA[| Clicked Delete Button| ]]>
     </line>
     <line>
-      <![CDATA[| Entered UserName| ]]>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
     </line>
     <line>
-      <![CDATA[| Entered Password| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered RetypePassword| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered ContactNo| ]]>
-    </line>
-    <line>
-      <![CDATA[| Max invalid attempt selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Max validity selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked Submit Button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked popup message of user created successfully| ]]>
-    </line>
-    <line>
-      <![CDATA[| User is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on user| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked logout button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered username| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered password| ]]>
-    </line>
-    <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
+      <![CDATA[| Execution status is: FAILED| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -323,7 +149,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Developer is not able to create new user| ]]>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -335,175 +161,148 @@
       <![CDATA[| Entered password| ]]>
     </line>
     <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
+      <![CDATA[| Clicked on my application menu| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+      <![CDATA[| Selected container| ]]>
     </line>
     <line>
-      <![CDATA[| Initializing self healing driver| ]]>
+      <![CDATA[| Container as service selected| ]]>
     </line>
     <line>
-      <![CDATA[| New driver instantiated.| ]]>
+      <![CDATA[| Clicked on select artifact| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+      <![CDATA[| Artifact List is displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Admin is able to delete user| ]]>
+      <![CDATA[| Clicked Delete Button| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
     </line>
     <line>
-      <![CDATA[| Entered username| ]]>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Entered password| ]]>
+      <![CDATA[| Clicked on close| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked the user management| ]]>
+      <![CDATA[| Artifact is deleted| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked delete button| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked confirm button| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Element is deleted| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| User is not displayed| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Execution status is: PASSED| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Initializing self healing driver| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| New driver instantiated.| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Admin is able to inactive the user| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
-      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered username| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered password| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked the user management| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked locked button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on user| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked logout button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered username| ]]>
-    </line>
-    <line>
-      <![CDATA[| Entered password| ]]>
-    </line>
-    <line>
-      <![CDATA[| User is inactivated| ]]>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -521,7 +320,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Create new zone and Check the functionality| ]]>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -533,56 +332,1273 @@
       <![CDATA[| Entered password| ]]>
     </line>
     <line>
-      <![CDATA[| Entered zone name| ]]>
+      <![CDATA[| Clicked on my application menu| ]]>
     </line>
     <line>
-      <![CDATA[| Entered zone name| ]]>
+      <![CDATA[| Selected container| ]]>
     </line>
     <line>
-      <![CDATA[| Entered zone name| ]]>
+      <![CDATA[| Container as service selected| ]]>
     </line>
     <line>
-      <![CDATA[| Entered zone name| ]]>
+      <![CDATA[| Clicked on select artifact| ]]>
     </line>
     <line>
-      <![CDATA[| Entered zone name| ]]>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: FAILED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: FAILED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked Delete Button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Confirmed for deletion of artiofact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact deleted message is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is deleted| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| ArtfacTID is not displayed| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-13T11:55:33 IST" name="Surefire suite" finished-at="2023-02-13T11:58:42 IST" duration-ms="189481">
+  <suite started-at="2023-02-13T21:49:38 IST" name="Surefire suite" finished-at="2023-02-13T21:58:23 IST" duration-ms="524782">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-13T11:55:33 IST" name="Surefire test" finished-at="2023-02-13T11:58:42 IST" duration-ms="189481">
+    <test started-at="2023-02-13T21:49:38 IST" name="Surefire test" finished-at="2023-02-13T21:58:23 IST" duration-ms="524782">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:55:33 IST" name="setUpClass" finished-at="2023-02-13T11:55:33 IST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:49:38 IST" name="setUpClass" finished-at="2023-02-13T21:49:39 IST" duration-ms="723" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4889fbba]]>
+                <![CDATA[org.testng.TestRunner@d082916]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:55:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:56:00 IST" duration-ms="26188" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:49:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:50:27 IST" duration-ms="47824" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["preprovision the edge"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb880f535166bb6d3dec3b710eed0862, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52597/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb880f535166bb6d3dec3b710eed0862]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb880f535166bb6d3dec3b710eed0862, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52597/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb880f535166bb6d3dec3b710eed0862
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
+at com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage.verifyArtifactIsDeletedMessage(E2CO_MyApplicationPage.java:298)
+at stepdefinitions.E2COTestSteps.verifyUserNotAbleToSeeDeletedArtifact(E2COTestSteps.java:551)
+at ?.user is not able to find the deleted artifactId(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_MyApplication.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -636,7 +1652,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: preprovision the edge| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -648,95 +1664,94 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Click on preprovision option| ]]>
+              <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Enter EdgeId| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
-              <![CDATA[| Zone Id selected| ]]>
+              <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
-              <![CDATA[| Country is selected| ]]>
+              <![CDATA[| Artifact List is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Latency is selected| ]]>
+              <![CDATA[| Clicked Delete Button| ]]>
             </line>
             <line>
-              <![CDATA[| Enter EnterPrise Id| ]]>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
             </line>
             <line>
-              <![CDATA[| Bandwidth is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Edge description| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter the locality name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Radio is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MCC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MNC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter CGI value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter TAC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| App availability is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Load is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter cluster name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Latitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Longitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| EdgeId is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Execution status is: PASSED| ]]>
+              <![CDATA[| Execution status is: FAILED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:56:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:56:17 IST" duration-ms="17770" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:50:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:51:11 IST" duration-ms="44447" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Onbaording edge using yaml file"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [726d5bc08a58a9e811e8e9217686769c, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52641/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 726d5bc08a58a9e811e8e9217686769c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [726d5bc08a58a9e811e8e9217686769c, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52641/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 726d5bc08a58a9e811e8e9217686769c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
+at com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage.verifyArtifactIsDeletedMessage(E2CO_MyApplicationPage.java:298)
+at stepdefinitions.E2COTestSteps.verifyUserNotAbleToSeeDeletedArtifact(E2COTestSteps.java:551)
+at ?.user is not able to find the deleted artifactId(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_MyApplication.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -751,7 +1766,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Onbaording edge using yaml file| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -763,15 +1778,36 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Execution status is: PASSED| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: FAILED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:56:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:57:17 IST" duration-ms="59700" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:51:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:51:55 IST" duration-ms="43637" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create new artifactId"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
@@ -794,7 +1830,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Create new artifactId| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -812,47 +1848,158 @@
               <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on create new artifact| ]]>
-            </line>
-            <line>
-              <![CDATA[| Entered artifact name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enetered componenetID| ]]>
-            </line>
-            <line>
-              <![CDATA[| Entered componenet image name| ]]>
-            </line>
-            <line>
-              <![CDATA[| zip file is imported| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Artifact created successfully| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on close| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
               <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:57:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:57:29 IST" duration-ms="12337" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:51:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:52:37 IST" duration-ms="42392" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create new Admin user and verify login"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[User Management Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
@@ -870,7 +2017,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Create new Admin user and verify login| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -882,77 +2029,161 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked the user management| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked the add new user| ]]>
+              <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Entered first name| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
-              <![CDATA[| Entered last name| ]]>
+              <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
-              <![CDATA[| Role selected| ]]>
+              <![CDATA[| Artifact List is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Entered EmailId| ]]>
+              <![CDATA[| Clicked Delete Button| ]]>
             </line>
             <line>
-              <![CDATA[| Entered UserName| ]]>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
             </line>
             <line>
-              <![CDATA[| Entered Password| ]]>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Entered RetypePassword| ]]>
+              <![CDATA[| Clicked on close| ]]>
             </line>
             <line>
-              <![CDATA[| Entered ContactNo| ]]>
+              <![CDATA[| Artifact is deleted| ]]>
             </line>
             <line>
-              <![CDATA[| Max invalid attempt selected| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Max validity selected| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked Submit Button| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked popup message of user created successfully| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on user| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked logout button| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Entered username| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Entered password| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:57:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:07 IST" duration-ms="37694" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:52:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:53:20 IST" duration-ms="42484" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Developer is not able to create new user"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[User Management Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
@@ -970,7 +2201,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Developer is not able to create new user| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -982,20 +2213,158 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:21 IST" duration-ms="13965" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:53:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:54:02 IST" duration-ms="42296" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin is able to delete user"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[User Management Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
@@ -1013,7 +2382,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Admin is able to delete user| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -1025,116 +2394,269 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked the user management| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked delete button| ]]>
+              <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked confirm button| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
-              <![CDATA[| Element is deleted| ]]>
+              <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Artifact List is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Clicked Delete Button| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Clicked on close| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| Artifact is deleted| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
-              <![CDATA[| User is not displayed| ]]>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:30 IST" duration-ms="8697" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:54:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:54:46 IST" duration-ms="43966" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin is able to inactive the user"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[User Management Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [300795b49a358d112cb78bd702e1554a, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52862/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 300795b49a358d112cb78bd702e1554a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [300795b49a358d112cb78bd702e1554a, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52862/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 300795b49a358d112cb78bd702e1554a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
+at com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage.verifyArtifactIsDeletedMessage(E2CO_MyApplicationPage.java:298)
+at stepdefinitions.E2COTestSteps.verifyUserNotAbleToSeeDeletedArtifact(E2COTestSteps.java:551)
+at ?.user is not able to find the deleted artifactId(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_MyApplication.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: FAILED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:54:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:55:31 IST" duration-ms="45609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to delete artifact"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
@@ -1152,7 +2674,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Admin is able to inactive the user| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -1164,41 +2686,152 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked the user management| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked locked button| ]]>
+              <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on user| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked logout button| ]]>
+              <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
-              <![CDATA[| Entered username| ]]>
+              <![CDATA[| Artifact List is displayed| ]]>
             </line>
             <line>
-              <![CDATA[| Entered password| ]]>
+              <![CDATA[| Clicked Delete Button| ]]>
             </line>
             <line>
-              <![CDATA[| User is inactivated| ]]>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T11:58:42 IST" duration-ms="12432" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:55:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:56:13 IST" duration-ms="42029" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Create new zone and Check the functionality"]]>
+                <![CDATA["user able to delete artifact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Zones Feature]"]]>
+                <![CDATA["Optional[My Application Feature]"]]>
               </value>
             </param>
           </params>
@@ -1216,7 +2849,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Create new zone and Check the functionality| ]]>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -1228,26 +2861,589 @@
               <![CDATA[| Entered password| ]]>
             </line>
             <line>
-              <![CDATA[| Entered zone name| ]]>
+              <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Entered zone name| ]]>
+              <![CDATA[| Selected container| ]]>
             </line>
             <line>
-              <![CDATA[| Entered zone name| ]]>
+              <![CDATA[| Container as service selected| ]]>
             </line>
             <line>
-              <![CDATA[| Entered zone name| ]]>
+              <![CDATA[| Clicked on select artifact| ]]>
             </line>
             <line>
-              <![CDATA[| Entered zone name| ]]>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T11:58:42 IST" name="tearDownClass" finished-at="2023-02-13T11:58:42 IST" duration-ms="167" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:56:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:56:58 IST" duration-ms="44381" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to delete artifact"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c21ccbe91eacc9967a5da8d82a781dda, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52982}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52982/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c21ccbe91eacc9967a5da8d82a781dda]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Artifact Deleted !')]"}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN24010693', ip: '192.168.1.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c21ccbe91eacc9967a5da8d82a781dda, findElement {using=xpath, value=//div[contains(text(),'Artifact Deleted !')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52982}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52982/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c21ccbe91eacc9967a5da8d82a781dda
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
+at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
+at com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage.verifyArtifactIsDeletedMessage(E2CO_MyApplicationPage.java:298)
+at stepdefinitions.E2COTestSteps.verifyUserNotAbleToSeeDeletedArtifact(E2COTestSteps.java:551)
+at ?.user is not able to find the deleted artifactId(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_MyApplication.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: FAILED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:56:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:57:41 IST" duration-ms="43142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to delete artifact"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:57:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T21:58:23 IST" duration-ms="41538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to delete artifact"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to delete artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked Delete Button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Confirmed for deletion of artiofact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact deleted message is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is deleted| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| ArtfacTID is not displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-13T21:58:23 IST" name="tearDownClass" finished-at="2023-02-13T21:58:23 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
