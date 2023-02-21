@@ -15,10 +15,10 @@ import java.time.Duration;
 
 public class E2CO_LoginPage extends PageClass {
 
-    @FindBy(xpath = "//input[@id='floatingInput']")
+    @FindBy(xpath = "//input[@id = 'Username']")
     private WebElement txtUserName;
 
-    @FindBy(xpath = "//input[@id='floatingPassword']")
+    @FindBy(xpath = "//input[@id = 'floatingPassword']")
     private WebElement txtPassword;
 
     @FindBy(xpath = "//button[@type='submit']")

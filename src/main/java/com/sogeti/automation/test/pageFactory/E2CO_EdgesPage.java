@@ -117,7 +117,7 @@ String currentworkingDirectory;
 		
 		private String edgeslist="//table[@class='table edge-table mb-0']//tbody//tr";
 		
-		@FindBy(xpath = "//button[text()=' Add new edge ']")
+		@FindBy(xpath = "//button[contains(text(),'Add New Edge')]")
 	    WebElement addnewedgebttn;
 		
 		@FindBy(xpath = "//input[@type='file']")
@@ -139,12 +139,41 @@ String currentworkingDirectory;
 		 @FindBy(xpath="//td[normalize-space()='edge3']")
 		 private WebElement ClickONEdge;
 		 
-		 @FindBy(xpath="//button[normalize-space()='Manage Edge']")
-		 private WebElement ManageButton;
+//		 @FindBy(xpath="//button[normalize-space()='Manage Edge']")
+//		 private WebElement ManageButton;
 		 
 		 @FindBy(xpath="//button[normalize-space()='Deboard']")
 		 private WebElement DeboardButton;
+		 
+	//@FindBy(xpath = "//td[contains(text(),'edge02203006580')]")
+	@FindBy(xpath = "//td[starts-with(text(),'edge02')]")
+	private WebElement egdeDeboard;
 
+	@FindBy(xpath = "//div[contains(text(),'Edge Details')]")
+	private WebElement edgeDetailsTitle;
+	
+	@FindBy(xpath = "//button[@class='e2co-primary-btn']")
+	private WebElement ManageButton;
+	
+	@FindBy(xpath = "//button[contains(text(),'Deboard')]")
+	private WebElement deboardButton;
+	
+	@FindBy(xpath = "//div[contains(text(),'Deboarding This Edge!')]")
+	private WebElement deboardWarningMesage;
+	
+	@FindBy(xpath = "//button[contains(text(),'Confirm')]")
+	private WebElement confirmButton;
+	
+	@FindBy(xpath = "//button[contains(text(),'Deboarding')]")
+	private WebElement deboardingTitle;
+	
+	@FindBy(xpath = "//div[contains(text(),'Manage Edge Details')]")
+	private WebElement manageedgedetailstitle;
+	
+	@FindBy(xpath = "//div[contains(text(),'Zone Overview')]")
+	private WebElement zoneOverviewTitle;
+	
+	
 	public E2CO_EdgesPage(SelfHealingDriver driver) {
 		super(driver);
 		this.objDriver = driver;
@@ -188,10 +217,10 @@ String currentworkingDirectory;
 		
 	 }
 	 
-	 public void PreprovisionOption() {
-		 this.PreProvisionButton.click();
-		 log.info("Click on preprovision option");
-	 }
+//	 public void PreprovisionOption() {
+//		 this.PreProvisionButton.click();
+//		 log.info("Click on preprovision option");
+//	 }
 	 
 	 public void EdgeIdTextIsVisible() {
 		 Assert.assertTrue(EdgeIdText.isDisplayed());
@@ -458,6 +487,63 @@ String currentworkingDirectory;
 	    			 Confirmationalert.accept();
 	    			 log.info("Click on deboard button");
 	    		 }
+	    		 
+	    		 public void clickOnEdgeIdIsToDeboard() {
+	    			 this.egdeDeboard.click();
+	    			 log.info("Clicked on edgeid");
+	    		 }
+	    	////////////////////////////////////////////////////////////////////
+	    		 public void clickOnEdgeIsDeboard() {
+	    			 this.egdeDeboard.click();
+	    			 log.info("Clicked on edge.");
+	    		 }
+	    		 
+	    		 public boolean verifyEdgeDetailsPageIsDispalyed() {
+	    			 this.edgeDetailsTitle.isDisplayed();
+	    			 log.info("Edge details page is displayed");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void clickOnManageButton() throws Exception {
+	    			 //this.ManageButton.click();
+//	    			 log.info("Clicked on manage button");
+	    			 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+	    			 js.executeScript("arguments[0].scrollIntoView()",ManageButton);
+	    			 Thread.sleep(2000);
+	    			 js.executeScript("arguments[0].click()", ManageButton);
+	    			 log.info("Click on Manage button");
+	    		 }
+	    		 
+	    		 public boolean verifyManageEdgeDetailsPageIsDisplayed() {
+	    			 this.manageedgedetailstitle.isDisplayed();
+	    			 log.info("Manage Edge page is displayed");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void clickOnDeboardButton() {
+	    			 this.deboardButton.click();
+	    			 log.info("Clicked on deboard button");
+	    		 }
+	    		 
+	    		 public boolean verifyDeboardingWarningPageIsDisplayed() {
+	    			 this.deboardWarningMesage.isDisplayed();
+	    			 log.info("Deboard edge warning popup message page is displayed");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void clickOnConfirmButton() {
+	    			 this.confirmButton.click();
+	    			 log.info("Clicked on confirm button");
+	    		 }
+	    		 
+	    		 public boolean verifyZonesPageIsDisplayedAfterDeboard() {
+	    			 this.zoneOverviewTitle.isDisplayed();
+	    			 log.info("Zone page is displayed");
+	    			 return true;
+	    		 }
+	    		 
+	    		 
+	    		 
 
 	   
 }

@@ -8,10 +8,10 @@ Scenario Outline: Create new zone and Check the functionality
  		And user clicks on zone button
  		Then verify zone list
  		When user clicks on create new zone
- 		Then user enter the details of new zone <zoneid>, <country>, <latitude>, <longitude>, <description>
- 		When clicks on a submit
- 		Then user is clicks close icon
+ 		And user enter the details of new zone <zoneid>, <country>, <latitude>, <longitude>, <description>
+ 		Then clicks on a submit
+ #		Then user is clicks close icon
 	Examples:
  		| user | zoneid| country| latitude | longitude | description |
- 		| Admin | NorthZone | IN | 2 |2| NA |
-# 		| Admin | 113233 |76 |abc |asc |NA |
+ 		| Admin | NorthZone12345 |  | 2 |2| NA |
+ #		| Admin | 113233 |76 |abc |asc |NA |

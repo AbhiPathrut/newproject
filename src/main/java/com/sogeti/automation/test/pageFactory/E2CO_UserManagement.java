@@ -84,7 +84,7 @@ public class E2CO_UserManagement extends PageClass {
     @FindBy(xpath = "//span[@id='dropdownMenuButton1']")
     private WebElement userDropDownBtn;
     
-    @FindBy(xpath = "//button[normalize-space()='Logout']")
+    @FindBy(xpath = "//button[contains(text(),'Logout')]")
     private WebElement logoutBtn;
     
     @FindBy(xpath = "//table[@class='table custom-table-fixed-layout']")
@@ -102,18 +102,23 @@ public class E2CO_UserManagement extends PageClass {
 //    @FindBy(xpath = "(//div[contains(text(),'lock')])[5]")
 //    private WebElement lockbtn;
     
-    @FindBy(xpath = "//th[normalize-space()='inactive']")
+    @FindBy(xpath = "//span[@class='fw-bold']")
     private WebElement inactivemsg;
     
+    @FindBy(xpath = "//div[@class='ft-16 succes-edge-detail-text']")
+    private WebElement inactiveSuccessfulMesg;
+    
     @FindBy(xpath = "/html/body/ngb-modal-window/div/div/app-success-dialog-box/div/button")
-    WebElement closebtn;
+    private WebElement closebtn;
     
 //    @FindBy(xpath = "//div[@class='login-content border-radius-10 bg-white']")
 //    WebElement loginBorder;
     
     @FindBy(xpath = "//div[@class='text-critical ft-13']")
-    WebElement ErrorMessage;
+    private WebElement ErrorMessage;
     
+    @FindBy(xpath = "//button[contains(text(),'Close')]")
+    private WebElement closeButton;
     
     
     
@@ -393,5 +398,15 @@ public class E2CO_UserManagement extends PageClass {
 		 }
 		 
 		}	
+	 public void closeButton() {
+		 this.closeButton.click();
+		 log.info("Clicked on close button");
+	 }
+	 
+	 public boolean verifyInactiveSuccessfulMessageIsDisplayed() {
+		 this.inactiveSuccessfulMesg.isDisplayed();
+		 log.info("Inactive successful message is dispalyed");
+		 return true;
+	 }
 
 }

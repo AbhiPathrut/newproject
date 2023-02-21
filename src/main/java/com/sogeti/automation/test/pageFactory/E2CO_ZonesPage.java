@@ -36,10 +36,10 @@ public class E2CO_ZonesPage extends PageClass {
 	@FindBy(xpath = "//div[@class='create-new-zone-container']")
     WebElement displayopoupnewzone;
 	
-	@FindBy(xpath = "//input[@id='Zone ID']")
+	@FindBy(xpath = "//input[@id='Zone_ID']")
     WebElement zoneID;
 	
-	@FindBy(xpath = "//select[@id='floatingSelect']")
+	@FindBy(xpath = "//select[@id='operator']")
     WebElement selectoperatorID;
 	
 	
@@ -52,10 +52,10 @@ public class E2CO_ZonesPage extends PageClass {
 	@FindBy(xpath = "//input[@id='Longitude']")
     WebElement Longitude;
 	
-	@FindBy(xpath = "//*[@id='Description']")
+	@FindBy(xpath = "//textarea[@id='Description']")
     WebElement Description;
 
-	@FindBy(xpath = "//button[text()=' Submit ']")
+	@FindBy(xpath = "//button[@type='submit']")
     WebElement submitbttn;
 	
 	@FindBy(xpath = "//span[text()=' cancel ']")

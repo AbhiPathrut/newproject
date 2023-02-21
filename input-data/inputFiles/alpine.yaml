@@ -1,0 +1,53 @@
+metadata:
+  appName: alpineapp06022023
+  version: "1.0"
+  category: GAME
+  owner: admin
+  description: alpine app 1
+  appType: microservice
+  appDescriptorType: MEC
+deploymentRequirements:
+  latencyConstraints: none
+  regions:
+  - country: IN
+    operator: AirtelCorp
+    zoneId: SouthZone
+  noOfUsersPerApp: 3
+  deploymentSites: 3
+  bandwidth: "2"
+specifications:
+  accessToken: 652EI9IU0BF8CB9
+  artifactId: 630b6f5e2000010
+  mobilityCapability: Allowed
+  visibility: public
+  tenancy: single
+  enable: 'true'
+ComponentDetails:
+  services:
+  - serviceId: alpinesvc1
+    components:
+      componentId: alpine1
+      componentType: docker
+      componentEnvs:
+      - name: COMPENV
+        type: network
+        value: somvalue
+      componentSource:
+        repo: file
+        codeArchive: 'true'
+        id: ""
+        path: "" 
+        username: ""
+        password: ""
+      interfaces:
+      - interfaceId: testport
+        interfaceType: network
+        port: '8080'
+        scheme: tcp
+        visiblity: external
+        upstreamPath: "/time"
+      resourceProfiles:
+        resourceProfileId: default
+        cpu: 1
+        memory: 512   
+        

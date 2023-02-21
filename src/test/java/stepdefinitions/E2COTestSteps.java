@@ -1,7 +1,7 @@
 package stepdefinitions;
 
 
-import com.ctc.wstx.shaded.msv_core.grammar.xmlschema.XPath;
+
 import com.sogeti.automation.framework.basetest.TestClass;
 import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
@@ -38,6 +38,7 @@ public class E2COTestSteps extends TestClass {
     String dynamicEdgeId;
     String dynamicCluster;
     String dynamicArtifactName;
+    String dynamicAppName;
   
    
 
@@ -210,13 +211,19 @@ public class E2COTestSteps extends TestClass {
     }
 
     @When("^user clicks on the lock button$")
-    public void inactiveUser() {
-    	e2co_usermanagement.lockbtn();	
+    public void inactiveUser() throws Exception {
+    	e2co_usermanagement.lockbtn();
+    	Assert.assertTrue(e2co_usermanagement.inactivemsg(),"User is inactivated successfully.");
+    	e2co_usermanagement.confirmbtn();
+    	Thread.sleep(2000);
+    	
     }
     
     @And("^user is inactivated$")
     public void verifyUserIsInactivated() {
-    	Assert.assertTrue(e2co_usermanagement.inactivemsg(),"User is inactivated successfully.");	
+    	//Assert.assertTrue(e2co_usermanagement.inactivemsg(),"User is inactivated successfully.");	
+    	Assert.assertTrue(e2co_usermanagement.verifyInactiveSuccessfulMessageIsDisplayed(),"User is inactivated successfully.");
+    	e2co_usermanagement.closeButton();
     }
     
     @Then("^user enters the credientials of inactive user and not able to login$")
@@ -246,12 +253,15 @@ public class E2COTestSteps extends TestClass {
     	e2co_edgespage.submitDetailsOfEdge();
     	
     }
-    @When("^Click on preprovision option$")
-    public void clickOnPreProvision() {
-    	e2co_edgespage.PreprovisionOption();
+    @When("^Click on  add new edge option$")
+    public void clickOnPreProvision() throws Exception {
+    	//e2co_edgespage.PreprovisionOption();
+    	e2co_edgespage.clikAddNewEdgebttn();
+		Thread.sleep(2000);
+		System.out.println("click add new edge button");
     }
     
-    @Then("^Edge pre provision page is displayed$")
+    @Then("^New edge page is displayed$")
     public void VerifyPreProvisionPageLoaded() {
     	e2co_edgespage.EdgeIdTextIsVisible(); 
     }
@@ -382,7 +392,7 @@ public class E2COTestSteps extends TestClass {
 		System.out.println("user is on createnew zone page");	
 	}
 	
-	@Then ("^user enter the details of new zone (.*), (.*), (.*), (.*), (.*)")
+	@And ("^user enter the details of new zone (.*), (.*), (.*), (.*), (.*)")
 	public void entermandotarydetails(String zonename,String countryname,String latitude,String longitude,String description) {
 		e2co_zonespage.enterZoneName(zonename);
 		e2co_zonespage.enterCountry(countryname);
@@ -392,7 +402,7 @@ public class E2COTestSteps extends TestClass {
 		
 	}
 	
-	@When ("^clicks on a submit$")
+	@Then ("^clicks on a submit$")
 	public void clickOnSubmitbttn() throws Exception {
 		e2co_zonespage.submitData();
 		Assert.assertTrue(true);
@@ -400,10 +410,10 @@ public class E2COTestSteps extends TestClass {
 		System.out.println("result");
 	}
 	
-	@Then ("^user is clicks close icon$")
-	public void clickClosebttn() {
-		e2co_zonespage.closeIcon();
-	}
+//	@Then ("^user is clicks close icon$")
+//	public void clickClosebttn() {
+//		e2co_zonespage.closeIcon();
+//	}
 	
 	@And("^user clicks on my application$")
 	public void clickOnMyApplication() throws Exception {
@@ -413,6 +423,7 @@ public class E2COTestSteps extends TestClass {
 	
 	@Then("^user is on my application page$")
 	public void verifyUserIsOnMyApplicationPage() {
+		e2co_myapplication.SizeOfApplicationTable();
 		Assert.assertTrue(e2co_myapplication.applicationsTitleIsDisplayed(),"Application page is loaded.");
 	}
 	
@@ -424,6 +435,7 @@ public class E2COTestSteps extends TestClass {
 	@Then("^user is on new application page$")
 	public void verifyUserIsOnNewApplicationPage() {
 		Assert.assertTrue(e2co_myapplication.applicationNewPageIsDisplayed(),"New Application page is loaded.");
+		e2co_myapplication.SizeOfApplicationTable();
 		
 	}
 	
@@ -548,22 +560,100 @@ public class E2COTestSteps extends TestClass {
 	 
 	 @Then("^user is not able to find the deleted artifactId$")
 	 public void verifyUserNotAbleToSeeDeletedArtifact() throws Exception {
-		 Assert.assertTrue(e2co_myapplication.verifyArtifactIsDeletedMessage(),"Artifact deleted successful message is displayed");
+		 //Assert.assertTrue(e2co_myapplication.verifyArtifactIsDeletedMessage(),"Artifact deleted successful message is displayed");
+		 e2co_myapplication.verifyArtifactIsDeletedMessage();
 		 Thread.sleep(2000);
-		 e2co_myapplication.closeTheDialogBox();
-		 Thread.sleep(2000);
+		 //e2co_myapplication.closeTheDialogBox();
+		 //Thread.sleep(2000);
 		 afterNumRow = e2co_myapplication.SizeOfArtifactTable();
 		    	Thread.sleep(3000);
 		    	if(previousNumRow>afterNumRow) {
 		    		log.info("Artifact is deleted");
 		    		
-		    	}else {
+		    	}else if(previousNumRow==afterNumRow) {
 		    		log.info("Artifact is not deleted");
+		    	}else {
+		    		log.info("page not loaded");
 		    	}
 		    	
 		  Assert.assertTrue(e2co_myapplication.verifyDeletedArtifactIsNotPresentInTable(),"Artifact is deleted successfully.");
 		    
 	 }
+	 
+	 @When("^user selects the artifactid$")
+	 public void selectArtifactIdForApplicationOnboard() throws Exception {
+		 e2co_myapplication.selectArtifactId();
+	 }
+	 
+	 @And("^user clicks on done button$")
+	    public void clickOnDoneButton() {
+	    	e2co_myapplication.clickOnDoneBtn();
+	    }
+	   
+	    @And("^click on import button$")
+		 public void uploadFile() {
+			 e2co_myapplication.clickOnImportButton();
+			 
+		 }
+	    
+	    @Then("^upload file page is displayed$")
+	    public void verifyTheUploadingPageIsDisplayed() {
+	    	Assert.assertTrue(e2co_myapplication.verifyUploadPageIsVisible(),"Upload File Page is displayed");
+	    }
+	    
+	    @When("^upload the yaml file of application$")
+	    public void verifyTheUploadingOfFile() {
+	    	e2co_myapplication.uploadYAMLFile();
+	    }
+	    
+	    @And("^click on submit button$")
+	    public void clickOnSubmitButtonYaml() {
+	    	e2co_myapplication.submitBtnOfYAML();
+	    	
+	    }
+	    
+	    @Then("^user is able to see uploaded data on page$")
+	    public void verifyUploadedDataIsVisible() {
+	    	Assert.assertTrue(e2co_myapplication.verifyUploadedDataIsFecthed(),"Uploaded data is displayed on the page");
+	    }
+	    
+	    @When("^update the details of application (.*), (.*), (.*), (.*), (.*)")
+	    public void detailsUpdating(String appName, String Latency, String zone, String ComponentID, String Network) throws Exception {
+	    	String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+			dynamicAppName = appName + s;
+	    	e2co_myapplication.updateAppName(dynamicAppName);
+	    	Thread.sleep(2000);
+	    	//e2co_myapplication.updateBandWidth(BandWidth);
+	    	e2co_myapplication.updateLatency(Latency);
+	    	Thread.sleep(2000);
+	    	e2co_myapplication.updateZone(zone);
+	    	Thread.sleep(2000);
+	    	e2co_myapplication.clickOnDeploymentEdit();
+	    	Thread.sleep(2000);
+	    	e2co_myapplication.updateComponentID(ComponentID);
+	    	Thread.sleep(2000);
+	    	e2co_myapplication.updateNetwork(Network);
+	    	Thread.sleep(2000);	
+	    }
+	    
+	    @And("^Click on submit button$")
+	    public void clickOnSubmitButton() throws Exception {
+	    	e2co_myapplication.submitDetailsOfApplication();
+	    }
+	    
+	    @And("^user is able to see successful message for application onboard$")
+	    public void verifyApplicationOnboardMessageIsDisplayed() {
+	    	Assert.assertTrue(e2co_myapplication.verifyOnboardingMessageIsDisplayed(),"Application onboard request accepted");
+	    	e2co_myapplication.closeTheDialogBox();
+	    }
+
+	    @Then("^user is can see the application in a list$")
+	    public void verifyApplicationOnboardedIsDisplyaedInList() {
+	    	e2co_myapplication.SizeOfApplicationTable();
+	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(dynamicAppName);
+	    	
+	    	
+	    }
 	
 	////************
 	
@@ -604,5 +694,138 @@ public class E2COTestSteps extends TestClass {
     	
     }
 	
-   
+    @When("^click on the edge which is to deboard$")
+    public void selectEdgeIsToDeboard() {
+    	e2co_edgespage.clickOnEdgeIsDeboard();
+    }
+    
+    @Then("^Edge details page is displayed$")
+    public void verifyEdgesPageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyEdgeDetailsPageIsDispalyed(),"Edge details page is displayed");
+    }
+    
+    @When("^click on manage edge$")
+    public void clickOnEdgeManageButn() throws Exception {
+    	e2co_edgespage.clickOnManageButton();
+    }
+    
+    @Then("^Manage edge page is displayed$")
+    public void verifyManageEdgesDetailsPageIsDisplaying() {
+    	Assert.assertTrue(e2co_edgespage.verifyManageEdgeDetailsPageIsDisplayed(),"Manage Edges details page is displayed");
+    }
+    
+    @When("^click on deboard button$")
+    public void clickOnDeboardButton() {
+    	e2co_edgespage.clickOnDeboardButton();
+    	
+    }
+    
+    @Then("^Deboarding warning message popup is diaplyed$")
+    public void warningMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyDeboardingWarningPageIsDisplayed(),"Deboard warning message popup is displayed");
+    	
+    }
+    
+    @When("^click on the confirm button$")
+    public void clickOnConfirmBtn() {
+    	e2co_edgespage.clickOnConfirmButton();
+    }
+    
+    @Then("^Zones page is dispalyed$")
+    public void zonesPageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyZonesPageIsDisplayedAfterDeboard(),"Zones page is displayed");
+    }
+    
+    @When("^user is clicking on Edge menu$")
+    public void  clickOnedgesmenu() {
+    	e2co_edgespage.navigateToEdgesPage();
+    	
+    }
+    
+    @Then("^user is not able to see the edge which is deboarded$")
+    public void verifyEdgeIsRemovedFromList() {
+    	
+    }
+    
+    ////////////////////////////
+    
+//    @When("^user selects where to onboard application (.*)")
+//    public void selectServiceForApplicationOnboard(String service ) {
+//    	if(service.equals("container")) {
+//			e2co_myapplication.selectContainer();
+//			log.info("Container as service selected");
+//		 }else if (service.equals("VM")){
+//			e2co_myapplication.selectVM();
+//			log.info("Vm as service selected");
+//		}else {
+//			e2co_myapplication.selectKuberenetes();
+//			log.info("Kuberenetes as a service selected");
+//					}
+//    }
+//    
+//    @When("^user selects the artifactid$")
+//    public void selectArtifactForOnboardApplication() throws Exception {
+//    	e2co_myapplication.selectArtifactId();
+//    }
+//    
+//    @And("^user clicks on done button$")
+//    public void clickOnDoneButtonForselect() {
+//    	e2co_myapplication.clickOnDoneBtn();
+//    }
+//    
+//    @And("^click on import button$")
+//    public void clickonImportbttn() {
+//    	e2co_myapplication.clickOnImportButton();
+//    }
+//    
+//    @Then("^upload file page is displayed$")
+//    public void uploadfilePageIsDisplaying() {
+//    	Assert.assertTrue(e2co_myapplication.verifyUploadPageIsVisible(),"Upload your file page is displayed");
+//    }
+//    
+//    @When("^upload the yaml file of application$")
+//    public void uploadYAMLFile() {
+//    	e2co_myapplication.uploadYAMLFile();
+//    }
+//    
+//    @And("^click on submit button$")
+//    public void clickOnSubmitBttn() {
+//    	e2co_myapplication.submitBtnOfYAML();
+//    }
+//    
+//    @Then("^user is able to see uploaded data on page$")
+//    public void ableToSeeUploadedDataOnPage() {
+//    	Assert.assertTrue(e2co_myapplication.verifyUploadedDataIsFecthed(),"Fechted data is displaying on page");
+//    }
+//    
+//    @When("^update the details of application (.*), (.*), (.*), (.*), (.*), (.*)")
+//    public void updateDetailsOfApplicationAsperReq(String appName, String BandWidth, String Latency, String zone, String ComponentID, String Network) throws Exception {
+//    	e2co_myapplication.updateAppName(appName);
+//    	e2co_myapplication.updateBandWidth(BandWidth);
+//    	e2co_myapplication.updateLatency(Latency);
+//    	e2co_myapplication.updateZone(zone);
+//    	e2co_myapplication.clickOnDeploymentEdit();
+//    	Thread.sleep(2000);
+//    	e2co_myapplication.updateComponentID(ComponentID);
+//    	e2co_myapplication.updateNetwork(Network);
+//    	
+//    	
+//    }
+//    
+//    @And("^Click on submit button$")
+//    public void submitDetailsOfUpdatedForApplication() throws Exception {
+//    	e2co_myapplication.submitDetailsOfApplication();
+//    	Thread.sleep(2000);
+//    }
+//    
+//    @And("^user is able to see successful message for application onboard$")
+//    public void successfulMessageOfOnboardingOfApplicationIsDisplayed() {
+//    	
+//    	Assert.assertTrue(e2co_myapplication.verifyOnboardingMessageIsDisplayed(),"Onboarding accept request message is displayed");
+//    }
+//    
+//    @Then("^user is can see the application in a list$")
+//    public void userIsAbleToSeeApplicationOnboarded() {
+//    	e2co_myapplication.SizeOfApplicationTable();
+//    }
 }

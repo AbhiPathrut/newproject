@@ -3,14 +3,17 @@ package com.sogeti.automation.test.pageFactory;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.epam.healenium.SelfHealingDriver;
 import com.sogeti.automation.framework.constants.FrameworkConstants;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+
 
 public class E2CO_MyApplicationPage extends PageClass {
 	String currentworkingDirectory;
@@ -19,6 +22,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	SelfHealingDriver objDriver;
 	int row;
 	String DeletedArtifactName;
+	String SelectedArtifactName;
 	
 	@FindBy(xpath = "//a[@href='/MEC/my-apps']")
 	private WebElement MyApplication;
@@ -50,7 +54,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[contains(text(),'Select Artifact')]")
 	private WebElement selectArtifact; 
 	
-	@FindBy(xpath = "//div[@class='e2co-header']")
+	@FindBy(xpath = "//div[contains(text(),'Overview')]")
 	private WebElement applicationsTitle;
 
 	@FindBy(xpath = "//div[contains(text(),'Onboarding New VM')]")
@@ -95,12 +99,68 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//button[contains(text(),'Confirm')]")
 	private WebElement confirmBttn;
 	
-	@FindBy(xpath = "//div[contains(text(),'Deleting Artifact !')]")
+	@FindBy(xpath = "//div[@class= 'success-text onboard-success-text-spacing ft-18 ft-wt-500' ]")
 	private WebElement messageDeleting;
 	
-	@FindBy(xpath = "//div[contains(text(),'Artifact Deleted !')]")
+	//@FindBy(xpath = "//div[contains(text(),'Artifact Deleted !')]")
+	//@FindBy(xpath = "//div[@class = '*-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	@FindBy(xpath = "//div[@class='onboard-success-container text-center']")
 	private WebElement artifactDeletedMessage;
 	
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement doneBtn;
+	
+	@FindBy(xpath = "//button[@class='e2co-import-btn mx-15']")
+	private WebElement imprtBtn;
+	
+	@FindBy(xpath = "//input[@id='inp']")
+	private WebElement fileUpload;
+	
+	@FindBy(xpath = "//button[@class= 'primary-custom-bg-blue border-0 import-file-modal-submit-btn text-white ft-16 ft-wt-500']")
+	private WebElement submitBttn;
+	
+	@FindBy(xpath = "//input[@id='AppName']")
+	private WebElement appName;
+	
+	@FindBy(xpath = "//select[@id='LatencyConstraintSelect']")
+	private WebElement selectLatency;
+	
+	@FindBy(xpath = "//input[@id='floatingbandwidth']")
+	private WebElement bandWidth;
+	
+	//@FindBy(xpath = "//div[@class='onboard-new-app-deployment ms-3 cursor-pt border-radius-5 d-flex align-items-center']")
+	@FindBy(xpath = "//i[@class = 'material-symbols-outlined onboard-general-input-border ft-30']")
+	private WebElement deploymentEdit;
+	
+	@FindBy(xpath = "//select[@id='zoneSelect']")
+	private WebElement selectZone;
+	
+	@FindBy(xpath = "//input[@placeholder=' Enter Component ID']")
+	private WebElement componentID;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter network Name']")
+	private WebElement network;
+	
+	@FindBy(xpath = "//button[@class='primary-custom-bg-blue border-0 add-deployment-data-save-btn text-white ft-16 ft-wt-500']")
+	private WebElement saveData;
+	
+	@FindBy(xpath = "//button[@class='e2co-submit-btn']")
+	private WebElement SubmitButton;
+	
+	@FindBy(xpath = "//div[@class='flex-grow-1 ft-20 ft-wt-400']")
+	private WebElement FileUploadPage;
+	
+	@FindBy(xpath = "//div[normalize-space()='Artifact']")
+	private WebElement artifactIsDisplaying;
+	
+	@FindBy(xpath = "//div[contains(text(),'Onboarding Request Accepted !')]")
+	private WebElement onboardSuccessfulMessage;
+	
+	@FindBy(xpath = "//div[contains(text(),'Artifact Deletion Failed !')]")
+	private WebElement deletionfailedMessg;
+	
+	@FindBy(xpath = "//button[@class = 'btn btn-secondary custom-success-close ft-18 ft-wt-400']")
+	private WebElement okButton;
 	
 	
 	public E2CO_MyApplicationPage(SelfHealingDriver driver) {
@@ -119,7 +179,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	}
 	
 	public void clickOnNewApplication() throws Exception {
-		newApplication.click();
+		this.newApplication.click();
 		Thread.sleep(2000);
 	}
 	
@@ -192,7 +252,9 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	public void clickOnSubmitButton() throws Exception {
 		this.submitBtn.click();
-		Thread.sleep(45000);
+		//Thread.sleep(120000);
+		WebDriverWait wait = new WebDriverWait(driver,180);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Close')]")));
 		log.info("Clicked on submit button");
 	}
 	
@@ -294,10 +356,20 @@ public class E2CO_MyApplicationPage extends PageClass {
 		Thread.sleep(3000);
 	}
 	
-	public boolean verifyArtifactIsDeletedMessage() {
-		this.artifactDeletedMessage.isDisplayed();
-		log.info("Artifact deleted message is displayed");
-		return true;
+	public void verifyArtifactIsDeletedMessage() throws Exception {
+		Thread.sleep(2000);
+	String	DeletionMessage = artifactDeletedMessage.getText();
+	//System.out.println(DeletionMessage);
+		if(DeletionMessage.contains("Artifact Deleted !")) {
+			log.info("Artifact is deleted successfully");
+			this.close.click();
+		}else  {
+			log.info("Artifact is InUse can't delete");
+			this.okButton.click();
+			SizeOfArtifactTable();
+			Thread.sleep(2000);			
+			objDriver.quit();
+		}	
 	}
 	
 	 public boolean verifyDeletedArtifactIsNotPresentInTable() {
@@ -313,5 +385,157 @@ public class E2CO_MyApplicationPage extends PageClass {
 		  return validationFlag;
 	 }
 	 
+	 public void clickOnDoneBtn() {
+		 this.doneBtn.click();
+		 log.info("Clicked on done button");
+	 }
 	 
+	public void clickOnImportButton() {
+		this.imprtBtn.click();
+		log.info("Clicked on import button");
+	}
+	 
+	public void uploadYAMLFile() {
+		currentworkingDirectory = System.getProperty("user.dir");
+		inputFile= currentworkingDirectory + "/input-data/inputFiles/mario.yml";
+		this.fileUpload.sendKeys(inputFile);
+		log.info("YAML file is imported");	
+	}
+	
+	public boolean verifyUploadPageIsVisible() {
+		this.FileUploadPage.isDisplayed();
+		log.info("Upload Your File ! is displayed");
+		return true;
+	}
+	
+	public void submitBtnOfYAML() {
+		this.submitBttn.click();
+		log.info("Clicked on submit button");
+	}
+	
+	public boolean verifyUploadedDataIsFecthed() {
+		this.artifactIsDisplaying.isDisplayed();
+		log.info("Imported data is displaying on the page");
+		return true;
+	}
+	
+	public void updateAppName(String appName) {
+		this.appName.clear();
+		this.appName.sendKeys(appName);
+		log.info("Updated app name");
+     
+    }
+	
+//	public void updateBandWidth(String BandWidth) {
+//		this.bandWidth.click();
+//		this.bandWidth.sendKeys(BandWidth);
+//		log.info("Updated bandwidth");
+//		
+//	}
+	
+	public void updateLatency(String Latency) {
+		Select select = new Select(selectLatency);
+        select.selectByVisibleText(Latency);
+        log.info("Latency selected");
+		
+	}
+	
+	public void updateZone(String zone) {
+		Select select1 = new Select(selectZone);
+        select1.selectByVisibleText(zone);
+        log.info("Zone selected");
+	}
+	
+	public void clickOnDeploymentEdit() throws Exception {
+//		 this.deploymentEdit.click();
+//		 Thread.sleep(2000);
+		 JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		 js.executeScript("arguments[0].scrollIntoView()",deploymentEdit);
+		 Thread.sleep(2000);
+		 js.executeScript("arguments[0].click()", deploymentEdit);
+		 Thread.sleep(2000);
+		// log.info("Click on Manage button");
+	}
+	
+	public void updateComponentID(String ComponentID) throws Exception {
+		Thread.sleep(2000);
+		this.componentID.clear();
+        this.componentID.sendKeys(ComponentID);
+        log.info("Updated componenet ID");
+	}
+		
+	public void updateNetwork(String Network) {
+		this.network.sendKeys(Network);
+		log.info("Updated network");
+        this.saveData.click();
+	}
+	
+	public void submitDetailsOfApplication() throws Exception {
+//		this.SubmitButton.click();
+//		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+//		 js.executeScript("scrollBy(0, -1000");
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		 js.executeScript("arguments[0].scrollIntoView()",SubmitButton);
+		 Thread.sleep(2000);
+		 js.executeScript("arguments[0].click()", SubmitButton);
+		 Thread.sleep(2000);
+		 //this.SubmitButton.click();
+		log.info("Clicked on submit button");
+	}
+	
+	public boolean verifyOnboardingMessageIsDisplayed() {
+		this.onboardSuccessfulMessage.isDisplayed();
+		log.info("Onboarding request accepted is message displayed");
+		return true;
+	}
+	
+	public int SizeOfApplicationTable() {
+		 List<WebElement> rows = objDriver.findElements(By.xpath("//table[@class = 'table mb-0 my-app-body-list-app-row']//tbody//tr"));
+		  row = rows.size();
+		 System.out.println(row);
+		return row;
+	}
+	
+	public boolean verifyApplicationOnoardedIsDisplayed(String AppName) {
+		boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class = 'table mb-0 my-app-body-list-app-row']//tbody//tr//td[1]"));
+		 for (WebElement element : allUserNameElements) {
+		String appNm = element.getText();
+		System.out.println(appNm);
+		if(AppName.equals(appNm)) {
+			log.info("Artifact is displayed");
+			System.out.println(AppName);
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
 }
+	
+	public void selectArtifactId() throws Exception {
+		 Random rand = new Random();
+			int randomNum = rand.nextInt((row - 1));
+			System.err.println(randomNum);
+			if (randomNum==0){          
+				randomNum= randomNum+2;
+				}
+			WebElement artifactNameSelected = objDriver.findElement(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr["+ randomNum +"]//td[2]"));
+			Thread.sleep(2000);
+			SelectedArtifactName = artifactNameSelected.getText();
+			System.out.println(DeletedArtifactName);
+			Thread.sleep(2000);
+			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ randomNum +"]"));
+			Thread.sleep(2000);
+			//WebElement userId =  objDriver.findElement(By.xpath("(//input[@name='artifact'])[2]"));
+			userId.click();
+			Thread.sleep(2000);
+			
+	}
+}
+	
+	
+	
+	
+	
+
+	
+

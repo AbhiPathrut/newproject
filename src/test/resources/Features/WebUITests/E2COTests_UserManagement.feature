@@ -24,24 +24,24 @@ Feature: User Management Feature
  		
  		
  		
- #Scenario Outline: Create new developer user and verify login
- #		When user logs into MEC portal<user>
- #		And  user is on Dashboard page
- #		And user clicks on User Mangement Menu
- #		Then user management page is displayed
- #		When user clicks on add new user
- #		Then add new user page is displayed
- #		When user enter the details <firstname>, <lastname>, <Role>, <emailid>, <username>, <pass>, <retypepass>, <contactno>, <Max invalid attempts>, <Max validity>
- #		And clicks on the submit
- #		Then created user is displayed
- #		When user logs out
- #		Then login page is displayed
- #		When user enter username as <username> and password <pass>
- #		And click on login
- #		Then user is able to login 
- #		Examples:
- #		| user | firstname | lastname | Role | emailid | username | pass| retypepass | contactno | Max invalid attempts | Max validity |
- #		| Admin | developer | user | Application Developer | developer@gmail.com | dev | Admin@1234 | Admin@1234 | 1234567890 | 5 | 60 |
+ Scenario Outline: Create new developer user and verify login
+ 		When user logs into MEC portal<user>
+ 		And  user is on Dashboard page
+ 		And user clicks on User Mangement Menu
+ 		Then user management page is displayed
+ 		When user clicks on add new user
+ 		Then add new user page is displayed
+ 		When user enter the details <firstname>, <lastname>, <Role>, <emailid>, <username>, <pass>, <retypepass>, <contactno>, <Max invalid attempts>, <Max validity>
+ 		And clicks on the submit
+ 		Then created user is displayed
+ 		When user logs out
+ 		Then login page is displayed
+ 		When user enter username as <username> and password <pass>
+ 		And click on login
+ 		Then user is able to login 
+ 		Examples:
+ 		| user | firstname | lastname | Role | emailid | username | pass| retypepass | contactno | Max invalid attempts | Max validity |
+ 		| Admin | developer | user | Application Developer | developer@gmail.com | dev | Admin@1234 | Admin@1234 | 1234567890 | 5 | 60 |
  		
  		
 Scenario Outline: Developer is not able to create new user
