@@ -14,6 +14,7 @@ public class PageObjectManager {
     E2CO_EdgesPage e2co_edgespage;
     E2CO_ZonesPage e2co_zonespage;
     E2CO_MyApplicationPage e2co_myapplication;
+    E2CO_SDKPage e2co_sdkpage;
 
     public PageObjectManager(SelfHealingDriver driver) {
         this.healingDriver = driver;
@@ -53,6 +54,11 @@ public class PageObjectManager {
     
     public E2CO_MyApplicationPage gete2co_myapplication() {
     	return ( e2co_myapplication == null) ?  e2co_myapplication = new E2CO_MyApplicationPage(healingDriver) : e2co_myapplication;
+    	
+    }
+    
+    public E2CO_SDKPage gete2co_sdkpage() {
+    	return ( e2co_sdkpage == null) ?  e2co_sdkpage = new E2CO_SDKPage(healingDriver) : e2co_sdkpage;
     	
     }
 }

@@ -5,6 +5,7 @@ com\sogeti\automation\framework\constants\AppConstants$Api$GrantType.class
 com\sogeti\automation\test\pageFactory\E2CO_LoginPage.class
 com\sogeti\automation\framework\constants\AppConstants.class
 com\sogeti\automation\test\pageFactory\PageClass.class
+com\sogeti\automation\test\pageFactory\E2CO_SDKPage.class
 com\sogeti\automation\test\pageFactory\E2CO_ZonesPage.class
 com\sogeti\automation\framework\basetest\TestContext.class
 com\sogeti\automation\framework\utils\Screenshot.class

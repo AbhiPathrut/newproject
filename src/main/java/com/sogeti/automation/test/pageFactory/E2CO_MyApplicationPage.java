@@ -236,7 +236,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	public void browseZipFileContainer() {
 		currentworkingDirectory = System.getProperty("user.dir");
-		inputFile= currentworkingDirectory + "/input-data/inputFiles/mario.zip";
+		inputFile= currentworkingDirectory + "/input-data/inputFiles/alpine.zip";
 		this.browseFile.sendKeys(inputFile);
 		//driver.findElement(By.xpath("//input[@id='inp']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\mario.zip");
 		log.info("zip file is imported");
@@ -397,7 +397,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	 
 	public void uploadYAMLFile() {
 		currentworkingDirectory = System.getProperty("user.dir");
-		inputFile= currentworkingDirectory + "/input-data/inputFiles/mario.yml";
+		inputFile= currentworkingDirectory + "/input-data/inputFiles/alpine.yaml";
 		this.fileUpload.sendKeys(inputFile);
 		log.info("YAML file is imported");	
 	}
@@ -503,7 +503,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 		String appNm = element.getText();
 		System.out.println(appNm);
 		if(AppName.equals(appNm)) {
-			log.info("Artifact is displayed");
+			log.info("Application is displayed");
 			System.out.println(AppName);
 			validationFlag = true;
 		}

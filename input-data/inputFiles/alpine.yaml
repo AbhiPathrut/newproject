@@ -1,5 +1,5 @@
 metadata:
-  appName: alpineapp06022023
+  appName: alpineapp212
   version: "1.0"
   category: GAME
   owner: admin
@@ -16,17 +16,17 @@ deploymentRequirements:
   deploymentSites: 3
   bandwidth: "2"
 specifications:
-  accessToken: 652EI9IU0BF8CB9
-  artifactId: 630b6f5e2000010
+  accessToken: 652ei9iu0bf8cb9
+  artifactId:  6376ebe34000010
   mobilityCapability: Allowed
   visibility: public
   tenancy: single
   enable: 'true'
 ComponentDetails:
   services:
-  - serviceId: alpinesvc1
+  - serviceId: alpinesvc1102
     components:
-      componentId: alpine1
+      componentId: alpine
       componentType: docker
       componentEnvs:
       - name: COMPENV
@@ -36,7 +36,7 @@ ComponentDetails:
         repo: file
         codeArchive: 'true'
         id: ""
-        path: "" 
+        path: ""
         username: ""
         password: ""
       interfaces:

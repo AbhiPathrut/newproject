@@ -8,6 +8,7 @@ import com.sogeti.automation.framework.constants.AppConstants.Web;
 import com.sogeti.automation.test.pageFactory.E2CO_EdgesPage;
 import com.sogeti.automation.test.pageFactory.E2CO_LoginPage;
 import com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage;
+import com.sogeti.automation.test.pageFactory.E2CO_SDKPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
 import com.sogeti.automation.test.pageFactory.E2CO_ZonesPage;
 
@@ -32,6 +33,7 @@ public class E2COTestSteps extends TestClass {
     E2CO_EdgesPage e2co_edgespage;
     E2CO_ZonesPage e2co_zonespage;
     E2CO_MyApplicationPage e2co_myapplication;
+    E2CO_SDKPage e2co_sdkpage;
     String dynamicUserName;
     int previousNumRow;
     int afterNumRow;
@@ -39,7 +41,10 @@ public class E2COTestSteps extends TestClass {
     String dynamicCluster;
     String dynamicArtifactName;
     String dynamicAppName;
-  
+    String dynamicSDKVersion;
+    String dynamicSDKName;
+    int beforedeleterownum;
+    int afterdeleterownum;
    
 
     public E2COTestSteps(TestContext context) throws Exception {
@@ -50,6 +55,7 @@ public class E2COTestSteps extends TestClass {
         e2co_edgespage = testContext.getPageObjectManager().geE2co_EdgesPage();
         e2co_zonespage= testContext.getPageObjectManager().gete2co_zonespage();
         e2co_myapplication = testContext.getPageObjectManager().gete2co_myapplication();
+        e2co_sdkpage = testContext.getPageObjectManager().gete2co_sdkpage();
         ThreadContext.pop();
         ThreadContext.push(this.getClass().getSimpleName());
     }
@@ -585,12 +591,12 @@ public class E2COTestSteps extends TestClass {
 		 e2co_myapplication.selectArtifactId();
 	 }
 	 
-	 @And("^user clicks on done button$")
+	 @Then("^user clicks on done button$")
 	    public void clickOnDoneButton() {
 	    	e2co_myapplication.clickOnDoneBtn();
 	    }
 	   
-	    @And("^click on import button$")
+	    @When("^click on import button$")
 		 public void uploadFile() {
 			 e2co_myapplication.clickOnImportButton();
 			 
@@ -648,8 +654,10 @@ public class E2COTestSteps extends TestClass {
 	    }
 
 	    @Then("^user is can see the application in a list$")
-	    public void verifyApplicationOnboardedIsDisplyaedInList() {
+	    public void verifyApplicationOnboardedIsDisplyaedInList() throws Exception {
+	    	Thread.sleep(2000);
 	    	e2co_myapplication.SizeOfApplicationTable();
+	    	Thread.sleep(2000);
 	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(dynamicAppName);
 	    	
 	    	
@@ -747,85 +755,81 @@ public class E2COTestSteps extends TestClass {
     	
     }
     
-    ////////////////////////////
+   //********************
+    @And("^user click on SDK menu$")
+    public void ClickOnSdkMenuButton() {
+    	e2co_sdkpage.ClickOnSDkMenu();
+    }
     
-//    @When("^user selects where to onboard application (.*)")
-//    public void selectServiceForApplicationOnboard(String service ) {
-//    	if(service.equals("container")) {
-//			e2co_myapplication.selectContainer();
-//			log.info("Container as service selected");
-//		 }else if (service.equals("VM")){
-//			e2co_myapplication.selectVM();
-//			log.info("Vm as service selected");
-//		}else {
-//			e2co_myapplication.selectKuberenetes();
-//			log.info("Kuberenetes as a service selected");
-//					}
-//    }
-//    
-//    @When("^user selects the artifactid$")
-//    public void selectArtifactForOnboardApplication() throws Exception {
-//    	e2co_myapplication.selectArtifactId();
-//    }
-//    
-//    @And("^user clicks on done button$")
-//    public void clickOnDoneButtonForselect() {
-//    	e2co_myapplication.clickOnDoneBtn();
-//    }
-//    
-//    @And("^click on import button$")
-//    public void clickonImportbttn() {
-//    	e2co_myapplication.clickOnImportButton();
-//    }
-//    
-//    @Then("^upload file page is displayed$")
-//    public void uploadfilePageIsDisplaying() {
-//    	Assert.assertTrue(e2co_myapplication.verifyUploadPageIsVisible(),"Upload your file page is displayed");
-//    }
-//    
-//    @When("^upload the yaml file of application$")
-//    public void uploadYAMLFile() {
-//    	e2co_myapplication.uploadYAMLFile();
-//    }
-//    
-//    @And("^click on submit button$")
-//    public void clickOnSubmitBttn() {
-//    	e2co_myapplication.submitBtnOfYAML();
-//    }
-//    
-//    @Then("^user is able to see uploaded data on page$")
-//    public void ableToSeeUploadedDataOnPage() {
-//    	Assert.assertTrue(e2co_myapplication.verifyUploadedDataIsFecthed(),"Fechted data is displaying on page");
-//    }
-//    
-//    @When("^update the details of application (.*), (.*), (.*), (.*), (.*), (.*)")
-//    public void updateDetailsOfApplicationAsperReq(String appName, String BandWidth, String Latency, String zone, String ComponentID, String Network) throws Exception {
-//    	e2co_myapplication.updateAppName(appName);
-//    	e2co_myapplication.updateBandWidth(BandWidth);
-//    	e2co_myapplication.updateLatency(Latency);
-//    	e2co_myapplication.updateZone(zone);
-//    	e2co_myapplication.clickOnDeploymentEdit();
-//    	Thread.sleep(2000);
-//    	e2co_myapplication.updateComponentID(ComponentID);
-//    	e2co_myapplication.updateNetwork(Network);
-//    	
-//    	
-//    }
-//    
-//    @And("^Click on submit button$")
-//    public void submitDetailsOfUpdatedForApplication() throws Exception {
-//    	e2co_myapplication.submitDetailsOfApplication();
-//    	Thread.sleep(2000);
-//    }
-//    
-//    @And("^user is able to see successful message for application onboard$")
-//    public void successfulMessageOfOnboardingOfApplicationIsDisplayed() {
-//    	
-//    	Assert.assertTrue(e2co_myapplication.verifyOnboardingMessageIsDisplayed(),"Onboarding accept request message is displayed");
-//    }
-//    
-//    @Then("^user is can see the application in a list$")
-//    public void userIsAbleToSeeApplicationOnboarded() {
-//    	e2co_myapplication.SizeOfApplicationTable();
-//    }
+    @Then("^list of SDK is diasplayed$")
+    public void ValidateSDklist() {
+    	e2co_sdkpage.SizeOfsdkTable();
+    	Assert.assertTrue(e2co_sdkpage.listOfsdkTableIsVisible(),"List of sdk displayed");
+    	
+    }
+    @When("^user clicks on upload option$")
+    public void ClickONUploadOption() {
+    	e2co_sdkpage.ClickOnUploadButton();
+    }
+    
+    //@And("^Enter all mandetory details(.*), (.*)$")
+    @And ("^Enter all mandetory details(.*),(.*)")
+    public void EnterAllDetails(String Version, String description) {
+    	
+    	e2co_sdkpage.SelectOneLanguage();
+    	String s = new SimpleDateFormat("dssSS").format(new Date());
+    	dynamicSDKVersion = Version + s;
+    	e2co_sdkpage.EnterSDKVersion(dynamicSDKVersion);
+    	e2co_sdkpage.EnterSDKDescription(description);
+    	e2co_sdkpage.SelectSDKFile();
+    	
+    }
+    
+    @And ("^click on upload button$")
+    public void ClickSubmitButton() throws Exception {
+    	e2co_sdkpage.SubmitCreatedSDK();
+    	Thread.sleep(2000);
+    	
+    }
+    
+    @Then ("^SDK is uploaded successfully$")
+    public void ValidateSDkUploaded() {
+    	Assert.assertTrue(e2co_sdkpage.sdkUploadedSuccessfullyMesgDisplayed(),"sdk uploaded successfully message is displayed");
+    	//e2co_sdkpage.ClickOnCloseButton();
+    	dynamicSDKName = "ec_client-sdk_Android_"+dynamicSDKVersion+".zip";
+    	System.out.println(dynamicSDKName);
+    	e2co_sdkpage.clickOnCloseButton();
+    	e2co_sdkpage.SizeOfsdkTable();
+    	//e2co_sdkpage.verifyUploadeddSDKIsDisplayed(dynamicSDKName);
+    	
+    }
+    
+    @And ("^click on uploaded Sdk$")
+    public void ClickOnUploadedSDK() {
+    	 beforedeleterownum = e2co_sdkpage.SizeOfsdkTable();
+    	e2co_sdkpage.SelectUploadedSDK();
+    }
+    
+    @And ("^click on delete sdk button$")
+    public void ClickOnDeleteOption() throws Exception {
+    	e2co_sdkpage.ClickOnDelete();
+    }
+    
+    @And ("^SDK is deleted$")
+    public void ClickOnConfirmButton() {
+    	e2co_sdkpage.ClickOnConfirm();
+    	 afterdeleterownum = e2co_sdkpage.SizeOfsdkTable();
+    }
+    
+    @Then("^SDK is deleted is verified$")
+    public void verifySDKIsRemovedFromList() {
+    	if(beforedeleterownum>afterdeleterownum) {
+    		log.info("SDK is removed from list");
+    		//System.out.println("SDK is deleted successfully");
+    		
+    	}else {
+    		log.info("SDK is not removed from list");
+    		//System.out.println("SDK is not deleted");
+    	}
+    }
 }

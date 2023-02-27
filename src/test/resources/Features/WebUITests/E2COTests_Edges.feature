@@ -13,19 +13,19 @@ Feature: Edges Feature
 #	| Admin |
 	
 
-Scenario Outline: preprovision the edge
-    When user logs into MEC portal<user>
-    And user is on Dashboard page
-    And user clicks on Edges menu
-    Then edges page is displayed
-    When  Click on  add new edge option
-    Then New edge page is displayed
-    When User enter all details <EdgeId>, <ZoneId>, <Country>, <Latency>, <EnterpriseId>, <Bandwidth>, <Description>, <City>, <State>, <Locality>, <radio>, <MCC>, <MNC>, <CGI>, <TAC>, <Appavailble>, <LoadFilter>, <Cluster>, <Latitude>, <Longitude>
-    And  User click on submit button
-    Then New pre provsion edge is displayed <EdegID>
-    Examples:
-    | user | EdgeId | ZoneId | Country | Latency | EnterpriseId | Bandwidth | Description | City | State | Locality |  radio | MCC | MNC | CGI | TAC | Appavailble | LoadFilter | Cluster | Latitude | Longitude |
-    | Admin | edge | SouthZone | India | Low | default | 10 | edge description | Hyderabad | TN | Charminar | LTE | 404 | 04 | 1 | 12 | 2 | 2 | cluster | 12.4168 | -34.7038 |
+#Scenario Outline: preprovision the edge
+    #When user logs into MEC portal<user>
+    #And user is on Dashboard page
+    #And user clicks on Edges menu
+    #Then edges page is displayed
+    #When  Click on  add new edge option
+    #Then New edge page is displayed
+    #When User enter all details <EdgeId>, <ZoneId>, <Country>, <Latency>, <EnterpriseId>, <Bandwidth>, <Description>, <City>, <State>, <Locality>, <radio>, <MCC>, <MNC>, <CGI>, <TAC>, <Appavailble>, <LoadFilter>, <Cluster>, <Latitude>, <Longitude>
+    #And  User click on submit button
+    #Then New pre provsion edge is displayed <EdegID>
+    #Examples:
+    #| user | EdgeId | ZoneId | Country | Latency | EnterpriseId | Bandwidth | Description | City | State | Locality |  radio | MCC | MNC | CGI | TAC | Appavailble | LoadFilter | Cluster | Latitude | Longitude |
+    #| Admin | edge | SouthZone | India | Low | default | 10 | edge description | Hyderabad | TN | Charminar | LTE | 404 | 04 | 1 | 12 | 2 | 2 | cluster | 12.4168 | -34.7038 |
     
     
 #Scenario Outline: Onbaording edge using yaml file
