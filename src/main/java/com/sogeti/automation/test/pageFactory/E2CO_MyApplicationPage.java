@@ -162,6 +162,23 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//button[@class = 'btn btn-secondary custom-success-close ft-18 ft-wt-400']")
 	private WebElement okButton;
 	
+	@FindBy(xpath = "//select[@formcontrolname='zoneId']")
+	private WebElement selectZoneProvision;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement provisionButton;
+	
+	@FindBy(xpath = "//div[@class = 'success-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	private WebElement successMesgOfProvision;
+	
+	@FindBy(xpath = "//td[contains(text(),'app02280151592')]")
+	//@FindBy(xpath = "//td[starts-with(text(),'app02280151592')]")
+	////td[contains(text(),'app02280141176')]
+	private WebElement applicationNmFrProv;
+	
+	@FindBy(xpath = "//div[@class='provison-instance-title ft-18']")
+	private WebElement applicationProvisionPage;
+	
 	
 	public E2CO_MyApplicationPage(SelfHealingDriver driver) {
 		super(driver);
@@ -530,6 +547,44 @@ public class E2CO_MyApplicationPage extends PageClass {
 			Thread.sleep(2000);
 			
 	}
+	
+	public void selectApplicationForPrvision() throws Exception {
+		//this.applicationNmFrProv.click();
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		 js.executeScript("arguments[0].scrollIntoView()",applicationNmFrProv);
+		 Thread.sleep(2000);
+		 js.executeScript("arguments[0].click()", applicationNmFrProv);
+		 Thread.sleep(2000);
+		log.info("Clicked on application for provision");
+	}
+	
+	public boolean userIsOnProvisionPage() {
+		this.applicationProvisionPage.isDisplayed();
+		log.info("User is on application provision page");
+		return true;
+	}
+	
+	public void selectZoneForApplicationProvision(String zone) {
+		Select select1 = new Select(selectZoneProvision);
+        select1.selectByVisibleText(zone);
+        log.info("Zone selected");
+	}
+	
+	public void clickOnProvisionBtn() {
+		this.provisionButton.click();
+		log.info("Clicked on provision button");
+	}
+	
+	public boolean requestAcceptMessageIsDisplayed() {
+		this.successMesgOfProvision.isDisplayed();
+		log.info("Request accepted message is displayed");
+		return true;
+	}
+	
+	public void clickOncloseBtn() {
+		this.close.click();
+	}
+	
 }
 	
 	

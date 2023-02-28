@@ -53,7 +53,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: user able to onboard application| ]]>
+      <![CDATA[| Scenario Name: user able to provision the application| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -68,90 +68,48 @@
       <![CDATA[| Clicked on my application menu| ]]>
     </line>
     <line>
-      <![CDATA[| Selected container| ]]>
+      <![CDATA[| Clicked on application for provision| ]]>
     </line>
     <line>
-      <![CDATA[| Container as service selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on import button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Upload Your File ! is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| YAML file is imported| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Imported data is displaying on the page| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on select artifact| ]]>
-    </line>
-    <line>
-      <![CDATA[| Artifact List is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on done button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Updated app name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Latency selected| ]]>
+      <![CDATA[| User is on application provision page| ]]>
     </line>
     <line>
       <![CDATA[| Zone selected| ]]>
     </line>
     <line>
-      <![CDATA[| Updated componenet ID| ]]>
+      <![CDATA[| Clicked on provision button| ]]>
     </line>
     <line>
-      <![CDATA[| Updated network| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Onboarding request accepted is message displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on close| ]]>
-    </line>
-    <line>
-      <![CDATA[| Application is displayed| ]]>
+      <![CDATA[| Request accepted message is displayed| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-27T18:20:59 IST" name="Surefire suite" finished-at="2023-02-27T18:22:16 IST" duration-ms="76616">
+  <suite started-at="2023-02-28T15:16:55 IST" name="Surefire suite" finished-at="2023-02-28T15:17:19 IST" duration-ms="24129">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-27T18:20:59 IST" name="Surefire test" finished-at="2023-02-27T18:22:16 IST" duration-ms="76616">
+    <test started-at="2023-02-28T15:16:55 IST" name="Surefire test" finished-at="2023-02-28T15:17:19 IST" duration-ms="24129">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-27T18:20:59 IST" name="setUpClass" finished-at="2023-02-27T18:21:00 IST" duration-ms="762" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:16:55 IST" name="setUpClass" finished-at="2023-02-28T15:16:56 IST" duration-ms="756" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@254e9709]]>
+                <![CDATA[org.testng.TestRunner@7e81617a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-27T18:21:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-27T18:22:16 IST" duration-ms="75667" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:16:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-28T15:17:19 IST" duration-ms="23204" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["user able to onboard application"]]>
+                <![CDATA["user able to provision the application"]]>
               </value>
             </param>
             <param index="1">
@@ -213,7 +171,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: user able to onboard application| ]]>
+              <![CDATA[| Scenario Name: user able to provision the application| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -228,68 +186,26 @@
               <![CDATA[| Clicked on my application menu| ]]>
             </line>
             <line>
-              <![CDATA[| Selected container| ]]>
+              <![CDATA[| Clicked on application for provision| ]]>
             </line>
             <line>
-              <![CDATA[| Container as service selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on import button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Upload Your File ! is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| YAML file is imported| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Imported data is displaying on the page| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on select artifact| ]]>
-            </line>
-            <line>
-              <![CDATA[| Artifact List is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on done button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Updated app name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Latency selected| ]]>
+              <![CDATA[| User is on application provision page| ]]>
             </line>
             <line>
               <![CDATA[| Zone selected| ]]>
             </line>
             <line>
-              <![CDATA[| Updated componenet ID| ]]>
+              <![CDATA[| Clicked on provision button| ]]>
             </line>
             <line>
-              <![CDATA[| Updated network| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Onboarding request accepted is message displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on close| ]]>
-            </line>
-            <line>
-              <![CDATA[| Application is displayed| ]]>
+              <![CDATA[| Request accepted message is displayed| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-27T18:22:16 IST" name="tearDownClass" finished-at="2023-02-27T18:22:16 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:17:19 IST" name="tearDownClass" finished-at="2023-02-28T15:17:19 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -61,6 +61,9 @@ public class E2CO_SDKPage extends PageClass {
 	 @FindBy(xpath="//button[normalize-space()='Confirm']")
 	 private WebElement ConfirmButton;
 	 
+	 @FindBy(xpath = "//div[@class='sdk-details-body bg-white border-radius-5']")
+	 private WebElement deletedSDKinfo;
+	 
 	public E2CO_SDKPage(SelfHealingDriver driver) {
 		super(driver);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(FrameworkConstants.MEDIUM_WAIT));
@@ -166,4 +169,9 @@ public class E2CO_SDKPage extends PageClass {
 		 System.out.println(row);
 		return row;
 	}
+	 
+	 public void infoOfDeletedSdk() {
+		 String InfoOFSDK = this.deletedSDKinfo.getText();
+		 System.out.println(InfoOFSDK);
+	 }
 }

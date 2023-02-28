@@ -772,7 +772,7 @@ public class E2COTestSteps extends TestClass {
     	e2co_sdkpage.ClickOnUploadButton();
     }
     
-    //@And("^Enter all mandetory details(.*), (.*)$")
+    
     @And ("^Enter all mandetory details(.*),(.*)")
     public void EnterAllDetails(String Version, String description) {
     	
@@ -800,7 +800,6 @@ public class E2COTestSteps extends TestClass {
     	System.out.println(dynamicSDKName);
     	e2co_sdkpage.clickOnCloseButton();
     	e2co_sdkpage.SizeOfsdkTable();
-    	//e2co_sdkpage.verifyUploadeddSDKIsDisplayed(dynamicSDKName);
     	
     }
     
@@ -808,6 +807,7 @@ public class E2COTestSteps extends TestClass {
     public void ClickOnUploadedSDK() {
     	 beforedeleterownum = e2co_sdkpage.SizeOfsdkTable();
     	e2co_sdkpage.SelectUploadedSDK();
+    	e2co_sdkpage.infoOfDeletedSdk();
     }
     
     @And ("^click on delete sdk button$")
@@ -831,5 +831,42 @@ public class E2COTestSteps extends TestClass {
     		log.info("SDK is not removed from list");
     		//System.out.println("SDK is not deleted");
     	}
+    }
+    
+    //******************************
+    
+    @When("^user clicks on application$")
+    public void selectApplicationIsToProvision() throws Exception {
+    	e2co_myapplication.selectApplicationForPrvision();
+    }
+    
+    @Then("^user is able to see the application details$")
+    public void verifyUserIsAbleToSeeApplicationDetails() {
+    	Assert.assertTrue(e2co_myapplication.userIsOnProvisionPage(),"User is on application provision page");
+    }
+    
+    @When("^user selects the zone for application provision (.*)")
+    public void selectZoneForProvisionOfApplication(String zone) {
+    	e2co_myapplication.selectZoneForApplicationProvision(zone);
+    }
+    
+    @And("^user click on provision buttton$")
+    public void clickOnProvision() {
+    	e2co_myapplication.clickOnProvisionBtn();
+    }
+    
+    @Then("^user is able to see successful message for request$")
+    public void verifyRequestAcceptMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_myapplication.requestAcceptMessageIsDisplayed(),"Request accepted message is displayed");
+    }
+    
+    @When("^user click on close button$")
+    public void clickOnCloseButton() {
+    	e2co_myapplication.clickOncloseBtn();
+    }
+    
+    @Then("^user is able to see the application in running status$")
+    public void verifyApplicationIsInRunningStatus() {
+    	
     }
 }
