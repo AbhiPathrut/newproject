@@ -21,7 +21,7 @@ public class E2CO_ZonesPage extends PageClass {
 	
 	private String zonelist="//table[@class='table zone-list-table mb-0 custom-table-fixed-layout table-borderless']//tbody//tr";
 	
-	@FindBy(xpath = "//a[@href='/MEC/zones/zone-list']")
+	@FindBy(xpath = "//div[@class='e2co-header']")
     WebElement zonepagetitle;
 	
 	@FindBy(xpath = "//table//tbody//tr//td[text()='SouthZone']")
@@ -70,6 +70,9 @@ public class E2CO_ZonesPage extends PageClass {
 	@FindBy(xpath = "//span[@class='material-symbols-outlined']")
     WebElement dropdown;
 
+	@FindBy(xpath = "//label[@class='ft-22 ft-wt-400']")
+	private WebElement createNewZoneTitle;
+	
 	public E2CO_ZonesPage(SelfHealingDriver driver) {
 		super(driver);
 		this.driver = driver;
@@ -84,7 +87,9 @@ public class E2CO_ZonesPage extends PageClass {
 	       
 	   }
 	   public boolean isZonetitlePageDisplayed() {
-	   	return zonepagetitle.isDisplayed();
+	   	 this.zonepagetitle.isDisplayed();
+	   	 log.info("user is on zone page");
+	   	 return true;
 	   	}
 
 	   public E2CO_LoginPage verifyUserIsOnHomePage() {

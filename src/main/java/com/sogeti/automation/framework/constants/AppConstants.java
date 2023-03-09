@@ -21,8 +21,10 @@ public class AppConstants {
                 + ":" + GRIP_HUB_PORT + "/wd/hub";
         public static final String UI_USERNAME = PropertyReader.getFieldValue("UI_USERNAME");
         public static final String UI_PASSWORD = PropertyReader.getFieldValue("UI_PASSWORD");
+        public static final String UI_DOMAINNAME = PropertyReader.getFieldValue("UI_DOMAINNAME");
         public static final String UI_Dev_USERNAME = PropertyReader.getFieldValue("UI_DEVUSERNAME");
         public static final String UI_Dev_PASSWORD = PropertyReader.getFieldValue("UI_DEVPASSWORD");
+        public static final String UI_Dev_DOMAINNAME = PropertyReader.getFieldValue("UI_DEVDOMAINNAME");
         public static final String SCREENSHOT_ENABLE = PropertyReader.getFieldValue("ScreenshotEnable");
 
         private Web() {

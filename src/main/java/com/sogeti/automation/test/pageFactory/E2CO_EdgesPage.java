@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.ctc.wstx.shaded.msv_core.grammar.xmlschema.XPath;
 import com.epam.healenium.SelfHealingDriver;
 import com.sogeti.automation.framework.constants.FrameworkConstants;
 
@@ -146,7 +147,7 @@ String currentworkingDirectory;
 		 private WebElement DeboardButton;
 		 
 	//@FindBy(xpath = "//td[contains(text(),'edge02203006580')]")
-	@FindBy(xpath = "//td[starts-with(text(),'edge02')]")
+	@FindBy(xpath = "//td[starts-with(text(),'edge03')]")
 	private WebElement egdeDeboard;
 
 	@FindBy(xpath = "//div[contains(text(),'Edge Details')]")
@@ -172,6 +173,9 @@ String currentworkingDirectory;
 	
 	@FindBy(xpath = "//div[contains(text(),'Zone Overview')]")
 	private WebElement zoneOverviewTitle;
+	
+	@FindBy(xpath = "//div[@class='top-health-section d-flex align-items-start pt-1']")
+	private WebElement edgeIdDeboarded;
 	
 	
 	public E2CO_EdgesPage(SelfHealingDriver driver) {
@@ -489,13 +493,19 @@ String currentworkingDirectory;
 	    		 }
 	    		 
 	    		 public void clickOnEdgeIdIsToDeboard() {
-	    			 this.egdeDeboard.click();
+	    			 //this.egdeDeboard.click();
 	    			 log.info("Clicked on edgeid");
 	    		 }
 	    	////////////////////////////////////////////////////////////////////
-	    		 public void clickOnEdgeIsDeboard() {
-	    			 this.egdeDeboard.click();
+	    		 public void clickOnEdgeIsDeboard(String EdgeId) throws Exception {
+	    			 WebElement EdgeDeboard = objDriver.findElement(By.xpath("//td[contains(text(),"+EdgeId+")]"));
+	    			 EdgeDeboard.click();
 	    			 log.info("Clicked on edge.");
+	    		 }
+	    		 
+	    		 public void edgeIdDeboarded() {
+	    			 String EdgeId = this.edgeIdDeboarded.getText();
+	    			 System.out.println(EdgeId);
 	    		 }
 	    		 
 	    		 public boolean verifyEdgeDetailsPageIsDispalyed() {

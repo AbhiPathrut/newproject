@@ -13,6 +13,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.epam.healenium.SelfHealingDriver;
 import com.sogeti.automation.framework.constants.FrameworkConstants;
 
+
+
+
 public class E2CO_SDKPage extends PageClass {
 	String currentworkingDirectory;
 	String inputFile;
@@ -52,7 +55,7 @@ public class E2CO_SDKPage extends PageClass {
 	 @FindBy(xpath = "//button[contains(text(),'Close')]")
 	 private WebElement closebtn;
 	 
-	 @FindBy(xpath="//td[starts-with(text(),'ec_client-sdk_Android_1')]")
+	 @FindBy(xpath="//td[starts-with(text(),'ec_client-sdk_Android_')]")
 	 private WebElement SelectUploadedSDK;
 	 
 	 @FindBy(xpath="//button[normalize-space()='Delete']")
@@ -80,10 +83,10 @@ public class E2CO_SDKPage extends PageClass {
 		 this.UploadButton.click();
 	 }
 	 
-	 public void SelectOneLanguage() {
+	 public void SelectOneLanguage(String language) {
 		 Select select = new Select(SelectLanguage);
 		 //select.selectByVisibleText("Android");
-		 select.selectByValue("Android");
+		 select.selectByValue(language);
 		 log.info("Language is selected"); 
 	 }
 	 
@@ -147,8 +150,9 @@ public class E2CO_SDKPage extends PageClass {
 		 log.info("Clicked on close button");
 	 }
 	 
-	 public void SelectUploadedSDK() {
-		 this.SelectUploadedSDK.click();
+	 public void SelectUploadedSDK(String version) {
+		 WebElement SelectUploadedSDK = objDriver.findElement(By.xpath("//td[contains(text(),"+version+")]"));
+		 SelectUploadedSDK.click();
 		 log.info("User Click on uploaded SDK");
 	 }
 	 
@@ -174,4 +178,6 @@ public class E2CO_SDKPage extends PageClass {
 		 String InfoOFSDK = this.deletedSDKinfo.getText();
 		 System.out.println(InfoOFSDK);
 	 }
+
+	  
 }

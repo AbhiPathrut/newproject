@@ -2,28 +2,31 @@ package stepdefinitions;
 
 
 
+
+
+
+import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.sogeti.automation.framework.basetest.TestClass;
 import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
+import com.sogeti.automation.framework.utils.ExcelReader;
 import com.sogeti.automation.test.pageFactory.E2CO_EdgesPage;
 import com.sogeti.automation.test.pageFactory.E2CO_LoginPage;
 import com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage;
 import com.sogeti.automation.test.pageFactory.E2CO_SDKPage;
+import com.sogeti.automation.test.pageFactory.E2CO_TrobleshootPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
 import com.sogeti.automation.test.pageFactory.E2CO_ZonesPage;
-
+import java.util.List;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+import java.io.IOException;
+import java.util.Map;
 import org.apache.logging.log4j.ThreadContext;
 import org.testng.Assert;
+
 
 public class E2COTestSteps extends TestClass {
 
@@ -34,17 +37,30 @@ public class E2COTestSteps extends TestClass {
     E2CO_ZonesPage e2co_zonespage;
     E2CO_MyApplicationPage e2co_myapplication;
     E2CO_SDKPage e2co_sdkpage;
+    E2CO_TrobleshootPage e2co_trobleshootpage;
     String dynamicUserName;
     int previousNumRow;
     int afterNumRow;
-    String dynamicEdgeId;
-    String dynamicCluster;
-    String dynamicArtifactName;
-    String dynamicAppName;
     String dynamicSDKVersion;
-    String dynamicSDKName;
     int beforedeleterownum;
     int afterdeleterownum;
+   ExcelReader excelreader;
+   String version;
+   String EdgeIdPreprovisioned;
+   String loginname;
+   String pass;
+   String serviceFromUser;
+   String artifactname;
+   String componentId;
+   String componenetImageName;
+   String domainName;
+   String appNameFromUser;
+   String Password;
+   String DomainName;
+   String domainname;
+   String UNRestPass;
+   String NewPassword;
+   String ZoneName;
    
 
     public E2COTestSteps(TestContext context) throws Exception {
@@ -56,6 +72,8 @@ public class E2COTestSteps extends TestClass {
         e2co_zonespage= testContext.getPageObjectManager().gete2co_zonespage();
         e2co_myapplication = testContext.getPageObjectManager().gete2co_myapplication();
         e2co_sdkpage = testContext.getPageObjectManager().gete2co_sdkpage();
+        e2co_trobleshootpage=testContext.getPageObjectManager().gete2co_trobleshootpage();
+        
         ThreadContext.pop();
         ThreadContext.push(this.getClass().getSimpleName());
     }
@@ -65,15 +83,15 @@ public class E2COTestSteps extends TestClass {
     @Given("^user logs into MEC portal(.*)")
     public void login(String user) {
     	if(user.equals("Admin")) {
-    	e2co_loginpage.login(Web.UI_USERNAME, Web.UI_PASSWORD);
+    	e2co_loginpage.login(Web.UI_USERNAME, Web.UI_PASSWORD, Web.UI_DOMAINNAME);
     	}else {
-    		e2co_loginpage.login(Web.UI_Dev_USERNAME, Web.UI_Dev_PASSWORD);
+    		e2co_loginpage.login(Web.UI_Dev_USERNAME, Web.UI_Dev_PASSWORD, Web.UI_Dev_DOMAINNAME);
     	}
     	    }
     
     @When("^user is on Dashboard page$")
     public void verifyUserisOnDashboard() {
-    	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is not loaded.");
+    	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is loaded.");
     }
     
     @And("^user clicks on User Mangement Menu$")
@@ -97,20 +115,36 @@ public class E2COTestSteps extends TestClass {
     	e2co_usermanagement.firstNameTextIsVisible();
     }
 
-    @When("^user enter the details (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*)")
-    public void enterDetailsOfUser(String firstname, String lastname, String Role, String emailid, String loginname, String loginpass, String retypass, String contactno, String InvdAtttempts, String MaxValdty) {
+    @When("^user enter the details of new user(.*), (.*)")
+    public void enterDetailsOfUser(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String firstname = testData.get(RowNumber).get("firstname");
+    	String lastname = testData.get(RowNumber).get("lastname");
+    	String Role = testData.get(RowNumber).get("Role");
+    	String emailid = testData.get(RowNumber).get("emailid");
+    	 loginname = testData.get(RowNumber).get("username");
+    	 pass = testData.get(RowNumber).get("pass");
+    	String retypepass = testData.get(RowNumber).get("retypepass");
+    	String contactno = testData.get(RowNumber).get("contactno");
+    	String MaxInvalidAttempts = testData.get(RowNumber).get("MaxInvalidAttempts");
+    	String MaxValidity = testData.get(RowNumber).get("MaxValidity");
+    	 domainName = testData.get(RowNumber).get("domainName");
+    	
     	e2co_usermanagement.firstnametext(firstname);
     	e2co_usermanagement.lastnametext(lastname);
     	e2co_usermanagement.selectRole(Role);
     	e2co_usermanagement.emailid(emailid);
-    	String s = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date());
-    	dynamicUserName = loginname+s;
-    	e2co_usermanagement.loginname(loginname+s);
-    	e2co_usermanagement.password(loginpass);
-    	e2co_usermanagement.retypePassword(retypass);
+//    	String s = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date());
+//    	dynamicUserName = loginname+s;
+    	e2co_usermanagement.loginname(loginname);
+    	e2co_usermanagement.password(pass);
+    	e2co_usermanagement.retypePassword(retypepass);
     	e2co_usermanagement.contactno(contactno);
-    	e2co_usermanagement.selectMaxInvdAttpt(InvdAtttempts);
-    	e2co_usermanagement.selectMaxValidty(MaxValdty);	
+    	e2co_usermanagement.selectMaxInvdAttpt(MaxInvalidAttempts);
+    	e2co_usermanagement.selectMaxValidty(MaxValidity);	
+    	e2co_usermanagement.enterDomainName(domainName);
     }
     
     @And("^clicks on the submit$")
@@ -123,7 +157,7 @@ public class E2COTestSteps extends TestClass {
     @Then("^created user is displayed$")
     public void verifyUserIsCreated() {
     	e2co_usermanagement.SizeOfTable();
-    	Assert.assertTrue(e2co_usermanagement.verifyUserCreatedIsDisplayed(dynamicUserName),"New user present");
+    	Assert.assertTrue(e2co_usermanagement.verifyUserCreatedIsDisplayed(loginname),"New user present");
     }
     
     @When("^user logs out$")
@@ -138,10 +172,11 @@ public class E2COTestSteps extends TestClass {
     	e2co_loginpage.verifyUserIsOnHomePage();	
     }
     
-    @When("^user enter username as (.*) and password (.*)")
-    public void verifyCreatedUserLogin(String username, String password ) {
-    	e2co_loginpage.enterUserName(dynamicUserName);
-    	e2co_loginpage.enterPassword(password);
+    @When("^user enter username as (.*), password as (.*) and domain as (.*)")
+    public void verifyCreatedUserLogin(String username, String password, String domain ) {
+    	e2co_loginpage.enterUserName(loginname);
+    	e2co_loginpage.enterPassword(pass);
+    	e2co_loginpage.enterDomain(domainName);
     	
     	
     }
@@ -159,12 +194,42 @@ public class E2COTestSteps extends TestClass {
     @When("^user is on login page$")
     public void userIsOnLoginPage() {
     	e2co_loginpage.verifyUserIsOnHomePage();	
-    } 
+    }
     
-    @And("^user enters the username as (.*) and password as (.*)")
-    public void enterLoginCredientials(String username, String password) {
-    	e2co_loginpage.enterUserName(username);
-    	e2co_loginpage.enterPassword(password);
+    @And("^enter username(.*), (.*)")
+    public void enterUserName(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String UserName = testData.get(RowNumber).get("UserName");
+    	 Password = testData.get(RowNumber).get("Password");
+    	 DomainName = testData.get(RowNumber).get("DomainName");
+    	e2co_loginpage.enterUserName(UserName);
+    	System.out.println(UserName);
+    }
+    
+    @And("^enter password(.*)")
+    public void enterPassword(String password) {
+    	e2co_loginpage.enterPassword(Password);
+    	System.out.println(Password);
+    }
+    
+    @And("^enter domain(.*)")
+    public void enterDomainName(String domainName) {
+    	e2co_loginpage.enterDomain(DomainName);
+    	System.out.println(DomainName);
+    }
+    
+    @Then("^User is on the dashboard page$")
+    public void VerifyLoginCredientialsAreWorking() {
+    	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is loaded.");
+    }
+    
+    @When("^user enters the username as (.*) and password (.*) and domain as (.*)")
+    public void enterLoginCredientials(String username, String password, String domain) {
+    	e2co_loginpage.enterUserName(loginname);
+    	e2co_loginpage.enterPassword(pass);
+    	e2co_loginpage.enterDomain(domainName);
     }
     
     @And("^click on login button$")
@@ -230,12 +295,39 @@ public class E2COTestSteps extends TestClass {
     	//Assert.assertTrue(e2co_usermanagement.inactivemsg(),"User is inactivated successfully.");	
     	Assert.assertTrue(e2co_usermanagement.verifyInactiveSuccessfulMessageIsDisplayed(),"User is inactivated successfully.");
     	e2co_usermanagement.closeButton();
+    	e2co_usermanagement.sizeOfInactiveUsers();
     }
     
     @Then("^user enters the credientials of inactive user and not able to login$")
     public void enterInactivatedCredientials() throws Exception {
     	e2co_usermanagement.verifyLockedUserIsNotAbleToLogin();
     	
+    }
+    
+    @When("^user clicks on open lock button$")
+    public void activeUser() throws Exception {
+    	e2co_usermanagement.sizeOfInactiveUsers();
+    	e2co_usermanagement.openlockbtn();
+    	Assert.assertTrue(e2co_usermanagement.verifyActivateWarningMessageIsDisplayed(),"User activate warning message is displayed");
+    	e2co_usermanagement.confirmbtn();
+    	Thread.sleep(2000);
+    }
+    
+    @Then("^user is activated$")
+    public void verifyUserIsActivated() {
+    	Assert.assertTrue(e2co_usermanagement.userActivatedSuccessMessagePopupMessageIsDisplayed(),"User activated success popup message is displayed");
+    	e2co_usermanagement.closeButton();
+    	e2co_usermanagement.sizeOfInactiveUsers();
+    }
+    
+    @And("^user enters the credientials of activated user and able to login$")
+    public void enterActivatedCredientials() throws Exception {
+    	e2co_usermanagement.verifyUnLockedUserIsAbleToLogin();
+    }
+    
+    @Then("^user is on the dashboard page as user activated$")
+    public void verifyActivatedUserIsAbleToLogin() {
+    	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is loaded.");
     }
     
     @And("^user clicks on Edges menu$")
@@ -272,12 +364,36 @@ public class E2COTestSteps extends TestClass {
     	e2co_edgespage.EdgeIdTextIsVisible(); 
     }
     
-    @When("^User enter all details (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*),(.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*), (.*)")
-    public void EnterOllDetails(String EdgeId,String ZoneId, String Country,String Latency,String EnterpriseId,String Bandwidth,String Description,String City,String State,String Locality,String radio,String MCC,String MNC,String CGI,String TAC,String Appavailble,String LoadFilter,String Cluster,String Latitude,String Longitude) {
-    	String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
-    	dynamicEdgeId = EdgeId + s;
-    	e2co_edgespage.EdgeIdText(dynamicEdgeId);
-    	System.out.println(dynamicEdgeId);
+    @When("^User enter all details (.*), (.*)")
+    public void EnterOllDetails(String SheetName, int RowNumber) throws IOException, Exception {
+//    	String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+//    	dynamicEdgeId = EdgeId + s;
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 EdgeIdPreprovisioned = testData.get(RowNumber).get("EdgeId");
+    	String ZoneId = testData.get(RowNumber).get("ZoneId"); 
+    	String Country = testData.get(RowNumber).get("Country");
+    	String Latency = testData.get(RowNumber).get("Latency");
+    	String EnterpriseId = testData.get(RowNumber).get("EnterpriseId");
+    	String Bandwidth = testData.get(RowNumber).get("Bandwidth");
+    	String Description = testData.get(RowNumber).get("Description");
+    	String City = testData.get(RowNumber).get("City");
+    	String State = testData.get(RowNumber).get("State");
+    	String Locality = testData.get(RowNumber).get("Locality");
+    	String radio = testData.get(RowNumber).get("radio");
+    	String MCC = testData.get(RowNumber).get("MCC");
+    	String MNC = testData.get(RowNumber).get("MNC");
+    	String CGI = testData.get(RowNumber).get("CGI");
+    	String TAC = testData.get(RowNumber).get("TAC");
+    	String Appavailble = testData.get(RowNumber).get("Appavailble");
+    	String LoadFilter = testData.get(RowNumber).get("LoadFilter");
+    	String Cluster = testData.get(RowNumber).get("Cluster");
+    	String Latitude = testData.get(RowNumber).get("Latitude");
+    	String Longitude = testData.get(RowNumber).get("Longitude");
+    	
+    	e2co_edgespage.EdgeIdText(EdgeIdPreprovisioned);
+    	//System.out.println(dynamicEdgeId);
     	e2co_edgespage.ZoneIdSelect(ZoneId);
     	e2co_edgespage.CountrySelect(Country);
     	e2co_edgespage.LatencySelect(Latency);
@@ -295,9 +411,9 @@ public class E2COTestSteps extends TestClass {
     	e2co_edgespage.TACText(TAC);
     	e2co_edgespage.Appavailabilty(Appavailble);
     	e2co_edgespage.SelectLoad(LoadFilter);
-    	dynamicCluster = Cluster + s;
-    	e2co_edgespage.ClusterName(dynamicCluster);
-    	System.out.println(dynamicCluster);
+    	//dynamicCluster = Cluster + s;
+    	e2co_edgespage.ClusterName(Cluster);
+    	//System.out.println(dynamicCluster);
 	 	e2co_edgespage.LatitudeText(Latitude);
 	 	e2co_edgespage.LongitudeText(Longitude);   
  	   
@@ -310,7 +426,7 @@ public class E2COTestSteps extends TestClass {
     
     @Then("^New pre provsion edge is displayed(.*)")
     public void verifyPreprovisionEdgeIsDisplayed(String EdgeId) {
-    	e2co_edgespage.verifyEdgeIsPreProvisioned(dynamicEdgeId);
+    	e2co_edgespage.verifyEdgeIsPreProvisioned(EdgeIdPreprovisioned);
     	
     }
     
@@ -356,7 +472,7 @@ public class E2COTestSteps extends TestClass {
 	public void clicksOnZoneIcon() {
 		e2co_zonespage.clikZoneIcon();
 		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is loaded.");
-		System.out.println("user is on zone page");
+		//System.out.println("user is on zone page");
 	}
 	
 //	public void southzone() throws Exception {////////////////zone
@@ -398,10 +514,18 @@ public class E2COTestSteps extends TestClass {
 		System.out.println("user is on createnew zone page");	
 	}
 	
-	@And ("^user enter the details of new zone (.*), (.*), (.*), (.*), (.*)")
-	public void entermandotarydetails(String zonename,String countryname,String latitude,String longitude,String description) {
-		e2co_zonespage.enterZoneName(zonename);
-		e2co_zonespage.enterCountry(countryname);
+	@And ("^user enter the details of new zone (.*), (.*)")
+	public void entermandotarydetails(String SheetName, int RowNumber) throws IOException, Exception {
+		ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String zoneid = testData.get(RowNumber).get("zoneid");
+    	String latitude = testData.get(RowNumber).get("latitude");
+    	String longitude = testData.get(RowNumber).get("longitude");
+    	String description = testData.get(RowNumber).get("description");
+    	 
+		e2co_zonespage.enterZoneName(zoneid);
+		//e2co_zonespage.enterCountry(countryname);
 		e2co_zonespage.enterLatitude(latitude);
 		e2co_zonespage.enterLongitude(longitude);
 		e2co_zonespage.enterDescription(description);
@@ -445,12 +569,21 @@ public class E2COTestSteps extends TestClass {
 		
 	}
 	
-	@When("^user selects where to onboard application (.*)")
-	public void selectOnboarding(String service) {
-		if(service.equals("container")) {
+	@When("^user selects where to onboard application(.*), (.*)")
+	public void selectOnboarding(String SheetName, int RowNumber) throws IOException, Exception {
+		ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 serviceFromUser = testData.get(RowNumber).get("service");
+    	 artifactname = testData.get(RowNumber).get("artifactname");
+     	 componentId = testData.get(RowNumber).get("componentId");
+     	 componenetImageName = testData.get(RowNumber).get("componenetImageName");
+    	 
+    	 Thread.sleep(2000);
+		if(serviceFromUser.equals("container")) {
 		e2co_myapplication.selectContainer();
 		log.info("Container as service selected");
-		}else if (service.equals("VM")){
+		}else if (serviceFromUser.equals("VM")){
 			e2co_myapplication.selectVM();
 			log.info("Vm as service selected");
 			}else {
@@ -460,10 +593,10 @@ public class E2COTestSteps extends TestClass {
 	}
 	
 	@Then("^user is able to see that service (.*)")
-	public void verifySelectedMenuIsVisible(String service ) {
-		if(service.equals("container")) {
+	public void verifySelectedMenuIsVisible(String service) throws Exception {
+		if(serviceFromUser.equals("container")) {
 		Assert.assertTrue(e2co_myapplication.containerIsSelected(),"Container is selected");
-		}else if (service.equals("VM")){
+		}else if (serviceFromUser.equals("VM")){
 			Assert.assertTrue(e2co_myapplication.applicationNewPageIsDisplayed(),"VM is selected.");
 		}else {
 			Assert.assertTrue(e2co_myapplication.kubernetesIsSelected(),"Kubernetes is selected.");
@@ -481,25 +614,25 @@ public class E2COTestSteps extends TestClass {
 		
 	}
 	
-	@When("^user enters the details to create artifact (.*), (.*), (.*), (.*)")
-	public void enterTheDetailsOfArtifact(String service, String ArtifactName, String ComponentID, String ComponentImageName) throws Exception {
-		if(service.equals("container")) {
-		String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
-		dynamicArtifactName = ArtifactName + s;
-		System.out.println(dynamicArtifactName);
-		e2co_myapplication.enterArtifactName(dynamicArtifactName);
-		e2co_myapplication.enterComponenetID(ComponentID);
-		e2co_myapplication.enterComponenetImageName(ComponentImageName);
+	@When("^user enters the details to create artifact(.*), (.*), (.*), (.*)")
+	public void enterTheDetailsOfArtifact(String service, String artifactName, String componentID, String componenetimageName ) throws Exception {
+		if(serviceFromUser.equals("container")) {
+		//String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+//		dynamicArtifactName = ArtifactName + s;
+//		System.out.println(dynamicArtifactName);
+		e2co_myapplication.enterArtifactName(artifactname);
+		e2co_myapplication.enterComponenetID(componentId);
+		e2co_myapplication.enterComponenetImageName(componenetImageName);
 		e2co_myapplication.browseZipFileContainer();
 		Thread.sleep(2000);
 		
-		}else if(service.equals("VM")) {
-			String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
-			dynamicArtifactName = ArtifactName + s;
-			System.out.println(dynamicArtifactName);
-			e2co_myapplication.enterArtifactName(dynamicArtifactName);
-			e2co_myapplication.enterVMID(ComponentID);
-			e2co_myapplication.enterVMImageName(ComponentImageName);
+		}else if(serviceFromUser.equals("VM")) {
+			//String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+//			dynamicArtifactName = ArtifactName + s;
+//			System.out.println(dynamicArtifactName);
+			e2co_myapplication.enterArtifactName(artifactname);
+			e2co_myapplication.enterVMID(componentId);
+			e2co_myapplication.enterVMImageName(componenetImageName);
 			e2co_myapplication.browseZipFileVM();
 			Thread.sleep(2000);
 		}
@@ -526,17 +659,21 @@ public class E2COTestSteps extends TestClass {
 	
 	@Then("^user able to see created artifact$")
 	public void verifyArtifactIsCreated() throws Exception {
-		e2co_myapplication.verifyArtifactCreatedIsDisplayed(dynamicArtifactName);
+		e2co_myapplication.verifyArtifactCreatedIsDisplayed(artifactname);
 		Thread.sleep(2000);;
 		
 	}
 	
-	 @When("^user selects from where to artifact is to delete (.*)")
-	    public void selectService(String service) {
-		 if(service.equals("container")) {
+	 @When("^user selects from where to artifact is to delete(.*), (.*)")
+	    public void selectService(String SheetName, int RowNumber) throws IOException, Exception {
+		 ExcelReader reader = new ExcelReader();
+	    	List<Map<String,String>> testData =
+	    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+	    	 serviceFromUser = testData.get(RowNumber).get("service");
+		 if(serviceFromUser.equals("container")) {
 			e2co_myapplication.selectContainer();
 			log.info("Container as service selected");
-		 }else if (service.equals("VM")){
+		 }else if (serviceFromUser.equals("VM")){
 			e2co_myapplication.selectVM();
 			log.info("Vm as service selected");
 		}else {
@@ -623,11 +760,20 @@ public class E2COTestSteps extends TestClass {
 	    	Assert.assertTrue(e2co_myapplication.verifyUploadedDataIsFecthed(),"Uploaded data is displayed on the page");
 	    }
 	    
-	    @When("^update the details of application (.*), (.*), (.*), (.*), (.*)")
-	    public void detailsUpdating(String appName, String Latency, String zone, String ComponentID, String Network) throws Exception {
-	    	String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
-			dynamicAppName = appName + s;
-	    	e2co_myapplication.updateAppName(dynamicAppName);
+	    @When("^update the details of application (.*), (.*)")
+	    public void detailsUpdating(String SheetName, int RowNumber) throws IOException, Exception {
+	    	//String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+			//dynamicAppName = appName + s;
+	    	ExcelReader reader = new ExcelReader();
+	    	List<Map<String,String>> testData =
+	    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+	    	 appNameFromUser = testData.get(RowNumber).get("appName");
+	    	String Latency = testData.get(RowNumber).get("Latency");
+	    	String zone = testData.get(RowNumber).get("zone");
+	    	String componentId = testData.get(RowNumber).get("componentId");
+	    	String Network = testData.get(RowNumber).get("Network");
+	    	
+	    	e2co_myapplication.updateAppName(appNameFromUser);
 	    	Thread.sleep(2000);
 	    	//e2co_myapplication.updateBandWidth(BandWidth);
 	    	e2co_myapplication.updateLatency(Latency);
@@ -636,7 +782,7 @@ public class E2COTestSteps extends TestClass {
 	    	Thread.sleep(2000);
 	    	e2co_myapplication.clickOnDeploymentEdit();
 	    	Thread.sleep(2000);
-	    	e2co_myapplication.updateComponentID(ComponentID);
+	    	e2co_myapplication.updateComponentID(componentId);
 	    	Thread.sleep(2000);
 	    	e2co_myapplication.updateNetwork(Network);
 	    	Thread.sleep(2000);	
@@ -658,7 +804,7 @@ public class E2COTestSteps extends TestClass {
 	    	Thread.sleep(2000);
 	    	e2co_myapplication.SizeOfApplicationTable();
 	    	Thread.sleep(2000);
-	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(dynamicAppName);
+	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(appNameFromUser);
 	    	
 	    	
 	    }
@@ -702,9 +848,16 @@ public class E2COTestSteps extends TestClass {
     	
     }
 	
-    @When("^click on the edge which is to deboard$")
-    public void selectEdgeIsToDeboard() {
-    	e2co_edgespage.clickOnEdgeIsDeboard();
+    @When("^click on the edge which is to deboard(.*), (.*)")
+    public void selectEdgeIsToDeboard(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String EdgeIdDeboard = testData.get(RowNumber).get("EdgeIdDeboard");
+    	Thread.sleep(2000);
+    	e2co_edgespage.clickOnEdgeIsDeboard(EdgeIdDeboard);
+    	Thread.sleep(2000);
+    	e2co_edgespage.edgeIdDeboarded();
     }
     
     @Then("^Edge details page is displayed$")
@@ -773,13 +926,18 @@ public class E2COTestSteps extends TestClass {
     }
     
     
-    @And ("^Enter all mandetory details(.*),(.*)")
-    public void EnterAllDetails(String Version, String description) {
-    	
-    	e2co_sdkpage.SelectOneLanguage();
-    	String s = new SimpleDateFormat("dssSS").format(new Date());
-    	dynamicSDKVersion = Version + s;
-    	e2co_sdkpage.EnterSDKVersion(dynamicSDKVersion);
+    @And ("^Enter all mandetory details(.*), (.*)")
+    public void EnterAllDetails(String SheetName, int RowNumber) throws IOException {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String language = testData.get(RowNumber).get("language");
+    	 version = testData.get(RowNumber).get("Version");
+    	String description = testData.get(RowNumber).get("description");	 
+    	e2co_sdkpage.SelectOneLanguage(language);
+//    	String s = new SimpleDateFormat("dssSS").format(new Date());
+//    	dynamicSDKVersion = Version + s;
+    	e2co_sdkpage.EnterSDKVersion(version);
     	e2co_sdkpage.EnterSDKDescription(description);
     	e2co_sdkpage.SelectSDKFile();
     	
@@ -796,17 +954,21 @@ public class E2COTestSteps extends TestClass {
     public void ValidateSDkUploaded() {
     	Assert.assertTrue(e2co_sdkpage.sdkUploadedSuccessfullyMesgDisplayed(),"sdk uploaded successfully message is displayed");
     	//e2co_sdkpage.ClickOnCloseButton();
-    	dynamicSDKName = "ec_client-sdk_Android_"+dynamicSDKVersion+".zip";
+    	String dynamicSDKName = "ec_client-sdk_Android_"+version+".zip";
     	System.out.println(dynamicSDKName);
     	e2co_sdkpage.clickOnCloseButton();
     	e2co_sdkpage.SizeOfsdkTable();
     	
     }
     
-    @And ("^click on uploaded Sdk$")
-    public void ClickOnUploadedSDK() {
+    @And ("^click on uploaded Sdk(.*), (.*)")
+    public void ClickOnUploadedSDK(String SheetName, int RowNumber) throws IOException, Exception {
     	 beforedeleterownum = e2co_sdkpage.SizeOfsdkTable();
-    	e2co_sdkpage.SelectUploadedSDK();
+    	 ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	String versionDelete = testData.get(RowNumber).get("versionDelete");
+    	e2co_sdkpage.SelectUploadedSDK(versionDelete);
     	e2co_sdkpage.infoOfDeletedSdk();
     }
     
@@ -835,9 +997,14 @@ public class E2COTestSteps extends TestClass {
     
     //******************************
     
-    @When("^user clicks on application$")
-    public void selectApplicationIsToProvision() throws Exception {
-    	e2co_myapplication.selectApplicationForPrvision();
+    @When("^user clicks on application(.*), (.*)")
+    public void selectApplicationIsToProvision(String SheetName, int RowNumber) throws Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	String ApplicationName = testData.get(RowNumber).get("ApplicationNameFrProvision");
+     	 ZoneName = testData.get(RowNumber).get("ZoneName");
+    	e2co_myapplication.selectApplicationForPrvision(ApplicationName);
     }
     
     @Then("^user is able to see the application details$")
@@ -847,7 +1014,7 @@ public class E2COTestSteps extends TestClass {
     
     @When("^user selects the zone for application provision (.*)")
     public void selectZoneForProvisionOfApplication(String zone) {
-    	e2co_myapplication.selectZoneForApplicationProvision(zone);
+    	e2co_myapplication.selectZoneForApplicationProvision(ZoneName);
     }
     
     @And("^user click on provision buttton$")
@@ -869,4 +1036,125 @@ public class E2COTestSteps extends TestClass {
     public void verifyApplicationIsInRunningStatus() {
     	
     }
+    
+    //**************************
+    
+    @And ("^user click on troubleshoot menu$")
+    public void ClickOnTrobleshoot() {
+    	e2co_trobleshootpage.ClickOnTroubleshoot();
+    	
+    }
+    
+    @And ("^user enter all mandetory details(.*), (.*)")
+    public void EnterAllDetailsOfApplicationToTrobleshoot(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	String applicationName = testData.get(RowNumber).get("applicationName");
+     	String appId = testData.get(RowNumber).get("appId");
+     	String appVersion = testData.get(RowNumber).get("appVersion");
+     	String instanceId = testData.get(RowNumber).get("instanceId");
+    	e2co_trobleshootpage.SelectAppName(applicationName);
+    	e2co_trobleshootpage.SelectApplicationId(appId);
+    	e2co_trobleshootpage.SelectAppVersion(appVersion);
+    	e2co_trobleshootpage.SelectInstanceId(instanceId);
+    }
+    
+    @And ("^user click on apply button$")
+    public void ClickOnApplyOption() throws Exception {
+    	e2co_trobleshootpage.ClickonApplyButton();
+    }
+    
+    @Then ("^user able to view troubleshoot status$")
+    public void VarifyTroubleShootStatusIsDisplay() {
+    	Assert.assertTrue(e2co_trobleshootpage.TroubleshootStatusDisplay(),"Troubleshoot status is displayed");
+    	e2co_trobleshootpage.troblshootDetailsDisplyed();
+    }
+    //************************
+    
+    @When("^clicks on application which is to deprovision(.*), (.*)")
+    public void selectRunningAppForDeprovision(String SheetName, int RowNumber) throws Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	String applicationName = testData.get(RowNumber).get("ApplicationNameFrDeProvision");
+    	e2co_myapplication.selectAppForDeprovision(applicationName);
+    }
+    
+    @Then("^user is able to see the application details of provisioned app$")
+    public void detailsOfAppIsDisplayed() {
+    	Assert.assertTrue(e2co_myapplication.provisionedAppDetailsIsDisplayed(),"App details are displaying");
+    	
+    }
+    
+    @When("^user clicks on deprovision button$")
+    public void clickOnDeprovisionButtion() {
+    	e2co_myapplication.clickOnDeprovisionButton();
+    	
+    }
+    
+    @Then("^user able to see warning message for deprovision$")
+    public void verifyWarningMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_myapplication.verifyDeprovisionAppWarningMessageIsDisplayed(),"App details are displaying");
+    }
+    
+    @When("^user clicks on confirm button$")
+    public void clcikOnConfirmButton() {
+    	e2co_myapplication.clickOnConfirmBtn();
+    	
+    }
+    
+    @Then("^user able to see the app is deprovisioned$")
+    public void verifyAppIsDeprovisioned() {
+    	
+    }
+    //*************************
+    @And("^user clicks on the change password$")
+    public void clickOnChangePasswordBtn() {
+    	e2co_loginpage.clickOnChangePassword();
+    }
+    
+    @And("^user enters the details for which password is to reset(.*), (.*)")
+    public void enterTheDetailsForResetPassword(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	 UNRestPass = testData.get(RowNumber).get("UNRestPass");
+     	String OldPassword = testData.get(RowNumber).get("OldPassword");
+     	 NewPassword = testData.get(RowNumber).get("NewPassword");
+     	String RetypeNewPassword = testData.get(RowNumber).get("RetypeNewPassword");
+     	 domainname = testData.get(RowNumber).get("domainname");
+    	e2co_loginpage.enterusernameResetPassword(UNRestPass);
+    	e2co_loginpage.enteroldpassword(OldPassword);
+    	e2co_loginpage.enterNewPassword(NewPassword);
+    	e2co_loginpage.enterretypePassword(RetypeNewPassword);
+    }
+    @And("^user clicks on the submit button$")
+    public void submitDetailsForRestePassword() throws Exception {
+    	e2co_loginpage.clickOnSubmitButton();
+    }
+    
+    @Then("^user able to see the successful popup message$")
+    public void verifyPasswordIsUpdatedSuccessfulMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_loginpage.verifyPasswordUpdateSuccessPopupMessageIsDisplayed(),"App details are displaying");
+    	//e2co_loginpage.verifyPasswordUpdateSuccessPopupMessageIsDisplayed();
+    }
+    
+    @When("^user clicks on close button$")
+    public void clickOnCloseButtonAfterResetingPassword() {
+    	e2co_loginpage.clickOnCloseButton();
+    }
+    
+    @And("^user enter the username rest pass for(.*), newpassword(.*) and domain(.*)")
+    public void verifyTheNewPasswordIsWorking(String username, String newpass, String domainName) {
+    	e2co_loginpage.enterUserName(UNRestPass);
+    	e2co_loginpage.enterPassword(NewPassword);
+    	e2co_loginpage.enterDomain(domainname);
+    }
+    
+    @Then("^User is on the dashboard page as using login with new pass$")
+    public void userisAbleToLoginWithNewPassword() {
+    	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is loaded.");
+    }
+    
 }

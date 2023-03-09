@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -35,13 +35,178 @@
       <![CDATA[| Received parameter 'UI_PASSWORD' = Admin@1234| ]]>
     </line>
     <line>
+      <![CDATA[| Received parameter 'UI_DOMAINNAME' = default| ]]>
+    </line>
+    <line>
       <![CDATA[| Received parameter 'UI_DEVUSERNAME' = dev01| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'UI_DEVPASSWORD' = Admin@1234| ]]>
     </line>
     <line>
+      <![CDATA[| Received parameter 'UI_DEVDOMAINNAME' = default| ]]>
+    </line>
+    <line>
       <![CDATA[| Received parameter 'ScreenshotEnable' = true| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: Create new artifactId| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered domain| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on create new artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered artifact name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Enetered componenetID| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered componenet image name| ]]>
+    </line>
+    <line>
+      <![CDATA[| zip file is imported| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact created successfully| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to onboard application| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered domain| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Selected container| ]]>
+    </line>
+    <line>
+      <![CDATA[| Container as service selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on import button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Upload Your File ! is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| YAML file is imported| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Imported data is displaying on the page| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on select artifact| ]]>
+    </line>
+    <line>
+      <![CDATA[| Artifact List is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on done button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Updated app name| ]]>
+    </line>
+    <line>
+      <![CDATA[| Latency selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Zone selected| ]]>
+    </line>
+    <line>
+      <![CDATA[| Updated componenet ID| ]]>
+    </line>
+    <line>
+      <![CDATA[| Updated network| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Onboarding request accepted is message displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close| ]]>
+    </line>
+    <line>
+      <![CDATA[| Application is displayed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
       <![CDATA[| Initializing self healing driver| ]]>
@@ -65,6 +230,9 @@
       <![CDATA[| Entered password| ]]>
     </line>
     <line>
+      <![CDATA[| Entered domain| ]]>
+    </line>
+    <line>
       <![CDATA[| Clicked on my application menu| ]]>
     </line>
     <line>
@@ -85,31 +253,79 @@
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
     </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Initializing self healing driver| ]]>
+    </line>
+    <line>
+      <![CDATA[| New driver instantiated.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Scenario Name: user able to deprovision the application| ]]>
+    </line>
+    <line>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered domain| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on my application menu| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on application which is running| ]]>
+    </line>
+    <line>
+      <![CDATA[| Runnig app details page is opned| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on deprovision button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Warning popup message is dispalyed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on confirm button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-02-28T15:16:55 IST" name="Surefire suite" finished-at="2023-02-28T15:17:19 IST" duration-ms="24129">
+  <suite started-at="2023-03-09T11:45:56 IST" name="Surefire suite" finished-at="2023-03-09T11:48:18 IST" duration-ms="142185">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-28T15:16:55 IST" name="Surefire test" finished-at="2023-02-28T15:17:19 IST" duration-ms="24129">
+    <test started-at="2023-03-09T11:45:56 IST" name="Surefire test" finished-at="2023-03-09T11:48:18 IST" duration-ms="142185">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:16:55 IST" name="setUpClass" finished-at="2023-02-28T15:16:56 IST" duration-ms="756" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:45:56 IST" name="setUpClass" finished-at="2023-03-09T11:45:57 IST" duration-ms="439" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7e81617a]]>
+                <![CDATA[org.testng.TestRunner@22dc9d46]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:16:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-28T15:17:19 IST" duration-ms="23204" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:45:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T11:46:40 IST" duration-ms="43292" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["user able to provision the application"]]>
+                <![CDATA["Create new artifactId"]]>
               </value>
             </param>
             <param index="1">
@@ -153,13 +369,210 @@
               <![CDATA[| Received parameter 'UI_PASSWORD' = Admin@1234| ]]>
             </line>
             <line>
+              <![CDATA[| Received parameter 'UI_DOMAINNAME' = default| ]]>
+            </line>
+            <line>
               <![CDATA[| Received parameter 'UI_DEVUSERNAME' = dev01| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'UI_DEVPASSWORD' = Admin@1234| ]]>
             </line>
             <line>
+              <![CDATA[| Received parameter 'UI_DEVDOMAINNAME' = default| ]]>
+            </line>
+            <line>
               <![CDATA[| Received parameter 'ScreenshotEnable' = true| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Create new artifactId| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on create new artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered artifact name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Enetered componenetID| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered componenet image name| ]]>
+            </line>
+            <line>
+              <![CDATA[| zip file is imported| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact created successfully| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:46:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T11:47:49 IST" duration-ms="69440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to onboard application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to onboard application| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Selected container| ]]>
+            </line>
+            <line>
+              <![CDATA[| Container as service selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on import button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Upload Your File ! is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| YAML file is imported| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Imported data is displaying on the page| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on select artifact| ]]>
+            </line>
+            <line>
+              <![CDATA[| Artifact List is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on done button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Updated app name| ]]>
+            </line>
+            <line>
+              <![CDATA[| Latency selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Zone selected| ]]>
+            </line>
+            <line>
+              <![CDATA[| Updated componenet ID| ]]>
+            </line>
+            <line>
+              <![CDATA[| Updated network| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Onboarding request accepted is message displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close| ]]>
+            </line>
+            <line>
+              <![CDATA[| Application is displayed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:47:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T11:48:04 IST" duration-ms="14529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to provision the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
               <![CDATA[| Initializing self healing driver| ]]>
@@ -181,6 +594,9 @@
             </line>
             <line>
               <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
             </line>
             <line>
               <![CDATA[| Clicked on my application menu| ]]>
@@ -205,7 +621,71 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@670002]" started-at="2023-02-28T15:17:19 IST" name="tearDownClass" finished-at="2023-02-28T15:17:19 IST" duration-ms="124" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:48:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-09T11:48:18 IST" duration-ms="14318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user able to deprovision the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[My Application Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: user able to deprovision the application| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on my application menu| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on application which is running| ]]>
+            </line>
+            <line>
+              <![CDATA[| Runnig app details page is opned| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on deprovision button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Warning popup message is dispalyed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on confirm button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-09T11:48:18 IST" name="tearDownClass" finished-at="2023-03-09T11:48:18 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

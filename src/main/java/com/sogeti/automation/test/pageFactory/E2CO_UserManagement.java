@@ -29,7 +29,11 @@ public class E2CO_UserManagement extends PageClass {
 	int row;
 	String DeletedUserName;
 	String LockedUserName;
-
+	String UnLockedUserName;
+	int rowInactiveUsers;
+	String UnLockedDomainName;
+	String LockedDomainName;
+	
 	@CacheLookup
     @FindBy(xpath="//a[@href='/MEC/userManager/user-list']")
     private WebElement usermanagebttn;
@@ -120,9 +124,14 @@ public class E2CO_UserManagement extends PageClass {
     @FindBy(xpath = "//button[contains(text(),'Close')]")
     private WebElement closeButton;
     
+    @FindBy(xpath = "//input[@id='domain']")
+    private WebElement domainName;
     
+    @FindBy(xpath = "//div[@class='d-flex flex-column align-items-center user-manager-delete-pop-up-container']")
+    private WebElement activateWarningMessage;
     
-    
+    @FindBy(xpath = "//div[@class='ft-16 succes-edge-detail-text']")
+    private WebElement activateSuccessPopupMessage;
     
     
 
@@ -230,6 +239,11 @@ public class E2CO_UserManagement extends PageClass {
     }
 	
 	
+	public void enterDomainName(String domainName) {
+		this.domainName.clear();
+		this.domainName.sendKeys(domainName);
+		log.info("Entered domain name");
+	}
 	public void clickSubmitBtn() {
 		this.Submitbtn.click();
 		log.info("Clicked Submit Button");
@@ -362,10 +376,13 @@ public class E2CO_UserManagement extends PageClass {
 			System.out.println(randomNum);
 			WebElement UserNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
 			 LockedUserName = UserNamelocked.getText();
+			 WebElement DomainNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[6]"));
+			 LockedDomainName = DomainNamelocked.getText();
 			 WebElement lockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock')])["+randomNum+"]"));
 			 lockbtn.click();
 			 log.info("Clicked locked button");
 			 System.out.println(LockedUserName); 
+			 System.out.println(LockedDomainName);
 	 }
 	 
 	 
@@ -381,7 +398,9 @@ public class E2CO_UserManagement extends PageClass {
 		 E2CO_LoginPage e2co_LoginPage = new E2CO_LoginPage(objDriver);
 		e2co_LoginPage.enterUserName(LockedUserName);
 		e2co_LoginPage.enterPassword("Admin@1234");
+		e2co_LoginPage.enterDomain(LockedDomainName);
 		e2co_LoginPage.clickLoginBtn(); 
+		Thread.sleep(2000);
 		
 		String expectedErrorMessage = "Please contact admin user is inactive";
 		
@@ -408,5 +427,51 @@ public class E2CO_UserManagement extends PageClass {
 		 log.info("Inactive successful message is dispalyed");
 		 return true;
 	 }
-
+	 
+	 public int sizeOfInactiveUsers() {
+		 List<WebElement> rows = objDriver.findElements(By.xpath("(//div[contains(text(),'lock_open')])"));
+		  rowInactiveUsers = rows.size();
+		 System.out.println(rowInactiveUsers);
+		return rowInactiveUsers;
+	 }
+	 
+	 public void openlockbtn() {
+		 Random rand = new Random();
+			int randomNum = rand.nextInt(rowInactiveUsers);
+			if (randomNum==0){          
+				randomNum= randomNum+1;
+				}
+			System.out.println(randomNum);
+			WebElement UserNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
+			 UnLockedUserName = UserNameUnlocked.getText();
+			 WebElement DomainNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[6]"));
+			 UnLockedDomainName = DomainNameUnlocked.getText();
+			 WebElement openlockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock_open')])["+randomNum+"]"));
+			 openlockbtn.click();
+			 log.info("Clicked openlock button");
+			 System.out.println(UnLockedUserName); 
+			 System.out.println(UnLockedDomainName);
+	 }
+	 
+	 public boolean verifyActivateWarningMessageIsDisplayed() {
+		 this.activateWarningMessage.isDisplayed();
+		 log.info("Activate warning message is displayed");
+		 return true;
+	 }
+	 
+	 public boolean userActivatedSuccessMessagePopupMessageIsDisplayed() {
+		 this.activateSuccessPopupMessage.isDisplayed();
+		 log.info("Activated success popup message is displayed");
+		 return true;
+	 }
+	 
+	 public void verifyUnLockedUserIsAbleToLogin() throws Exception {
+		 E2CO_LoginPage e2co_LoginPage = new E2CO_LoginPage(objDriver);
+		e2co_LoginPage.enterUserName(UnLockedUserName);
+		e2co_LoginPage.enterPassword("Admin@1234");
+		e2co_LoginPage.enterDomain(UnLockedDomainName);
+		e2co_LoginPage.clickLoginBtn(); 
+		Thread.sleep(2000);
+		
+	 }
 }

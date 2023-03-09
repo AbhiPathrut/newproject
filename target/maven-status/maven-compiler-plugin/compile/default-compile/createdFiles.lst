@@ -24,6 +24,7 @@ com\sogeti\automation\framework\utils\ExcelReader.class
 com\sogeti\automation\test\pageFactory\SelfHealDemoPage.class
 com\sogeti\automation\framework\driver\GlobalDriver$1.class
 com\sogeti\automation\framework\utils\APIUtils.class
+com\sogeti\automation\test\pageFactory\E2CO_TrobleshootPage.class
 com\sogeti\automation\framework\constants\AppConstants$Api.class
 com\sogeti\automation\test\pageFactory\PageObjectManager.class
 com\sogeti\automation\framework\utils\WebUtils.class

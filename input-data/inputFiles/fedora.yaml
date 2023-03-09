@@ -1,0 +1,87 @@
+{
+    "metadata": {
+        "appName": "vmaasapp1047",
+        "version": "1.0.0",
+        "category": "GAME",
+        "owner": "admin",
+        "description": "my fedora image mec",
+        "appType": "vm",
+        "appDescriptorType": "MEC"
+    },
+    "deploymentRequirements": {
+        "latencyConstraints": "none",
+        "regions": [
+            {
+                "operator": "Vodafone",
+                "Country": "IN",
+                "zoneId": "SouthZone",
+                "isbarred": false,
+                "status": "Pending"
+            }
+        ],
+        "bandwidth": "2"
+    },
+    "specifications": {
+        "accessToken": "652ZI9IU0BF8CB8",
+        "artifactId": "632c770ca000010",
+        "mobilityCapability": "Allowed",
+        "visibility": "public",
+        "tenancy": "single",
+        "enable": "true",
+        "userId": "admin"
+    },
+    "ComponentDetails": {
+        "services": [
+            {
+                "serviceId": "vmliveservice",
+                "components": {
+                    "componentId": "fedoraimage",
+                    "componentType": "docker",
+                    "componentSource": {
+                        "repo": "file",
+                        "codeArchive": "true",
+                        "id": "",
+                        "path": "",
+                        "username": "",
+                        "password": ""
+                    },
+                    "interfaces": [
+                        {
+                            "interfaceId": "vmport",
+                            "interfaceType": "network",
+                            "port": "22",
+                            "scheme": "tcp",
+                            "upstreamPath": "/time",
+                            "visiblity": "external",
+                            "network": "default"
+                        },
+                        {
+                            "interfaceId": "appport",
+                            "interfaceType": "network",
+                            "port": "8080",
+                            "scheme": "tcp",
+                            "upstreamPath": "/hello",
+                            "visiblity": "external",
+                            "network": "default"
+                        }
+                    ],
+                    "resourceProfiles": {
+                        "resourceProfileId": "default",
+                        "cpu": 1,
+                        "memory": 1024,
+                        "exclusiveCores": false,
+                        "vpu": 0
+                    },
+                    "persistentVolume": [
+                        {
+                            "name": "fedora-pv",
+                            "volumeSize": "10Gi",
+                            "volumePath": "/VMRepo/fedora"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "requestId": "123"
+}

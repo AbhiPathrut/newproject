@@ -4,6 +4,7 @@ import com.epam.healenium.SelfHealingDriver;
 import com.sogeti.automation.framework.constants.AppConstants;
 import com.sogeti.automation.framework.driver.GlobalDriver;
 import com.sogeti.automation.framework.driver.TestListener;
+import com.sogeti.automation.framework.utils.ExcelReader;
 import com.sogeti.automation.framework.utils.Logging;
 import com.sogeti.automation.framework.utils.PropertyReader;
 import org.apache.logging.log4j.ThreadContext;
@@ -19,12 +20,12 @@ import java.lang.reflect.Method;
 
 @Listeners({TestListener.class})
 public class TestClass {
-//    protected ExcelReader data;
+    protected ExcelReader data;
     protected GlobalDriver gDriver;
     protected SelfHealingDriver healingDriver;
     protected String testEnvironment;
     protected String testURL;
-//    protected String sheetName;
+    protected String sheetName;
     protected Logging log = new Logging(this.getClass().getName());
 
     public TestClass() throws IOException {

@@ -15,7 +15,8 @@ public class PageObjectManager {
     E2CO_ZonesPage e2co_zonespage;
     E2CO_MyApplicationPage e2co_myapplication;
     E2CO_SDKPage e2co_sdkpage;
-
+    E2CO_TrobleshootPage e2co_trobleshootpage;
+    
     public PageObjectManager(SelfHealingDriver driver) {
         this.healingDriver = driver;
         PageFactory.initElements(driver, this);
@@ -61,4 +62,10 @@ public class PageObjectManager {
     	return ( e2co_sdkpage == null) ?  e2co_sdkpage = new E2CO_SDKPage(healingDriver) : e2co_sdkpage;
     	
     }
+    
+    public E2CO_TrobleshootPage gete2co_trobleshootpage() {
+    	return ( e2co_trobleshootpage == null) ?  e2co_trobleshootpage = new E2CO_TrobleshootPage(healingDriver) : e2co_trobleshootpage;
+    	
+    }
+    
 }

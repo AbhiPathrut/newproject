@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.TestRunner" time="23.205" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="runner.TestRunner" time="141.58" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="strip"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\APathrut\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf11268113869495442005.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\APathrut\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf11070614078079503527.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-16\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Eclipse Foundation/jdk-11.0.12.7-hotspot/bin/server;C:/Program Files/Eclipse Foundation/jdk-11.0.12.7-hotspot/bin;C:\Program Files (x86)\Python38-32\Scripts\;C:\Program Files (x86)\Python38-32\;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Users\APathrut\OneDrive - Capgemini\Desktop\Maven\apache-maven-3.8.5\bin;C:\Program Files\nodejs\;C:\Users\APathrut\Downloads\commandlinetools-win-8512546_latest\cmdline-tools\bin;C:\Users\APathrut\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\APathrut\AppData\Local\Microsoft\WindowsApps;;C:\Users\APathrut\OneDrive - Capgemini\Desktop;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,5 +56,8 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="runner.TestRunner" time="23.205"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="43.293"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="69.44"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="14.529"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="14.318"/>
 </testsuite>

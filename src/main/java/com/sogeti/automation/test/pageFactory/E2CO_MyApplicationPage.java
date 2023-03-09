@@ -171,13 +171,27 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class = 'success-text onboard-success-text-spacing ft-18 ft-wt-500']")
 	private WebElement successMesgOfProvision;
 	
-	@FindBy(xpath = "//td[contains(text(),'app02280151592')]")
+	//@FindBy(xpath = "//td[contains(text(),'app02280151592')]")
 	//@FindBy(xpath = "//td[starts-with(text(),'app02280151592')]")
 	////td[contains(text(),'app02280141176')]
-	private WebElement applicationNmFrProv;
+	//private WebElement applicationNmFrProv;
 	
 	@FindBy(xpath = "//div[@class='provison-instance-title ft-18']")
 	private WebElement applicationProvisionPage;
+	
+	@FindBy(xpath = "//td[contains(text(),'alpineapp1505')]")
+	private WebElement applicationForDeprovision;
+	
+	@FindBy(xpath = "//button[contains(text(),'Deprovision')]")
+	private WebElement deprovisionBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Deployment Data')]")
+	private WebElement deploymentDataTitle;
+	
+	@FindBy(xpath = "//div[@class='d-flex flex-column align-items-center user-manager-delete-pop-up-container']")
+	private WebElement deprovisionWarningMessage;
+	
+	
 	
 	
 	public E2CO_MyApplicationPage(SelfHealingDriver driver) {
@@ -347,10 +361,10 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	public void deleteArtifactSelect() throws Exception  {
 		 Random rand = new Random();
-			int randomNum = rand.nextInt((row - 1));
+			int randomNum = rand.nextInt(row);
 			System.err.println(randomNum);
 			if (randomNum==0){          
-				randomNum= randomNum+2;
+				randomNum= randomNum+1;
 				}
 			WebElement artifactNameDeleted = objDriver.findElement(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr["+ randomNum +"]//td[2]"));
 			Thread.sleep(2000);
@@ -530,10 +544,10 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	public void selectArtifactId() throws Exception {
 		 Random rand = new Random();
-			int randomNum = rand.nextInt((row - 1));
+			int randomNum = rand.nextInt(row);
 			System.err.println(randomNum);
 			if (randomNum==0){          
-				randomNum= randomNum+2;
+				randomNum= randomNum+1;
 				}
 			WebElement artifactNameSelected = objDriver.findElement(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr["+ randomNum +"]//td[2]"));
 			Thread.sleep(2000);
@@ -548,8 +562,10 @@ public class E2CO_MyApplicationPage extends PageClass {
 			
 	}
 	
-	public void selectApplicationForPrvision() throws Exception {
+	public void selectApplicationForPrvision(String appName) throws Exception {
 		//this.applicationNmFrProv.click();
+		WebElement applicationNmFrProv = objDriver.findElement(By.xpath("//td[contains(text(),'"+appName+"')]"));
+		System.out.println(applicationNmFrProv);
 		JavascriptExecutor js = (JavascriptExecutor)objDriver;
 		 js.executeScript("arguments[0].scrollIntoView()",applicationNmFrProv);
 		 Thread.sleep(2000);
@@ -584,6 +600,40 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public void clickOncloseBtn() {
 		this.close.click();
 	}
+	
+	public void selectAppForDeprovision(String appName) throws Exception {
+		//this.applicationForDeprovision.click();
+		WebElement applicationForDeprovision = objDriver.findElement(By.xpath("//td[contains(text(),'"+appName+"')]"));
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		 js.executeScript("arguments[0].scrollIntoView()",applicationForDeprovision);
+		 Thread.sleep(2000);
+		 js.executeScript("arguments[0].click()", applicationForDeprovision);
+		 Thread.sleep(2000);
+		log.info("Clicked on application which is running");
+	}
+	
+	public boolean provisionedAppDetailsIsDisplayed() {
+		this.deploymentDataTitle.isDisplayed();
+		log.info("Runnig app details page is opned");
+		return true;
+	}
+	
+	public void clickOnDeprovisionButton() {
+		this.deprovisionBtn.click();
+		log.info("Clicked on deprovision button");
+	}
+	
+	public boolean verifyDeprovisionAppWarningMessageIsDisplayed() {
+		this.deprovisionWarningMessage.isDisplayed();
+		log.info("Warning popup message is dispalyed");
+		return true;
+	}
+	
+	public void clickOnConfirmBtn() {
+		this.confirmBttn.click();
+		log.info("Clicked on confirm button");
+	}
+	
 	
 }
 	
