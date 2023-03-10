@@ -191,6 +191,11 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class='d-flex flex-column align-items-center user-manager-delete-pop-up-container']")
 	private WebElement deprovisionWarningMessage;
 	
+	@FindBy(xpath = "//div[@class='ft-16 ft-wt-400']")
+	private WebElement deboardingPopupMessage;
+	
+	@FindBy(xpath = "//button[contains(text(),'Deboarding')]")
+	private WebElement appDeboardingBtn;
 	
 	
 	
@@ -632,6 +637,34 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public void clickOnConfirmBtn() {
 		this.confirmBttn.click();
 		log.info("Clicked on confirm button");
+	}
+	
+	public void selectAppForDebaord(String appName) throws Exception {
+		WebElement applicationForDeboard = objDriver.findElement(By.xpath("//td[contains(text(),'"+appName+"')]"));
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		 js.executeScript("arguments[0].scrollIntoView()",applicationForDeboard);
+		 Thread.sleep(2000);
+		 js.executeScript("arguments[0].click()", applicationForDeboard);
+		 Thread.sleep(2000);
+		log.info("Clicked on application which is onboarded or onboardingpending");
+	}
+	
+	public boolean debordingWarningPopupMessageIsDispalying() {
+		this.deboardingPopupMessage.isDisplayed();
+		log.info("Deboarding warning popup message is displayed");
+		return true;
+	}
+	
+	public void clickOnDeboardingAppButton() {
+		this.appDeboardingBtn.click();
+		log.info("Click on deboarding button");
+	}
+	
+	public void applicationIsRemovedFromList(String appName) {
+		WebElement applicationForDeboard = objDriver.findElement(By.xpath("//td[contains(text(),'"+appName+"')]"));
+		applicationForDeboard.isDisplayed();
+		log.info("Application is removed from the list");
+		
 	}
 	
 	

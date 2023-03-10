@@ -21,8 +21,8 @@ Scenario Outline: Create new artifactId
 		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
     #| Admin | MyApplication | 1 |
-
- 	
+#
+ #	
 #Scenario Outline: user able to delete artifact
  #		When user logs into MEC portal<user>
  #		And user is on Dashboard page
@@ -41,8 +41,8 @@ Scenario Outline: Create new artifactId
  #		| user | SheetName | RowNumber |
     #| Admin | MyApplication | 0 |
     #| Admin | MyApplication | 1 |
-
-
+#
+#
 Scenario Outline: user able to onboard application
  		When user logs into MEC portal<user>
  		And user is on Dashboard page
@@ -69,7 +69,6 @@ Scenario Outline: user able to onboard application
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
 
- 
 Scenario Outline: user able to provision the application
  		When user logs into MEC portal<user>
  		And user is on Dashboard page
@@ -85,9 +84,7 @@ Scenario Outline: user able to provision the application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-
-
- 		
+		
  Scenario Outline: user able to deprovision the application
  		When user logs into MEC portal<user>
  		And user is on Dashboard page
@@ -103,4 +100,18 @@ Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
  		
- 		
+
+Scenario Outline: user able to deboard the application
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application
+ 		Then user is on my application page
+ 		When clicks on application which is to deboard the application<SheetName>, <RowNumber>
+ 		Then user is able to see the application details of onboarded application
+ 		When user click on Deboarding button
+ 		Then user is able to see deboarding warning poupup messg 		
+ 		When user clicks on confirm button
+ 		Then user is able to see the application is removed from the list
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |

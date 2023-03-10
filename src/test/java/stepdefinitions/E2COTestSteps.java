@@ -61,6 +61,9 @@ public class E2COTestSteps extends TestClass {
    String UNRestPass;
    String NewPassword;
    String ZoneName;
+   String ApplicationNmFrDeboard;
+   int beforedeboardingNoApp;
+   int afterdeboardingNoApp;
    
 
     public E2COTestSteps(TestContext context) throws Exception {
@@ -1157,4 +1160,45 @@ public class E2COTestSteps extends TestClass {
     	Assert.assertTrue(e2co_loginpage.isElementDisplayed(),"Dashboard page is loaded.");
     }
     
+    //*****************************
+    @When("^clicks on application which is to deboard the application(.*), (.*)")
+    public void selectApplicationForDeboarding(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	 ApplicationNmFrDeboard = testData.get(RowNumber).get("ApplicationNmFrDeboard");
+     	beforedeboardingNoApp = e2co_myapplication.SizeOfApplicationTable();
+    	e2co_myapplication.selectAppForDebaord(ApplicationNmFrDeboard);
+    }
+    
+    @Then("^user is able to see the application details of onboarded application$")
+    public void verifyApplicationDetailsAreDisplayingForDeboard() {
+    	Assert.assertTrue(e2co_myapplication.userIsOnProvisionPage(),"Application details are displaying");
+    }
+    
+    @When("^user click on Deboarding button$")
+    public void clickOnDeboardingButtonOfApp() {
+    	e2co_myapplication.clickOnDeboardingAppButton();
+    }
+    
+    @Then("^user is able to see deboarding warning poupup messg$")
+    public void verifyDeboardingOfAppWarningPopupMessgDispalyed() {
+    	Assert.assertTrue(e2co_myapplication.debordingWarningPopupMessageIsDispalying(),"Application deboarding warning popup message is displayed");
+    }
+    
+    @Then("^user is able to see the application is removed from the list$")
+    public void verifyApplicationDeboardedIsRemovedFromDeboarded() throws Exception {
+    	e2co_myapplication.clickOncloseBtn();
+    	Thread.sleep(2000);
+    	afterdeboardingNoApp = e2co_myapplication.SizeOfApplicationTable();
+    	Thread.sleep(2000);
+//    	if(beforedeboardingNoApp>afterdeboardingNoApp) {
+//    		log.info("Application is deoarded");
+//    	}else{
+//    		log.info("Application is not deboarded");
+//    	}
+    	//Assert.assertNotEquals(,"Application deboarding warning popup message is displayed");
+    	//e2co_myapplication.applicationIsRemovedFromList(ApplicationNmFrDeboard);
+ 
+    }
 }

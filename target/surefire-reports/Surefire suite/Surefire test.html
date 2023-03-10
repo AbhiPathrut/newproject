@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 09 11:45:56 IST 2023</td>
+<td>Started on:</td><td>Fri Mar 10 17:50:00 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>142 seconds (142185 ms)</td>
+<tr><td>Total time:</td><td>173 seconds (173406 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,93 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to onboard application", "Optional[My Application Feature]"<br/>
-<a href="#Output-1012812460" onClick='toggleBox("Output-1012812460", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to provision the application", "Optional[My Application Feature]"<br/>
+<a href="#Output-349346006" onClick='toggleBox("Output-349346006", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1012812460" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1012812460">
+<a href="#Output-349346006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-349346006">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: user able to provision the application| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| Clicked on my application menu| <br/>
+| Clicked on application for provision| <br/>
+| User is on application provision page| <br/>
+| Zone selected| <br/>
+| Clicked on provision button| <br/>
+| Request accepted message is displayed| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>runner.TestRunner@4b5a5ed1</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to deboard the application", "Optional[My Application Feature]"<br/>
+<a href="#Output-118186765" onClick='toggleBox("Output-118186765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-118186765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-118186765">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: user able to deboard the application| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| Clicked on my application menu| <br/>
+| Clicked on application which is onboarded or onboardingpending| <br/>
+| User is on application provision page| <br/>
+| Click on deboarding button| <br/>
+| Deboarding warning popup message is displayed| <br/>
+| Clicked on confirm button| <br/>
+| Application is not deboarded| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>runner.TestRunner@4b5a5ed1</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to deprovision the application", "Optional[My Application Feature]"<br/>
+<a href="#Output-1510452783" onClick='toggleBox("Output-1510452783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510452783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510452783">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: user able to deprovision the application| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| Clicked on my application menu| <br/>
+| Clicked on application which is running| <br/>
+| Runnig app details page is opned| <br/>
+| Clicked on deprovision button| <br/>
+| Warning popup message is dispalyed| <br/>
+| Clicked on confirm button| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>runner.TestRunner@4b5a5ed1</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to onboard application", "Optional[My Application Feature]"<br/>
+<a href="#Output-485375493" onClick='toggleBox("Output-485375493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-485375493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-485375493">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
@@ -113,68 +195,14 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>69</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to deprovision the application", "Optional[My Application Feature]"<br/>
-<a href="#Output-339730588" onClick='toggleBox("Output-339730588", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-339730588" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-339730588">
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Initializing self healing driver| <br/>
-| New driver instantiated.| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: user able to deprovision the application| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Entered username| <br/>
-| Entered password| <br/>
-| Entered domain| <br/>
-| Clicked on my application menu| <br/>
-| Clicked on application which is running| <br/>
-| Runnig app details page is opned| <br/>
-| Clicked on deprovision button| <br/>
-| Warning popup message is dispalyed| <br/>
-| Clicked on confirm button| <br/>
-| Execution status is: PASSED| <br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user able to provision the application", "Optional[My Application Feature]"<br/>
-<a href="#Output-415632769" onClick='toggleBox("Output-415632769", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-415632769" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-415632769">
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Initializing self healing driver| <br/>
-| New driver instantiated.| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: user able to provision the application| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Entered username| <br/>
-| Entered password| <br/>
-| Entered domain| <br/>
-| Clicked on my application menu| <br/>
-| Clicked on application for provision| <br/>
-| User is on application provision page| <br/>
-| Zone selected| <br/>
-| Clicked on provision button| <br/>
-| Request accepted message is displayed| <br/>
-| Execution status is: PASSED| <br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
+<td>71</td>
 <td>runner.TestRunner@4b5a5ed1</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create new artifactId", "Optional[My Application Feature]"<br/>
-<a href="#Output-475249993" onClick='toggleBox("Output-475249993", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-65194223" onClick='toggleBox("Output-65194223", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-475249993" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-475249993">
+<a href="#Output-65194223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-65194223">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Received parameter 'ExecutionServer' = Local| <br/>
 | Received parameter 'InterfaceType' = Web| <br/>
@@ -216,7 +244,7 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>43</td>
+<td>46</td>
 <td>runner.TestRunner@4b5a5ed1</td></tr>
 </table><p>
 </body>
