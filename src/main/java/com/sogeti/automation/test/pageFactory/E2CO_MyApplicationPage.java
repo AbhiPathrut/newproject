@@ -1,6 +1,7 @@
 package com.sogeti.automation.test.pageFactory;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import org.openqa.selenium.By;
@@ -667,6 +668,56 @@ public class E2CO_MyApplicationPage extends PageClass {
 		
 	}
 	
+	public boolean verifyDeboardedAppIsNotPresentInAppList(String DeboardedAppName) {
+		 boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class = 'table mb-0 my-app-body-list-app-row']//tbody//tr//td[1]"));
+		 for (WebElement element : allUserNameElements) {
+		String linkText = element.getText();
+		if(DeboardedAppName != (linkText)) {
+			log.info("App is successfully deboarded");
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
+	 }
+	
+	public int rowNumber(String appName) {
+		WebElement table = driver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		
+		int rowNumber = -1;
+		for (int i = 0; i < rows.size(); i++) {
+		    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+		    for (int j = 0; j < cells.size(); j++) {
+		        if (cells.get(j).getText().equals(appName)) {
+		            rowNumber = i;
+		            break;
+		        }
+		    }
+		    if (rowNumber != -1) {
+		        break;
+		    }
+		}
+		System.out.println("Row number: " + rowNumber);
+		return rowNumber;
+		
+	}
+	
+
+	
+	public void statusOfApplication(String appName) throws Exception {
+		int RowNum = rowNumber(appName);
+		Thread.sleep(2000);
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']//tbody//tr["+RowNum+"]//td[8]"));
+		Thread.sleep(2000);
+		String StatusOfApplication = StatusOfApp.getText();
+		System.out.println("Status of "+appName+": "+StatusOfApplication);
+	}
+
+	public void refresHPageOfWeb() {
+		objDriver.navigate().refresh();
+		log.info("Page is refreshed");
+	}
 	
 }
 	

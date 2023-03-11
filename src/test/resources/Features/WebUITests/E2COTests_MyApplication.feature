@@ -20,29 +20,29 @@ Scenario Outline: Create new artifactId
 	Examples:
 		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    #| Admin | MyApplication | 1 |
-#
- #	
-#Scenario Outline: user able to delete artifact
- #		When user logs into MEC portal<user>
- #		And user is on Dashboard page
- #		And user clicks on my application
- #		Then user is on my application page 
- #		When user clicks on new application
- #		Then user is on new application page
- #		When user selects from where to artifact is to delete<SheetName>, <RowNumber> 
- #		Then user is able to see that service <service>	
-#		When user clicks on select artifact
- #		Then user able to see artifacts uploaded
- #		When user selects the artifactid for delete
- #		And user clicks on delete button
- #		Then user is not able to find the deleted artifactId
- #		Examples:
- #		| user | SheetName | RowNumber |
-    #| Admin | MyApplication | 0 |
-    #| Admin | MyApplication | 1 |
-#
-#
+    | Admin | MyApplication | 1 |
+
+
+Scenario Outline: user able to delete artifact
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application
+ 		Then user is on my application page 
+ 		When user clicks on new application
+ 		Then user is on new application page
+ 		When user selects from where to artifact is to delete<SheetName>, <RowNumber> 
+ 		Then user is able to see that service <service>	
+		When user clicks on select artifact
+ 		Then user able to see artifacts uploaded
+ 		When user selects the artifactid for delete
+ 		And user clicks on delete button
+ 		Then user is not able to find the deleted artifactId
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |
+    | Admin | MyApplication | 1 |
+
+
 Scenario Outline: user able to onboard application
  		When user logs into MEC portal<user>
  		And user is on Dashboard page
@@ -68,6 +68,7 @@ Scenario Outline: user able to onboard application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    | Admin | MyApplication | 1 |
 
 Scenario Outline: user able to provision the application
  		When user logs into MEC portal<user>
@@ -84,6 +85,7 @@ Scenario Outline: user able to provision the application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    | Admin | MyApplication | 1 |
 		
  Scenario Outline: user able to deprovision the application
  		When user logs into MEC portal<user>
@@ -99,6 +101,7 @@ Scenario Outline: user able to provision the application
 Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    | Admin | MyApplication | 1 |
  		
 
 Scenario Outline: user able to deboard the application
@@ -115,3 +118,4 @@ Scenario Outline: user able to deboard the application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    | Admin | MyApplication | 1 |

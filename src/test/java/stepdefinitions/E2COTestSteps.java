@@ -5,7 +5,7 @@ package stepdefinitions;
 
 
 
-import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+
 import com.sogeti.automation.framework.basetest.TestClass;
 import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
@@ -64,7 +64,8 @@ public class E2COTestSteps extends TestClass {
    String ApplicationNmFrDeboard;
    int beforedeboardingNoApp;
    int afterdeboardingNoApp;
-   
+   String ApplicationNameFrProvision;
+   String ApplicationNameFrDeProvision;
 
     public E2COTestSteps(TestContext context) throws Exception {
         super();
@@ -804,10 +805,12 @@ public class E2COTestSteps extends TestClass {
 
 	    @Then("^user is can see the application in a list$")
 	    public void verifyApplicationOnboardedIsDisplyaedInList() throws Exception {
-	    	Thread.sleep(2000);
 	    	e2co_myapplication.SizeOfApplicationTable();
-	    	Thread.sleep(2000);
 	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(appNameFromUser);
+	    	Thread.sleep(15000);
+	    	e2co_myapplication.refresHPageOfWeb();
+	    	Thread.sleep(6000);
+	    	e2co_myapplication.statusOfApplication(appNameFromUser);
 	    	
 	    	
 	    }
@@ -961,7 +964,6 @@ public class E2COTestSteps extends TestClass {
     	System.out.println(dynamicSDKName);
     	e2co_sdkpage.clickOnCloseButton();
     	e2co_sdkpage.SizeOfsdkTable();
-    	
     }
     
     @And ("^click on uploaded Sdk(.*), (.*)")
@@ -1005,9 +1007,9 @@ public class E2COTestSteps extends TestClass {
     	ExcelReader reader = new ExcelReader();
      	List<Map<String,String>> testData =
      			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
-     	String ApplicationName = testData.get(RowNumber).get("ApplicationNameFrProvision");
+     	 ApplicationNameFrProvision = testData.get(RowNumber).get("ApplicationNameFrProvision");
      	 ZoneName = testData.get(RowNumber).get("ZoneName");
-    	e2co_myapplication.selectApplicationForPrvision(ApplicationName);
+    	e2co_myapplication.selectApplicationForPrvision(ApplicationNameFrProvision);
     }
     
     @Then("^user is able to see the application details$")
@@ -1036,8 +1038,11 @@ public class E2COTestSteps extends TestClass {
     }
     
     @Then("^user is able to see the application in running status$")
-    public void verifyApplicationIsInRunningStatus() {
-    	
+    public void verifyApplicationIsInRunningStatus() throws Exception {
+    	Thread.sleep(8000);
+    	e2co_myapplication.refresHPageOfWeb();
+    	Thread.sleep(5000);
+    	e2co_myapplication.statusOfApplication(ApplicationNameFrProvision);
     }
     
     //**************************
@@ -1080,8 +1085,8 @@ public class E2COTestSteps extends TestClass {
     	ExcelReader reader = new ExcelReader();
      	List<Map<String,String>> testData =
      			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
-     	String applicationName = testData.get(RowNumber).get("ApplicationNameFrDeProvision");
-    	e2co_myapplication.selectAppForDeprovision(applicationName);
+     	 ApplicationNameFrDeProvision = testData.get(RowNumber).get("ApplicationNameFrDeProvision");
+    	e2co_myapplication.selectAppForDeprovision(ApplicationNameFrDeProvision);
     }
     
     @Then("^user is able to see the application details of provisioned app$")
@@ -1108,7 +1113,11 @@ public class E2COTestSteps extends TestClass {
     }
     
     @Then("^user able to see the app is deprovisioned$")
-    public void verifyAppIsDeprovisioned() {
+    public void verifyAppIsDeprovisioned() throws Exception {
+    	Thread.sleep(10000);
+    	e2co_myapplication.refresHPageOfWeb();
+    	Thread.sleep(6000);
+    	e2co_myapplication.statusOfApplication(ApplicationNameFrDeProvision);
     	
     }
     //*************************
@@ -1192,13 +1201,6 @@ public class E2COTestSteps extends TestClass {
     	Thread.sleep(2000);
     	afterdeboardingNoApp = e2co_myapplication.SizeOfApplicationTable();
     	Thread.sleep(2000);
-//    	if(beforedeboardingNoApp>afterdeboardingNoApp) {
-//    		log.info("Application is deoarded");
-//    	}else{
-//    		log.info("Application is not deboarded");
-//    	}
-    	//Assert.assertNotEquals(,"Application deboarding warning popup message is displayed");
-    	//e2co_myapplication.applicationIsRemovedFromList(ApplicationNmFrDeboard);
- 
+    	e2co_myapplication.verifyDeboardedAppIsNotPresentInAppList(ApplicationNmFrDeboard);
     }
 }

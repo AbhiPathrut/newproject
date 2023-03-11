@@ -27,7 +27,8 @@ public class WebUtils {
     }
 
     public void refreshPage() {
-        this._hDriver.navigate().refresh();
+        //this._hDriver.navigate().refresh();
+    	_hDriver.navigate().refresh();
     }
 
     public String getPageTitle() {
