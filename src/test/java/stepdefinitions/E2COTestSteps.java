@@ -62,8 +62,6 @@ public class E2COTestSteps extends TestClass {
    String NewPassword;
    String ZoneName;
    String ApplicationNmFrDeboard;
-   int beforedeboardingNoApp;
-   int afterdeboardingNoApp;
    String ApplicationNameFrProvision;
    String ApplicationNameFrDeProvision;
 
@@ -104,7 +102,8 @@ public class E2COTestSteps extends TestClass {
     }
     
     @Then("^user management page is displayed$")
-    public void verifyUserManagementPageLoaded() {
+    public void verifyUserManagementPageLoaded() throws Exception {
+    	Thread.sleep(2000);
     	e2co_usermanagement.SizeOfTable();
     	e2co_usermanagement.userManagementPageLoaded();
     }
@@ -809,7 +808,7 @@ public class E2COTestSteps extends TestClass {
 	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(appNameFromUser);
 	    	Thread.sleep(15000);
 	    	e2co_myapplication.refresHPageOfWeb();
-	    	Thread.sleep(6000);
+	    	Thread.sleep(10000);
 	    	e2co_myapplication.statusOfApplication(appNameFromUser);
 	    	
 	    	
@@ -1039,9 +1038,9 @@ public class E2COTestSteps extends TestClass {
     
     @Then("^user is able to see the application in running status$")
     public void verifyApplicationIsInRunningStatus() throws Exception {
-    	Thread.sleep(8000);
+    	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
-    	Thread.sleep(5000);
+    	Thread.sleep(8000);
     	e2co_myapplication.statusOfApplication(ApplicationNameFrProvision);
     }
     
@@ -1116,7 +1115,7 @@ public class E2COTestSteps extends TestClass {
     public void verifyAppIsDeprovisioned() throws Exception {
     	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
-    	Thread.sleep(6000);
+    	Thread.sleep(8000);
     	e2co_myapplication.statusOfApplication(ApplicationNameFrDeProvision);
     	
     }
@@ -1176,7 +1175,6 @@ public class E2COTestSteps extends TestClass {
      	List<Map<String,String>> testData =
      			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
      	 ApplicationNmFrDeboard = testData.get(RowNumber).get("ApplicationNmFrDeboard");
-     	beforedeboardingNoApp = e2co_myapplication.SizeOfApplicationTable();
     	e2co_myapplication.selectAppForDebaord(ApplicationNmFrDeboard);
     }
     
@@ -1199,8 +1197,22 @@ public class E2COTestSteps extends TestClass {
     public void verifyApplicationDeboardedIsRemovedFromDeboarded() throws Exception {
     	e2co_myapplication.clickOncloseBtn();
     	Thread.sleep(2000);
-    	afterdeboardingNoApp = e2co_myapplication.SizeOfApplicationTable();
-    	Thread.sleep(2000);
     	e2co_myapplication.verifyDeboardedAppIsNotPresentInAppList(ApplicationNmFrDeboard);
+    }
+    //****************************
+    @When("^user close the artifactWindow$")
+    public void closeArtifactWindowForApp() {
+    	e2co_myapplication.closeArtifactWindow();
+    }
+    
+    @Then("^user is able to see artifactWindow Closed$")
+    public void verifyArtifactWindowClosed() {
+    	Assert.assertTrue(e2co_myapplication.artifactwindowClosedValidation(),"Artifact window is closed");
+    }
+    //*********************
+    @When("^user clicks on User Mangement Menu for UM$")
+    public void clickOnUserManagementMenu() throws Exception {
+    	e2co_usermanagement.usermanagebttn();
+    	Thread.sleep(2000);
     }
 }

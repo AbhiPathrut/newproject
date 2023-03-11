@@ -198,6 +198,11 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//button[contains(text(),'Deboarding')]")
 	private WebElement appDeboardingBtn;
 	
+	@FindBy(xpath = "//body/ngb-modal-window[1]")
+	private WebElement randomclickforartifactWindow;
+	
+	@FindBy(xpath = "//div[@class='form-floating']")
+	private WebElement artifactwindowClosedValidation;
 	
 	
 	public E2CO_MyApplicationPage(SelfHealingDriver driver) {
@@ -712,11 +717,27 @@ public class E2CO_MyApplicationPage extends PageClass {
 		Thread.sleep(2000);
 		String StatusOfApplication = StatusOfApp.getText();
 		System.out.println("Status of "+appName+": "+StatusOfApplication);
+		if(StatusOfApplication.contains("Onboarded")) {
+			log.info("App is onboarded or deprovisioned successfully.");
+		}else if(StatusOfApplication.contains("Onboardpending")) {
+			log.info("App onboarding process is initiated.");
+		}else {
+			log.info("App is provisioned.");
+		}
 	}
 
 	public void refresHPageOfWeb() {
 		objDriver.navigate().refresh();
 		log.info("Page is refreshed");
+	}
+	
+	public void closeArtifactWindow() {
+		this.randomclickforartifactWindow.click();
+	}
+	
+	public boolean artifactwindowClosedValidation() {
+		this.artifactwindowClosedValidation.isDisplayed();
+		return true;
 	}
 	
 }

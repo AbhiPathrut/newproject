@@ -35,7 +35,8 @@ public class E2CO_UserManagement extends PageClass {
 	String LockedDomainName;
 	
 	@CacheLookup
-    @FindBy(xpath="//a[@href='/MEC/userManager/user-list']")
+    //@FindBy(xpath="//a[@href='/MEC/userManager/user-list']")
+	@FindBy(xpath = "//a[@class='sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active' ]")
     private WebElement usermanagebttn;
     
     @CacheLookup
@@ -147,7 +148,7 @@ public class E2CO_UserManagement extends PageClass {
 
 	
 	public void usermanagebttn() {
-    	this.usermanagebttn.click();
+    	usermanagebttn.click();
     	log.info("Clicked the user management");
     	
      }

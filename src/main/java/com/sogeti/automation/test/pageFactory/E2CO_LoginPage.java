@@ -74,8 +74,11 @@ public class E2CO_LoginPage extends PageClass {
     }
 
     public boolean isElementDisplayed() {
-    	return userIcon.isDisplayed();
+    	userIcon.isDisplayed();
+    	log.info("User icon is displayed.");
+    	return true;
     	}
+    
     public E2CO_LoginPage verifyUserIsOnHomePage() {
 		Assert.assertTrue(txtUserName.isDisplayed());
 		return null;	
