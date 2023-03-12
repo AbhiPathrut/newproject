@@ -6786,3 +6786,1408 @@
 2023-03-12 11:54:07,653 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
 2023-03-12 11:54:17,778 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
 2023-03-12 11:54:18,080 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:15:52,831 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:15:52,831 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:15:52,835 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:15:52,835 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:15:52,835 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:15:52,835 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:15:52,836 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:15:52,837 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:15:52,838 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:15:52,838 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:15:52,838 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:15:52,838 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:15:52,839 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:15:52,839 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:15:56,693 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:15:56,693 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:16:00,721 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:00,721 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:00,723 [INFO] [LOCAL, CommonSteps] Scenario Name: Create new user and verify login
+2023-03-12 15:16:00,729 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:00,729 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:01,061 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:01,061 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:01,252 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:01,252 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:01,349 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:01,349 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:01,892 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:01,892 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:02,319 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:02,319 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:04,775 [INFO] [LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:04,775 [INFO] [LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:05,817 [INFO] [LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:05,817 [INFO] [LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:05,904 [INFO] [LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:05,904 [INFO] [LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:05,963 [INFO] [LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:05,963 [INFO] [LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:06,042 [INFO] [LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:06,042 [INFO] [LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:06,112 [INFO] [LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:06,112 [INFO] [LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:06,198 [INFO] [LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:06,198 [INFO] [LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:06,284 [INFO] [LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:06,284 [INFO] [LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:06,377 [INFO] [LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:06,377 [INFO] [LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:06,470 [INFO] [LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:06,470 [INFO] [LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:06,546 [INFO] [LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:06,546 [INFO] [LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:06,649 [INFO] [LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:06,649 [INFO] [LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:06,840 [INFO] [LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:06,840 [INFO] [LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:07,181 [INFO] [LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:07,181 [INFO] [LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:07,428 [INFO] [LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:07,428 [INFO] [LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:07,644 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:07,644 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:07,721 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:07,721 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:08,523 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:08,523 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:08,635 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:08,635 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:08,751 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:08,751 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:09,599 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:09,599 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:10,035 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:16:10,062 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:10,062 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:10,062 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:16:10,062 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:16:12,162 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:16:12,162 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:16:15,571 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:15,571 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:15,571 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: Create new user and verify login
+2023-03-12 15:16:15,572 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:15,572 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:15,909 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:15,909 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:16,010 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:16,010 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:16,104 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:16,104 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:16,667 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:16,667 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:17,121 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:17,121 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:19,602 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:19,602 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:20,113 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:20,113 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:20,230 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:20,230 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:20,323 [INFO] [LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:20,323 [INFO] [LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:20,424 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:20,424 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:20,494 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:20,494 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:20,587 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:20,587 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:20,674 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:20,674 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:20,754 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:20,754 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:20,834 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:20,834 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:20,915 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:20,915 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:21,008 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:21,008 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:21,205 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:21,205 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:21,605 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:21,605 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:21,883 [INFO] [LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:21,883 [INFO] [LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:22,041 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:22,041 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:22,108 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:22,108 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:22,883 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:22,883 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:22,976 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:22,976 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:23,054 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:23,054 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:24,154 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:24,154 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:24,612 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:16:24,633 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:24,633 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:24,633 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:16:24,633 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:16:26,466 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:16:26,466 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:16:29,192 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:29,192 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:29,192 [INFO] [LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Create new user and verify login
+2023-03-12 15:16:29,193 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:29,193 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:29,547 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:29,547 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:29,649 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:29,649 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:29,750 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:29,750 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:30,326 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:30,326 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:30,789 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:30,789 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:16:33,419 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:33,419 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:16:33,947 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:33,947 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:16:34,043 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:34,043 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:16:34,095 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:34,095 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:16:34,178 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:34,178 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:16:34,243 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:34,243 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:16:34,309 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:34,309 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:16:34,376 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:34,376 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:16:34,439 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:34,439 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:16:34,491 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:34,491 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:16:34,551 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:34,551 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:16:34,656 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:34,656 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:16:34,850 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:34,850 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:16:35,211 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:35,211 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:16:35,471 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:35,471 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:16:35,682 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:35,682 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:16:35,734 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:35,734 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:16:36,597 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:36,597 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:16:36,691 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:36,691 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:16:36,771 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:36,771 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:16:37,712 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:37,712 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:16:38,186 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:16:38,199 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:38,199 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:16:38,200 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:16:38,200 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:19:19,275 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:19,275 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:19,279 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:19:19,279 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:19:19,280 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:19:19,281 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:19:19,282 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:19:19,283 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:19:22,175 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:19:22,175 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:19:24,899 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:24,899 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:24,902 [INFO] [LOCAL, CommonSteps] Scenario Name: User Management complete end to end scenario
+2023-03-12 15:19:24,907 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:24,907 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:19:25,261 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:19:25,261 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:19:25,356 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:19:25,356 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:19:25,451 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:19:25,451 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:19:25,959 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:19:25,959 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:19:26,241 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:19:26,241 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:19:28,710 [INFO] [LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:19:28,710 [INFO] [LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:19:29,668 [INFO] [LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:19:29,668 [INFO] [LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:19:29,754 [INFO] [LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:19:29,754 [INFO] [LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:19:29,821 [INFO] [LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:19:29,821 [INFO] [LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:19:29,909 [INFO] [LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:19:29,909 [INFO] [LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:19:29,970 [INFO] [LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:19:29,970 [INFO] [LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:19:30,037 [INFO] [LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:19:30,037 [INFO] [LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:19:30,101 [INFO] [LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:19:30,101 [INFO] [LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:19:30,166 [INFO] [LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:19:30,166 [INFO] [LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:19:30,244 [INFO] [LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:19:30,244 [INFO] [LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:19:30,315 [INFO] [LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:19:30,315 [INFO] [LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:19:30,408 [INFO] [LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:19:30,408 [INFO] [LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:19:30,603 [INFO] [LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:19:30,603 [INFO] [LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:19:30,932 [INFO] [LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:19:30,932 [INFO] [LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:19:31,171 [INFO] [LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:19:31,171 [INFO] [LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:19:31,360 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:19:31,360 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:19:31,440 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:19:31,440 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:19:32,268 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:19:32,268 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:19:32,394 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:19:32,394 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:19:32,508 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:19:32,508 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:19:33,332 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:19:33,332 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:19:35,499 [INFO] [LOCAL, E2COTestSteps] Admin is able to access user management.
+2023-03-12 15:19:35,738 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:19:35,738 [INFO] [LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:19:40,162 [INFO] [LOCAL, E2COTestSteps] Clicked delete button
+2023-03-12 15:19:40,162 [INFO] [LOCAL, E2COTestSteps] Clicked delete button
+2023-03-12 15:19:40,531 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:40,531 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:44,731 [INFO] [LOCAL, E2COTestSteps] Element is deleted
+2023-03-12 15:19:44,753 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,753 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,767 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,767 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,781 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,781 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,795 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,795 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,810 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:44,810 [INFO] [LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:19:45,031 [INFO] [LOCAL, E2COTestSteps] Clicked locked button
+2023-03-12 15:19:45,031 [INFO] [LOCAL, E2COTestSteps] Clicked locked button
+2023-03-12 15:19:45,105 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:45,105 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:47,279 [INFO] [LOCAL, E2COTestSteps] Inactive successful message is dispalyed
+2023-03-12 15:19:47,279 [INFO] [LOCAL, E2COTestSteps] Inactive successful message is dispalyed
+2023-03-12 15:19:47,328 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:19:47,328 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:19:47,689 [INFO] [LOCAL, E2COTestSteps] Clicked openlock button
+2023-03-12 15:19:47,689 [INFO] [LOCAL, E2COTestSteps] Clicked openlock button
+2023-03-12 15:19:47,721 [INFO] [LOCAL, E2COTestSteps] Activate warning message is displayed
+2023-03-12 15:19:47,721 [INFO] [LOCAL, E2COTestSteps] Activate warning message is displayed
+2023-03-12 15:19:47,795 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:47,795 [INFO] [LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:19:49,956 [INFO] [LOCAL, E2COTestSteps] Activated success popup message is displayed
+2023-03-12 15:19:49,956 [INFO] [LOCAL, E2COTestSteps] Activated success popup message is displayed
+2023-03-12 15:19:50,004 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:19:50,004 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:20:00,204 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:00,204 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:00,284 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:00,284 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:01,038 [INFO] [LOCAL, E2CO_LoginPage] Entered username
+2023-03-12 15:20:01,038 [INFO] [LOCAL, E2CO_LoginPage] Entered username
+2023-03-12 15:20:01,191 [INFO] [LOCAL, E2CO_LoginPage] Entered password
+2023-03-12 15:20:01,191 [INFO] [LOCAL, E2CO_LoginPage] Entered password
+2023-03-12 15:20:01,316 [INFO] [LOCAL, E2CO_LoginPage] Entered domain
+2023-03-12 15:20:01,316 [INFO] [LOCAL, E2CO_LoginPage] Entered domain
+2023-03-12 15:20:03,625 [INFO] [LOCAL, E2CO_LoginPage] User icon is displayed.
+2023-03-12 15:20:03,625 [INFO] [LOCAL, E2CO_LoginPage] User icon is displayed.
+2023-03-12 15:20:04,047 [INFO] [LOCAL, E2CO_LoginPage] Execution status is: PASSED
+2023-03-12 15:20:04,067 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:04,067 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:04,068 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:20:04,068 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:20:06,089 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:20:06,089 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:20:09,205 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:09,205 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:09,206 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: User Management complete end to end scenario
+2023-03-12 15:20:09,208 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:09,208 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:09,567 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:09,567 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:09,660 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:09,660 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:09,780 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:09,780 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:10,344 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:10,344 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:10,816 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:20:10,816 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:20:13,278 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:20:13,278 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:20:13,796 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:20:13,796 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:20:13,882 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:20:13,882 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:20:13,951 [INFO] [LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:20:13,951 [INFO] [LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:20:14,031 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:20:14,031 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:20:14,089 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:20:14,089 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:20:14,153 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:20:14,153 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:20:14,223 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:20:14,223 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:20:14,295 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:20:14,295 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:20:14,384 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:20:14,384 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:20:14,462 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:20:14,462 [INFO] [LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:20:14,549 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:20:14,549 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:20:14,755 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:20:14,755 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:20:15,131 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:20:15,131 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:20:15,408 [INFO] [LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:20:15,408 [INFO] [LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:20:15,579 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:15,579 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:15,653 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:15,653 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:16,475 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:16,475 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:16,562 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:16,562 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:16,636 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:16,636 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:17,617 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:17,617 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:48,402 [ERROR] [LOCAL, LOCAL, E2COTestSteps] Page not loadedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/MEC/userManager/user-list']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-12 15:20:48,402 [ERROR] [LOCAL, LOCAL, E2COTestSteps] Page not loadedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/MEC/userManager/user-list']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-12 15:20:48,402 [INFO] [LOCAL, LOCAL, E2COTestSteps] User managemenent is not present for developer.
+2023-03-12 15:20:48,444 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:48,444 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:20:48,529 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:48,529 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:20:49,063 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: SKIPPED
+2023-03-12 15:20:49,069 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:49,069 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:49,070 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:20:49,070 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:20:51,063 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:20:51,063 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:20:54,200 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:54,200 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:54,200 [INFO] [LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: User Management complete end to end scenario
+2023-03-12 15:20:54,201 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:54,201 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:20:54,549 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:54,549 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:20:54,642 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:54,642 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:20:54,722 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:54,722 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:20:55,276 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:55,276 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:20:55,741 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:20:55,741 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:20:58,284 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:20:58,284 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:20:58,743 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:20:58,743 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:20:58,848 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:20:58,848 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:20:58,920 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:20:58,920 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:20:59,004 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:20:59,004 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:20:59,081 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:20:59,081 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:20:59,157 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:20:59,157 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:20:59,242 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:20:59,242 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:20:59,322 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:20:59,322 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:20:59,375 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:20:59,375 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:20:59,428 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:20:59,428 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:20:59,517 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:20:59,517 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:20:59,732 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:20:59,732 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:21:00,107 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:21:00,107 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:21:00,339 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:21:00,339 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:21:00,531 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:21:00,531 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:21:00,600 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:21:00,600 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:21:01,368 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:01,368 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:01,470 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:01,470 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:01,558 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:01,558 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:02,389 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:21:02,389 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:21:04,577 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Admin is able to access user management.
+2023-03-12 15:21:04,796 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:21:04,796 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:21:09,172 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked delete button
+2023-03-12 15:21:09,172 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked delete button
+2023-03-12 15:21:09,574 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:21:09,574 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:21:13,787 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Element is deleted
+2023-03-12 15:21:13,804 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,804 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,815 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,815 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,827 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,827 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,838 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,838 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,850 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,850 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,863 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:13,863 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User is not displayed
+2023-03-12 15:21:14,072 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked locked button
+2023-03-12 15:21:14,072 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked locked button
+2023-03-12 15:21:14,132 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:21:14,132 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked confirm button
+2023-03-12 15:21:26,637 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-12 15:21:26,662 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:26,662 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:26,662 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:21:26,662 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:21:28,649 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:21:28,649 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:21:31,787 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:31,787 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:31,787 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: User Management complete end to end scenario
+2023-03-12 15:21:31,788 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:31,788 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:21:32,109 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:32,109 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:32,203 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:32,203 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:32,282 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:32,282 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:32,837 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:21:32,837 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:21:33,260 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:21:33,260 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the user management
+2023-03-12 15:21:35,805 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:21:35,805 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked the add new user
+2023-03-12 15:21:36,245 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:21:36,245 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered first name
+2023-03-12 15:21:36,338 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:21:36,338 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered last name
+2023-03-12 15:21:36,410 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:21:36,410 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Role selected
+2023-03-12 15:21:36,494 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:21:36,494 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered EmailId
+2023-03-12 15:21:36,548 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:21:36,548 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered UserName
+2023-03-12 15:21:36,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:21:36,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered Password
+2023-03-12 15:21:36,677 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:21:36,677 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered RetypePassword
+2023-03-12 15:21:36,741 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:21:36,741 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered ContactNo
+2023-03-12 15:21:36,809 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:21:36,809 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Max invalid attempt selected
+2023-03-12 15:21:36,874 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:21:36,874 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Max validity selected
+2023-03-12 15:21:36,965 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:21:36,965 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain name
+2023-03-12 15:21:37,183 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:21:37,183 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked Submit Button
+2023-03-12 15:21:37,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:21:37,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked popup message of user created successfully
+2023-03-12 15:21:37,899 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:21:37,899 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User is displayed
+2023-03-12 15:21:38,079 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:21:38,079 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:21:38,154 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:21:38,154 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:21:38,927 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:38,927 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:21:39,045 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:39,045 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:21:39,156 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:39,156 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:21:40,149 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:21:40,149 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:22:11,043 [ERROR] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Page not loadedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/MEC/userManager/user-list']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-12 15:22:11,043 [ERROR] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Page not loadedorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@href='/MEC/userManager/user-list']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-12 15:22:11,043 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User managemenent is not present for developer.
+2023-03-12 15:22:11,099 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:22:11,099 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-12 15:22:11,176 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:22:11,176 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-12 15:22:11,693 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: SKIPPED
+2023-03-12 15:28:53,273 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:28:53,273 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:28:53,279 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:28:53,280 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:28:53,281 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:28:53,282 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:28:53,283 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:28:53,283 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:28:57,205 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:28:57,205 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:01,062 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:01,062 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:01,065 [INFO] [LOCAL, CommonSteps] Scenario Name: SdK Uploading
+2023-03-12 15:29:01,070 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:01,070 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:01,364 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:01,364 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:01,530 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:01,530 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:01,620 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:01,620 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:02,173 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:02,173 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:02,651 [INFO] [LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:02,651 [INFO] [LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:12,989 [INFO] [LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:12,989 [INFO] [LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:14,039 [INFO] [LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:14,039 [INFO] [LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:14,479 [INFO] [LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:14,479 [INFO] [LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:16,648 [INFO] [LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:16,648 [INFO] [LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:16,701 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:16,701 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:17,179 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:29:17,194 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:17,194 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:17,195 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:17,195 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:19,061 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:19,061 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:22,476 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:22,476 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:22,476 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: SdK Uploading
+2023-03-12 15:29:22,477 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:22,477 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:22,798 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:22,798 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:22,905 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:22,905 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:23,014 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:23,014 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:23,584 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:23,584 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:24,051 [INFO] [LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:24,051 [INFO] [LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:24,437 [INFO] [LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:24,437 [INFO] [LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:25,174 [INFO] [LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:25,174 [INFO] [LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:25,628 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:25,628 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:27,781 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:27,781 [INFO] [LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:27,832 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:27,832 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:28,269 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:29:28,275 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:28,275 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:28,275 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:28,275 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:30,324 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:30,324 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:32,968 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:32,968 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:32,969 [INFO] [LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK Uploading
+2023-03-12 15:29:32,969 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:32,969 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:33,254 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:33,254 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:33,435 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:33,435 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:33,533 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:33,533 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:34,040 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:34,040 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:34,402 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:34,402 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:34,739 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:34,739 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:35,317 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:35,317 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:35,821 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:35,821 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:37,983 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:37,983 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:38,034 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:38,034 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:38,465 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:29:38,478 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:38,478 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:38,479 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:38,479 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:40,503 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:40,503 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:43,684 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:43,684 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:43,684 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK Uploading
+2023-03-12 15:29:43,686 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:43,686 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:43,989 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:43,989 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:44,098 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:44,098 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:44,197 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:44,197 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:44,762 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:44,762 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:45,191 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:45,191 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:45,553 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:45,553 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:46,201 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:46,201 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:46,709 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:46,709 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:48,856 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:48,856 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:48,901 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:48,901 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:49,356 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:29:49,365 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:49,365 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:49,365 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:49,365 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:51,782 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:51,782 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:29:54,055 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:54,055 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:54,055 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK Uploading
+2023-03-12 15:29:54,056 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:54,056 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:54,385 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:54,385 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:29:54,502 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:54,502 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:29:54,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:54,613 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:29:55,186 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:55,186 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:29:55,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:55,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:29:56,000 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:56,000 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:29:56,598 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:56,598 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:29:57,008 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:57,008 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:29:59,167 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:59,167 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:29:59,208 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:59,208 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:29:59,608 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:29:59,620 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:59,620 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:29:59,620 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:29:59,620 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:01,651 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:01,651 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:05,264 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:05,264 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:05,265 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK deleting
+2023-03-12 15:30:05,266 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:05,266 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:05,658 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:05,658 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:05,753 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:05,753 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:05,840 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:05,840 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:06,391 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:06,391 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:06,831 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:06,831 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:07,240 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:07,240 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:07,537 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:07,537 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:09,951 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:09,951 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:10,351 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:30:10,732 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:30:10,739 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:10,739 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:10,740 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:10,740 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:12,785 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:12,785 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:14,971 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:14,971 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:14,971 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK deleting
+2023-03-12 15:30:14,972 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:14,972 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:15,331 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:15,331 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:15,439 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:15,439 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:15,541 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:15,541 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:16,097 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:16,097 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:16,598 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:16,598 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:16,949 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:16,949 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:17,204 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:17,204 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:19,649 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:19,649 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:20,068 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:30:20,398 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:30:20,402 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:20,402 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:20,402 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:20,402 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:22,362 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:22,362 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:25,504 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:25,504 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:25,505 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK deleting
+2023-03-12 15:30:25,507 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:25,507 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:25,770 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:25,770 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:25,963 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:25,963 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:26,073 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:26,073 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:26,626 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:26,626 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:27,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:27,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:27,606 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:27,606 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:27,905 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:27,905 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:30,355 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:30,355 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:30,745 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:30:31,126 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:30:31,131 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:31,131 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:31,131 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:31,131 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:33,135 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:33,135 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:35,543 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:35,543 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:35,543 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK deleting
+2023-03-12 15:30:35,545 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:35,545 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:35,905 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:35,905 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:36,023 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:36,023 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:36,125 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:36,125 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:36,682 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:36,682 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:37,104 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:37,104 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:37,546 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:37,546 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:37,797 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:37,797 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:40,267 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:40,267 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:40,608 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:30:40,944 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:30:40,953 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:40,953 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:40,953 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:40,953 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:30:42,901 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:42,901 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:30:45,847 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:45,847 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:45,847 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK deleting
+2023-03-12 15:30:45,848 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:45,848 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:30:46,072 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:46,072 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:30:46,231 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:46,231 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:30:46,314 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:46,314 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:30:46,850 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:46,850 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:30:47,250 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:47,250 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:30:47,650 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:47,650 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:30:47,923 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:47,923 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:30:50,339 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:30:50,339 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:31:00,472 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:31:00,789 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:31:00,801 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:00,801 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:00,802 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:31:00,802 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:31:02,753 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:31:02,753 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:31:05,690 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:05,690 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:05,691 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK end to end scenario
+2023-03-12 15:31:05,692 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:05,692 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:06,016 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:31:06,016 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:31:06,116 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:31:06,116 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:31:06,210 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:31:06,210 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:31:06,728 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:31:06,728 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:31:07,178 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:31:07,178 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:31:17,496 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:31:17,496 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:31:18,124 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:31:18,124 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:31:18,671 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:31:18,671 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:31:20,834 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:31:20,834 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:31:20,889 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:31:20,889 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:31:21,329 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:31:21,329 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:31:23,709 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:31:23,709 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:31:33,878 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:31:34,179 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:31:34,185 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:34,185 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:34,186 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:31:34,186 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:31:36,139 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:31:36,139 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:31:39,773 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:39,773 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:39,773 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: SdK end to end scenario
+2023-03-12 15:31:39,774 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:39,774 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:31:40,061 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:31:40,061 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:31:40,155 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:31:40,155 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:31:40,241 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:31:40,241 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:31:40,771 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:31:40,771 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:31:41,257 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:31:41,257 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User click on SDK menu
+2023-03-12 15:31:51,602 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:31:51,602 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] List of sdk displayed
+2023-03-12 15:31:52,189 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:31:52,189 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Language is selected
+2023-03-12 15:31:52,699 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:31:52,699 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is submitted successfully
+2023-03-12 15:31:54,859 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:31:54,859 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK created successfully
+2023-03-12 15:31:54,913 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:31:54,913 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-12 15:31:55,619 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:31:55,619 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User Click on uploaded SDK
+2023-03-12 15:31:57,944 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:31:57,944 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is deleted successfully
+2023-03-12 15:32:08,080 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] SDK is removed from list
+2023-03-12 15:32:08,357 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:34:46,505 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:46,505 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:46,509 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:34:46,509 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:34:46,510 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:34:46,511 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:34:46,512 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-12 15:34:46,513 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:34:46,513 [INFO] [qa.properties] Initializing self healing driver
+2023-03-12 15:34:49,708 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:34:49,708 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:34:52,257 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:52,257 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:52,260 [INFO] [LOCAL, CommonSteps] Scenario Name: preprovision the edge
+2023-03-12 15:34:52,266 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:52,266 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:34:52,565 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:34:52,565 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:34:52,655 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:34:52,655 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:34:52,742 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:34:52,742 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:34:53,270 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:34:53,270 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:34:53,695 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:34:53,695 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:34:58,024 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:34:58,024 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:34:58,110 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:34:58,110 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:34:58,167 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:34:58,167 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:34:58,249 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:34:58,249 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:34:58,354 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:34:58,354 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:34:58,444 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:34:58,444 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:34:58,548 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:34:58,548 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:34:58,669 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:34:58,669 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:34:58,768 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:34:58,768 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:34:58,875 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:34:58,875 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:34:58,977 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:34:58,977 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:34:59,044 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:34:59,044 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:34:59,116 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:34:59,116 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:34:59,189 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:34:59,189 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:34:59,249 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:34:59,249 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:34:59,330 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:34:59,330 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:34:59,408 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:34:59,408 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:34:59,475 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:34:59,475 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:34:59,543 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:34:59,543 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:34:59,628 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:34:59,628 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:34:59,826 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:34:59,826 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:35:02,205 [INFO] [LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:35:02,205 [INFO] [LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:35:02,593 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:35:02,613 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:02,613 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:02,613 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:02,613 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:04,627 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:04,627 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:07,105 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:07,105 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:07,105 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: preprovision the edge
+2023-03-12 15:35:07,106 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:07,106 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:07,407 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:07,407 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:07,497 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:07,497 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:07,589 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:07,589 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:08,130 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:08,130 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:08,533 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:08,533 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:11,537 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:35:11,537 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:35:11,627 [INFO] [LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:35:11,627 [INFO] [LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:35:11,684 [INFO] [LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:35:11,684 [INFO] [LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:35:11,768 [INFO] [LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:35:11,768 [INFO] [LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:35:11,879 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:35:11,879 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:35:11,949 [INFO] [LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:35:11,949 [INFO] [LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:35:12,049 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:35:12,049 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:35:12,140 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:12,140 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:12,237 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:12,237 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:12,335 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:35:12,335 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:35:12,420 [INFO] [LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:35:12,420 [INFO] [LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:35:12,480 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:35:12,480 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:35:12,545 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:35:12,545 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:35:12,605 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:35:12,605 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:35:12,663 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:35:12,663 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:35:12,736 [INFO] [LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:35:12,736 [INFO] [LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:35:12,819 [INFO] [LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:35:12,819 [INFO] [LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:35:12,898 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:35:12,898 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:35:12,966 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:35:12,966 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:35:13,041 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:35:13,041 [INFO] [LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:35:13,225 [INFO] [LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:35:13,225 [INFO] [LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:35:16,554 [INFO] [LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:35:16,554 [INFO] [LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:35:16,950 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:35:16,966 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:16,966 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:16,966 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:16,966 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:18,788 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:18,788 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:21,933 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:21,933 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:21,934 [INFO] [LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Deboard the edge
+2023-03-12 15:35:21,935 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:21,935 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:22,265 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:22,265 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:22,376 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:22,376 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:22,476 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:22,476 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:23,015 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:23,015 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:23,496 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:23,496 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:26,038 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:35:26,038 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:35:28,238 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:35:28,238 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:35:30,473 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:35:30,473 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:35:30,714 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:35:30,714 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:35:30,904 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:35:30,904 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:35:31,100 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:35:31,100 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:35:31,292 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:35:31,292 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:35:31,543 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:35:31,543 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:35:31,823 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:31,823 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:32,431 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:35:32,439 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:32,439 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:32,439 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:32,439 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:34,449 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:34,449 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:37,776 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:37,776 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:37,776 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Deboard the edge
+2023-03-12 15:35:37,777 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:37,777 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:38,117 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:38,117 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:38,210 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:38,210 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:38,294 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:38,294 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:38,813 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:38,813 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:39,308 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:39,308 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:41,815 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:35:41,815 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:35:44,006 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:35:44,006 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:35:46,199 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:35:46,199 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:35:46,470 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:35:46,470 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:35:46,646 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:35:46,646 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:35:46,843 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:35:46,843 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:35:47,064 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:35:47,064 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:35:47,288 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:35:47,288 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:35:47,576 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:47,576 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:48,200 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:35:48,205 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:48,205 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:48,205 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:48,205 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:35:50,215 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:50,215 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:35:53,129 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:53,129 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:53,129 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Edges end to end scenario
+2023-03-12 15:35:53,130 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:53,130 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:35:53,461 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:53,461 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:35:53,540 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:53,540 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:35:53,618 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:53,618 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:35:54,220 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:54,220 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:35:54,660 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:54,660 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:35:58,039 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:35:58,039 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:35:58,115 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:35:58,115 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:35:58,167 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:35:58,167 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:35:58,232 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:35:58,232 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:35:58,340 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:35:58,340 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:35:58,415 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:35:58,415 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:35:58,518 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:35:58,518 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:35:58,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:58,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:58,731 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:58,731 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:35:58,842 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:35:58,842 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:35:58,923 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:35:58,923 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:35:58,993 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:35:58,993 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:35:59,060 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:35:59,060 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:35:59,118 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:35:59,118 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:35:59,175 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:35:59,175 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:35:59,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:35:59,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:35:59,330 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:35:59,330 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:35:59,392 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:35:59,392 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:35:59,475 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:35:59,475 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:35:59,564 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:35:59,564 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:35:59,746 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:35:59,746 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:36:02,091 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:36:02,091 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:36:04,341 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:36:04,341 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:36:09,332 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:36:09,332 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:36:11,481 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:36:11,481 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:36:20,241 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:36:20,241 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Manage Edge page is displayed
+2023-03-12 15:36:20,515 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:36:20,515 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on deboard button
+2023-03-12 15:36:20,699 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:36:20,699 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Deboard edge warning popup message page is displayed
+2023-03-12 15:36:20,893 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:36:20,893 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on confirm button
+2023-03-12 15:36:21,137 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:36:21,137 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone page is displayed
+2023-03-12 15:36:21,394 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:36:21,394 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:36:21,960 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-12 15:36:24,309 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:36:24,309 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-12 15:36:27,148 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:27,148 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:27,148 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Edges end to end scenario
+2023-03-12 15:36:27,149 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:27,149 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-12 15:36:27,411 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:36:27,411 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-12 15:36:27,534 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:36:27,534 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-12 15:36:27,654 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:36:27,654 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-12 15:36:28,322 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:36:28,322 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-12 15:36:28,691 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:36:28,691 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
+2023-03-12 15:36:32,331 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:36:32,331 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-12 15:36:32,393 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:36:32,393 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone Id selected
+2023-03-12 15:36:32,458 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:36:32,458 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Country is selected
+2023-03-12 15:36:32,531 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:36:32,531 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Latency is selected
+2023-03-12 15:36:32,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:36:32,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-12 15:36:32,703 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:36:32,703 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-12 15:36:32,788 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:36:32,788 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Edge description
+2023-03-12 15:36:32,904 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:36:32,904 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:36:32,992 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:36:32,992 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
+2023-03-12 15:36:33,091 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:36:33,091 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter the locality name
+2023-03-12 15:36:33,170 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:36:33,170 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Radio is selected
+2023-03-12 15:36:33,232 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:36:33,232 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MCC value
+2023-03-12 15:36:33,296 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:36:33,296 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MNC value
+2023-03-12 15:36:33,354 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:36:33,354 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter CGI value
+2023-03-12 15:36:33,413 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:36:33,413 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter TAC value
+2023-03-12 15:36:33,474 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:36:33,474 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] App availability is selected
+2023-03-12 15:36:33,537 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:36:33,537 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Load is selected
+2023-03-12 15:36:33,614 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:36:33,614 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter cluster name
+2023-03-12 15:36:33,697 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:36:33,697 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-12 15:36:33,760 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:36:33,760 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-12 15:36:33,973 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:36:33,973 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on submit button
+2023-03-12 15:36:36,347 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:36:36,347 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-12 15:36:38,587 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:36:38,587 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
+2023-03-12 15:36:42,820 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:36:42,820 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
+2023-03-12 15:36:44,961 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:36:44,961 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
+2023-03-12 15:36:55,480 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: FAILED
