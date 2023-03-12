@@ -34,31 +34,26 @@ public class E2CO_UserManagement extends PageClass {
 	String UnLockedDomainName;
 	String LockedDomainName;
 	
-	@CacheLookup
-    //@FindBy(xpath="//a[@href='/MEC/userManager/user-list']")
-	@FindBy(xpath = "//a[@class='sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active' ]")
+	
+    @FindBy(xpath="//a[@href='/MEC/userManager/user-list']")
+	//@FindBy(xpath = "//a[@class='sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active' ]")
     private WebElement usermanagebttn;
     
-    @CacheLookup
     @FindBy(xpath="(//button[normalize-space()='Add New User'])[1]")
     private WebElement addnewuser;
     
-    @CacheLookup
     @FindBy(xpath="//input[@id='First_name']")
     private WebElement firstnametext;
-    
-    @CacheLookup
+
     @FindBy(xpath="//input[@id='last_name']")
     private WebElement lastnametext;
     
     @FindBy(xpath = "//select[@id='floatingSelect']") 
 	private WebElement selectRole;
 
-    @CacheLookup
     @FindBy(xpath="//input[@id='email']")
     private WebElement emailid;
-    
-    @CacheLookup
+
     @FindBy(xpath="//input[@id='floatinglogin']")
     private WebElement loginname;
     
@@ -66,11 +61,9 @@ public class E2CO_UserManagement extends PageClass {
     @FindBy(xpath="//input[@id='floatingpassword']")
     private WebElement password;
     
-    @CacheLookup
     @FindBy(xpath="//input[@id='floatingRetype']")
     private WebElement retypePassword;
     
-    @CacheLookup
     @FindBy(xpath="//input[@id='floatingContact']")
     private WebElement contactno;
     
@@ -134,6 +127,11 @@ public class E2CO_UserManagement extends PageClass {
     @FindBy(xpath = "//div[@class='ft-16 succes-edge-detail-text']")
     private WebElement activateSuccessPopupMessage;
     
+    @FindBy(xpath = "//div[@class='onboard-success-container text-center']")
+    private WebElement ownUserDeletingMessage;
+    
+    @FindBy(xpath = "//button[normalize-space()='Ok']")
+    private WebElement okBtn;
     
 
 	
@@ -325,9 +323,9 @@ public class E2CO_UserManagement extends PageClass {
 	 
 	 public void deletebtn() {
 		 Random rand = new Random();
-		int randomNum = rand.nextInt((row - 1));
+		int randomNum = rand.nextInt(row);
 		if (randomNum==0){          
-			randomNum= randomNum+2;
+			randomNum= randomNum+1;
 			}
 		System.out.println(randomNum);
 		WebElement userNameDeleted = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
@@ -370,9 +368,9 @@ public class E2CO_UserManagement extends PageClass {
 	 
 	 public void lockbtn() {
 		 Random rand = new Random();
-			int randomNum = rand.nextInt((row - 1));
+			int randomNum = rand.nextInt(row);
 			if (randomNum==0){          
-				randomNum= randomNum+2;
+				randomNum= randomNum+1;
 				}
 			System.out.println(randomNum);
 			WebElement UserNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
@@ -465,7 +463,7 @@ public class E2CO_UserManagement extends PageClass {
 		 log.info("Activated success popup message is displayed");
 		 return true;
 	 }
-	 
+
 	 public void verifyUnLockedUserIsAbleToLogin() throws Exception {
 		 E2CO_LoginPage e2co_LoginPage = new E2CO_LoginPage(objDriver);
 		e2co_LoginPage.enterUserName(UnLockedUserName);
@@ -474,5 +472,15 @@ public class E2CO_UserManagement extends PageClass {
 		e2co_LoginPage.clickLoginBtn(); 
 		Thread.sleep(2000);
 		
+	 }
+	 
+	 public void ownUserDelete() {
+		 String ownUserDeletionMessage = this.ownUserDeletingMessage.getText();
+		 if(ownUserDeletionMessage.contains("You can not delete your own account")) {
+			 log.info("Trying to delete own user which is logged in through.");
+			 this.okBtn.click();
+		 }else {
+			 log.info("User is deleted successfully.");
+		 }
 	 }
 }

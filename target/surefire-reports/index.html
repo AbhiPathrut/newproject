@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
+                    <div class="method-list-content passed suite-Surefire_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Management complete end to end scenario&quot;, &quot;Optional[User Management Feature]&quot;)">runScenario("User Management complete end to end scenario", "Optional[User Management Feature]")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;SdK Uploading&quot;, &quot;Optional[SDK Feature]&quot;)">runScenario("SdK Uploading", "Optional[SDK Feature]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;SdK Uploading&quot;, &quot;Optional[SDK Feature]&quot;)">runScenario("SdK Uploading", "Optional[SDK Feature]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,52 +124,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Management complete end to end scenario&quot;, &quot;Optional[User Management Feature]&quot;)">
-                  </a> <!-- runScenario("User Management complete end to end scenario", "Optional[User Management Feature]") -->
+                  <a name="runScenario(&quot;SdK Uploading&quot;, &quot;Optional[SDK Feature]&quot;)">
+                  </a> <!-- runScenario("SdK Uploading", "Optional[SDK Feature]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Management complete end to end scenario", "Optional[User Management Feature]")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [59e1a3f6bb406fe5411cc4d37e0f368c, clickElement {id=24d1a917-2c3f-4107-9805-60a037e648d8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60768}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60768/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (59e1a3f6bb406fe5411cc4d37e0f368c)] -&gt; xpath: //a[@class=&apos;sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active&apos; ]]
-Session ID: 59e1a3f6bb406fe5411cc4d37e0f368c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.epam.healenium.handlers.proxy.WebElementProxyHandler.invoke(WebElementProxyHandler.java:59)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_UserManagement.usermanagebttn(E2CO_UserManagement.java:151)
-	at stepdefinitions.E2COTestSteps.clickOnUserManagementMenu(E2COTestSteps.java:1215)
-	at ✽.user clicks on User Mangement Menu for UM(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_UserManagement.feature:97)
-... Removed 11 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">("SdK Uploading", "Optional[SDK Feature]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;SdK Uploading&quot;, &quot;Optional[SDK Feature]&quot;)">
+                  </a> <!-- runScenario("SdK Uploading", "Optional[SDK Feature]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("SdK Uploading", "Optional[SDK Feature]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -224,16 +211,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 30299);
+data.setCell(0, 3, 35144);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 33319);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -245,7 +236,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("User Management complete end to end scenario", "Optional[User Management Feature]")</span>
+              <span class="reporter-method-name">runScenario("SdK Uploading", "Optional[SDK Feature]")</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
                 <span class="reporter-method-output">| Received parameter 'ExecutionServer' = Local| </span>
@@ -266,35 +257,47 @@ return data;
                 <span class="reporter-method-output">| Initializing self healing driver| </span>
                 <span class="reporter-method-output">| New driver instantiated.| </span>
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: User Management complete end to end scenario| </span>
+                <span class="reporter-method-output">| Scenario Name: SdK Uploading| </span>
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
                 <span class="reporter-method-output">| Entered username| </span>
                 <span class="reporter-method-output">| Entered password| </span>
                 <span class="reporter-method-output">| Entered domain| </span>
                 <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked the user management| </span>
-                <span class="reporter-method-output">| Clicked the add new user| </span>
-                <span class="reporter-method-output">| Entered first name| </span>
-                <span class="reporter-method-output">| Entered last name| </span>
-                <span class="reporter-method-output">| Role selected| </span>
-                <span class="reporter-method-output">| Entered EmailId| </span>
-                <span class="reporter-method-output">| Entered UserName| </span>
-                <span class="reporter-method-output">| Entered Password| </span>
-                <span class="reporter-method-output">| Entered RetypePassword| </span>
-                <span class="reporter-method-output">| Entered ContactNo| </span>
-                <span class="reporter-method-output">| Max invalid attempt selected| </span>
-                <span class="reporter-method-output">| Max validity selected| </span>
-                <span class="reporter-method-output">| Entered domain name| </span>
-                <span class="reporter-method-output">| Clicked Submit Button| </span>
-                <span class="reporter-method-output">| Clicked popup message of user created successfully| </span>
-                <span class="reporter-method-output">| User is displayed| </span>
-                <span class="reporter-method-output">| Clicked on user| </span>
-                <span class="reporter-method-output">| Clicked logout button| </span>
+                <span class="reporter-method-output">| User click on SDK menu| </span>
+                <span class="reporter-method-output">| List of sdk displayed| </span>
+                <span class="reporter-method-output">| Language is selected| </span>
+                <span class="reporter-method-output">| SDK is submitted successfully| </span>
+                <span class="reporter-method-output">| SDK created successfully| </span>
+                <span class="reporter-method-output">| Clicked on close button| </span>
+                <span class="reporter-method-output">| User Click on uploaded SDK| </span>
+                <span class="reporter-method-output">| SDK is deleted successfully| </span>
+                <span class="reporter-method-output">| SDK is removed from list| </span>
+                <span class="reporter-method-output">| Execution status is: PASSED| </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("SdK Uploading", "Optional[SDK Feature]")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
+                <span class="reporter-method-output">| Initializing self healing driver| </span>
+                <span class="reporter-method-output">| New driver instantiated.| </span>
+                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
+                <span class="reporter-method-output">| Scenario Name: SdK Uploading| </span>
+                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
                 <span class="reporter-method-output">| Entered username| </span>
                 <span class="reporter-method-output">| Entered password| </span>
                 <span class="reporter-method-output">| Entered domain| </span>
                 <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Execution status is: FAILED| </span>
+                <span class="reporter-method-output">| User click on SDK menu| </span>
+                <span class="reporter-method-output">| List of sdk displayed| </span>
+                <span class="reporter-method-output">| Language is selected| </span>
+                <span class="reporter-method-output">| SDK is submitted successfully| </span>
+                <span class="reporter-method-output">| SDK created successfully| </span>
+                <span class="reporter-method-output">| Clicked on close button| </span>
+                <span class="reporter-method-output">| User Click on uploaded SDK| </span>
+                <span class="reporter-method-output">| SDK is deleted successfully| </span>
+                <span class="reporter-method-output">| SDK is removed from list| </span>
+                <span class="reporter-method-output">| Execution status is: PASSED| </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,18 +317,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@51fb5fe6)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@652f26da)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User Management complete end to end scenario", "Optional[User Management Feature]")</span>
-                <span class="method-start">436 ms</span>
+                <span class="method-name">runScenario("SdK Uploading", "Optional[SDK Feature]")</span>
+                <span class="method-start">487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("SdK Uploading", "Optional[SDK Feature]")</span>
+                <span class="method-start">35633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">30744 ms</span>
+                <span class="method-start">68953 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

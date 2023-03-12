@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 11 19:04:34 IST 2023</td>
+<td>Started on:</td><td>Sun Mar 12 11:53:09 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30861 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69047 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,19 +67,19 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Management complete end to end scenario", "Optional[User Management Feature]"<br/>
-<a href="#Output-77538886" onClick='toggleBox("Output-77538886", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SdK Uploading", "Optional[SDK Feature]"<br/>
+<a href="#Output-758843768" onClick='toggleBox("Output-758843768", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-77538886" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-77538886">
+<a href="#Output-758843768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-758843768">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Received parameter 'ExecutionServer' = Local| <br/>
 | Received parameter 'InterfaceType' = Web| <br/>
@@ -99,103 +99,57 @@ function toggleAllBoxes() {
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: User Management complete end to end scenario| <br/>
+| Scenario Name: SdK Uploading| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Entered username| <br/>
 | Entered password| <br/>
 | Entered domain| <br/>
 | User icon is displayed.| <br/>
-| Clicked the user management| <br/>
-| Clicked the add new user| <br/>
-| Entered first name| <br/>
-| Entered last name| <br/>
-| Role selected| <br/>
-| Entered EmailId| <br/>
-| Entered UserName| <br/>
-| Entered Password| <br/>
-| Entered RetypePassword| <br/>
-| Entered ContactNo| <br/>
-| Max invalid attempt selected| <br/>
-| Max validity selected| <br/>
-| Entered domain name| <br/>
-| Clicked Submit Button| <br/>
-| Clicked popup message of user created successfully| <br/>
-| User is displayed| <br/>
-| Clicked on user| <br/>
-| Clicked logout button| <br/>
+| User click on SDK menu| <br/>
+| List of sdk displayed| <br/>
+| Language is selected| <br/>
+| SDK is submitted successfully| <br/>
+| SDK created successfully| <br/>
+| Clicked on close button| <br/>
+| User Click on uploaded SDK| <br/>
+| SDK is deleted successfully| <br/>
+| SDK is removed from list| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>runner.TestRunner@4b5a5ed1</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "SdK Uploading", "Optional[SDK Feature]"<br/>
+<a href="#Output-1216741689" onClick='toggleBox("Output-1216741689", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1216741689" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1216741689">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: SdK Uploading| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
 | Entered username| <br/>
 | Entered password| <br/>
 | Entered domain| <br/>
 | User icon is displayed.| <br/>
-| Execution status is: FAILED| <br/>
+| User click on SDK menu| <br/>
+| List of sdk displayed| <br/>
+| Language is selected| <br/>
+| SDK is submitted successfully| <br/>
+| SDK created successfully| <br/>
+| Clicked on close button| <br/>
+| User Click on uploaded SDK| <br/>
+| SDK is deleted successfully| <br/>
+| SDK is removed from list| <br/>
+| Execution status is: PASSED| <br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [59e1a3f6bb406fe5411cc4d37e0f368c, clickElement {id=24d1a917-2c3f-4107-9805-60a037e648d8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60768}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60768/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (59e1a3f6bb406fe5411cc4d37e0f368c)] -&gt; xpath: //a[@class=&apos;sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active&apos; ]]
-Session ID: 59e1a3f6bb406fe5411cc4d37e0f368c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.epam.healenium.handlers.proxy.WebElementProxyHandler.invoke(WebElementProxyHandler.java:59)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_UserManagement.usermanagebttn(E2CO_UserManagement.java:151)
-	at stepdefinitions.E2COTestSteps.clickOnUserManagementMenu(E2COTestSteps.java:1215)
-	at ?.user clicks on User Mangement Menu for UM(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_UserManagement.feature:97)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace77538886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace77538886'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [59e1a3f6bb406fe5411cc4d37e0f368c, clickElement {id=24d1a917-2c3f-4107-9805-60a037e648d8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:60768}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60768/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (59e1a3f6bb406fe5411cc4d37e0f368c)] -&gt; xpath: //a[@class=&apos;sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active&apos; ]]
-Session ID: 59e1a3f6bb406fe5411cc4d37e0f368c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at com.epam.healenium.handlers.proxy.WebElementProxyHandler.invoke(WebElementProxyHandler.java:59)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.click(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_UserManagement.usermanagebttn(E2CO_UserManagement.java:151)
-	at stepdefinitions.E2COTestSteps.clickOnUserManagementMenu(E2COTestSteps.java:1215)
-	at ?.user clicks on User Mangement Menu for UM(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_UserManagement.feature:97)
-</pre></div></td>
-<td>30</td>
+<td></td>
+<td>33</td>
 <td>runner.TestRunner@4b5a5ed1</td></tr>
 </table><p>
 </body>

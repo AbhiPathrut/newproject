@@ -18,6 +18,8 @@ import com.sogeti.automation.test.pageFactory.E2CO_TrobleshootPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
 import com.sogeti.automation.test.pageFactory.E2CO_ZonesPage;
 import java.util.List;
+
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,6 +27,7 @@ import io.cucumber.java.en.When;
 import java.io.IOException;
 import java.util.Map;
 import org.apache.logging.log4j.ThreadContext;
+import org.junit.Assume;
 import org.testng.Assert;
 
 
@@ -45,6 +48,7 @@ public class E2COTestSteps extends TestClass {
     int beforedeleterownum;
     int afterdeleterownum;
    ExcelReader excelreader;
+   Scenario scenario;
    String version;
    String EdgeIdPreprovisioned;
    String loginname;
@@ -64,6 +68,7 @@ public class E2COTestSteps extends TestClass {
    String ApplicationNmFrDeboard;
    String ApplicationNameFrProvision;
    String ApplicationNameFrDeProvision;
+   String Role;
 
     public E2COTestSteps(TestContext context) throws Exception {
         super();
@@ -125,7 +130,7 @@ public class E2COTestSteps extends TestClass {
     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
     	String firstname = testData.get(RowNumber).get("firstname");
     	String lastname = testData.get(RowNumber).get("lastname");
-    	String Role = testData.get(RowNumber).get("Role");
+    	 Role = testData.get(RowNumber).get("Role");
     	String emailid = testData.get(RowNumber).get("emailid");
     	 loginname = testData.get(RowNumber).get("username");
     	 pass = testData.get(RowNumber).get("pass");
@@ -280,6 +285,7 @@ public class E2COTestSteps extends TestClass {
     	}else {
     		log.info("Element is not deleted");
     	}
+    	//e2co_usermanagement.ownUserDelete();
     	
     	Assert.assertTrue(e2co_usermanagement.verifyDeletedRowIsNotPresentInTable(),"User is deleted successfully.");
     }
@@ -1156,7 +1162,7 @@ public class E2COTestSteps extends TestClass {
     	e2co_loginpage.clickOnCloseButton();
     }
     
-    @And("^user enter the username rest pass for(.*), newpassword(.*) and domain(.*)")
+    @And("^user enter the username reset pass for(.*), newpassword(.*) and domain(.*)")
     public void verifyTheNewPasswordIsWorking(String username, String newpass, String domainName) {
     	e2co_loginpage.enterUserName(UNRestPass);
     	e2co_loginpage.enterPassword(NewPassword);
@@ -1214,5 +1220,23 @@ public class E2COTestSteps extends TestClass {
     public void clickOnUserManagementMenu() throws Exception {
     	e2co_usermanagement.usermanagebttn();
     	Thread.sleep(2000);
+    }
+    
+    @Then("^user is admin or dev verify$")
+    public void verifyUserIsAdminOrDev() throws Exception {
+    	if(Role.contains("Admin")) {
+    		Thread.sleep(2000);
+    		log.info("Admin is able to access user management.");
+    		
+    	}else {
+    		Assert.assertFalse(e2co_usermanagement.verifyUserManagementIsNotAvailable(),"User managemenent is not present for developer");
+    		log.info("User managemenent is not present for developer.");
+    		e2co_usermanagement.userDropDownBtn();
+        	e2co_usermanagement.logoutBtn();
+        	Assume.assumeTrue(false);
+        	
+
+    	}
+    	
     }
 }
