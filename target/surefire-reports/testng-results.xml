@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -59,7 +59,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: preprovision the edge| ]]>
+      <![CDATA[| Scenario Name: Login to MEC portal| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -77,73 +77,10 @@
       <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked on user| ]]>
     </line>
     <line>
-      <![CDATA[| Enter EdgeId| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone Id selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Country is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Latency is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EnterPrise Id| ]]>
-    </line>
-    <line>
-      <![CDATA[| Bandwidth is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Edge description| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter the locality name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Radio is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MCC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MNC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter CGI value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter TAC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| App availability is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Load is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter cluster name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Latitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Longitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| EdgeId is displayed| ]]>
+      <![CDATA[| Clicked logout button| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -161,7 +98,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: preprovision the edge| ]]>
+      <![CDATA[| Scenario Name: Login to MEC portal| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -179,73 +116,10 @@
       <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked on user| ]]>
     </line>
     <line>
-      <![CDATA[| Enter EdgeId| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone Id selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Country is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Latency is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EnterPrise Id| ]]>
-    </line>
-    <line>
-      <![CDATA[| Bandwidth is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Edge description| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter the locality name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Radio is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MCC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MNC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter CGI value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter TAC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| App availability is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Load is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter cluster name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Latitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Longitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| EdgeId is displayed| ]]>
+      <![CDATA[| Clicked logout button| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -263,7 +137,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Deboard the edge| ]]>
+      <![CDATA[| Scenario Name: Login to MEC portal| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -281,34 +155,10 @@
       <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked on user| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edge.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Edge details page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on Manage button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Manage Edge page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on deboard button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on confirm button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked logout button| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -326,7 +176,7 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Deboard the edge| ]]>
+      <![CDATA[| Scenario Name: Login to MEC portal| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -344,34 +194,10 @@
       <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked on user| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edge.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Edge details page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on Manage button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Manage Edge page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on deboard button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on confirm button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Clicked logout button| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -389,10 +215,34 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Edges end to end scenario| ]]>
+      <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on change password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username for which password is to change| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered old password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered new password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Retyped the password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close button| ]]>
     </line>
     <line>
       <![CDATA[| Entered username| ]]>
@@ -405,102 +255,6 @@
     </line>
     <line>
       <![CDATA[| User icon is displayed.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edges| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EdgeId| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone Id selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Country is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Latency is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter EnterPrise Id| ]]>
-    </line>
-    <line>
-      <![CDATA[| Bandwidth is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Edge description| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter city name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter the locality name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Radio is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MCC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter MNC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter CGI value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter TAC value| ]]>
-    </line>
-    <line>
-      <![CDATA[| App availability is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Load is selected| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter cluster name| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Latitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Enter Longitude value| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on submit button| ]]>
-    </line>
-    <line>
-      <![CDATA[| EdgeId is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edge.| ]]>
-    </line>
-    <line>
-      <![CDATA[| Edge details page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Click on Manage button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Manage Edge page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on deboard button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on confirm button| ]]>
-    </line>
-    <line>
-      <![CDATA[| Zone page is displayed| ]]>
-    </line>
-    <line>
-      <![CDATA[| Clicked on edges| ]]>
     </line>
     <line>
       <![CDATA[| Execution status is: PASSED| ]]>
@@ -518,10 +272,34 @@
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Scenario Name: Edges end to end scenario| ]]>
+      <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
     </line>
     <line>
       <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on change password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username for which password is to change| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered old password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered new password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Retyped the password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close button| ]]>
     </line>
     <line>
       <![CDATA[| Entered username| ]]>
@@ -536,116 +314,152 @@
       <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edges| ]]>
+      <![CDATA[| Execution status is: PASSED| ]]>
     </line>
     <line>
-      <![CDATA[| Enter EdgeId| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Zone Id selected| ]]>
+      <![CDATA[| Initializing self healing driver| ]]>
     </line>
     <line>
-      <![CDATA[| Country is selected| ]]>
+      <![CDATA[| New driver instantiated.| ]]>
     </line>
     <line>
-      <![CDATA[| Latency is selected| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Enter EnterPrise Id| ]]>
+      <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
     </line>
     <line>
-      <![CDATA[| Bandwidth is selected| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Enter Edge description| ]]>
+      <![CDATA[| Clicked on change password| ]]>
     </line>
     <line>
-      <![CDATA[| Enter city name| ]]>
+      <![CDATA[| Entered username for which password is to change| ]]>
     </line>
     <line>
-      <![CDATA[| Enter city name| ]]>
+      <![CDATA[| Entered old password| ]]>
     </line>
     <line>
-      <![CDATA[| Enter the locality name| ]]>
+      <![CDATA[| Entered new password| ]]>
     </line>
     <line>
-      <![CDATA[| Radio is selected| ]]>
+      <![CDATA[| Retyped the password| ]]>
     </line>
     <line>
-      <![CDATA[| Enter MCC value| ]]>
+      <![CDATA[| Clicked on submit button| ]]>
     </line>
     <line>
-      <![CDATA[| Enter MNC value| ]]>
+      <![CDATA[| Password update successfully popup message is dispalyed| ]]>
     </line>
     <line>
-      <![CDATA[| Enter CGI value| ]]>
+      <![CDATA[| Clicked on close button| ]]>
     </line>
     <line>
-      <![CDATA[| Enter TAC value| ]]>
+      <![CDATA[| Entered username| ]]>
     </line>
     <line>
-      <![CDATA[| App availability is selected| ]]>
+      <![CDATA[| Entered password| ]]>
     </line>
     <line>
-      <![CDATA[| Load is selected| ]]>
+      <![CDATA[| Entered domain| ]]>
     </line>
     <line>
-      <![CDATA[| Enter cluster name| ]]>
+      <![CDATA[| User icon is displayed.| ]]>
     </line>
     <line>
-      <![CDATA[| Enter Latitude value| ]]>
+      <![CDATA[| Execution status is: PASSED| ]]>
     </line>
     <line>
-      <![CDATA[| Enter Longitude value| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Click on submit button| ]]>
+      <![CDATA[| Initializing self healing driver| ]]>
     </line>
     <line>
-      <![CDATA[| EdgeId is displayed| ]]>
+      <![CDATA[| New driver instantiated.| ]]>
     </line>
     <line>
-      <![CDATA[| Clicked on edge.| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Edge details page is displayed| ]]>
+      <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
     </line>
     <line>
-      <![CDATA[| Click on Manage button| ]]>
+      <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
     </line>
     <line>
-      <![CDATA[| Execution status is: FAILED| ]]>
+      <![CDATA[| Clicked on change password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username for which password is to change| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered old password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered new password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Retyped the password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on submit button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+    </line>
+    <line>
+      <![CDATA[| Clicked on close button| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered username| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered password| ]]>
+    </line>
+    <line>
+      <![CDATA[| Entered domain| ]]>
+    </line>
+    <line>
+      <![CDATA[| User icon is displayed.| ]]>
+    </line>
+    <line>
+      <![CDATA[| Execution status is: PASSED| ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-12T15:34:45 IST" name="Surefire suite" finished-at="2023-03-12T15:36:55 IST" duration-ms="130091">
+  <suite started-at="2023-03-20T11:33:34 IST" name="Surefire suite" finished-at="2023-03-20T11:35:45 IST" duration-ms="131039">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-12T15:34:45 IST" name="Surefire test" finished-at="2023-03-12T15:36:55 IST" duration-ms="130091">
+    <test started-at="2023-03-20T11:33:34 IST" name="Surefire test" finished-at="2023-03-20T11:35:45 IST" duration-ms="131039">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:34:45 IST" name="setUpClass" finished-at="2023-03-12T15:34:46 IST" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:33:34 IST" name="setUpClass" finished-at="2023-03-20T11:33:35 IST" duration-ms="787" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@66450129]]>
+                <![CDATA[org.testng.TestRunner@144792d5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:34:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:35:02 IST" duration-ms="16561" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:33:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:33:51 IST" duration-ms="15385" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["preprovision the edge"]]>
+                <![CDATA["Login to MEC portal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
@@ -708,7 +522,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: preprovision the edge| ]]>
+              <![CDATA[| Scenario Name: Login to MEC portal| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -726,89 +540,26 @@
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked on user| ]]>
             </line>
             <line>
-              <![CDATA[| Enter EdgeId| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone Id selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Country is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Latency is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EnterPrise Id| ]]>
-            </line>
-            <line>
-              <![CDATA[| Bandwidth is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Edge description| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter the locality name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Radio is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MCC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MNC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter CGI value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter TAC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| App availability is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Load is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter cluster name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Latitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Longitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| EdgeId is displayed| ]]>
+              <![CDATA[| Clicked logout button| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:35:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:35:16 IST" duration-ms="14350" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:33:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:34:01 IST" duration-ms="10157" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["preprovision the edge"]]>
+                <![CDATA["Login to MEC portal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
@@ -826,7 +577,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: preprovision the edge| ]]>
+              <![CDATA[| Scenario Name: Login to MEC portal| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -844,89 +595,26 @@
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked on user| ]]>
             </line>
             <line>
-              <![CDATA[| Enter EdgeId| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone Id selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Country is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Latency is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EnterPrise Id| ]]>
-            </line>
-            <line>
-              <![CDATA[| Bandwidth is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Edge description| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter the locality name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Radio is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MCC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MNC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter CGI value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter TAC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| App availability is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Load is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter cluster name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Latitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Longitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| EdgeId is displayed| ]]>
+              <![CDATA[| Clicked logout button| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:35:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:35:32 IST" duration-ms="15480" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:34:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:34:11 IST" duration-ms="10251" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Deboard the edge"]]>
+                <![CDATA["Login to MEC portal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
@@ -944,7 +632,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Deboard the edge| ]]>
+              <![CDATA[| Scenario Name: Login to MEC portal| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -962,50 +650,26 @@
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked on user| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edge.| ]]>
-            </line>
-            <line>
-              <![CDATA[| Edge details page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on Manage button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Manage Edge page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on deboard button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on confirm button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked logout button| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:35:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:35:48 IST" duration-ms="15768" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:34:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:34:23 IST" duration-ms="11586" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Deboard the edge"]]>
+                <![CDATA["Login to MEC portal"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
@@ -1023,7 +687,7 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Deboard the edge| ]]>
+              <![CDATA[| Scenario Name: Login to MEC portal| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -1041,50 +705,26 @@
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked on user| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edge.| ]]>
-            </line>
-            <line>
-              <![CDATA[| Edge details page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on Manage button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Manage Edge page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on deboard button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on confirm button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on edges| ]]>
+              <![CDATA[| Clicked logout button| ]]>
             </line>
             <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:35:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:36:21 IST" duration-ms="33761" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:34:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:34:42 IST" duration-ms="19146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Edges end to end scenario"]]>
+                <![CDATA["Change the password and setting new one"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
@@ -1102,10 +742,34 @@
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Edges end to end scenario| ]]>
+              <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on change password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username for which password is to change| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered old password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered new password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Retyped the password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close button| ]]>
             </line>
             <line>
               <![CDATA[| Entered username| ]]>
@@ -1120,169 +784,23 @@
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EdgeId| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone Id selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Country is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Latency is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EnterPrise Id| ]]>
-            </line>
-            <line>
-              <![CDATA[| Bandwidth is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Edge description| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter the locality name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Radio is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MCC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MNC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter CGI value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter TAC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| App availability is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Load is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter cluster name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Latitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Longitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| EdgeId is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on edge.| ]]>
-            </line>
-            <line>
-              <![CDATA[| Edge details page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on Manage button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Manage Edge page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on deboard button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Deboard edge warning popup message page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on confirm button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on edges| ]]>
-            </line>
-            <line>
               <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:36:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T15:36:55 IST" duration-ms="33522" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:34:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:35:01 IST" duration-ms="19142" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Edges end to end scenario"]]>
+                <![CDATA["Change the password and setting new one"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Edges Feature]"]]>
+                <![CDATA["Optional[Login Feature]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Edge Details')]"}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LIN24010693', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),'Manage Edge Details')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Edge Details')]"}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LIN24010693', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),'Manage Edge Details')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
-at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
-at com.sogeti.automation.test.pageFactory.E2CO_EdgesPage.verifyManageEdgeDetailsPageIsDisplayed(E2CO_EdgesPage.java:528)
-at stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying(E2COTestSteps.java:886)
-at ✽.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_Edges.feature:53)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
@@ -1297,10 +815,34 @@ at ✽.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
             </line>
             <line>
-              <![CDATA[| Scenario Name: Edges end to end scenario| ]]>
+              <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
             </line>
             <line>
               <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on change password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username for which password is to change| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered old password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered new password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Retyped the password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close button| ]]>
             </line>
             <line>
               <![CDATA[| Entered username| ]]>
@@ -1315,89 +857,157 @@ at ✽.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace
               <![CDATA[| User icon is displayed.| ]]>
             </line>
             <line>
-              <![CDATA[| Clicked on edges| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EdgeId| ]]>
-            </line>
-            <line>
-              <![CDATA[| Zone Id selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Country is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Latency is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter EnterPrise Id| ]]>
-            </line>
-            <line>
-              <![CDATA[| Bandwidth is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Edge description| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter city name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter the locality name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Radio is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MCC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter MNC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter CGI value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter TAC value| ]]>
-            </line>
-            <line>
-              <![CDATA[| App availability is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Load is selected| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter cluster name| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Latitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Enter Longitude value| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on submit button| ]]>
-            </line>
-            <line>
-              <![CDATA[| EdgeId is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Clicked on edge.| ]]>
-            </line>
-            <line>
-              <![CDATA[| Edge details page is displayed| ]]>
-            </line>
-            <line>
-              <![CDATA[| Click on Manage button| ]]>
-            </line>
-            <line>
-              <![CDATA[| Execution status is: FAILED| ]]>
+              <![CDATA[| Execution status is: PASSED| ]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@4b5a5ed1]" started-at="2023-03-12T15:36:55 IST" name="tearDownClass" finished-at="2023-03-12T15:36:55 IST" duration-ms="124" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:35:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:35:22 IST" duration-ms="21304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Change the password and setting new one"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on change password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username for which password is to change| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered old password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered new password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Retyped the password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
+            </line>
+            <line>
+              <![CDATA[| User icon is displayed.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:35:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-20T11:35:45 IST" duration-ms="22954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Change the password and setting new one"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Initializing self healing driver| ]]>
+            </line>
+            <line>
+              <![CDATA[| New driver instantiated.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Scenario Name: Change the password and setting new one| ]]>
+            </line>
+            <line>
+              <![CDATA[| Received parameter 'TestEnvironment' = QA| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on change password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username for which password is to change| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered old password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered new password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Retyped the password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on submit button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Password update successfully popup message is dispalyed| ]]>
+            </line>
+            <line>
+              <![CDATA[| Clicked on close button| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered username| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered password| ]]>
+            </line>
+            <line>
+              <![CDATA[| Entered domain| ]]>
+            </line>
+            <line>
+              <![CDATA[| User icon is displayed.| ]]>
+            </line>
+            <line>
+              <![CDATA[| Execution status is: PASSED| ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@72cde7cc]" started-at="2023-03-20T11:35:45 IST" name="tearDownClass" finished-at="2023-03-20T11:35:45 IST" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

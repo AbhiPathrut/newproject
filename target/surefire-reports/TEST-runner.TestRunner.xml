@@ -1,260 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.TestRunner" time="129.446" tests="6" errors="0" skipped="0" failures="1">
+<testsuite name="runner.TestRunner" time="129.924" tests="8" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="jansi.mode" value="strip"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="16+36-2231"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\APathrut\eclipse-workspace\e2colitmus\E2CO%20Automation"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.6+10"/>
+    <property name="sun.boot.library.path" value="C:\Users\APATHRUT\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\APATHRUT\OneDrive - Capgemini\Desktop\E2CO PROJECT\Automation\E2COAutomation\E2CO%20Automation"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\APathrut\eclipse-workspace\e2colitmus\E2CO%20Automation"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="16+36-2231"/>
+    <property name="user.dir" value="C:\Users\APATHRUT\OneDrive - Capgemini\Desktop\E2CO PROJECT\Automation\E2COAutomation\E2CO%20Automation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.6+10"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\APathrut\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\APATHRUT\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\APathrut\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14547197964350584190.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\APATHRUT\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2054054027136315488.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-16\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Eclipse Foundation/jdk-11.0.12.7-hotspot/bin/server;C:/Program Files/Eclipse Foundation/jdk-11.0.12.7-hotspot/bin;C:\Program Files (x86)\Python38-32\Scripts\;C:\Program Files (x86)\Python38-32\;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Users\APathrut\OneDrive - Capgemini\Desktop\Maven\apache-maven-3.8.5\bin;C:\Program Files\nodejs\;C:\Users\APathrut\Downloads\commandlinetools-win-8512546_latest\cmdline-tools\bin;C:\Users\APathrut\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\APathrut\AppData\Local\Microsoft\WindowsApps;;C:\Users\APathrut\OneDrive - Capgemini\Desktop;;."/>
+    <property name="java.library.path" value="C:\Users\APATHRUT\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/APATHRUT/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/APATHRUT/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Python 3.11;C:\Users\APATHRUT\AppData\Local\Microsoft\WindowsApps;;C:\Users\APATHRUT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\APATHRUT\OneDrive - Capgemini\Desktop;;."/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="60.0"/>
+    <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\APathrut"/>
+    <property name="user.home" value="C:\Users\APATHRUT"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="java.specification.version" value="16"/>
-    <property name="user.name" value="apathrut"/>
-    <property name="java.class.path" value="C:\Users\APathrut\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319\jars\plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="16"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="APATHRUT"/>
+    <property name="java.class.path" value="C:\Users\APATHRUT\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-16"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
+    <property name="java.home" value="C:\Users\APATHRUT\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="16"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\APathrut\eclipse-workspace\e2colitmus\E2CO%20Automation\EMBEDDED"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Users\APATHRUT\OneDrive - Capgemini\Desktop\E2CO PROJECT\Automation\E2COAutomation\E2CO%20Automation\EMBEDDED"/>
+    <property name="style.color" value="always"/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2021-03-16"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
+    <property name="m2e.build.project.data.socket.port" value="64642"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="runner.TestRunner" time="16.564"/>
-  <testcase name="runScenario" classname="runner.TestRunner" time="14.347"/>
-  <testcase name="runScenario" classname="runner.TestRunner" time="15.48"/>
-  <testcase name="runScenario" classname="runner.TestRunner" time="15.767"/>
-  <testcase name="runScenario" classname="runner.TestRunner" time="33.76"/>
-  <testcase name="runScenario" classname="runner.TestRunner" time="33.528">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Manage Edge Details&apos;)]&quot;}&#10;  (Session info: chrome=110.0.5481.180)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),&apos;Manage Edge Details&apos;)]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0c52e1115c1c28c5093e3568d4b11b7d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Edge Details')]"}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LIN24010693', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),'Manage Edge Details')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
-	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_EdgesPage.verifyManageEdgeDetailsPageIsDisplayed(E2CO_EdgesPage.java:528)
-	at stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying(E2COTestSteps.java:886)
-	at ✽.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_Edges.feature:53)
-</failure>
-    <system-out><![CDATA[
-@Edges
-Scenario Outline: Edges end to end scenario                # src/test/resources/Features/WebUITests/E2COTests_Edges.feature:63
-2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
-2023-03-12 15:36:21,967 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
-2023-03-12 15:36:24,309 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
-2023-03-12 15:36:27,148 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
-2023-03-12 15:36:27,148 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Edges end to end scenario
-2023-03-12 15:36:27,149 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
-2023-03-12 15:36:27,411 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
-2023-03-12 15:36:27,534 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
-2023-03-12 15:36:27,654 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
-  When user logs into MEC portalAdmin                      # stepdefinitions.E2COTestSteps.login(java.lang.String)
-
-    Embedding Edges end to end scenario [image/png 476838 bytes]
-
-2023-03-12 15:36:28,322 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
-  And user is on Dashboard page                            # stepdefinitions.E2COTestSteps.verifyUserisOnDashboard()
-
-    Embedding Edges end to end scenario [image/png 96768 bytes]
-
-2023-03-12 15:36:28,691 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edges
-  And user clicks on Edges menu                            # stepdefinitions.E2COTestSteps.clickOnEdgesMenu()
-
-    Embedding Edges end to end scenario [image/png 96755 bytes]
-
-  Then edges page is displayed                             # stepdefinitions.E2COTestSteps.verifyEdgePageIsDisplayed()
-
-    Embedding Edges end to end scenario [image/png 96755 bytes]
-
-click add new edge button
-  When Click on  add new edge option                       # stepdefinitions.E2COTestSteps.clickOnPreProvision()
-
-    Embedding Edges end to end scenario [image/png 67992 bytes]
-
-  Then New edge page is displayed                          # stepdefinitions.E2COTestSteps.VerifyPreProvisionPageLoaded()
-
-    Embedding Edges end to end scenario [image/png 67992 bytes]
-
-2023-03-12 15:36:32,331 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EdgeId
-2023-03-12 15:36:32,393 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Zone Id selected
-2023-03-12 15:36:32,458 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Country is selected
-2023-03-12 15:36:32,531 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Latency is selected
-2023-03-12 15:36:32,631 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter EnterPrise Id
-2023-03-12 15:36:32,703 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Bandwidth is selected
-2023-03-12 15:36:32,788 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Edge description
-2023-03-12 15:36:32,904 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
-2023-03-12 15:36:32,992 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter city name
-2023-03-12 15:36:33,091 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter the locality name
-2023-03-12 15:36:33,170 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Radio is selected
-2023-03-12 15:36:33,232 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MCC value
-2023-03-12 15:36:33,296 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter MNC value
-2023-03-12 15:36:33,354 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter CGI value
-2023-03-12 15:36:33,413 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter TAC value
-2023-03-12 15:36:33,474 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] App availability is selected
-2023-03-12 15:36:33,537 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Load is selected
-2023-03-12 15:36:33,614 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter cluster name
-2023-03-12 15:36:33,697 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Latitude value
-2023-03-12 15:36:33,760 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Enter Longitude value
-  When User enter all details Edges, 1                     # stepdefinitions.E2COTestSteps.EnterOllDetails(java.lang.String,int)
-
-    Embedding Edges end to end scenario [image/png 61058 bytes]
-
-2023-03-12 15:36:33,973 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on submit button
-  And User click on submit button                          # stepdefinitions.E2COTestSteps.ClickOnSubmit()
-
-    Embedding Edges end to end scenario [image/png 72954 bytes]
-
-edge038
-The edgeid is: edge038
-2023-03-12 15:36:36,347 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] EdgeId is displayed
-edge5
-edge1
-  Then New pre provsion edge is displayed <EdgeId>         # stepdefinitions.E2COTestSteps.verifyPreprovisionEdgeIsDisplayed(java.lang.String)
-
-    Embedding Edges end to end scenario [image/png 72954 bytes]
-
-2023-03-12 15:36:38,587 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on edge.
-edge038
-  When click on the edge which is to deboardEdges, 1       # stepdefinitions.E2COTestSteps.selectEdgeIsToDeboard(java.lang.String,int)
-
-    Embedding Edges end to end scenario [image/png 80380 bytes]
-
-2023-03-12 15:36:42,820 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Edge details page is displayed
-  Then Edge details page is displayed                      # stepdefinitions.E2COTestSteps.verifyEdgesPageIsDisplayed()
-
-    Embedding Edges end to end scenario [image/png 80380 bytes]
-
-2023-03-12 15:36:44,961 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
-  When click on manage edge                                # stepdefinitions.E2COTestSteps.clickOnEdgeManageButn()
-
-    Embedding Edges end to end scenario [image/png 70608 bytes]
-
-  Then Manage edge page is displayed                       # stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying()
-      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Edge Details')]"}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LIN24010693', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),'Manage Edge Details')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
-	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_EdgesPage.verifyManageEdgeDetailsPageIsDisplayed(E2CO_EdgesPage.java:528)
-	at stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying(E2COTestSteps.java:886)
-	at âœ½.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_Edges.feature:53)
-
-
-    Embedding Edges end to end scenario [image/png 80711 bytes]
-
-  When click on deboard button                             # stepdefinitions.E2COTestSteps.clickOnDeboardButton()
-  Then Deboarding warning message popup is diaplyed        # stepdefinitions.E2COTestSteps.warningMessageIsDisplayed()
-  When click on the confirm button                         # stepdefinitions.E2COTestSteps.clickOnConfirmBtn()
-  Then Zones page is dispalyed                             # stepdefinitions.E2COTestSteps.zonesPageIsDisplayed()
-  When user is clicking on Edge menu                       # stepdefinitions.E2COTestSteps.clickOnedgesmenu()
-  Then user is not able to see the edge which is deboarded # stepdefinitions.E2COTestSteps.verifyEdgeIsRemovedFromList()
-2023-03-12 15:36:55,480 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: FAILED
-]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.cache.ResolutionCache - Clearing WebDriverManager resolution cache
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\APathrut\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 50538
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1678615584.162][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Mar 12, 2023 3:36:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Mar 12, 2023 3:36:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
-Mar 12, 2023 3:36:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Unable to find CDP implementation matching 110.
-Mar 12, 2023 3:36:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Cleaning up unclosed ZipFile for archive C:\Users\APathrut\eclipse-workspace\e2colitmus\E2CO%20Automation\input-data\inputFiles\InputData.xlsx
-Cleaning up unclosed ZipFile for archive C:\Users\APathrut\eclipse-workspace\e2colitmus\E2CO%20Automation\input-data\inputFiles\InputData.xlsx
-]]></system-err>
-  </testcase>
+  <testcase name="runScenario" classname="runner.TestRunner" time="15.387"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="10.155"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="10.251"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="11.584"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="19.147"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="19.142"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="21.303"/>
+  <testcase name="runScenario" classname="runner.TestRunner" time="22.955"/>
 </testsuite>

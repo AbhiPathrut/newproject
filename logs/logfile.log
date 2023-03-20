@@ -8191,3 +8191,691 @@
 2023-03-12 15:36:44,961 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
 2023-03-12 15:36:44,961 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Click on Manage button
 2023-03-12 15:36:55,480 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-17 18:51:32,427 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:32,427 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:32,434 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-17 18:51:32,434 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-17 18:51:32,434 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-17 18:51:32,434 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-17 18:51:32,435 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-17 18:51:32,435 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-17 18:51:32,436 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-17 18:51:32,436 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-17 18:51:32,437 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-17 18:51:32,437 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-17 18:51:32,438 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-17 18:51:32,438 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-17 18:51:32,438 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-17 18:51:32,438 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-17 18:51:32,439 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-17 18:51:32,439 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-17 18:51:32,439 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-17 18:51:32,439 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-17 18:51:32,440 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-17 18:51:32,441 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-17 18:51:32,441 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-17 18:51:32,441 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-17 18:51:32,441 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-17 18:51:32,442 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-17 18:51:32,442 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-17 18:51:32,443 [INFO] [qa.properties] Initializing self healing driver
+2023-03-17 18:51:32,443 [INFO] [qa.properties] Initializing self healing driver
+2023-03-17 18:51:44,403 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:44,403 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:44,404 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:44,404 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:47,400 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:47,400 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:47,400 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:47,400 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:50,800 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:50,800 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:50,802 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:50,802 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:53,898 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:53,898 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:53,906 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:53,906 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:57,429 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:57,429 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:51:57,431 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:51:57,431 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:01,535 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:01,535 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:01,536 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:01,536 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:07,925 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:07,925 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:07,926 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:07,926 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:12,780 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:12,780 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:12,781 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:12,781 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:18,007 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:18,007 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:52:18,008 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:52:18,008 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:16,006 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:16,006 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:16,012 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-17 18:55:16,012 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-17 18:55:16,012 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-17 18:55:16,012 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-17 18:55:16,013 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-17 18:55:16,013 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-17 18:55:16,013 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-17 18:55:16,013 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-17 18:55:16,014 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-17 18:55:16,015 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-17 18:55:16,016 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-17 18:55:16,016 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-17 18:55:16,016 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-17 18:55:16,016 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-17 18:55:16,017 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-17 18:55:16,017 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-17 18:55:16,017 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-17 18:55:16,017 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-17 18:55:16,018 [INFO] [qa.properties] Initializing self healing driver
+2023-03-17 18:55:16,018 [INFO] [qa.properties] Initializing self healing driver
+2023-03-17 18:55:19,315 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:19,315 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:19,316 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:19,316 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:22,044 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:22,044 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:22,045 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:22,045 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:24,900 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:24,900 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:24,901 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:24,901 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:27,701 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:27,701 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-17 18:55:27,702 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-17 18:55:27,702 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:32,991 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:32,991 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:32,999 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-18 12:50:32,999 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-18 12:50:33,000 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-18 12:50:33,001 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-18 12:50:33,001 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-18 12:50:33,002 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-18 12:50:33,003 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-18 12:50:33,004 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-18 12:50:33,004 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-18 12:50:33,004 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-18 12:50:33,004 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-18 12:50:33,005 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-18 12:50:33,005 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-18 12:50:33,006 [INFO] [qa.properties] Initializing self healing driver
+2023-03-18 12:50:33,006 [INFO] [qa.properties] Initializing self healing driver
+2023-03-18 12:50:38,609 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:38,609 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:38,610 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:38,610 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:41,277 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:41,277 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:41,278 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:41,278 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:44,248 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:44,248 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:44,249 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:44,249 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:47,716 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:47,716 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:47,720 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:47,720 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:53,382 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:53,382 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:53,383 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:53,383 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:59,481 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:59,481 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:50:59,482 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:50:59,482 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:07,337 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:07,337 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:07,337 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:07,337 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:12,828 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:12,828 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:12,846 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:12,846 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:18,878 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:18,878 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:18,879 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:18,879 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:25,171 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:25,171 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:25,173 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:25,173 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:31,654 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:31,654 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:31,655 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:31,655 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:36,758 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:36,758 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:36,759 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:36,759 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:43,316 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:43,316 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:43,317 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:43,317 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:52,353 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:52,353 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:51:52,354 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:51:52,354 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:52:03,741 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:52:03,741 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 12:52:03,743 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 12:52:03,743 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:09,079 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:09,079 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:09,086 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-18 13:02:09,086 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-18 13:02:09,087 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-18 13:02:09,088 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-18 13:02:09,088 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-18 13:02:09,089 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-18 13:02:09,090 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-18 13:02:09,091 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-18 13:02:09,092 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-18 13:02:09,092 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-18 13:02:09,094 [INFO] [qa.properties] Initializing self healing driver
+2023-03-18 13:02:09,094 [INFO] [qa.properties] Initializing self healing driver
+2023-03-18 13:02:13,434 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:13,434 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:13,435 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:13,435 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:15,859 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:15,859 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:15,860 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:15,860 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:18,581 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:18,581 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:18,584 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:18,584 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:21,118 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:21,118 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-18 13:02:21,120 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-18 13:02:21,120 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:36,918 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:36,918 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:36,926 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:17:36,926 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:17:36,927 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:17:36,929 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:17:36,929 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:17:36,929 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:17:36,929 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:17:36,930 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:17:36,930 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:17:36,930 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:17:36,930 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:17:36,931 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:17:36,931 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:17:36,931 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:17:36,931 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:17:36,932 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:17:36,932 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:17:36,933 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:17:36,933 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:17:36,934 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:17:36,934 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:17:36,934 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:17:36,934 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:17:36,935 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:17:36,935 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:17:36,937 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:17:36,937 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:17:42,684 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:42,684 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:42,684 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:42,684 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:45,367 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:45,367 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:45,369 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:45,369 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:48,523 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:48,523 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:48,524 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:48,524 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:52,345 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:52,345 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:52,346 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:52,346 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:57,569 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:57,569 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:17:57,571 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:17:57,571 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:12,394 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:12,394 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:23:12,401 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:23:12,402 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:23:12,402 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:23:12,404 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:23:12,405 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:23:12,406 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:23:12,407 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:23:12,407 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:23:12,407 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:23:12,407 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:23:12,409 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:23:12,409 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:23:16,553 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:16,553 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:16,554 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:16,554 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:20,127 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:20,127 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:20,129 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:20,129 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:24,548 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:24,548 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:24,549 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:24,549 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:28,375 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:28,375 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:28,376 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:28,376 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:31,704 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:31,704 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:31,705 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:31,705 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:36,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:36,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:23:36,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:23:36,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:25:23,561 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:23,561 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:25:23,571 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:25:23,572 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:25:23,572 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:25:23,573 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:25:23,573 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:25:23,574 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:25:23,575 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:25:23,575 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:25:23,576 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:25:23,576 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:25:23,577 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:25:23,577 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:25:23,577 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:25:23,577 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:25:23,578 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:25:23,578 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:25:23,579 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:25:23,579 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:25:23,581 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:25:23,581 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:25:23,586 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:25:23,586 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:25:28,122 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:28,122 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:28,123 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:25:28,123 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:25:31,066 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:31,066 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:25:31,067 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:25:31,067 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:33:36,474 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:36,474 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:33:36,483 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-20 11:33:36,484 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:33:36,484 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-20 11:33:36,485 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:33:36,485 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-20 11:33:36,486 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:33:36,486 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:33:36,487 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-20 11:33:36,488 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:33:36,488 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-20 11:33:36,488 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:33:36,488 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-20 11:33:36,489 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:33:36,489 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-20 11:33:36,489 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:33:36,489 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-20 11:33:36,490 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:33:36,490 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-20 11:33:36,490 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:33:36,490 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-20 11:33:36,492 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:33:36,492 [INFO] [qa.properties] Initializing self healing driver
+2023-03-20 11:33:40,987 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:33:40,987 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:33:44,363 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:44,363 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:44,368 [INFO] [LOCAL, CommonSteps] Scenario Name: Login to MEC portal
+2023-03-20 11:33:44,374 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:44,374 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:46,205 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:33:46,205 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:33:47,090 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:33:47,090 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:33:47,846 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:33:47,846 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:33:49,052 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:33:49,052 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:33:49,394 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:33:49,394 [INFO] [LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:33:49,461 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:33:49,461 [INFO] [LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:33:51,081 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:33:51,113 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:51,113 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:51,114 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:33:51,114 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:33:53,613 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:33:53,613 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:33:56,098 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:56,098 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:56,099 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: Login to MEC portal
+2023-03-20 11:33:56,100 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:56,100 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:33:56,942 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:33:56,942 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:33:57,513 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:33:57,513 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:33:58,050 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:33:58,050 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:33:59,593 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:33:59,593 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:33:59,977 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:33:59,977 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:34:00,084 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:00,084 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:01,252 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:34:01,261 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:01,261 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:01,262 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:01,262 [INFO] [LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:03,661 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:03,661 [INFO] [LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:07,119 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:07,119 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:07,120 [INFO] [LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Login to MEC portal
+2023-03-20 11:34:07,122 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:07,122 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:07,938 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:07,938 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:08,486 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:08,486 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:08,982 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:08,982 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:09,949 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:09,949 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:10,262 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:34:10,262 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:34:10,345 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:10,345 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:11,503 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:34:11,519 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:11,519 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:11,520 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:11,520 [INFO] [LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:13,874 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:13,874 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:18,576 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:18,576 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:18,577 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Login to MEC portal
+2023-03-20 11:34:18,578 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:18,578 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:19,378 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:19,378 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:19,936 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:19,936 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:20,400 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:20,400 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:21,408 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:21,408 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:21,740 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:34:21,740 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on user
+2023-03-20 11:34:21,820 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:21,820 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked logout button
+2023-03-20 11:34:23,090 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:34:23,098 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:23,098 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:23,099 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:23,099 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:25,567 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:25,567 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:32,638 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:32,638 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:32,639 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Change the password and setting new one
+2023-03-20 11:34:32,639 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:32,639 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:33,403 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:34:33,403 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:34:34,088 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:34:34,088 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:34:34,239 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:34:34,239 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:34:34,333 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:34:34,333 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:34:34,421 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:34:34,421 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:34:38,770 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:34:38,770 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:34:38,999 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:34:38,999 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:34:39,247 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:34:39,247 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:34:39,898 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:39,898 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:40,017 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:40,017 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:40,122 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:40,122 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:41,565 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:41,565 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:34:42,236 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:34:42,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:42,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:42,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:42,246 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:34:44,736 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:44,736 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:34:52,375 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:52,375 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:52,375 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Change the password and setting new one
+2023-03-20 11:34:52,376 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:52,376 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:34:53,105 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:34:53,105 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:34:53,700 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:34:53,700 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:34:53,839 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:34:53,839 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:34:53,942 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:34:53,942 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:34:54,049 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:34:54,049 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:34:58,367 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:34:58,367 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:34:58,569 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:34:58,569 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:34:58,802 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:34:58,802 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:34:59,234 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:59,234 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:34:59,332 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:59,332 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:34:59,424 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:34:59,424 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:35:00,902 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:00,902 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:01,379 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:35:01,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:01,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:01,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:35:01,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:35:05,178 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:35:05,178 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:35:14,155 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:14,155 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:14,155 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Change the password and setting new one
+2023-03-20 11:35:14,156 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:14,156 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:14,833 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:35:14,833 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:35:15,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:35:15,386 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:35:15,538 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:35:15,538 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:35:15,605 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:35:15,605 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:35:15,679 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:35:15,679 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:35:20,029 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:35:20,029 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:35:20,306 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:35:20,306 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:35:20,516 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:35:20,516 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:35:20,950 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:35:20,950 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:35:21,049 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:35:21,049 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:35:21,139 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:35:21,139 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:35:22,187 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:22,187 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:22,683 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-20 11:35:22,692 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:22,692 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:22,693 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:35:22,693 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Initializing self healing driver
+2023-03-20 11:35:24,943 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:35:24,943 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-20 11:35:37,206 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:37,206 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:37,206 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, CommonSteps] Scenario Name: Change the password and setting new one
+2023-03-20 11:35:37,208 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:37,208 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-20 11:35:37,880 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:35:37,880 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on change password
+2023-03-20 11:35:38,426 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:35:38,426 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username for which password is to change
+2023-03-20 11:35:38,550 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:35:38,550 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered old password
+2023-03-20 11:35:38,618 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:35:38,618 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered new password
+2023-03-20 11:35:38,695 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:35:38,695 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Retyped the password
+2023-03-20 11:35:43,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:35:43,037 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on submit button
+2023-03-20 11:35:43,227 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:35:43,227 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Password update successfully popup message is dispalyed
+2023-03-20 11:35:43,467 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:35:43,467 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Clicked on close button
+2023-03-20 11:35:43,957 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:35:43,957 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-20 11:35:44,058 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:35:44,058 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-20 11:35:44,164 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:35:44,164 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-20 11:35:45,179 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:45,179 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-20 11:35:45,636 [INFO] [LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED

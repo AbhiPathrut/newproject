@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 12 15:34:45 IST 2023</td>
+<td>Started on:</td><td>Mon Mar 20 11:33:34 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>130 seconds (130091 ms)</td>
+<tr><td>Total time:</td><td>131 seconds (131039 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,126 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edges end to end scenario", "Optional[Edges Feature]"<br/>
-<a href="#Output-1522752279" onClick='toggleBox("Output-1522752279", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1522752279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1522752279">
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Initializing self healing driver| <br/>
-| New driver instantiated.| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: Edges end to end scenario| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Entered username| <br/>
-| Entered password| <br/>
-| Entered domain| <br/>
-| User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Enter EdgeId| <br/>
-| Zone Id selected| <br/>
-| Country is selected| <br/>
-| Latency is selected| <br/>
-| Enter EnterPrise Id| <br/>
-| Bandwidth is selected| <br/>
-| Enter Edge description| <br/>
-| Enter city name| <br/>
-| Enter city name| <br/>
-| Enter the locality name| <br/>
-| Radio is selected| <br/>
-| Enter MCC value| <br/>
-| Enter MNC value| <br/>
-| Enter CGI value| <br/>
-| Enter TAC value| <br/>
-| App availability is selected| <br/>
-| Load is selected| <br/>
-| Enter cluster name| <br/>
-| Enter Latitude value| <br/>
-| Enter Longitude value| <br/>
-| Click on submit button| <br/>
-| EdgeId is displayed| <br/>
-| Clicked on edge.| <br/>
-| Edge details page is displayed| <br/>
-| Click on Manage button| <br/>
-| Execution status is: FAILED| <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Manage Edge Details&apos;)]&quot;}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),&apos;Manage Edge Details&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
-	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_EdgesPage.verifyManageEdgeDetailsPageIsDisplayed(E2CO_EdgesPage.java:528)
-	at stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying(E2COTestSteps.java:886)
-	at ?.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_Edges.feature:53)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522752279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1522752279'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Manage Edge Details&apos;)]&quot;}
-  (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;LIN24010693&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c52e1115c1c28c5093e3568d4b11b7d, findElement {using=xpath, value=//div[contains(text(),&apos;Manage Edge Details&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64664/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:62)
-	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy41.findElement(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy45.isDisplayed(Unknown Source)
-	at com.sogeti.automation.test.pageFactory.E2CO_EdgesPage.verifyManageEdgeDetailsPageIsDisplayed(E2CO_EdgesPage.java:528)
-	at stepdefinitions.E2COTestSteps.verifyManageEdgesDetailsPageIsDisplaying(E2COTestSteps.java:886)
-	at ?.Manage edge page is displayed(file:///C:/Users/APathrut/eclipse-workspace/e2colitmus/E2CO%2520Automation/src/test/resources/Features/WebUITests/E2COTests_Edges.feature:53)
-</pre></div></td>
-<td>33</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -195,174 +75,119 @@ Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deboard the edge", "Optional[Edges Feature]"<br/>
-<a href="#Output-774689836" onClick='toggleBox("Output-774689836", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change the password and setting new one", "Optional[Login Feature]"<br/>
+<a href="#Output-1057707545" onClick='toggleBox("Output-1057707545", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-774689836" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-774689836">
+<a href="#Output-1057707545" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1057707545">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: Deboard the edge| <br/>
+| Scenario Name: Change the password and setting new one| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Clicked on change password| <br/>
+| Entered username for which password is to change| <br/>
+| Entered old password| <br/>
+| Entered new password| <br/>
+| Retyped the password| <br/>
+| Clicked on submit button| <br/>
+| Password update successfully popup message is dispalyed| <br/>
+| Clicked on close button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| User icon is displayed.| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to MEC portal", "Optional[Login Feature]"<br/>
+<a href="#Output-54411368" onClick='toggleBox("Output-54411368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54411368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54411368">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Login to MEC portal| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Entered username| <br/>
 | Entered password| <br/>
 | Entered domain| <br/>
 | User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Clicked on edge.| <br/>
-| Edge details page is displayed| <br/>
-| Click on Manage button| <br/>
-| Manage Edge page is displayed| <br/>
-| Clicked on deboard button| <br/>
-| Deboard edge warning popup message page is displayed| <br/>
-| Clicked on confirm button| <br/>
-| Zone page is displayed| <br/>
-| Clicked on edges| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
 | Execution status is: PASSED| <br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
+<td>10</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edges end to end scenario", "Optional[Edges Feature]"<br/>
-<a href="#Output-1433290120" onClick='toggleBox("Output-1433290120", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change the password and setting new one", "Optional[Login Feature]"<br/>
+<a href="#Output-1212214376" onClick='toggleBox("Output-1212214376", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1433290120" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1433290120">
+<a href="#Output-1212214376" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1212214376">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: Edges end to end scenario| <br/>
+| Scenario Name: Change the password and setting new one| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Clicked on change password| <br/>
+| Entered username for which password is to change| <br/>
+| Entered old password| <br/>
+| Entered new password| <br/>
+| Retyped the password| <br/>
+| Clicked on submit button| <br/>
+| Password update successfully popup message is dispalyed| <br/>
+| Clicked on close button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| User icon is displayed.| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to MEC portal", "Optional[Login Feature]"<br/>
+<a href="#Output-1063847668" onClick='toggleBox("Output-1063847668", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1063847668" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1063847668">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Login to MEC portal| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Entered username| <br/>
 | Entered password| <br/>
 | Entered domain| <br/>
 | User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Enter EdgeId| <br/>
-| Zone Id selected| <br/>
-| Country is selected| <br/>
-| Latency is selected| <br/>
-| Enter EnterPrise Id| <br/>
-| Bandwidth is selected| <br/>
-| Enter Edge description| <br/>
-| Enter city name| <br/>
-| Enter city name| <br/>
-| Enter the locality name| <br/>
-| Radio is selected| <br/>
-| Enter MCC value| <br/>
-| Enter MNC value| <br/>
-| Enter CGI value| <br/>
-| Enter TAC value| <br/>
-| App availability is selected| <br/>
-| Load is selected| <br/>
-| Enter cluster name| <br/>
-| Enter Latitude value| <br/>
-| Enter Longitude value| <br/>
-| Click on submit button| <br/>
-| EdgeId is displayed| <br/>
-| Clicked on edge.| <br/>
-| Edge details page is displayed| <br/>
-| Click on Manage button| <br/>
-| Manage Edge page is displayed| <br/>
-| Clicked on deboard button| <br/>
-| Deboard edge warning popup message page is displayed| <br/>
-| Clicked on confirm button| <br/>
-| Zone page is displayed| <br/>
-| Clicked on edges| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
 | Execution status is: PASSED| <br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
+<td>10</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "preprovision the edge", "Optional[Edges Feature]"<br/>
-<a href="#Output-159536229" onClick='toggleBox("Output-159536229", this, "Show output", "Hide output");'>Show output</a>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to MEC portal", "Optional[Login Feature]"<br/>
+<a href="#Output-580515543" onClick='toggleBox("Output-580515543", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-159536229" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-159536229">
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Initializing self healing driver| <br/>
-| New driver instantiated.| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: preprovision the edge| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Entered username| <br/>
-| Entered password| <br/>
-| Entered domain| <br/>
-| User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Enter EdgeId| <br/>
-| Zone Id selected| <br/>
-| Country is selected| <br/>
-| Latency is selected| <br/>
-| Enter EnterPrise Id| <br/>
-| Bandwidth is selected| <br/>
-| Enter Edge description| <br/>
-| Enter city name| <br/>
-| Enter city name| <br/>
-| Enter the locality name| <br/>
-| Radio is selected| <br/>
-| Enter MCC value| <br/>
-| Enter MNC value| <br/>
-| Enter CGI value| <br/>
-| Enter TAC value| <br/>
-| App availability is selected| <br/>
-| Load is selected| <br/>
-| Enter cluster name| <br/>
-| Enter Latitude value| <br/>
-| Enter Longitude value| <br/>
-| Click on submit button| <br/>
-| EdgeId is displayed| <br/>
-| Execution status is: PASSED| <br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deboard the edge", "Optional[Edges Feature]"<br/>
-<a href="#Output-889633931" onClick='toggleBox("Output-889633931", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-889633931" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-889633931">
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Initializing self healing driver| <br/>
-| New driver instantiated.| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: Deboard the edge| <br/>
-| Received parameter 'TestEnvironment' = QA| <br/>
-| Entered username| <br/>
-| Entered password| <br/>
-| Entered domain| <br/>
-| User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Clicked on edge.| <br/>
-| Edge details page is displayed| <br/>
-| Click on Manage button| <br/>
-| Manage Edge page is displayed| <br/>
-| Clicked on deboard button| <br/>
-| Deboard edge warning popup message page is displayed| <br/>
-| Clicked on confirm button| <br/>
-| Zone page is displayed| <br/>
-| Clicked on edges| <br/>
-| Execution status is: PASSED| <br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "preprovision the edge", "Optional[Edges Feature]"<br/>
-<a href="#Output-345584390" onClick='toggleBox("Output-345584390", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-345584390" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-345584390">
+<a href="#Output-580515543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-580515543">
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Received parameter 'ExecutionServer' = Local| <br/>
 | Received parameter 'InterfaceType' = Web| <br/>
@@ -382,41 +207,104 @@ Session ID: 0c52e1115c1c28c5093e3568d4b11b7d
 | Initializing self healing driver| <br/>
 | New driver instantiated.| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
-| Scenario Name: preprovision the edge| <br/>
+| Scenario Name: Login to MEC portal| <br/>
 | Received parameter 'TestEnvironment' = QA| <br/>
 | Entered username| <br/>
 | Entered password| <br/>
 | Entered domain| <br/>
 | User icon is displayed.| <br/>
-| Clicked on edges| <br/>
-| Enter EdgeId| <br/>
-| Zone Id selected| <br/>
-| Country is selected| <br/>
-| Latency is selected| <br/>
-| Enter EnterPrise Id| <br/>
-| Bandwidth is selected| <br/>
-| Enter Edge description| <br/>
-| Enter city name| <br/>
-| Enter city name| <br/>
-| Enter the locality name| <br/>
-| Radio is selected| <br/>
-| Enter MCC value| <br/>
-| Enter MNC value| <br/>
-| Enter CGI value| <br/>
-| Enter TAC value| <br/>
-| App availability is selected| <br/>
-| Load is selected| <br/>
-| Enter cluster name| <br/>
-| Enter Latitude value| <br/>
-| Enter Longitude value| <br/>
-| Click on submit button| <br/>
-| EdgeId is displayed| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
 | Execution status is: PASSED| <br/>
 </div>
 </td>
 <td></td>
-<td>16</td>
-<td>runner.TestRunner@4b5a5ed1</td></tr>
+<td>15</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to MEC portal", "Optional[Login Feature]"<br/>
+<a href="#Output-1805788877" onClick='toggleBox("Output-1805788877", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1805788877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1805788877">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Login to MEC portal| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| User icon is displayed.| <br/>
+| Clicked on user| <br/>
+| Clicked logout button| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change the password and setting new one", "Optional[Login Feature]"<br/>
+<a href="#Output-660673902" onClick='toggleBox("Output-660673902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-660673902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-660673902">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Change the password and setting new one| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Clicked on change password| <br/>
+| Entered username for which password is to change| <br/>
+| Entered old password| <br/>
+| Entered new password| <br/>
+| Retyped the password| <br/>
+| Clicked on submit button| <br/>
+| Password update successfully popup message is dispalyed| <br/>
+| Clicked on close button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| User icon is displayed.| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change the password and setting new one", "Optional[Login Feature]"<br/>
+<a href="#Output-692720309" onClick='toggleBox("Output-692720309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-692720309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-692720309">
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Initializing self healing driver| <br/>
+| New driver instantiated.| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Scenario Name: Change the password and setting new one| <br/>
+| Received parameter 'TestEnvironment' = QA| <br/>
+| Clicked on change password| <br/>
+| Entered username for which password is to change| <br/>
+| Entered old password| <br/>
+| Entered new password| <br/>
+| Retyped the password| <br/>
+| Clicked on submit button| <br/>
+| Password update successfully popup message is dispalyed| <br/>
+| Clicked on close button| <br/>
+| Entered username| <br/>
+| Entered password| <br/>
+| Entered domain| <br/>
+| User icon is displayed.| <br/>
+| Execution status is: PASSED| <br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>runner.TestRunner@72cde7cc</td></tr>
 </table><p>
 </body>
 </html>

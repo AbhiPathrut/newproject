@@ -152,6 +152,7 @@ public class GlobalDriver {
 
     private ChromeOptions setChromeOptions() {
         ChromeOptions options = new ChromeOptions();
+        
 
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("download.default_directory", defaultDownloadPath);  //adding download folder preference
@@ -165,6 +166,7 @@ public class GlobalDriver {
         options.addArguments("--test-type");
         options.addArguments("ignore-certificate-errors");
         options.addArguments("--disable-extensions");
+        options.addArguments("--remote-allow-origins=*");
         options.addArguments("start-maximized");
         options.addArguments("--use-fake-ui-for-media-stream=1");
         if (_headless.equalsIgnoreCase("true"))
