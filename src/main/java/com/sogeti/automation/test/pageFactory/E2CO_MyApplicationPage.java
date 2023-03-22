@@ -52,7 +52,8 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class='ml-15']//button[@class='e2co-submit-btn'][normalize-space()='Submit']")
 	private WebElement submitBtn;
 	
-	@FindBy(xpath = "//div[contains(text(),'Select Artifact')]")
+	//@FindBy(xpath = "//div[contains(text(),'Select Artifact')]")
+	@FindBy(xpath = "//div[@class='cursor-pt']")
 	private WebElement selectArtifact; 
 	
 	@FindBy(xpath = "//div[contains(text(),'Overview')]")
@@ -151,7 +152,8 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class='flex-grow-1 ft-20 ft-wt-400']")
 	private WebElement FileUploadPage;
 	
-	@FindBy(xpath = "//div[normalize-space()='Artifact']")
+	//@FindBy(xpath = "//div[normalize-space()='Artifact']")
+	@FindBy(xpath = "//label[@for='repoTypeDocker']")
 	private WebElement artifactIsDisplaying;
 	
 	@FindBy(xpath = "//div[contains(text(),'Onboarding Request Accepted !')]")
@@ -195,7 +197,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class='ft-16 ft-wt-400']")
 	private WebElement deboardingPopupMessage;
 	
-	@FindBy(xpath = "//button[contains(text(),'Deboarding')]")
+	@FindBy(xpath = "//button[contains(text(),'Deboard')]")
 	private WebElement appDeboardingBtn;
 	
 	@FindBy(xpath = "//body/ngb-modal-window[1]")
@@ -203,6 +205,21 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	@FindBy(xpath = "//div[@class='form-floating']")
 	private WebElement artifactwindowClosedValidation;
+	
+	//@FindBy(xpath = "//a[@class='sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active']")
+	@FindBy(xpath = "//a[@href='/MEC/enterprise/applications']")
+	private WebElement myapplicationfrEnterprise;
+	
+	@FindBy(xpath = "//input[@id='vmApplication']")
+	private WebElement vmApplicationFrEnterprise;
+	
+	@FindBy(xpath = "//input[@formcontrolname='appName']")
+	private WebElement appNameFrEnterprise;
+	
+//	@FindBy(xpath = "//table[@class='table mb-0 entrp-app-list-app-row']")
+//	private WebElement enterpriseAppTable;
+	
+	
 	
 	
 	public E2CO_MyApplicationPage(SelfHealingDriver driver) {
@@ -234,7 +251,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 		this.VMselected.click();
 		log.info("Selected VM");
 	}
-	
+		
 	
 	public void selectKuberenetes() {
 		this.kubernetesselected.click();
@@ -468,6 +485,12 @@ public class E2CO_MyApplicationPage extends PageClass {
      
     }
 	
+	public void UpdateappName(String appName) {
+		this.appNameFrEnterprise.clear();
+		this.appNameFrEnterprise.sendKeys(appName);
+		log.info("Updated app name");
+	}
+	
 //	public void updateBandWidth(String BandWidth) {
 //		this.bandWidth.click();
 //		this.bandWidth.sendKeys(BandWidth);
@@ -538,6 +561,13 @@ public class E2CO_MyApplicationPage extends PageClass {
 		return row;
 	}
 	
+	public int SizeOfApplicationTableFrEnterprise() {
+		List<WebElement> rows = objDriver.findElements(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr"));
+		  row = rows.size();
+		 System.out.println(row);
+		return row;
+	}
+	
 	public boolean verifyApplicationOnoardedIsDisplayed(String AppName) {
 		boolean validationFlag = false;
 		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class = 'table mb-0 my-app-body-list-app-row']//tbody//tr//td[1]"));
@@ -553,6 +583,20 @@ public class E2CO_MyApplicationPage extends PageClass {
 		  return validationFlag;
 }
 	
+	public boolean verifyAppOnboardedIsDisplayedFrEnterprise(String AppName) {
+		boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr//td[1]"));
+		 for (WebElement element : allUserNameElements) {
+		String appNm = element.getText();
+		System.out.println(appNm);
+		if(AppName.equals(appNm)) {
+			log.info("Application is displayed");
+			System.out.println(AppName);
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
+	}
 	public void selectArtifactId() throws Exception {
 		 Random rand = new Random();
 			int randomNum = rand.nextInt(row);
@@ -686,6 +730,21 @@ public class E2CO_MyApplicationPage extends PageClass {
 		  return validationFlag;
 	 }
 	
+	public boolean verifyDeboardedAppIsNotPresentInAppListFrEnterprise(String DeboardedAppName) {
+		 boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr//td[1]"));
+		 for (WebElement element : allUserNameElements) {
+		String linkText = element.getText();
+		if(DeboardedAppName != (linkText)) {
+			log.info("App is successfully deboarded");
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
+	 }
+	
+	
+	
 	public int rowNumber(String appName) {
 		WebElement table = driver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']"));
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
@@ -708,12 +767,35 @@ public class E2CO_MyApplicationPage extends PageClass {
 		
 	}
 	
+	public int rowNumberFrEnterprise(String appName) {
+		WebElement table = driver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		
+		int rowNumber = -1;
+		for (int i = 0; i < rows.size(); i++) {
+		    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+		    for (int j = 0; j < cells.size(); j++) {
+		        if (cells.get(j).getText().equals(appName)) {
+		            rowNumber = i;
+		            break;
+		        }
+		    }
+		    if (rowNumber != -1) {
+		        break;
+		    }
+		}
+		System.out.println("Row number: " + rowNumber);
+		return rowNumber;
+		
+	}
+
+	
 
 	
 	public void statusOfApplication(String appName) throws Exception {
 		int RowNum = rowNumber(appName);
 		Thread.sleep(2000);
-		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']//tbody//tr["+RowNum+"]//td[8]"));
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
 		Thread.sleep(2000);
 		String StatusOfApplication = StatusOfApp.getText();
 		System.out.println("Status of "+appName+": "+StatusOfApplication);
@@ -721,7 +803,29 @@ public class E2CO_MyApplicationPage extends PageClass {
 			log.info("App is onboarded or deprovisioned successfully.");
 		}else if(StatusOfApplication.contains("Onboardpending")) {
 			log.info("App onboarding process is initiated.");
-		}else {
+		}else if(StatusOfApplication.contains("Failed")) {
+			log.info("Application onboarding failed.");
+		}
+		else {
+			log.info("App is provisioned.");
+		}
+	}
+	
+	public void statusOfApplicationFrEnterprise(String appName) throws Exception {
+		int RowNum = rowNumberFrEnterprise(appName);
+		Thread.sleep(2000);
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
+		Thread.sleep(2000);
+		String StatusOfApplication = StatusOfApp.getText();
+		System.out.println("Status of "+appName+": "+StatusOfApplication);
+		if(StatusOfApplication.contains("Onboarded")) {
+			log.info("App is onboarded or deprovisioned successfully.");
+		}else if(StatusOfApplication.contains("Onboardpending")) {
+			log.info("App onboarding process is initiated.");
+		}else if(StatusOfApplication.contains("Failed")) {
+			log.info("Application onboarding failed.");
+		}
+		else {
 			log.info("App is provisioned.");
 		}
 	}
@@ -738,6 +842,11 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public boolean artifactwindowClosedValidation() {
 		this.artifactwindowClosedValidation.isDisplayed();
 		return true;
+	}
+	
+	public void clickOnMyApplfrEnter() {
+		this.myapplicationfrEnterprise.click();
+		log.info("Clicked on my application menu for enterprise.");
 	}
 	
 }

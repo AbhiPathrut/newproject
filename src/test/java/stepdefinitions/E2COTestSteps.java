@@ -1238,4 +1238,99 @@ public class E2COTestSteps extends TestClass {
     	}
     	
     }
+    
+    //**************
+    @When("^click on the edge for the details of edge(.*), (.*)")
+    public void selectEdgeToViewDetails(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String EdgeForDetails = testData.get(RowNumber).get("EdgeForDetails");
+    	Thread.sleep(2000);
+    	e2co_edgespage.clickOnEdgeIsDeboard(EdgeForDetails);
+    	Thread.sleep(2000);
+    	e2co_edgespage.edgeIdDeboarded();
+    	
+    }
+    
+    @Then("^Edge details page is displayed for the particular edge$")
+    public void verifyEdgeDetailsAreAbleToSeeForParticularEdge() throws Exception {
+    	Thread.sleep(3000);
+    	e2co_edgespage.edgeDetails();
+    }
+    
+    @Then("^provisioned list of edges displayed$")
+    public void provisionedEdgesListAbleToSee() throws Exception {
+    	Thread.sleep(2000);
+    	e2co_edgespage.provisionedEdgesList();
+    	
+    }
+    
+    @And("^user clicks on my application for enterprise$")
+    public void clickOnMyApplicationForEnterprise() {
+    	e2co_myapplication.clickOnMyApplfrEnter();
+    }
+    
+    @When("^the details of application for enterprise(.*), (.*)")
+    public void detailsUpdatingFrEnterprise(String SheetName, int RowNumber) throws IOException, Exception {
+    	//String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
+		//dynamicAppName = appName + s;
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 appNameFromUser = testData.get(RowNumber).get("appName");
+    	String Latency = testData.get(RowNumber).get("Latency");
+    	String zone = testData.get(RowNumber).get("zone");
+    	String componentId = testData.get(RowNumber).get("componentId");
+    	String Network = testData.get(RowNumber).get("Network");
+    	
+    	e2co_myapplication.UpdateappName(appNameFromUser);
+    	Thread.sleep(2000);
+    	//e2co_myapplication.updateBandWidth(BandWidth);
+    	e2co_myapplication.updateLatency(Latency);
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateZone(zone);
+    	Thread.sleep(2000);
+    	e2co_myapplication.clickOnDeploymentEdit();
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateComponentID(componentId);
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateNetwork(Network);
+    	Thread.sleep(2000);	
+    }
+    
+    @Then("^user is can see the application in a list for enterprise$")
+    public void applicationIsOnboardedOrNot() throws Exception {
+    	e2co_myapplication.SizeOfApplicationTableFrEnterprise();
+    	e2co_myapplication.verifyAppOnboardedIsDisplayedFrEnterprise(appNameFromUser);
+    	Thread.sleep(15000);
+    	e2co_myapplication.refresHPageOfWeb();
+    	Thread.sleep(10000);
+    	e2co_myapplication.statusOfApplicationFrEnterprise(appNameFromUser);
+    }
+    
+    @Then("^user is able to see the application in running status for enterprise$")
+    public void verifyApplicationStatusIsRunningFrEnterprise() throws Exception {
+    	Thread.sleep(10000);
+    	e2co_myapplication.refresHPageOfWeb();
+    	Thread.sleep(8000);
+    	e2co_myapplication.statusOfApplicationFrEnterprise(ApplicationNameFrProvision);
+    }
+    
+    @Then("^user able to see the app is deprovisioned for enterprise$")
+    public void verifyApplicationIsDeprovisionedFrEnterprise() throws Exception {
+    	Thread.sleep(10000);
+    	e2co_myapplication.refresHPageOfWeb();
+    	Thread.sleep(8000);
+    	e2co_myapplication.statusOfApplicationFrEnterprise(ApplicationNameFrDeProvision);
+    	
+    }
+    
+    @Then("^user is able to see the application is removed from the list for enterprise$")
+    public void verifyAppIsDeboardedFrEnterprise() throws Exception {
+    	e2co_myapplication.clickOncloseBtn();
+    	Thread.sleep(2000);
+    	e2co_myapplication.verifyDeboardedAppIsNotPresentInAppListFrEnterprise(ApplicationNmFrDeboard);
+    	
+    }
 }

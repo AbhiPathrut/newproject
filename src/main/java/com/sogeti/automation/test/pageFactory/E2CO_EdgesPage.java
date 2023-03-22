@@ -177,6 +177,9 @@ String currentworkingDirectory;
 	@FindBy(xpath = "//div[@class='top-health-section d-flex align-items-start pt-1']")
 	private WebElement edgeIdDeboarded;
 	
+	@FindBy(xpath = "//div[@class='edge-overiew-top-area bg-white']")
+	private WebElement edgeDetailsCm;
+	
 	
 	public E2CO_EdgesPage(SelfHealingDriver driver) {
 		super(driver);
@@ -359,6 +362,14 @@ String currentworkingDirectory;
 			 return validationFlag;
 	 } 
 	 
+	 public void provisionedEdgesList() {
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']"));
+		 for (WebElement element : allUserNameElements) {
+		String EdgeList = element.getText();
+		System.out.println("Provisioned Edges: " + EdgeList);
+		 }
+	 }
+	 
 	 public void clikEdgeIcon() {
 	       this.edgeicon.click();
 	       
@@ -506,6 +517,12 @@ String currentworkingDirectory;
 	    		 public void edgeIdDeboarded() {
 	    			 String EdgeId = this.edgeIdDeboarded.getText();
 	    			 System.out.println(EdgeId);
+	    		 }
+	    		 
+	    		 public void edgeDetails() throws Exception {
+	    			 String EdgeDetails = this.edgeDetailsCm.getText();
+	    			 Thread.sleep(2000);
+	    			 System.out.println(EdgeDetails);
 	    		 }
 	    		 
 	    		 public boolean verifyEdgeDetailsPageIsDispalyed() {

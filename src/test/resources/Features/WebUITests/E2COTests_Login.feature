@@ -1,7 +1,8 @@
-@Loginpage
+@Login
 
 Feature: Login Feature
-  
+
+@Login_01  
 Scenario Outline: Login to MEC portal
     When user is on login page
     And enter username<SheetName>, <RowNumber>
@@ -14,11 +15,11 @@ Scenario Outline: Login to MEC portal
  		Examples:
  		| SheetName | RowNumber |
     | Login | 0 |
-    | Login | 1 |
-    | Login | 2 |
-    | Login | 3 |   
+    #| Login | 1 |
+    #| Login | 2 |
+    #| Login | 3 |   
 
-
+@Login_02
 Scenario Outline: Change the password and setting new one
     When user is on login page
     And user clicks on the change password
@@ -32,6 +33,6 @@ Scenario Outline: Change the password and setting new one
     Examples:
  		| SheetName | RowNumber |
  		| Login | 0 |
-    | Login | 1 |
-    | Login | 2 |
-    | Login | 3 |
+    #| Login | 1 |
+    #| Login | 2 |
+    #| Login | 3 |

@@ -1,8 +1,8 @@
-@trobleshootpage
+@Trobleshoot
 
 Feature: Trobleshoot Feature
   
-Scenario Outline: TroubleShoot menu
+Scenario Outline: view running status of application in pods
     When user logs into MEC portal<user>
     And user is on Dashboard page
     And user click on troubleshoot menu
