@@ -24,6 +24,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	int row;
 	String DeletedArtifactName;
 	String SelectedArtifactName;
+	String DeletedArtifactNameTh;
 	
 	@FindBy(xpath = "//a[@href='/MEC/my-apps']")
 	private WebElement MyApplication;
@@ -218,6 +219,30 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 //	@FindBy(xpath = "//table[@class='table mb-0 entrp-app-list-app-row']")
 //	private WebElement enterpriseAppTable;
+	
+	@FindBy(xpath = "//button[@routerlink='artifacts-list']")
+	private WebElement manageArtifactbn;
+	
+	@FindBy(xpath = "//button[@routerlink='/enterprise/artifacts-list']")
+	private WebElement manageArtifactbnfrenterprise;
+	
+	@FindBy(xpath = "//button[@class='e2co-reset-btn me-3']")
+	private WebElement deleteButtonMngArt;
+	
+	@FindBy(xpath = "//div[contains(text(),'List of Artifacts')]")
+	private WebElement manageArtifactPage;
+	
+	@FindBy(xpath = "//button[@class='e2co-primary-btn']")
+	private WebElement createNewArtifactBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),' Create an Artifact - VM App ')]")
+	private WebElement vmService;
+	
+	@FindBy(xpath = "//div[contains(text(),' Create an Artifact - Container App ')]")
+	private WebElement containerService;
+	
+	@FindBy(xpath = "//div[contains(text(),' Create an Artifact - Kubernetes App ')]")
+	private WebElement kubernetesService;
 	
 	
 	
@@ -795,7 +820,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public void statusOfApplication(String appName) throws Exception {
 		int RowNum = rowNumber(appName);
 		Thread.sleep(2000);
-		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class='table mb-0 my-app-body-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
 		Thread.sleep(2000);
 		String StatusOfApplication = StatusOfApp.getText();
 		System.out.println("Status of "+appName+": "+StatusOfApplication);
@@ -847,6 +872,93 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public void clickOnMyApplfrEnter() {
 		this.myapplicationfrEnterprise.click();
 		log.info("Clicked on my application menu for enterprise.");
+	}
+	
+	public void clickOnManageArtifactBtn() {
+		this.manageArtifactbn.click();
+		log.info("Click on manage artifact button");
+	}
+	
+	public boolean verifyManageArtifactPageIsDispalyed() {
+		this.manageArtifactPage.isDisplayed();
+		log.info("List of artifacts are getting displayed.");
+		return true;
+	}
+	
+	public void createNewArtifactBtn() {
+		this.createNewArtifactBtn.click();
+		log.info("Clicked on create new artifact button");
+	}
+	
+	public boolean verifyCreateNewArtifactPageIsOpened() {
+		this.vmService.isDisplayed();
+		log.info("Create new page is opned.");
+		return true;
+	}
+	
+	public boolean verifySelectedServiceContainerIsDispalyed() {
+		this.containerService.isDisplayed();
+		log.info("Container selected.");
+		return true;
+	}
+	
+	public boolean verifySelectedServicekubernetesIsDispalyed() {
+		this.kubernetesService.isDisplayed();
+		log.info("Container selected.");
+		return true;
+	}
+	
+	public boolean verifyArtifactCreatedIsDisplayedThroughManageArtifact(String ArtifactName) {
+		boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']//tbody[1]//tr//td[2]"));
+		 for (WebElement element : allUserNameElements) {
+		String artifactNm = element.getText();
+		System.out.println(artifactNm);
+		if(ArtifactName.equals(artifactNm)) {
+			log.info("Artifact is displayed");
+			System.out.println(ArtifactName);
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
+}
+	
+	public void deleteArtifactSelected() throws Exception  {
+		 Random rand = new Random();
+			int randomNum = rand.nextInt(row+1);
+			System.err.println(randomNum);
+			if (randomNum==0){          
+				randomNum= randomNum+1;
+				}
+			WebElement artifactNameDeleted = objDriver.findElement(By.xpath("//table[@class='table edge-table mb-0']//tbody[1]//tr["+ randomNum +"]//td[2]"));
+			Thread.sleep(2000);
+			DeletedArtifactNameTh = artifactNameDeleted.getText();
+			System.out.println(DeletedArtifactNameTh);
+			Thread.sleep(2000);
+			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ randomNum +"]"));
+			Thread.sleep(2000);
+			//WebElement userId =  objDriver.findElement(By.xpath("(//input[@name='artifact'])[2]"));
+			userId.click();
+			Thread.sleep(2000);
+			
+	}
+	
+	public boolean verifyDeletedArtifactIsNotPresentInTableThroghManageArtifact() {
+		 boolean validationFlag = false;
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']//tbody[1]//tr//td[2]"));
+		 for (WebElement element : allUserNameElements) {
+		String linkText = element.getText();
+		if(DeletedArtifactNameTh != (linkText)) {
+			log.info("ArtfacTID is not displayed");
+			validationFlag = true;
+		}
+	}
+		  return validationFlag;
+	 }
+	public void clickOnManageArtifactFrEnterprise() {
+		this.manageArtifactbnfrenterprise.click();
+		log.info("Clicked on manage artifact.");
+		
 	}
 	
 }

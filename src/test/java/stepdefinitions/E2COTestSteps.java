@@ -18,7 +18,6 @@ import com.sogeti.automation.test.pageFactory.E2CO_TrobleshootPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
 import com.sogeti.automation.test.pageFactory.E2CO_ZonesPage;
 import java.util.List;
-
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -1333,4 +1332,59 @@ public class E2COTestSteps extends TestClass {
     	e2co_myapplication.verifyDeboardedAppIsNotPresentInAppListFrEnterprise(ApplicationNmFrDeboard);
     	
     }
-}
+    
+    @When("^user clicks on manage artifact$")
+    public void clickOnManageArtifactButton() {
+    	e2co_myapplication.clickOnManageArtifactBtn();
+    }
+    
+    @Then("^user is able to see list of artifacts$")
+    public void verifyListOfArtifactsAreDisplayed() {
+    	Assert.assertTrue(e2co_myapplication.verifyManageArtifactPageIsDispalyed(),"List of artifacts are getting displayed.");
+    }
+    
+    @When("^user clicks on create new artifact through Manage Artifact$")
+    public void clickOnCreateNewArtifactButton() {
+    	e2co_myapplication.createNewArtifactBtn();
+    } 
+    
+    @Then("^create a artifact page is getting displaying$")
+    public void createNewArtifactPageIsGettingDispalyed() {
+    	Assert.assertTrue(e2co_myapplication.verifyCreateNewArtifactPageIsOpened(),"Create new artifact page is getting displayed.");
+    }
+    
+    @Then("^user is able to seeing that service through manage artifact (.*)")
+    public void userIsAbleToSeeServiceSelected(String service) {
+    	if(serviceFromUser.equals("container")) {
+    		Assert.assertTrue(e2co_myapplication.verifySelectedServiceContainerIsDispalyed(),"User is able to see container is selected.");
+    		}else if (serviceFromUser.equals("VM")){
+    			Assert.assertTrue(e2co_myapplication.verifyCreateNewArtifactPageIsOpened(),"Create new artifact page is getting displayed.");
+    		}else {
+    			Assert.assertTrue(e2co_myapplication.verifySelectedServicekubernetesIsDispalyed(),"Kubernetes is selected.");
+    		}
+    	
+    }
+    
+    @Then("^user able to see the crated artifact in list through manage artifact$")
+    public void artifactIsDisplayed() {
+    	e2co_myapplication.verifyArtifactCreatedIsDisplayedThroughManageArtifact(artifactname);
+    	
+    }
+    
+    @When("^user selects the artifact to delete through manage artifact$")
+    public void selectArtifactFrDelete() throws Exception {
+    	e2co_myapplication.deleteArtifactSelected();
+    }
+    
+    @Then("^user is not able to find the deleted artifactId through manage artifact$")
+    public void artifactIsDeletedSuccessfullyThroughManageArtifact() {
+    	e2co_myapplication.clickOncloseBtn();
+    	e2co_myapplication.verifyDeletedArtifactIsNotPresentInTableThroghManageArtifact();
+    	
+    }
+    
+    @When("^user clicks on manage artifact for eneterprise$")
+    public void clickOnManageButtonFrEnterprise() {
+    	e2co_myapplication.clickOnManageArtifactFrEnterprise();
+    	}
+    }

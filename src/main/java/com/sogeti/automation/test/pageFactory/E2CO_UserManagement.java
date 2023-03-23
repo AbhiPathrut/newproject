@@ -484,5 +484,35 @@ public class E2CO_UserManagement extends PageClass {
 		 }
 	 }
 	 
+	 public int rowNumber(String username) {
+			WebElement table = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']"));
+			List<WebElement> rows = table.findElements(By.tagName("tr"));
+			
+			int rowNumber = -1;
+			for (int i = 0; i < rows.size(); i++) {
+			    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			    for (int j = 0; j < cells.size(); j++) {
+			        if (cells.get(j).getText().equals(username)) {
+			            rowNumber = i;
+			            break;
+			        }
+			    }
+			    if (rowNumber != -1) {
+			        break;
+			    }
+			}
+			System.out.println("Row number: " + rowNumber);
+			return rowNumber;
+			
+		}
+	 
+//	 public void statusOfApplication(String appName) throws Exception {
+//			int RowNum = rowNumber(appName);
+//			Thread.sleep(2000);
+//			WebElement EditButton = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+RowNum+"]//th[7]//"));
+//			Thread.sleep(2000);
+//			
+//		}
+	 
 	 
 }

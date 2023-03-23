@@ -117,6 +117,25 @@ Scenario Outline: User Management complete end to end scenario
     #| Admin | UserManagement | 1 |
     #| Admin | UserManagement | 2 |
     #| Admin | UserManagement | 3 |
+    
+ 
+@UserManagement_07
+Scenario Outline: Create new user and verify login
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on User Mangement Menu
+ 		Then user management page is displayed
+ #		When user clicks on edit button for user to be edit<SheetName>, <RowNumber>
+ 		Then update user page is dispalyed
+ 		When update the details for user which is to be required
+ 		And Click on update button
+ 		Then user is able to see the updated user successfully popup message
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | UserManagement | 0 |
+ 		
+  
+
 
  		
  		  

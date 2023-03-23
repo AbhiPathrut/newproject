@@ -21,7 +21,7 @@ Scenario Outline: Create new artifactId
 	Examples:
 		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
 
 @MyApplication_02
 Scenario Outline: user able to delete artifact
@@ -41,7 +41,7 @@ Scenario Outline: user able to delete artifact
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
 
 @MyApplication_03
 Scenario Outline: user able to onboard application
@@ -69,7 +69,7 @@ Scenario Outline: user able to onboard application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
 
 @MyApplication_04
 Scenario Outline: user able to provision the application
@@ -87,7 +87,7 @@ Scenario Outline: user able to provision the application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
     
 @MyApplication_05
  Scenario Outline: user able to deprovision the application
@@ -104,7 +104,7 @@ Scenario Outline: user able to provision the application
 Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
  		
 
 @MyApplication_06
@@ -122,7 +122,7 @@ Scenario Outline: user able to deboard the application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
     
         
 @MyApplication_07
@@ -181,7 +181,7 @@ Scenario Outline: My application end to end scenario
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
-    | Admin | MyApplication | 1 |
+    
  
  
 @MyApplication_08
@@ -300,14 +300,76 @@ Scenario Outline: user able to deprovision application for enterprise
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
  		
-
+@MyApplication_14
+Scenario Outline: Create new artifactId through manage artifact
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application
+ 		Then user is on my application page 
+ 		When user clicks on manage artifact
+ 		Then user is able to see list of artifacts
+ 		When user clicks on create new artifact through Manage Artifact
+ 		Then create a artifact page is getting displaying
+ 		When user selects where to onboard application<SheetName>, <RowNumber>
+ 		Then user is able to seeing that service through manage artifact <service>
+ 		When user enters the details to create artifact <service>, <artifactname>, <componentId>, <componenetImageName>
+ 		Then user submits the details and able to see successful message
+ 		Then user able to see the crated artifact in list through manage artifact	
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |
+ 		
+@MyApplication_15
+Scenario Outline: delete artifact through manage artifact
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application
+ 		Then user is on my application page 
+ 		When user clicks on manage artifact
+ 		Then user is able to see list of artifacts
+ 		When user selects the artifact to delete through manage artifact
+ 		And user clicks on delete button
+ 		Then user is not able to find the deleted artifactId through manage artifact
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |		
 
 
     
-
+@MyApplication_16
+Scenario Outline: Create new artifactId through manage artifact for enterprise
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application for enterprise
+ 		Then user is on my application page
+ 		When user clicks on manage artifact for eneterprise
+ 		Then user is able to see list of artifacts
+ 		When user clicks on create new artifact through Manage Artifact
+ 		Then create a artifact page is getting displaying
+ 		When user selects where to onboard application<SheetName>, <RowNumber>
+ 		Then user is able to seeing that service through manage artifact <service>
+ 		When user enters the details to create artifact <service>, <artifactname>, <componentId>, <componenetImageName>
+ 		Then user submits the details and able to see successful message
+ 		Then user able to see the crated artifact in list through manage artifact	
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |
  		
-	
-	
+
+@MyApplication_17 		
+Scenario Outline: delete artifact through manage artifact for eneterprise
+ 		When user logs into MEC portal<user>
+ 		And user is on Dashboard page
+ 		And user clicks on my application for enterprise
+ 		Then user is on my application page
+ 		When user clicks on manage artifact for eneterprise
+ 		Then user is able to see list of artifacts
+ 		When user selects the artifact to delete through manage artifact
+ 		And user clicks on delete button
+ 		Then user is not able to find the deleted artifactId through manage artifact
+ 		Examples:
+ 		| user | SheetName | RowNumber |
+    | Admin | MyApplication | 0 |
 
 
  		
