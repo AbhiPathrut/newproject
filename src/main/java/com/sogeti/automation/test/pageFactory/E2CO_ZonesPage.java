@@ -7,11 +7,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.epam.healenium.SelfHealingDriver;
 import com.sogeti.automation.framework.constants.FrameworkConstants;
+import com.sogeti.automation.framework.constants.AppConstants.Web;
 
 public class E2CO_ZonesPage extends PageClass {
 	SelfHealingDriver driver;
@@ -55,7 +57,7 @@ public class E2CO_ZonesPage extends PageClass {
 	@FindBy(xpath = "//textarea[@id='Description']")
     WebElement Description;
 
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@class='e2co-submit-btn ml-15']")
     WebElement submitbttn;
 	
 	@FindBy(xpath = "//span[text()=' cancel ']")
@@ -72,6 +74,53 @@ public class E2CO_ZonesPage extends PageClass {
 
 	@FindBy(xpath = "//label[@class='ft-22 ft-wt-400']")
 	private WebElement createNewZoneTitle;
+	
+	@FindBy(xpath = "//div[@class='e2co-header']")
+	private WebElement zonesPage;
+	
+	@FindBy(xpath = "//button[contains(text(),'Close')]")
+    private WebElement closeButton;
+	
+	@FindBy(xpath = "//div[@class='success-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	private WebElement successMessage;
+	
+	@FindBy(xpath = "//input[@id='isEnterprise']")
+	private WebElement enterpriseDedicated;
+	
+	@FindBy(xpath = "//select[@id='bandwidth']")
+	private WebElement bandwidth;
+	
+	@FindBy(xpath = "//select[@id='latency constraint']")
+	private WebElement latencyConstraint;
+	
+	@FindBy(xpath = "//select[@id='radio']")
+	private WebElement radio;
+	
+	@FindBy(xpath = "//input[@formcontrolname='MCC']")
+	private WebElement MCC;
+	
+	@FindBy(xpath = "//input[@formcontrolname='MNC']")
+	private WebElement MNC;
+	
+	@FindBy(xpath = "//input[@formcontrolname='CGI']")
+	private WebElement CGI;
+	
+	@FindBy(xpath = "//input[@formcontrolname='TAC']")
+	private WebElement TAC;
+	
+	@FindBy(xpath = "//input[@formcontrolname='parameter']")
+	private WebElement Name;
+	
+	@FindBy(xpath = "//select[@formcontrolname='value']")
+	private WebElement value;
+	
+	@FindBy(xpath = "//input[@id='isEdgeCharacteristics']")
+	private WebElement kubService;
+	
+	
+	
+	
+	
 	
 	public E2CO_ZonesPage(SelfHealingDriver driver) {
 		super(driver);
@@ -114,43 +163,17 @@ public class E2CO_ZonesPage extends PageClass {
 	   }
 	   
 	   
-	//   public void zoneName(String zonename) throws Exception {
-//	   	if(zonename.equals("South")) {
-//	   		JavascriptExecutor js = (JavascriptExecutor)driver;
-//	 	   js.executeScript("arguments[0].scrollIntoView()",southzone );
-//	 	   js.executeScript("arguments[0].click()",southzone );
-//	 	   Thread.sleep(10000);
-//	   	}
-//	   	else {
-//	   		JavascriptExecutor js = (JavascriptExecutor)driver;
-//	 	   js.executeScript("arguments[0].scrollIntoView()",northzone );
-//	 	   js.executeScript("arguments[0].click()",northzone );
-//	 	   Thread.sleep(10000);
-//	   	}
-	//   }   
-	   
+	
 
 	   public void creatNewZone() {
 	       this.createnewzone.click();
-//	       boolean isEnabled= displayopoupnewzone.isEnabled();
-//	       boolean isdisplayed= displayopoupnewzone.isDisplayed();
-//	       if(isEnabled) {
-//	     	  System.out.println("popupmsg is isEnabled");
-//	       }else {
-//	     	  System.out.println("popupmsg is not isEnabled");
-//	       }
-//	       if(isdisplayed) {
-//	     	  System.out.println("popupmsg is isdisplayed");
-//	       }else {
-//	     	  System.out.println("popupmsg is not isdisplayed");
-//	       }
+	       log.info("Clicked on create new zone.");
 	    }
 	   
 	  
 	   public void  enterZoneName(String Zonename) {
-		   this.zoneID.click();
+		   //this.zoneID.click();
 	       zoneID.sendKeys(Zonename);
-	       
 	       log.info("Entered zone name");
 	     
 	   }
@@ -184,47 +207,7 @@ public class E2CO_ZonesPage extends PageClass {
 	       log.info("Entered zone name");
 	     
 	   }
-	   public void submitData () {
-		   
-		   submitbttn.click();
-		   boolean isEnabled= submitbttn.isEnabled();
-	       boolean isdisplayed= submitbttn.isDisplayed();
-	      
-	       if(isEnabled) {
-	     	  System.out.println("submit is isEnabled");
-	       }
-	       else {
-	     	  System.out.println("submit is not isEnabled");
-	     	  
-	     	 String actual_errormsg= errormessage.getAttribute("innerHTML");
-	     	 System.out.println(actual_errormsg);
-	         String expected_errormsg="Enter valid Latitude";
-	         Assert.assertEquals(actual_errormsg,expected_errormsg );
-	       }
-	       if(isdisplayed) {
-	     	  System.out.println("submit is isdisplayed");
-	     	 
-	       }
-	       else {
-	     	  System.out.println("submit is not isdisplayed");
-	     	  
-	        
-	       }
-	       
-	    }
-		
-	//   public boolean isDisplayPopup() {
-//		  
-//			   try {
-//		            wait.until(ExpectedConditions.alertIsPresent());
-//		            return true;
-//		        } catch (NoSuchElementException ne) {
-//		            return false;
-//		        } catch (Exception e) {
-//		            log.error("No popup message is display" + e);
-//		            return false;
-//		        }
-	//   }
+	   
 	   public void closeIcon () {
 			 closeIcon.click();		   
 		   }
@@ -236,4 +219,95 @@ public class E2CO_ZonesPage extends PageClass {
 	     // this.dropdown.click();
 	   }  
 	
+	   public boolean verifyUserIsOnZonesPage() {
+		   this.zonesPage.isDisplayed();
+		   log.info("Zones page is displayed.");
+		   return true;
+	   }
+	   
+	   public boolean verifyCreateNewZonePopupPageIsDisplayed() {
+		   this.createNewZoneTitle.isDisplayed();
+		   log.info("Create new zone page is displayed.");
+		   return true;
+	   }
+	   
+	   public void clickOnSubmitBtn() {
+		   submitbttn.click();
+		   log.info("Clicked on submit button.");
+	   }
+	   
+	   public void clickOnCloseBtn() {
+		   this.closeButton.click();
+		   log.info("Clicked on close button.");
+	   }
+	   
+	   public void successPopupMessage(String zoneName) {
+		   String SucessMessage = this.successMessage.getText();
+		   System.out.println(SucessMessage);
+		   if(SucessMessage.equals(zoneName+" created successfully !!")) {
+			   log.info("New zone created successfully.");
+		   }else {
+			   log.info("New zone not created.");
+		   }
+	   }
+	   
+	   public void selectZoneFrEnterpriseDedicated() {
+		   this.enterpriseDedicated.click();
+		   log.info("Selected for enterpeise dedicated zone.");
+	   }
+	   
+	   public void selectBandwidth(String Bandwidth) {
+	        Select select = new Select(bandwidth);
+	        select.selectByVisibleText(Bandwidth);
+	        log.info("Bandwidth selected");
+	    }
+	   
+	   public void selectLatencyConstraint(String Latency) {
+	        Select select = new Select(latencyConstraint);
+	        select.selectByVisibleText(Latency);
+	        log.info("Latency constraint selected");
+	    }
+	   
+	   public void selectRadio(String Radio) {
+	        Select select = new Select(radio);
+	        select.selectByVisibleText(Radio);
+	        log.info("Radio selected");
+	    }
+	   
+	   public void enterMCC(String mcc) {
+		   MCC.sendKeys(mcc);
+		   log.info("Entered MCC");
+	   }
+	   
+	   public void enterMNC(String mnc) {
+		   MNC.sendKeys(mnc);
+		   log.info("Entered MNC");
+	   }
+	   
+	   public void enterCGI(String cgi) {
+		   CGI.sendKeys(cgi);
+		   log.info("Entered CGI");
+	   }
+	   
+	   public void enterTAC(String tac) {
+		   TAC.sendKeys(tac);
+		   log.info("Entered TAC");
+	   }
+	   
+	   public void enterName(String name) {
+		   Name.sendKeys(name);
+		   log.info("Entered Name");
+	   }
+	   
+	   public void selectValue(String Value) {
+	        Select select = new Select(value);
+	        select.selectByVisibleText(Value);
+	        log.info("Value selected");
+	    }
+	   
+	   public void selectKubernetesService() {
+		   this.kubService.click();
+		   log.info("Selected Edge Characteristics for Kubernetes Service");
+	   }
+
 }

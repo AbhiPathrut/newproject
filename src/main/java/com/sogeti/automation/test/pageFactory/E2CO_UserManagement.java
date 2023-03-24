@@ -133,8 +133,17 @@ public class E2CO_UserManagement extends PageClass {
     @FindBy(xpath = "//button[normalize-space()='Ok']")
     private WebElement okBtn;
     
+    @FindBy(xpath = "//div[@class='update-user-title ft-18']")
+    private WebElement updateUserTitle;
+    
+    @FindBy(xpath = "//button[@type='submit']")
+    private WebElement updateBtn;
+    
+    @FindBy(xpath = "//div[@class='success-text onboard-success-text-spacing ft-18 ft-wt-500']")
+    private WebElement updateSuccessMessage;
+  
+    
 
-	
 	 
 	public E2CO_UserManagement(SelfHealingDriver driver) {
 		super(driver);
@@ -220,6 +229,7 @@ public class E2CO_UserManagement extends PageClass {
 	
 	public void contactno(String ContactNo) {
     	//this.contactno.click();
+		this.contactno.clear();
     	this.contactno.sendKeys(ContactNo);
     	log.info("Entered ContactNo");
     	
@@ -490,7 +500,7 @@ public class E2CO_UserManagement extends PageClass {
 			
 			int rowNumber = -1;
 			for (int i = 0; i < rows.size(); i++) {
-			    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			    List<WebElement> cells = rows.get(i).findElements(By.tagName("th"));
 			    for (int j = 0; j < cells.size(); j++) {
 			        if (cells.get(j).getText().equals(username)) {
 			            rowNumber = i;
@@ -506,13 +516,35 @@ public class E2CO_UserManagement extends PageClass {
 			
 		}
 	 
-//	 public void statusOfApplication(String appName) throws Exception {
-//			int RowNum = rowNumber(appName);
-//			Thread.sleep(2000);
-//			WebElement EditButton = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+RowNum+"]//th[7]//"));
-//			Thread.sleep(2000);
-//			
-//		}
+	 public void clickOnEditButton(String username) throws Exception {
+			int RowNum = rowNumber(username);
+			Thread.sleep(2000);
+			WebElement EditButton = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+RowNum+"]//div[@class='material-symbols-outlined ft-22 cursor-pt']"));
+			Thread.sleep(2000);
+			EditButton.click();
+			Thread.sleep(2000);
+			
+		}
+	 
+	 public boolean verifyUpdateUserPageIsDispalyed() {
+		 this.updateUserTitle.isDisplayed();
+		 log.info("Update user page is displayed.");
+		 return true;
+	 }
+	 
+	 public void clickOnUpdateBtn() {
+		 updateBtn.click();
+		 log.info("Clicked on update button.");
+		 
+	 }
+	 
+	 public boolean verifyUpdateOfUserSSuccessPopupMessageDisplayed() {
+		 this.updateSuccessMessage.isDisplayed();
+		 log.info("User updated success popup message is displayed.");
+		 return true;
+	 }
+	 
+	 
 	 
 	 
 }

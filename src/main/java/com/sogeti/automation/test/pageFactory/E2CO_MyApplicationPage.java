@@ -244,6 +244,15 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[contains(text(),' Create an Artifact - Kubernetes App ')]")
 	private WebElement kubernetesService;
 	
+	@FindBy(xpath = "//input[@id='repoTypeFile']")
+	private WebElement externalRepositry;
+	
+	@FindBy(xpath = "//input[@formcontrolname='repositoryPath']")
+	private WebElement repoURL;
+	
+	@FindBy(xpath = "//input[@formcontrolname='sourceFileIdentifier']")
+	private WebElement imageTag;
+	
 	
 	
 	
@@ -961,6 +970,34 @@ public class E2CO_MyApplicationPage extends PageClass {
 		
 	}
 	
+	public void selectExternalRepo() {
+		this.externalRepositry.click();
+		log.info("External repositry selected.");
+	}
+	
+	public boolean verifyExternalRepoPageIsDisplayed() {
+		this.repoURL.isDisplayed();
+		log.info("External repo page is opened.");
+		return true;
+	}
+	
+	public void enterRepoURL(String RepoURL) {
+		this.repoURL.sendKeys(RepoURL);
+		log.info("Entered repo url.");
+	}
+	
+	public void enterImageTag(String ImageTag) {
+		this.imageTag.sendKeys(ImageTag);
+		log.info("Entered image tag");
+	}
+	
+	
+	public void uploadYAMLFileFrExternalRepo() {
+		currentworkingDirectory = System.getProperty("user.dir");
+		inputFile= currentworkingDirectory + "/input-data/inputFiles/ExternalRepo.yaml";
+		this.fileUpload.sendKeys(inputFile);
+		log.info("YAML file is imported");	
+	}
 }
 	
 	

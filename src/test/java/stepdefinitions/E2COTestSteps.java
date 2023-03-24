@@ -68,6 +68,12 @@ public class E2COTestSteps extends TestClass {
    String ApplicationNameFrProvision;
    String ApplicationNameFrDeProvision;
    String Role;
+   String UpdateSelectRole;
+   String UpdateContactNumber;
+   String UpdateMaxInvalidAttempts;
+   String UpdateMaxValidity;
+   String zoneid;
+   String zoneidKS;
 
     public E2COTestSteps(TestContext context) throws Exception {
         super();
@@ -474,84 +480,84 @@ public class E2COTestSteps extends TestClass {
 		System.out.println("Click on submit bttn");
 		
 	}
-	//////////////////////////
-	@And ("^user clicks on zone button$")
-	public void clicksOnZoneIcon() {
-		e2co_zonespage.clikZoneIcon();
-		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is loaded.");
-		//System.out.println("user is on zone page");
-	}
-	
-//	public void southzone() throws Exception {////////////////zone
-//		System.out.println("perform javascript");
-//		zonepage.zonelist();/////////////////south zone click
+//	//////////////////////////
+//	@And ("^user clicks on zone button$")
+//	public void clicksOnZoneIcon() {
+//		e2co_zonespage.clikZoneIcon();
+//		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is loaded.");
+//		//System.out.println("user is on zone page");
+//	}
+//	
+////	public void southzone() throws Exception {////////////////zone
+////		System.out.println("perform javascript");
+////		zonepage.zonelist();/////////////////south zone click
+////		
+////		System.out.println("print south result");
+////	}
+////	
+//	@Then("^verify zone list$")
+//	public void printZoneList() {
+//		e2co_zonespage.displayZonelist();
+//		System.out.println("print zonelist details-");
 //		
-//		System.out.println("print south result");
+//	}
+//	@Then ("^click on south zone$")
+//	public void clickOnSouthZone() throws Exception {
+//		e2co_zonespage.clickOnZoneName();
+//		Thread.sleep(2000);
+//		e2co_zonespage.clickOnZoneName();
+//		System.out.println("print which zone name clicked");
+//		e2co_zonespage.clickOnDropDowndots();
+//		System.out.println("dropdown clicked");
+//		
+//	}
+////	@Then ("^click on threedotsdropdown$")
+////	public void threeDotsClick() {
+////		zonepage.clickOnDropDowndots();
+////		System.out.println("three dots");
+////	}
+////	
+//	@When ("^user clicks on create new zone$")
+//	public void clickOnNewZonebttn() {
+//		
+//		e2co_zonespage.creatNewZone();
+//		
+//		//Assert.assertTrue(true);
+//		
+//		System.out.println("user is on createnew zone page");	
 //	}
 //	
-	@Then("^verify zone list$")
-	public void printZoneList() {
-		e2co_zonespage.displayZonelist();
-		System.out.println("print zonelist details-");
-		
-	}
-	@Then ("^click on south zone$")
-	public void clickOnSouthZone() throws Exception {
-		e2co_zonespage.clickOnZoneName();
-		Thread.sleep(2000);
-		e2co_zonespage.clickOnZoneName();
-		System.out.println("print which zone name clicked");
-		e2co_zonespage.clickOnDropDowndots();
-		System.out.println("dropdown clicked");
-		
-	}
-//	@Then ("^click on threedotsdropdown$")
-//	public void threeDotsClick() {
-//		zonepage.clickOnDropDowndots();
-//		System.out.println("three dots");
+//	@And ("^user enter the details of new zone (.*), (.*)")
+//	public void entermandotarydetails(String SheetName, int RowNumber) throws IOException, Exception {
+//		ExcelReader reader = new ExcelReader();
+//    	List<Map<String,String>> testData =
+//    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+//    	String zoneid = testData.get(RowNumber).get("zoneid");
+//    	String latitude = testData.get(RowNumber).get("latitude");
+//    	String longitude = testData.get(RowNumber).get("longitude");
+//    	String description = testData.get(RowNumber).get("description");
+//    	 
+//		e2co_zonespage.enterZoneName(zoneid);
+//		//e2co_zonespage.enterCountry(countryname);
+//		e2co_zonespage.enterLatitude(latitude);
+//		e2co_zonespage.enterLongitude(longitude);
+//		e2co_zonespage.enterDescription(description);
+//		
 //	}
 //	
-	@When ("^user clicks on create new zone$")
-	public void clickOnNewZonebttn() {
-		
-		e2co_zonespage.creatNewZone();
-		
-		//Assert.assertTrue(true);
-		
-		System.out.println("user is on createnew zone page");	
-	}
-	
-	@And ("^user enter the details of new zone (.*), (.*)")
-	public void entermandotarydetails(String SheetName, int RowNumber) throws IOException, Exception {
-		ExcelReader reader = new ExcelReader();
-    	List<Map<String,String>> testData =
-    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
-    	String zoneid = testData.get(RowNumber).get("zoneid");
-    	String latitude = testData.get(RowNumber).get("latitude");
-    	String longitude = testData.get(RowNumber).get("longitude");
-    	String description = testData.get(RowNumber).get("description");
-    	 
-		e2co_zonespage.enterZoneName(zoneid);
-		//e2co_zonespage.enterCountry(countryname);
-		e2co_zonespage.enterLatitude(latitude);
-		e2co_zonespage.enterLongitude(longitude);
-		e2co_zonespage.enterDescription(description);
-		
-	}
-	
-	@Then ("^clicks on a submit$")
-	public void clickOnSubmitbttn() throws Exception {
-		e2co_zonespage.submitData();
-		Assert.assertTrue(true);
-		Thread.sleep(2000);
-		System.out.println("result");
-	}
+//	@Then ("^clicks on a submit$")
+//	public void clickOnSubmitbttn() throws Exception {
+//		e2co_zonespage.submitData();
+//		Assert.assertTrue(true);
+//		Thread.sleep(2000);
+//		System.out.println("result");
+//	}
 	
 //	@Then ("^user is clicks close icon$")
 //	public void clickClosebttn() {
 //		e2co_zonespage.closeIcon();
 //	}
-	
+	//************************
 	@And("^user clicks on my application$")
 	public void clickOnMyApplication() throws Exception {
 		e2co_myapplication.clickOnMyApplication();
@@ -1387,4 +1393,186 @@ public class E2COTestSteps extends TestClass {
     public void clickOnManageButtonFrEnterprise() {
     	e2co_myapplication.clickOnManageArtifactFrEnterprise();
     	}
+    @When("^user clicks on edit button for user to be edit(.*), (.*)")
+    public void clickOnEditButton(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String UpdateUserName = testData.get(RowNumber).get("UpdateUserName");
+    	UpdateSelectRole = testData.get(RowNumber).get("UpdateSelectRole");
+    	UpdateContactNumber = testData.get(RowNumber).get("UpdateContactNumber");
+    	UpdateMaxInvalidAttempts = testData.get(RowNumber).get("UpdateMaxInvalidAttempts");
+    	UpdateMaxValidity = testData.get(RowNumber).get("UpdateMaxValidity");
+    	
+    	e2co_usermanagement.clickOnEditButton(UpdateUserName);
+    	
     }
+    
+    @Then("^update user page is dispalyed$")
+    public void updateUserPageIsGettingDisplayed() {
+    	Assert.assertTrue(e2co_usermanagement.verifyUpdateUserPageIsDispalyed(),"Update user page is displayed.");
+    }
+    
+    @When("^update the details for user which is to be required$")
+    public void updateDetailsForUpdateTheUserRequired() {
+    	e2co_usermanagement.selectRole(UpdateSelectRole);
+    	e2co_usermanagement.contactno(UpdateContactNumber);
+    	e2co_usermanagement.selectMaxInvdAttpt(UpdateMaxInvalidAttempts);
+    	e2co_usermanagement.selectMaxValidty(UpdateMaxValidity);
+    }
+    
+    @And("^Click on update button$")
+    public void clickOnUpdateButton() {
+    	e2co_usermanagement.clickOnUpdateBtn();
+    }
+    
+    @Then("^user is able to see the updated user successfully popup message$")
+    public void verifyUserAbleToSeeSuccessMessageForUserUpdate() throws Exception {
+    	Assert.assertTrue(e2co_usermanagement.verifyUpdateOfUserSSuccessPopupMessageDisplayed(),"User updated success popup message is displayed.");
+    	Thread.sleep(2000);
+    	e2co_usermanagement.closeButton();
+    }
+    //****************
+    
+    @When("^user selects external repositry$")
+    public void selectExternalRepoitryOption() {
+    	e2co_myapplication.selectExternalRepo();
+    }
+    
+    @Then("^external repositry page is displayed$")
+    public void verifyExternalRepoPageIsOpened() {
+    	Assert.assertTrue(e2co_myapplication.verifyExternalRepoPageIsDisplayed(),"External repo page is opened.");
+    }
+    @When("^upload the yaml file of application for external repositry$")
+    public void uploadingOfYYamlFileFrExternalRepo() {
+    	e2co_myapplication.uploadYAMLFileFrExternalRepo();
+    }
+    
+    @When("^update the external repositry details of application(.*), (.*)")
+    public void updateTheDetailsOfApplicationOnboardThroughExternalRepo(String SheetName, int RowNumber) throws IOException, Exception  {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 appNameFromUser = testData.get(RowNumber).get("appName");
+    	String Latency = testData.get(RowNumber).get("Latency");
+    	String zone = testData.get(RowNumber).get("zone");
+    	String componentId = testData.get(RowNumber).get("componentId");
+    	String Network = testData.get(RowNumber).get("Network");
+    	String ImageTag = testData.get(RowNumber).get("ImageTag");
+    	String RepoURL = testData.get(RowNumber).get("RepoURL");
+    	
+    	e2co_myapplication.enterImageTag(ImageTag);
+    	e2co_myapplication.enterRepoURL(RepoURL);
+    	e2co_myapplication.updateAppName(appNameFromUser);
+    	Thread.sleep(2000);
+    	//e2co_myapplication.updateBandWidth(BandWidth);
+    	e2co_myapplication.updateLatency(Latency);
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateZone(zone);
+    	Thread.sleep(2000);
+    	e2co_myapplication.clickOnDeploymentEdit();
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateComponentID(componentId);
+    	Thread.sleep(2000);
+    	e2co_myapplication.updateNetwork(Network);
+    	Thread.sleep(2000);
+    	
+    }
+    
+    //**************************
+    @And("^user clicks on zones menu$")
+    public void clickOnZonesMenu() {
+    	e2co_zonespage.clikZoneIcon();
+    }
+    
+    @Then("^user is on zones page$")
+    public void verifyUserIsOnZonesPage() {
+    	Assert.assertTrue(e2co_zonespage.verifyUserIsOnZonesPage(),"Zones page is displayed.");
+    }
+    
+    @When("^click on create new zone$")
+    public void clickOnNewZonebttn() {
+		e2co_zonespage.creatNewZone();
+	}
+    
+    @Then("^create new zone page is diplayed$")
+    public void verifyCreateNewZonePageIsDisplayed() {
+    	Assert.assertTrue(e2co_zonespage.verifyCreateNewZonePopupPageIsDisplayed(),"Create new zone page is displayed.");
+    }
+    
+    @When("^new zone details update(.*), (.*)")
+    public void entermandotarydetails(String SheetName, int RowNumber) throws IOException, Exception {
+		ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 zoneid = testData.get(RowNumber).get("zoneid");
+    	String latitude = testData.get(RowNumber).get("latitude");
+    	String longitude = testData.get(RowNumber).get("longitude");
+    	String description = testData.get(RowNumber).get("description");
+    	 
+		e2co_zonespage.enterZoneName(zoneid);
+		e2co_zonespage.enterLatitude(latitude);
+		e2co_zonespage.enterLongitude(longitude);
+		e2co_zonespage.enterDescription(description);
+	}
+    
+    @Then("^click on submit$")
+    public void clickOnSubmitBtn() throws Exception {
+    	Thread.sleep(2000);
+    	e2co_zonespage.clickOnSubmitBtn();
+    	Thread.sleep(2000);
+    }
+    
+    @When("^user is able to see successful popup message created new zone$")
+    public void verifySuccessMessageOfNewZone() {
+    	e2co_zonespage.successPopupMessage(zoneid);
+    }
+    
+    @Then("^click on close button$")
+    public void clickOnCloseButtonofZone() {
+    	e2co_zonespage.clickOnCloseBtn();
+    }
+    
+    @When("^user select enterprise dedicated zone$")
+    public void selectEnterpriseDedicatedZone() {
+    	e2co_zonespage.selectZoneFrEnterpriseDedicated();
+    }
+    
+ 
+    @When("^kubernetes service selected update new zone details(.*), (.*)")
+    public void updateDetailsOfZoneWithKubernetes(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	 zoneidKS = testData.get(RowNumber).get("zoneid");
+    	String latitude = testData.get(RowNumber).get("latitude");
+    	String longitude = testData.get(RowNumber).get("longitude");
+    	String description = testData.get(RowNumber).get("description");
+    	String bandwidth = testData.get(RowNumber).get("bandwidth");
+    	String latencyConstraint = testData.get(RowNumber).get("latencyConstraint");
+    	String radio = testData.get(RowNumber).get("radio");
+    	String MCC = testData.get(RowNumber).get("MCC");
+    	String MNC = testData.get(RowNumber).get("MNC");
+    	String CGI = testData.get(RowNumber).get("CGI");
+    	String TAC = testData.get(RowNumber).get("TAC");
+    	String Name = testData.get(RowNumber).get("Name");
+    	String value = testData.get(RowNumber).get("value");
+    
+    	 
+		e2co_zonespage.enterZoneName(zoneidKS);
+		e2co_zonespage.enterLatitude(latitude);
+		e2co_zonespage.enterLongitude(longitude);
+		e2co_zonespage.enterDescription(description);
+		Thread.sleep(2000);
+		e2co_zonespage.selectKubernetesService();
+		e2co_zonespage.selectBandwidth(bandwidth);
+		e2co_zonespage.selectLatencyConstraint(latencyConstraint);
+		e2co_zonespage.selectRadio(radio);
+		e2co_zonespage.enterMCC(MCC);
+		e2co_zonespage.enterMNC(MNC);
+		e2co_zonespage.enterCGI(CGI);
+		e2co_zonespage.enterTAC(TAC);
+		e2co_zonespage.enterName(Name);
+		e2co_zonespage.selectValue(value);
+    }
+}
