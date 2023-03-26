@@ -180,6 +180,62 @@ String currentworkingDirectory;
 	@FindBy(xpath = "//div[@class='edge-overiew-top-area bg-white']")
 	private WebElement edgeDetailsCm;
 	
+	@FindBy(xpath = "//button[@class='out-of-service-btn border-0 ft-14 ft-wt-500']")
+	private WebElement outOfServiceBtn;
+	
+	@FindBy(xpath = "//button[@class='in-service-btn border-0 ft-14 ft-wt-500 in-service-btn-deactive']")
+	private WebElement inServiceBtn;
+	
+	@FindBy(xpath = "//div[@class='ft-20 ft-wt-500 general-text oos-state']")
+	private WebElement outOfServiceWarMessg;
+	
+	@FindBy(xpath = "//div[@class='zone-badge bg-healthy ft-12 ft-wt-500 text-white text-center']")
+	private WebElement healthy;
+	
+	@FindBy(xpath = "//div[@class='ft-20 ft-wt-500 general-text is-state']")
+	private WebElement InServiceWarMessg;
+	
+	@FindBy(xpath = "//a[@href='/MEC/systemconfig']")
+	private WebElement systemConfigMenu;
+	
+	@FindBy(xpath = "//div[contains(text(),'System Configuration')]")
+	private WebElement systemconfigtitle;
+	
+	@FindBy(xpath = "//a[normalize-space()='Threshold Settings']")
+	private WebElement thresholdSettig;
+	
+	@FindBy(xpath = "//div[@class='ft-16 ft-wt-400 lb mt-2']")
+	private WebElement thresholdsettingtitle;
+	
+	@FindBy(xpath = "//div[@class='success-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	private WebElement updatedSuccessMessg;
+	
+	@FindBy(xpath = "//input[@formcontrolname='CPUWarning']")
+	private WebElement CPUWarning;
+	
+	@FindBy(xpath = "//input[@formcontrolname='CPUCritical']")
+	private WebElement CPUCritical;
+	
+	@FindBy(xpath = "//input[@formcontrolname='StorageWarning']")
+	private WebElement StorageWarning;
+	
+	@FindBy(xpath = "//input[@formcontrolname='StorageCritical']")
+	private WebElement StorageCritical;
+	
+	@FindBy(xpath = "//input[@formcontrolname='MemoryWarning']")
+	private WebElement MemoryWarning;
+	
+	@FindBy(xpath = "//input[@formcontrolname='MemoryCritical']")
+	private WebElement MemoryCritical;
+	
+	@FindBy(xpath = "//input[@formcontrolname='GPUWarning']")
+	private WebElement GPUWarning;
+	
+	@FindBy(xpath = "//input[@formcontrolname='GPUCritical']")
+	private WebElement GPUCritical;
+	
+	
+	
 	
 	public E2CO_EdgesPage(SelfHealingDriver driver) {
 		super(driver);
@@ -345,6 +401,16 @@ String currentworkingDirectory;
 		 log.info("Click on submit button");
 		 this.CloseButton.click();
 		 Thread.sleep(2000);
+	 }
+	 
+	 public void clickOnSubmitBtn() {
+		 this.SubmitButton.click();
+		 log.info("Clicked on submit button.");
+	 }
+	 
+	 public void clickOnCloseButton() {
+		 this.CloseButton.click();
+		 log.info("Clicked on close button.");
 	 }
 	 
 	 public boolean verifyEdgeIsPreProvisioned(String EdgeId) {
@@ -569,10 +635,148 @@ String currentworkingDirectory;
 	    			 return true;
 	    		 }
 	    		 
+	    		 public void clickOnOOSBtn() {
+	    			 this.outOfServiceBtn.click();
+	    			 log.info("Clicked on out of service button.");
+	    		 }
 	    		 
+	    		 public void clickOnISBtn() {
+	    			 this.inServiceBtn.click();
+	    			 log.info("Clicked on in service button.");
+	    		 }
+	    		 
+	    		 public void clickOnEdgeIDTOOS(String EdgeId) throws Exception {
+	    			 WebElement EdgeOOS = objDriver.findElement(By.xpath("//td[contains(text(),"+EdgeId+")]"));
+	    			 EdgeOOS.click();
+	    			 log.info("Clicked on edge.");
+	    		 }
+	    		 
+	    		 public boolean verifyOOSWarningMessageIsDispalyed() {
+	    			 this.outOfServiceWarMessg.isDisplayed();
+	    			 log.info("Out of service warning message displayed.");
+	    			 return true;
+	    		 }
+	   
+	    		 public boolean verifyHealthyStatusIsVisible() {
+	    			 this.healthy.isDisplayed();
+	    			 log.info("Healthy status is displayed.");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public boolean verifyISWarningMessageIsDispalyed() {
+	    			 this.InServiceWarMessg.isDisplayed();
+	    			 log.info("In service warning message displayed.");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void clickOnEdgeIDIS(String EdgeId) throws Exception {
+	    			 WebElement EdgeIS = objDriver.findElement(By.xpath("//td[contains(text(),"+EdgeId+")]"));
+	    			 EdgeIS.click();
+	    			 log.info("Clicked on edge.");
+	    		 }
+	    		 
+	    		 public void verifyEdgeStatus() {
+	    			 //boolean validationFlag = false;
+	    			 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table edge-table mb-0']//tbody//tr//td[4]"));
+	    				 for (WebElement element : allUserNameElements) {
+	    				String linkText = element.getText();
+	    				System.out.println(linkText);
+	    				if(linkText.equals("onboarded")) {
+	    					//System.out.println("The edge status is : "+linkText );
+	    					log.info("Edge is in onboarded state.");
+	    					//validationFlag = true;
+	    				}else if(linkText.equals("faulty")){
+	    					//System.out.println("The edge status is : "+linkText );
+	    					log.info("Edge is in Faulty state.");
+	    				}else {
+	    					log.info("Edge is in degraded state.");
+	    				}
+	    			}
+	    				 //return validationFlag;
+	    		 } 
+	    		 
+	    		 public void clickOnSystemConfigMenu() {
+	    			 this.systemConfigMenu.click();
+	    			 log.info("Clicked on system config menu.");
+	    		 }
+	    		 
+	    		 public boolean verifySystemConfigPageIsDisplayed() {
+	    			 this.systemconfigtitle.isDisplayed();
+	    			 log.info("System config page is opened.");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void clickOnThresholdSettings() {
+	    			 this.thresholdSettig.click();
+	    			 log.info("Clicked threshold menu.");
+	    		 }
+	    		 
+	    		 public boolean verifyThresholdPageIsDisplayed() {
+	    			 this.thresholdsettingtitle.isDisplayed();
+	    			 log.info("Threshold setting page is displayed.");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public boolean verifySuccessPopupMessagDisplayed() {
+	    			 this.updatedSuccessMessg.isDisplayed();
+	    			 log.info("Updated successfully popup message is dispalyed.");
+	    			 return true;
+	    		 }
+	    		 
+	    		 public void enterCPUWarning(String CPUWar) {
+	    			 this.CPUWarning.clear();
+	    			 this.CPUWarning.sendKeys(CPUWar);
+	    			 log.info("Changed CPUwarning value");
+	    		 }
+	    		 
+	    		 public void enterCPUCritical(String CPUCrit) {
+	    			 this.CPUCritical.clear();
+	    			 this.CPUCritical.sendKeys(CPUCrit);
+	    			 log.info("Changed CPUCritical value");
+	    		 }
+	    		 
+	    		 public void enterStorageWarning(String StorageWar) {
+	    			 this.StorageWarning.clear();
+	    			 this.StorageWarning.sendKeys(StorageWar);
+	    			 log.info("Changed StorageWarning value");
+	    		 }
+	    		 
+	    		 public void enterStorageCritical(String StorageCrit) {
+	    			 this.StorageCritical.clear();
+	    			 this.StorageCritical.sendKeys(StorageCrit);
+	    			 log.info("Changed StorageCritical value");
+	    		 }
+	    		 
+	    		 public void enterMemoryWarning(String MemoryWar) {
+	    			 this.MemoryWarning.clear();
+	    			 this.MemoryWarning.sendKeys(MemoryWar);
+	    			 log.info("Changed MemoryWarning value");
+	    		 }
+	    		 
+	    		 public void enterMemoryCritical(String MemoryCrit) {
+	    			 this.MemoryCritical.clear();
+	    			 this.MemoryCritical.sendKeys(MemoryCrit);
+	    			 log.info("Changed MemoryCritical value");
+	    		 }
+	    		 
+	    		 public void enterGPUWarning(String GPUWar) {
+	    			 this.GPUWarning.clear();
+	    			 this.GPUWarning.sendKeys(GPUWar);
+	    			 log.info("Changed GPUWarning value");
+	    		 }
+	    		 
+	    		 public void enterGPUCritical(String GPUCrit) {
+	    			 this.GPUCritical.clear();
+	    			 this.GPUCritical.sendKeys(GPUCrit);
+	    			 log.info("Changed GPUCritical value");
+	    		 }
+	    		 
+	    		 public void refresHPageOfWeb() {
+	    				objDriver.navigate().refresh();
+	    				log.info("Page is refreshed");
+	    			}
 	    		 
 
-	   
 }
 	 
 

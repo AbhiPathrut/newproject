@@ -36,12 +36,12 @@ ComponentDetails:
         codeArchive: 'true'
         id: ""
         path: ""
-        username: ""
-        password: ""
+        username: "rospandu"
+        password: "Bahlerave@98"
       interfaces:
       - interfaceId: testport
         interfaceType: network
-        port: '8080'
+        port: '80'
         scheme: tcp
         visiblity: external
         upstreamPath: "/time"

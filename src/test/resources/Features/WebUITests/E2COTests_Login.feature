@@ -15,9 +15,9 @@ Scenario Outline: Login to MEC portal
  		Examples:
  		| SheetName | RowNumber |
     | Login | 0 |
-    #| Login | 1 |
-    #| Login | 2 |
-    #| Login | 3 |   
+    | Login | 1 |
+    | Login | 2 |
+    | Login | 3 |   
 
 @Login_02
 Scenario Outline: Change the password and setting new one

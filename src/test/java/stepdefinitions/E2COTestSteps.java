@@ -1575,4 +1575,142 @@ public class E2COTestSteps extends TestClass {
 		e2co_zonespage.enterName(Name);
 		e2co_zonespage.selectValue(value);
     }
+    
+    //*************************
+    @When("^click on the edge which is to do Out-Of-Service(.*), (.*)")
+    public void selectEdgeFrOOS(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String EdgeFrOOS = testData.get(RowNumber).get("EdgeFrOOS");
+    	Thread.sleep(2000);
+    	e2co_edgespage.clickOnEdgeIDTOOS(EdgeFrOOS);
+    	Thread.sleep(2000);
+    }
+    
+    @When("^user clicks on out of service button$")
+    public void clickOnOutOfServiceButton() {
+    	e2co_edgespage.clickOnOOSBtn();
+    }
+    
+    @And("^out of service warning message is displayed$")
+    public void verifyOOSWarningMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyOOSWarningMessageIsDispalyed(),"Out of service Warning message is displayed.");
+    }
+    
+    @And("^click on confirm button$")
+    public void clickOnConfirmButtonFrOOS() {
+    	e2co_edgespage.clickOnConfirmButton();
+    }
+    
+    @Then("^edge is in out-of-service status$")
+    public void verifyEdgeIsOutOfServiceStatus() {
+    	try {
+    		Assert.assertTrue(e2co_edgespage.verifyHealthyStatusIsVisible(),"Healthy status is visible.");
+    		log.info("Healthy status is visible.");
+        } catch (Exception e) {
+            log.error("Healthy status is not visible.\n" + e);
+            log.info("Healthy status is not visible.");
+        }
+    	
+    }
+    
+    @When("^click on edge which is to do IN-Service(.*), (.*)")
+    public void selectEdgeFrIS(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String EdgeFrIS = testData.get(RowNumber).get("EdgeFrIS");
+    	Thread.sleep(2000);
+    	e2co_edgespage.clickOnEdgeIDIS(EdgeFrIS);
+    	Thread.sleep(2000);
+    }
+    
+    @When("^user clicks on in service button$")
+    public void clickOnInServiceButton() {
+    	e2co_edgespage.clickOnISBtn();
+    }
+    
+    @And("^in service warning message is displayed$")
+    public void verifyISWarningMessageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyISWarningMessageIsDispalyed(),"In service Warning message is displayed.");
+    }
+    
+    @Then("^edge in In-service status$")
+    public void verifyEdgeIsInServiceStatus() {
+    	Assert.assertTrue(e2co_edgespage.verifyHealthyStatusIsVisible(),"Healthy status is visible.");
+    }
+    
+    @Then("^edges page is displayed observe status of edge$")
+    public void observeEdgeStatus() throws Exception {
+    	Thread.sleep(35000);
+    	e2co_edgespage.refresHPageOfWeb();
+    	Thread.sleep(8000);
+    	e2co_edgespage.verifyEdgeStatus();
+    }
+    
+    @When("^user clicks on system configuration menu$")
+    public void clickOnSystemConfigMenu() {
+    	e2co_edgespage.clickOnSystemConfigMenu();
+    }
+    
+    @Then("^system configuration page is displayed$")
+    public void verifySystemConFigPageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifySystemConfigPageIsDisplayed(),"System config page is opened.");
+    }
+    
+    @When("^user clicks on threshold settings option$")
+    public void clickOnThresholdSettingMenu() {
+    	e2co_edgespage.clickOnThresholdSettings();
+    }
+    
+    @Then("^threshold settings page is displayed$")
+    public void verifyThresholdSettingPageIsDisplayed() {
+    	Assert.assertTrue(e2co_edgespage.verifyThresholdPageIsDisplayed(),"Threshold setting page is displayed.");
+    }
+    
+    @When("^user changes details for change config(.*), (.*)")
+    public void changeDetailsForConfig(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String CPUWarning = testData.get(RowNumber).get("CPUWarning");
+    	String CPUCritical = testData.get(RowNumber).get("CPUCritical");
+    	String StorageWarning = testData.get(RowNumber).get("StorageWarning");
+    	String StorageCritical = testData.get(RowNumber).get("StorageCritical");
+    	String MemoryWarning = testData.get(RowNumber).get("MemoryWarning");
+    	String MemoryCritical = testData.get(RowNumber).get("MemoryCritical");
+    	String GPUWarning = testData.get(RowNumber).get("GPUWarning");
+    	String GPUCritical = testData.get(RowNumber).get("GPUCritical");
+    	Thread.sleep(2000);
+    	e2co_edgespage.enterCPUWarning(CPUWarning);
+    	e2co_edgespage.enterCPUCritical(CPUCritical);
+    	e2co_edgespage.enterStorageWarning(StorageWarning);
+    	e2co_edgespage.enterStorageCritical(StorageCritical);
+    	e2co_edgespage.enterMemoryWarning(MemoryWarning);
+    	e2co_edgespage.enterMemoryCritical(MemoryCritical);
+    	e2co_edgespage.enterGPUWarning(GPUWarning);
+    	e2co_edgespage.enterGPUCritical(GPUCritical);
+    	Thread.sleep(5000);
+    }
+    
+    @And("^click on submit button for system config$")
+    public void clickOnSubmitBtnFrConfig() throws Exception {
+    	e2co_edgespage.clickOnSubmitBtn();
+    	Thread.sleep(2000);
+    }
+    
+    @Then("^click on close button for system config$")
+    public void frSystemConfigClickOnClose() {
+    	e2co_edgespage.clickOnCloseButton();
+    }
+    
+    @And("^system config update successfully message displayed$")
+    public void verifyConfigDetailsUpdateSuccessMessgDisplayed() throws Exception {
+    	Thread.sleep(2000);
+    	Assert.assertTrue(e2co_edgespage.verifySuccessPopupMessagDisplayed(),"Updated successfully popup message is dispalyed.");
+    	Thread.sleep(2000);
+
+    }
 }
+

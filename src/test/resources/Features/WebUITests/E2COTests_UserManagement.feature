@@ -20,10 +20,10 @@ Feature: User Management Feature
  		Then user is able to login 
  		Examples:
  		| user | SheetName | RowNumber |
+    | Admin | UserManagement | 0 |
     | Admin | UserManagement | 1 |
-    #| Admin | UserManagement | 1 |
-    #| Admin | UserManagement | 2 |
-    #| Admin | UserManagement | 3 |
+    | Admin | UserManagement | 2 |
+    | Admin | UserManagement | 3 |
     	
 @UserManagement_02 			
 Scenario Outline: Developer is not able to create new user
