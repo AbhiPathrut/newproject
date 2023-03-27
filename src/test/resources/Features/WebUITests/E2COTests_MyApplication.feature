@@ -396,8 +396,31 @@ Scenario Outline: user able to onboard application through external repositry
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
 		
-
 @MyApplication_19
+Scenario Outline: user able to view count of healthy application
+      When user logs into MEC portal<user>
+     	And user is on Dashboard page
+ 			And user clicks on my application
+ 			Then user is on my application page
+      Then count of healthy application is displayed    
+Examples:
+    | user | 
+    |Admin| 
+    
+    
+@MyApplication_20
+Scenario Outline: user able to view count of all applications
+      When user logs into MEC portal<user>
+      And user is on Dashboard page
+ 			And user clicks on my application
+ 			Then user is on my application page
+      Then count of all application and consumption details is displayed    
+Examples:
+    | user | 
+    |Admin|
+
+
+@MyApplication_21
 Scenario Outline: user able to onboard application with edge IS and onboarding application by doing edge OOS
 		When user logs into MEC portal<user>
  		And user is on Dashboard page
@@ -451,6 +474,17 @@ Scenario Outline: user able to onboard application with edge IS and onboarding a
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
     
+@MyApplication_22
+Scenario Outline: user able to view application instance details
+      When user logs into MEC portal<user>
+     	And user is on Dashboard page
+ 			And user clicks on my application
+ 			Then user is on my application page
+      And click on specific application
+      Then user able to view instance deatils 
+Examples:
+    | user | 
+    |Admin| 
 
  		
  		    

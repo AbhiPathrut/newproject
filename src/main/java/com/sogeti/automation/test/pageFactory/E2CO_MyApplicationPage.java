@@ -268,6 +268,25 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//select[@id='selectPersistent']")
 	private WebElement selectVolume;
 	
+	@FindBy(xpath="//span[normalize-space()='display_settings']")
+	private WebElement ApplicationMenu;
+
+	//@FindBy(xpath="//div[normalize-space()='Healthy Applications']")
+	@FindBy(xpath="//div[@class='px-2 py-2 w-50 border rounded progress-bar-bg my-app-body-overview-health']")
+	private WebElement countHealthy;
+	
+	@FindBy(xpath="//div[@class='my-app-body-overview-wrapper']")
+	private WebElement CountAndConsumption;
+	
+	@FindBy(xpath="//td[normalize-space()='alpineapp1758']")
+	private WebElement SpecificApplication;
+
+	@FindBy(xpath="//div[@class='provision-app-instance-meta-geograpics-container mb-4 d-flex bg-white border-radius-5 pb-2']")
+	//div[@class='provision-app-instance-meta-geograpics-container mb-4 d-flex bg-white border-radius-5 pb-2']
+	private WebElement InstanceDetails;
+
+
+	
 	
 	
 	
@@ -346,7 +365,6 @@ public class E2CO_MyApplicationPage extends PageClass {
 		currentworkingDirectory = System.getProperty("user.dir");
 		inputFile= currentworkingDirectory + "/input-data/inputFiles/alpine.zip";
 		this.browseFile.sendKeys(inputFile);
-		//driver.findElement(By.xpath("//input[@id='inp']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\mario.zip");
 		log.info("zip file is imported");
 	}
 	
@@ -354,7 +372,6 @@ public class E2CO_MyApplicationPage extends PageClass {
 		currentworkingDirectory = System.getProperty("user.dir");
 		inputFile= currentworkingDirectory + "/input-data/inputFiles/fedora.zip";
 		this.browseFile.sendKeys(inputFile);
-		//driver.findElement(By.xpath("//input[@id='inp']")).sendKeys("C:\\Users\\APathrut\\OneDrive - Capgemini\\Desktop\\fedora.zip");
 		log.info("zip file is imported");
 	}
 	
@@ -608,9 +625,6 @@ public class E2CO_MyApplicationPage extends PageClass {
 	}
 	
 	public void submitDetailsOfApplication() throws Exception {
-//		this.SubmitButton.click();
-//		JavascriptExecutor js = (JavascriptExecutor)objDriver;
-//		 js.executeScript("scrollBy(0, -1000");
 		JavascriptExecutor js = (JavascriptExecutor)objDriver;
 		 js.executeScript("arguments[0].scrollIntoView()",SubmitButton);
 		 Thread.sleep(2000);
@@ -1066,6 +1080,41 @@ public class E2CO_MyApplicationPage extends PageClass {
 	        select1.selectByVisibleText(Volume);
 	        log.info("Zone selected");
 		}
+	
+	
+	public void ClickApplicationMenu() throws Exception {
+		this.ApplicationMenu.click();
+		log.info("user clicks on application menu");
+		Thread.sleep(2000);
+		}
+
+	public void HealthyApplicationDetails() {
+		String countHealthy = this.countHealthy.getText();
+		 System.out.println(countHealthy);
+		 }
+	
+	public void CountOfAppAndConsumption() {
+		String CountAndConsumption = this.CountAndConsumption.getText();
+		 System.out.println(CountAndConsumption);
+		 }
+	
+	public void ClickOnSpecificApp() throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		js.executeScript("arguments[0].scrollIntoView()",SpecificApplication);
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click()",SpecificApplication);
+		Thread.sleep(2000);
+		log.info("User click on application");
+		Thread.sleep(2000);
+	}
+
+	public void ValidateInstanceDetails() throws Exception {
+		String InstanceDetails = this.InstanceDetails.getText();
+		 System.out.println(InstanceDetails);
+		 Thread.sleep(2000);
+	}
+	
+	
 	}
 
 	

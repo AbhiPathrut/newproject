@@ -22784,3 +22784,1191 @@ Session ID: a736e20583ed27db01d009bf534dea9a
 2023-03-27 18:06:23,182 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Application for network policy is selected
 2023-03-27 18:06:23,182 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Application for network policy is selected
 2023-03-27 18:06:28,766 [INFO] [LOCAL, LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 18:47:44,579 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:44,579 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:44,594 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:47:44,594 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:47:44,595 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:47:44,595 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:47:44,596 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:47:44,596 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:47:44,596 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:47:44,596 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:47:44,598 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:47:44,598 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:47:44,598 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:47:44,598 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:47:44,599 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:47:44,599 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:47:44,599 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:47:44,599 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:47:44,600 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:47:44,600 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:47:44,600 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:47:44,600 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:47:44,601 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:47:44,601 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:47:44,601 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:47:44,601 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:47:44,602 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:47:44,602 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:47:44,602 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:47:44,602 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:47:44,603 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:47:44,603 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:47:44,605 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:47:44,605 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:47:51,617 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:47:51,617 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:47:53,976 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:53,976 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:53,980 [INFO] [LOCAL, CommonSteps] Scenario Name: user able to view count of healthy application
+2023-03-27 18:47:53,988 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:53,988 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:54,456 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:47:54,456 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:47:54,713 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:47:54,713 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:47:54,869 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:47:54,869 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:47:55,711 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:47:55,711 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:47:56,034 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:47:56,034 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:47:59,414 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 18:47:59,465 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:59,465 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:47:59,466 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 18:47:59,466 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 18:48:02,862 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:48:02,862 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:48:05,640 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:48:05,640 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:48:05,641 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: user able to view count of all applications
+2023-03-27 18:48:05,643 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:48:05,643 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:48:06,207 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:48:06,207 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:48:06,394 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:48:06,394 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:48:06,541 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:48:06,541 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:48:07,282 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:48:07,282 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:48:07,779 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:48:07,779 [INFO] [LOCAL, LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:48:10,918 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 18:53:03,842 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:03,842 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:03,853 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:53:03,853 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:53:03,854 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:53:03,855 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:53:03,855 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:53:03,856 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:53:03,856 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:53:03,856 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:53:03,856 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:53:03,857 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:53:03,857 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:53:03,858 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:53:03,858 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:53:03,858 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:53:03,858 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:53:03,859 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:53:03,859 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:53:03,860 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:53:03,860 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:53:03,860 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:53:03,860 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:53:03,861 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:53:03,861 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:53:03,862 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:53:03,862 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:53:03,863 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:53:03,863 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:53:09,421 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:53:09,421 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:53:13,736 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:13,736 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:13,740 [INFO] [LOCAL, CommonSteps] Scenario Name: user able to view application instance details
+2023-03-27 18:53:13,748 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:13,748 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:53:14,246 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:53:14,246 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:53:14,396 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:53:14,396 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:53:14,541 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:53:14,541 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:53:15,367 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:53:15,367 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:53:15,683 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:53:15,683 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:53:34,301 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 18:55:21,091 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:21,091 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:55:21,100 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:55:21,101 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:55:21,101 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:55:21,102 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:55:21,102 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:55:21,103 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:55:21,103 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:55:21,103 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:55:21,103 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:55:21,104 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:55:21,104 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:55:21,104 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:55:21,104 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:55:21,105 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:55:21,105 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:55:21,105 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:55:21,105 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:55:21,106 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:55:21,106 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:55:21,106 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:55:21,106 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:55:21,107 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:55:21,107 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:55:21,107 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:55:21,107 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:55:21,110 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:55:21,110 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:55:26,498 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:55:26,498 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:55:28,821 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:28,821 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:28,834 [INFO] [LOCAL, CommonSteps] Scenario Name: user able to view application instance details
+2023-03-27 18:55:28,860 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:28,860 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:55:29,366 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:55:29,366 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:55:29,516 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:55:29,516 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:55:29,676 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:55:29,676 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:55:30,501 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:55:30,501 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:55:30,991 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:55:30,991 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:55:50,568 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 18:57:44,924 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:44,924 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:44,932 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:57:44,932 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:57:44,933 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 18:57:44,935 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:57:44,935 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 18:57:44,935 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:57:44,935 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:57:44,936 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 18:57:44,937 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:57:44,937 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 18:57:44,937 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:57:44,937 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:57:44,938 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 18:57:44,940 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:57:44,940 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 18:57:50,613 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:57:50,613 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 18:57:54,227 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:54,227 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:54,234 [INFO] [LOCAL, CommonSteps] Scenario Name: user able to view application instance details
+2023-03-27 18:57:54,257 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:54,257 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 18:57:54,652 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:57:54,652 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 18:57:54,801 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:57:54,801 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 18:57:54,967 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:57:54,967 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 18:57:55,854 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:57:55,854 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 18:57:56,203 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:57:56,203 [INFO] [LOCAL, E2COTestSteps] Clicked on my application menu
+2023-03-27 18:58:03,438 [INFO] [LOCAL, E2COTestSteps] User click on application
+2023-03-27 18:58:03,438 [INFO] [LOCAL, E2COTestSteps] User click on application
+2023-03-27 18:58:08,240 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 19:30:19,874 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:19,874 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:19,885 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:30:19,885 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:30:19,886 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:30:19,888 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:30:19,888 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:30:19,889 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:30:19,890 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:30:19,891 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:30:19,891 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:30:19,891 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:30:19,891 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:30:19,892 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:30:19,892 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:30:19,892 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:30:19,892 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:30:19,894 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:30:19,894 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:30:25,847 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:30:25,847 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:30:28,241 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:28,241 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:28,247 [INFO] [LOCAL, CommonSteps] Scenario Name: preprovision the edge
+2023-03-27 19:30:28,260 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:28,260 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:30:28,758 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:30:28,758 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:30:28,910 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:30:28,910 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:30:29,061 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:30:29,061 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:30:29,891 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:30:29,891 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:30:30,260 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:30:30,260 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:30:36,198 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:30:36,198 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:30:46,809 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 19:31:37,496 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:37,496 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:37,504 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:31:37,504 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:31:37,505 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:31:37,506 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:31:37,506 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:31:37,507 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:31:37,508 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:31:37,508 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:31:37,508 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:31:37,508 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:31:37,509 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:31:37,510 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:31:37,510 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:31:37,510 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:31:37,510 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:31:37,512 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:31:37,512 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:31:42,986 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:31:42,986 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:31:46,330 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:46,330 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:46,333 [INFO] [LOCAL, CommonSteps] Scenario Name: preprovision the edge
+2023-03-27 19:31:46,342 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:46,342 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:31:46,711 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:31:46,711 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:31:46,916 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:31:46,916 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:31:47,255 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:31:47,255 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:31:48,220 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:31:48,220 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:31:48,684 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:31:48,684 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:31:53,521 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:31:53,521 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:31:53,691 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-27 19:31:53,691 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-27 19:31:53,792 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-27 19:31:53,792 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-27 19:31:53,934 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-27 19:31:53,934 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-27 19:31:54,121 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-27 19:31:54,121 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-27 19:31:54,273 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-27 19:31:54,273 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-27 19:31:54,471 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-27 19:31:54,471 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-27 19:31:54,677 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:31:54,677 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:31:54,833 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:31:54,833 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:31:54,991 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-27 19:31:54,991 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-27 19:31:55,133 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-27 19:31:55,133 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-27 19:31:55,241 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-27 19:31:55,241 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-27 19:31:55,349 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-27 19:31:55,349 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-27 19:31:55,459 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-27 19:31:55,459 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-27 19:31:55,570 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-27 19:31:55,570 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-27 19:31:55,699 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-27 19:31:55,699 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-27 19:31:55,826 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-27 19:31:55,826 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-27 19:31:55,957 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-27 19:31:55,957 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-27 19:31:56,084 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-27 19:31:56,084 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-27 19:31:56,222 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-27 19:31:56,222 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-27 19:31:56,535 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-27 19:31:56,535 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-27 19:32:07,120 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 19:33:50,349 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:33:50,349 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:33:50,357 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:33:50,357 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:33:50,358 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:33:50,360 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:33:50,361 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:33:50,362 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 19:33:50,363 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:33:50,363 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 19:33:50,363 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:33:50,363 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 19:33:50,365 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:33:50,365 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 19:33:57,081 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:33:57,081 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 19:34:00,133 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:34:00,133 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:34:00,138 [INFO] [LOCAL, CommonSteps] Scenario Name: preprovision the edge
+2023-03-27 19:34:00,149 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:34:00,149 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 19:34:00,521 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:34:00,521 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 19:34:00,848 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:34:00,848 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 19:34:00,987 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:34:00,987 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 19:34:01,879 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:34:01,879 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 19:34:02,251 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:34:02,251 [INFO] [LOCAL, E2COTestSteps] Clicked on edges
+2023-03-27 19:34:08,391 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:34:08,391 [INFO] [LOCAL, E2COTestSteps] Enter EdgeId
+2023-03-27 19:34:08,542 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-27 19:34:08,542 [INFO] [LOCAL, E2COTestSteps] Zone Id selected
+2023-03-27 19:34:08,637 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-27 19:34:08,637 [INFO] [LOCAL, E2COTestSteps] Country is selected
+2023-03-27 19:34:08,772 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-27 19:34:08,772 [INFO] [LOCAL, E2COTestSteps] Latency is selected
+2023-03-27 19:34:08,948 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-27 19:34:08,948 [INFO] [LOCAL, E2COTestSteps] Enter EnterPrise Id
+2023-03-27 19:34:09,079 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-27 19:34:09,079 [INFO] [LOCAL, E2COTestSteps] Bandwidth is selected
+2023-03-27 19:34:09,263 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-27 19:34:09,263 [INFO] [LOCAL, E2COTestSteps] Enter Edge description
+2023-03-27 19:34:09,433 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:34:09,433 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:34:09,593 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:34:09,593 [INFO] [LOCAL, E2COTestSteps] Enter city name
+2023-03-27 19:34:09,751 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-27 19:34:09,751 [INFO] [LOCAL, E2COTestSteps] Enter the locality name
+2023-03-27 19:34:09,889 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-27 19:34:09,889 [INFO] [LOCAL, E2COTestSteps] Radio is selected
+2023-03-27 19:34:09,999 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-27 19:34:09,999 [INFO] [LOCAL, E2COTestSteps] Enter MCC value
+2023-03-27 19:34:10,115 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-27 19:34:10,115 [INFO] [LOCAL, E2COTestSteps] Enter MNC value
+2023-03-27 19:34:10,218 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-27 19:34:10,218 [INFO] [LOCAL, E2COTestSteps] Enter CGI value
+2023-03-27 19:34:10,327 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-27 19:34:10,327 [INFO] [LOCAL, E2COTestSteps] Enter TAC value
+2023-03-27 19:34:10,483 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-27 19:34:10,483 [INFO] [LOCAL, E2COTestSteps] App availability is selected
+2023-03-27 19:34:10,610 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-27 19:34:10,610 [INFO] [LOCAL, E2COTestSteps] Load is selected
+2023-03-27 19:34:10,743 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-27 19:34:10,743 [INFO] [LOCAL, E2COTestSteps] Enter cluster name
+2023-03-27 19:34:10,866 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-27 19:34:10,866 [INFO] [LOCAL, E2COTestSteps] Enter Latitude value
+2023-03-27 19:34:10,989 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-27 19:34:10,989 [INFO] [LOCAL, E2COTestSteps] Enter Longitude value
+2023-03-27 19:34:11,261 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-27 19:34:11,261 [INFO] [LOCAL, E2COTestSteps] Click on submit button
+2023-03-27 19:34:14,309 [INFO] [LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-27 19:34:14,309 [INFO] [LOCAL, E2COTestSteps] EdgeId is displayed
+2023-03-27 19:34:14,832 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 22:11:12,050 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:12,050 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:12,061 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:11:12,061 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:11:12,062 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:11:12,062 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:11:12,062 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:11:12,062 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:11:12,063 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:11:12,063 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:11:12,065 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:11:12,065 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:11:12,065 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:11:12,065 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:11:12,066 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:11:12,066 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:11:12,066 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:11:12,066 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:11:12,067 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:11:12,067 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:11:12,067 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:11:12,067 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:11:12,068 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:11:12,068 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:11:12,068 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:11:12,068 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:11:12,069 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:11:12,069 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:11:12,069 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:11:12,069 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:11:12,070 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:11:12,070 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:11:12,073 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:11:12,073 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:11:19,896 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:11:19,896 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:11:24,880 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:24,880 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:24,884 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:11:24,892 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:24,892 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:25,510 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:11:25,510 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:11:25,659 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:11:25,659 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:11:25,863 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:11:25,863 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:11:27,359 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:11:27,359 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:11:28,451 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:11:28,542 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:28,542 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:28,544 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:11:28,544 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:11:32,635 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:11:32,635 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:11:40,712 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:40,712 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:40,713 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:11:40,715 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:40,715 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:11:41,474 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:11:41,474 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:11:41,633 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:11:41,633 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:11:41,887 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:11:41,887 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:11:42,992 [ERROR] [LOCAL, LOCAL, E2COTestSteps] Failed to click Login button.
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (86, 781)
+  (Session info: chrome=111.0.5563.111)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN20001532', ip: '10.112.144.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [061a1127d5f66f2f7e36e064964d2efe, clickElement {id=70eccfdb-98b7-43c0-81fc-778d0a2d535c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:59274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59274/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (061a1127d5f66f2f7e36e064964d2efe)] -> xpath: //button[@type='submit']]
+Session ID: 061a1127d5f66f2f7e36e064964d2efe
+2023-03-27 22:11:42,992 [ERROR] [LOCAL, LOCAL, E2COTestSteps] Failed to click Login button.
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (86, 781)
+  (Session info: chrome=111.0.5563.111)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LIN20001532', ip: '10.112.144.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [061a1127d5f66f2f7e36e064964d2efe, clickElement {id=70eccfdb-98b7-43c0-81fc-778d0a2d535c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:59274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59274/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (061a1127d5f66f2f7e36e064964d2efe)] -> xpath: //button[@type='submit']]
+Session ID: 061a1127d5f66f2f7e36e064964d2efe
+2023-03-27 22:11:54,323 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:13:40,979 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:13:40,979 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:13:40,990 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:13:40,991 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:13:40,991 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:13:40,992 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:13:40,992 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:13:40,993 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:13:40,993 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:13:40,994 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:13:40,994 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:13:40,994 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:13:40,994 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:13:40,995 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:13:40,995 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:13:40,996 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:13:40,996 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:13:40,996 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:13:40,996 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:13:40,997 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:13:40,997 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:13:40,997 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:13:40,997 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:13:40,998 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:13:40,998 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:13:40,998 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:13:40,998 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:13:41,001 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:13:41,001 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:13:46,095 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:13:46,095 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:14:02,487 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:02,487 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:02,490 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:14:02,499 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:02,499 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:03,285 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:14:03,285 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:14:03,635 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:14:03,635 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:14:03,830 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:14:03,830 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:14:05,510 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:14:05,510 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:14:06,369 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:14:06,400 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:06,400 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:14:06,401 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:14:06,401 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:16:23,412 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:23,412 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:23,421 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:16:23,421 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:16:23,422 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:16:23,423 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:16:23,423 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:16:23,424 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:16:23,424 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:16:23,424 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:16:23,424 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:16:23,425 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:16:23,425 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:16:23,425 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:16:23,425 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:16:23,426 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:16:23,427 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:16:23,429 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:16:23,429 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:16:29,679 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:16:29,679 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:16:33,603 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:33,603 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:33,607 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:16:33,615 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:33,615 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:16:34,816 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:16:34,816 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:16:35,110 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:16:35,110 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:16:35,361 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:16:35,361 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:16:36,131 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:16:36,131 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:16:36,896 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:18:24,035 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:24,035 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:24,045 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:18:24,045 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:18:24,046 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:18:24,048 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:18:24,048 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:18:24,048 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:18:24,048 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:18:24,049 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:18:24,049 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:18:24,050 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:18:24,051 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:18:24,051 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:18:24,051 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:18:24,051 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:18:24,052 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:18:24,052 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:18:24,052 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:18:24,052 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:18:24,053 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:18:24,053 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:18:24,054 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:18:24,054 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:18:30,586 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:18:30,586 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:18:35,474 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:35,474 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:35,479 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:18:35,489 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:35,489 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:18:36,013 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:18:36,013 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:18:36,192 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:18:36,192 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:18:36,470 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:18:36,470 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:18:37,354 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:18:37,354 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:18:48,899 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:20:44,601 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:44,601 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:20:44,610 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:20:44,612 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:20:44,612 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:20:44,613 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:20:44,613 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:20:44,613 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:20:44,613 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:20:44,614 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:20:44,614 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:20:44,615 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:20:44,615 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:20:44,615 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:20:44,615 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:20:44,616 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:20:44,616 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:20:44,616 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:20:44,616 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:20:44,617 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:20:44,617 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:20:44,617 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:20:44,617 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:20:44,618 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:20:44,618 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:20:44,620 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:20:44,620 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:20:50,576 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:20:50,576 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:20:53,709 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:53,709 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:53,713 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:20:53,721 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:53,721 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:20:54,540 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:20:54,540 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:20:54,705 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:20:54,705 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:20:54,855 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:20:54,855 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:20:56,147 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:20:56,147 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:21:00,182 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:24:10,012 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:10,012 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:10,021 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:24:10,021 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:24:10,022 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:24:10,022 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:24:10,022 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:24:10,022 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:24:10,023 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:24:10,023 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:24:10,024 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:24:10,025 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:24:10,026 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:24:10,027 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:24:10,027 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:24:10,027 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:24:10,027 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:24:10,028 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:24:10,028 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:24:15,485 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:24:15,485 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:24:19,377 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:19,377 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:19,380 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:24:19,389 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:19,389 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:24:20,130 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:24:20,130 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:24:20,337 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:24:20,337 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:24:20,614 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:24:20,614 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:24:21,371 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:24:21,371 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:24:26,530 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:27:29,341 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:29,341 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:29,350 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:27:29,350 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:27:29,351 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:27:29,351 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:27:29,352 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:27:29,353 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:27:29,353 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:27:29,353 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:27:29,353 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:27:29,354 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:27:29,354 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:27:29,354 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:27:29,354 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:27:29,355 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:27:29,355 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:27:29,355 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:27:29,355 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:27:29,356 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:27:29,356 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:27:29,356 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:27:29,356 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:27:29,357 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:27:29,357 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:27:29,358 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:27:29,358 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:27:29,360 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:27:29,360 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:27:34,901 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:27:34,901 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:27:38,138 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:38,138 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:38,142 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:27:38,157 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:38,157 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:27:39,221 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:27:39,221 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:27:39,384 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:27:39,384 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:27:39,566 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:27:39,566 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:27:40,431 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:27:40,431 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:27:43,950 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:29:20,608 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:20,608 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:20,618 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:29:20,618 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:29:20,618 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:29:20,618 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:29:20,619 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:29:20,619 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:29:20,619 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:29:20,619 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:29:20,620 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:29:20,620 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:29:20,621 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:29:20,621 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:29:20,621 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:29:20,621 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:29:20,622 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:29:20,623 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:29:20,623 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:29:20,623 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:29:20,623 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:29:20,624 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:29:20,626 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:29:20,626 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:29:26,351 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:29:26,351 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:29:29,358 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:29,358 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:29,363 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:29:29,375 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:29,375 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:29:29,825 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:29:29,825 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:29:29,969 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:29:29,969 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:29:30,112 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:29:30,112 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:29:30,902 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:29:30,902 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:29:34,720 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:30:49,299 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:49,299 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:49,308 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:30:49,308 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:30:49,308 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:30:49,308 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:30:49,309 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:30:49,309 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:30:49,309 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:30:49,309 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:30:49,311 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:30:49,312 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:30:49,313 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:30:49,313 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:30:49,313 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:30:49,313 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:30:49,314 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:30:49,314 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:30:49,314 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:30:49,314 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:30:49,316 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:30:49,316 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:30:54,423 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:30:54,423 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:30:57,605 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:57,605 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:57,609 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:30:57,620 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:57,620 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:30:58,095 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:30:58,095 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:30:58,275 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:30:58,275 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:30:58,417 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:30:58,417 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:30:59,125 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:30:59,125 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:31:02,314 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:39:05,464 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:05,464 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:39:05,472 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:39:05,473 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:39:05,473 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:39:05,474 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:39:05,475 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:39:05,476 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:39:05,477 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:39:05,477 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:39:05,477 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:39:05,477 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:39:05,479 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:39:05,479 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:39:11,247 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:39:11,247 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:39:14,684 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:14,684 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:14,689 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:39:14,697 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:14,697 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:39:15,612 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:39:15,612 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:39:15,782 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:39:15,782 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:39:15,948 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:39:15,948 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:39:16,749 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:39:16,749 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:39:29,838 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:41:48,473 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:48,473 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:48,481 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:41:48,481 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:41:48,481 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:41:48,481 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:41:48,482 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:41:48,482 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:41:48,482 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:41:48,482 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:41:48,483 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:41:48,483 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:41:48,484 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:41:48,485 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:41:48,486 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:41:48,487 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:41:48,487 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:41:48,489 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:41:48,489 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:41:55,011 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:41:55,011 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:41:58,618 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:58,618 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:58,623 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:41:58,635 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:58,635 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:41:59,073 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:41:59,073 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:41:59,243 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:41:59,243 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:41:59,614 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:41:59,614 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:42:00,544 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:42:00,544 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:42:14,543 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:44:28,320 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:28,320 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:28,332 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:44:28,332 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:44:28,333 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:44:28,333 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:44:28,333 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:44:28,333 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:44:28,334 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:44:28,334 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:44:28,335 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:44:28,335 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:44:28,336 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:44:28,336 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:44:28,336 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:44:28,336 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:44:28,337 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:44:28,337 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:44:28,337 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:44:28,337 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:44:28,338 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:44:28,338 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:44:28,339 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:44:28,339 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:44:28,339 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:44:28,339 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:44:28,340 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:44:28,340 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:44:28,340 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:44:28,340 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:44:28,341 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:44:28,341 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:44:28,343 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:44:28,343 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:44:34,430 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:44:34,430 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:44:37,525 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:37,525 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:37,528 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:44:37,536 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:37,536 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:44:37,893 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:44:37,893 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:44:38,102 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:44:38,102 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:44:38,348 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:44:38,348 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:44:39,163 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:44:39,163 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:45:20,918 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-27 22:49:00,519 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:00,519 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:00,528 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:49:00,528 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-27 22:49:00,528 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:49:00,528 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-27 22:49:00,529 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:49:00,529 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-27 22:49:00,529 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:49:00,529 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-27 22:49:00,530 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:49:00,530 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-27 22:49:00,531 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:49:00,531 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:49:00,532 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-27 22:49:00,533 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:49:00,533 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-27 22:49:00,533 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:49:00,533 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-27 22:49:00,534 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:49:00,534 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-27 22:49:00,534 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:49:00,534 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-27 22:49:00,535 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:49:00,535 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-27 22:49:00,535 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:49:00,535 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-27 22:49:00,537 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:49:00,537 [INFO] [qa.properties] Initializing self healing driver
+2023-03-27 22:49:06,028 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:49:06,028 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:49:08,662 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:08,662 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:08,667 [INFO] [LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:49:08,686 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:08,686 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:09,233 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:49:09,233 [INFO] [LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:49:09,484 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:49:09,484 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:49:09,816 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:49:09,816 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:49:10,625 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:49:10,625 [INFO] [LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:49:50,118 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-27 22:49:50,140 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:50,140 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:50,141 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:49:50,141 [INFO] [LOCAL, qa.properties] Initializing self healing driver
+2023-03-27 22:49:53,890 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:49:53,890 [INFO] [LOCAL, LOCAL, CHROME] New driver instantiated.
+2023-03-27 22:49:57,242 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:57,242 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:57,244 [INFO] [LOCAL, LOCAL, CommonSteps] Scenario Name: Test reports Application Based Reports functionality
+2023-03-27 22:49:57,244 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:57,244 [INFO] [LOCAL, LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-27 22:49:57,708 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:49:57,708 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered username
+2023-03-27 22:49:57,919 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:49:57,919 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered password
+2023-03-27 22:49:58,265 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:49:58,265 [INFO] [LOCAL, LOCAL, E2COTestSteps] Entered domain
+2023-03-27 22:49:59,046 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:49:59,046 [INFO] [LOCAL, LOCAL, E2COTestSteps] User icon is displayed.
+2023-03-27 22:50:13,383 [INFO] [LOCAL, LOCAL, E2COTestSteps] Execution status is: PASSED

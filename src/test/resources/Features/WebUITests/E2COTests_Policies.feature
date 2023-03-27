@@ -1,6 +1,6 @@
 @Policies
 
-Feature: Policies
+Feature: Policies feature
   
 @Policy_01    
 Scenario Outline: User able to set Edge policy

@@ -18,6 +18,7 @@ public class PageObjectManager {
     E2CO_TrobleshootPage e2co_trobleshootpage;
     E2CO_EnterprisePage e2co_enterprisepage;
     E2CO_PoliciesPage e2co_policiespage;
+    E2CO_ReportsPage e2co_reportspage;
     
     public PageObjectManager(SelfHealingDriver driver) {
         this.healingDriver = driver;
@@ -77,6 +78,11 @@ public class PageObjectManager {
     
     public E2CO_PoliciesPage gete2co_policiespage() {
     	return ( e2co_policiespage == null) ?  e2co_policiespage = new E2CO_PoliciesPage(healingDriver) : e2co_policiespage;
+    	
+    }
+    
+    public E2CO_ReportsPage gete2co_reportspage() {
+    	return ( e2co_reportspage == null) ?  e2co_reportspage = new E2CO_ReportsPage(healingDriver) : e2co_reportspage;
     	
     }
     

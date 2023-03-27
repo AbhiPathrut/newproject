@@ -15,6 +15,7 @@ import com.sogeti.automation.test.pageFactory.E2CO_EnterprisePage;
 import com.sogeti.automation.test.pageFactory.E2CO_LoginPage;
 import com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage;
 import com.sogeti.automation.test.pageFactory.E2CO_PoliciesPage;
+import com.sogeti.automation.test.pageFactory.E2CO_ReportsPage;
 import com.sogeti.automation.test.pageFactory.E2CO_SDKPage;
 import com.sogeti.automation.test.pageFactory.E2CO_TrobleshootPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
@@ -44,6 +45,7 @@ public class E2COTestSteps extends TestClass {
     E2CO_TrobleshootPage e2co_trobleshootpage;
     E2CO_EnterprisePage e2co_enterprisepage;
     E2CO_PoliciesPage e2co_policiespage;
+    E2CO_ReportsPage e2co_reportspage;
     String dynamicUserName;
     int previousNumRow;
     int afterNumRow;
@@ -101,6 +103,7 @@ public class E2COTestSteps extends TestClass {
         e2co_trobleshootpage=testContext.getPageObjectManager().gete2co_trobleshootpage();
         e2co_enterprisepage=testContext.getPageObjectManager().gete2co_enterprise();
         e2co_policiespage=testContext.getPageObjectManager().gete2co_policiespage();
+        e2co_reportspage=testContext.getPageObjectManager().gete2co_reportspage();
         
         ThreadContext.pop();
         ThreadContext.push(this.getClass().getSimpleName());
@@ -1789,6 +1792,174 @@ public class E2COTestSteps extends TestClass {
     public void ValidateNetworkDetails() {
     	e2co_policiespage.GetNetworkSelectedDetails();
     }
+    //***********************************
+    @Then ("^count of healthy application is displayed$")
+    public void ValidateCountOfApplication() {
+    	e2co_myapplication.HealthyApplicationDetails();
+    }
+    
+    @Then ("^count of all application and consumption details is displayed$")
+    public void validateAppCountIsDisplayed() {
+    	e2co_myapplication.CountOfAppAndConsumption();
+    }
+    
+    @And ("^click on specific application$")
+    public void ClickonOneApplication() throws Exception {
+    	e2co_myapplication.ClickOnSpecificApp();
+    }
+    
+    @Then ("^user able to view instance deatils$")
+    public void VerifyAppInstanceDetails() throws Exception {
+    	e2co_myapplication.ValidateInstanceDetails();
+    }
+    
+    //************************
+    @And ("^user clicks on reports icon$")
+		public void reportspage(){
+			e2co_reportspage.clikOnReportsIcon();
+		}
+		
+	@Then ("^verify user is on reports page")
+		public void reportstitle() {
+			//e2co_reportspage.isReportPageDisplayed();
+			Assert.assertTrue(e2co_reportspage.isReportPageDisplayed(),"Reports page is loadeded.");
+		}
+		
+	@Then ("^select data from dropdown and click on show metrics button (.*), (.*)")
+		public void searchreport(String SheetName, int RowNumber) throws IOException, Exception  {
+			
+				ExcelReader reader = new ExcelReader();
+				List<Map<String,String>> testData =
+						reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+				String reportype = testData.get(RowNumber).get("ReportType");
+				String country = testData.get(RowNumber).get("Country");
+				String operator = testData.get(RowNumber).get("Operator");
+				String zone = testData.get(RowNumber).get("Zone");
+				String edge = testData.get(RowNumber).get("Edge");
+				String searchcategoary = testData.get(RowNumber).get("SearchCategory");
+				String searchsubcategoary = testData.get(RowNumber).get("SearchSubCategory");
+				String appname = testData.get(RowNumber).get("AppName");
+				String appid = testData.get(RowNumber).get("AppID");
+				String appversion = testData.get(RowNumber).get("AppVersion");
+				String instanceid = testData.get(RowNumber).get("InstanceID");
+				
+				//e2co_reportspage.clickOnSearchReport(reportype);
+				if(reportype.equals("Application Based Reports")) 
+				{
+					e2co_reportspage.clickOnSearchReport(reportype);
+					if(searchcategoary.equals("Resource Availability ")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnSearchSubCategory(searchsubcategoary);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnAppName(appname);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnAppId(appid);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnAppVersion(appversion);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnInstancesID(instanceid);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnCountry(country);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnOperator(operator);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnZone(zone);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnEdge(edge);
+						Thread.sleep(2000);
+						e2co_reportspage.clickOnShowmetricsbttn();
+						Thread.sleep(2000);
+						
+					}else if(searchcategoary.equals("App Instance Provisioning Report")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnAppName(appname);
+						e2co_reportspage.clickOnAppId(appid);
+						e2co_reportspage.clickOnAppVersion(appversion);
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+						
+					}else if(searchcategoary.equals("Total Data Transfer Report")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnAppName(appname);
+						e2co_reportspage.clickOnAppId(appid);
+						e2co_reportspage.clickOnAppVersion(appversion);
+						e2co_reportspage.clickOnInstancesID(instanceid);
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+						}	else if(searchcategoary.equals("Auto Registration Report Table")) {
+							e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+							e2co_reportspage.clickOnShowmetricsbttn();
+					}	else {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnShowmetricsbttn();
+					}
+					}
+					
+				else{
+					
+					e2co_reportspage.clickOnSearchReport(reportype);
+					if(searchcategoary.equals("Edge Discovery")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnAppName(appname);
+						e2co_reportspage.clickOnAppId(appid);
+						e2co_reportspage.clickOnAppVersion(appversion);
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+						
+					}else if(searchcategoary.equals("CPU Utilization Report")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+					}else if(searchcategoary.equals("Storage Report")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+					}else if(searchcategoary.equals("Memory Consumption Report")) {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+					}else {
+						e2co_reportspage.clickOnSearchCategory(searchcategoary);	
+						e2co_reportspage.clickOnAppName(appname);
+						e2co_reportspage.clickOnAppId(appid);
+						e2co_reportspage.clickOnAppVersion(appversion);
+						e2co_reportspage.clickOnCountry(country);
+						e2co_reportspage.clickOnOperator(operator);
+						e2co_reportspage.clickOnZone(zone);
+						e2co_reportspage.clickOnEdge(edge);
+						e2co_reportspage.clickOnShowmetricsbttn();
+						
+					}
+				}
+			
+		}
+		
+		@Then ("^click on reset button$")
+		public void resetbttn() {
+			e2co_reportspage.clickOnreset();
+		}
+
 
     
 }

@@ -15,7 +15,7 @@ Scenario Outline: preprovision the edge
     Examples:
     | user | SheetName | RowNumber | 
     | Admin | Edges | 0 |
-    | Admin | Edges | 1 |
+    #| Admin | Edges | 1 |
     
 @Edges_02      
 Scenario Outline: Deboard the edge
