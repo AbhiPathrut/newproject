@@ -253,6 +253,21 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//input[@formcontrolname='sourceFileIdentifier']")
 	private WebElement imageTag;
 	
+	@FindBy(xpath = "//input[@formcontrolname='username']")
+	private WebElement username;
+	
+	@FindBy(xpath = "//input[@formcontrolname='password']")
+	private WebElement password;
+	
+	@FindBy(xpath = "//input[@formcontrolname='confirmPassword']")
+	private WebElement confirmPassword;
+	
+	@FindBy(xpath = "//input[@formcontrolname='sshKey']")
+	private WebElement sshKey;
+	
+	@FindBy(xpath = "//select[@id='selectPersistent']")
+	private WebElement selectVolume;
+	
 	
 	
 	
@@ -421,19 +436,42 @@ public class E2CO_MyApplicationPage extends PageClass {
 		return row;
 	}
 	
-	public void deleteArtifactSelect() throws Exception  {
-		 Random rand = new Random();
-			int randomNum = rand.nextInt(row);
-			System.err.println(randomNum);
-			if (randomNum==0){          
-				randomNum= randomNum+1;
-				}
-			WebElement artifactNameDeleted = objDriver.findElement(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr["+ randomNum +"]//td[2]"));
+	public int rownumber(String artifactName) {
+		WebElement table = objDriver.findElement(By.xpath("//table[@class='table mb-0']"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		
+		int rowNumber = -1;
+		for (int i = 0; i < rows.size(); i++) {
+		    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+		    for (int j = 0; j < cells.size(); j++) {
+		        if (cells.get(j).getText().equals(artifactName)) {
+		            rowNumber = i;
+		            break;
+		        }
+		    }
+		    if (rowNumber != -1) {
+		        break;
+		    }
+		}
+		System.out.println("Row number: " + rowNumber);
+		return rowNumber;
+		
+	}
+	
+	public void deleteArtifactSelect(String artifactName) throws Exception  {
+//		 Random rand = new Random();
+//			int randomNum = rand.nextInt(row);
+//			System.err.println(randomNum);
+//			if (randomNum==0){          
+//				randomNum= randomNum+1;
+//				}
+		int RowNum=rownumber(artifactName);
+			WebElement artifactNameDeleted = objDriver.findElement(By.xpath("//table[@class='table mb-0']//tbody[1]//tr["+ RowNum +"]//td[2]"));
 			Thread.sleep(2000);
 			DeletedArtifactName = artifactNameDeleted.getText();
 			System.out.println(DeletedArtifactName);
 			Thread.sleep(2000);
-			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ randomNum +"]"));
+			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ RowNum +"]"));
 			Thread.sleep(2000);
 			//WebElement userId =  objDriver.findElement(By.xpath("(//input[@name='artifact'])[2]"));
 			userId.click();
@@ -467,7 +505,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	
 	 public boolean verifyDeletedArtifactIsNotPresentInTable() {
 		 boolean validationFlag = false;
-		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr//td[2]"));
+		 List<WebElement> allUserNameElements = objDriver.findElements(By.xpath("//table[@class='table mb-0']//tbody[1]//tr//td[2]"));
 		 for (WebElement element : allUserNameElements) {
 		String linkText = element.getText();
 		if(DeletedArtifactName != (linkText)) {
@@ -631,19 +669,22 @@ public class E2CO_MyApplicationPage extends PageClass {
 	}
 		  return validationFlag;
 	}
-	public void selectArtifactId() throws Exception {
-		 Random rand = new Random();
-			int randomNum = rand.nextInt(row);
-			System.err.println(randomNum);
-			if (randomNum==0){          
-				randomNum= randomNum+1;
-				}
-			WebElement artifactNameSelected = objDriver.findElement(By.xpath("//table[@class=\'table mb-0\']//tbody[1]//tr["+ randomNum +"]//td[2]"));
+	
+	
+	public void selectArtifactId(String artifactName) throws Exception {
+//		 Random rand = new Random();
+//			int randomNum = rand.nextInt(row);
+//			System.err.println(randomNum);
+//			if (randomNum==0){          
+//				randomNum= randomNum+1;
+//				}
+		int RowNum=rownumber(artifactName);
+			WebElement artifactNameSelected = objDriver.findElement(By.xpath("//table[@class='table mb-0']//tbody[1]//tr["+ RowNum +"]//td[2]"));
 			Thread.sleep(2000);
 			SelectedArtifactName = artifactNameSelected.getText();
-			System.out.println(DeletedArtifactName);
+			System.out.println(SelectedArtifactName);
 			Thread.sleep(2000);
-			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ randomNum +"]"));
+			WebElement userId = objDriver.findElement(By.xpath("(//input[@name='artifact'])["+ RowNum +"]"));
 			Thread.sleep(2000);
 			//WebElement userId =  objDriver.findElement(By.xpath("(//input[@name='artifact'])[2]"));
 			userId.click();
@@ -998,7 +1039,35 @@ public class E2CO_MyApplicationPage extends PageClass {
 		this.fileUpload.sendKeys(inputFile);
 		log.info("YAML file is imported");	
 	}
-}
+	
+	public void enterUserName(String UserName) {
+		this.username.sendKeys(UserName);
+		log.info("Entered username.");
+		
+	}
+	
+	public void enterPassword(String Password) {
+		this.password.sendKeys(Password);
+		log.info("Entered password.");
+	}
+	
+	public void enterConfirmPassword(String Password) {
+		this.confirmPassword.sendKeys(Password);
+		log.info("Entered confirm password.");
+	}
+	
+	public void enterSSHKey(String Key) {
+		this.sshKey.sendKeys(Key);
+		log.info("Entered SSHKey.");
+	}
+	
+	public void selectVolume(String Volume) {
+			Select select1 = new Select(selectVolume);
+	        select1.selectByVisibleText(Volume);
+	        log.info("Zone selected");
+		}
+	}
+
 	
 	
 	

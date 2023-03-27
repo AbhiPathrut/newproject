@@ -11,8 +11,10 @@ import com.sogeti.automation.framework.basetest.TestContext;
 import com.sogeti.automation.framework.constants.AppConstants.Web;
 import com.sogeti.automation.framework.utils.ExcelReader;
 import com.sogeti.automation.test.pageFactory.E2CO_EdgesPage;
+import com.sogeti.automation.test.pageFactory.E2CO_EnterprisePage;
 import com.sogeti.automation.test.pageFactory.E2CO_LoginPage;
 import com.sogeti.automation.test.pageFactory.E2CO_MyApplicationPage;
+import com.sogeti.automation.test.pageFactory.E2CO_PoliciesPage;
 import com.sogeti.automation.test.pageFactory.E2CO_SDKPage;
 import com.sogeti.automation.test.pageFactory.E2CO_TrobleshootPage;
 import com.sogeti.automation.test.pageFactory.E2CO_UserManagement;
@@ -40,6 +42,8 @@ public class E2COTestSteps extends TestClass {
     E2CO_MyApplicationPage e2co_myapplication;
     E2CO_SDKPage e2co_sdkpage;
     E2CO_TrobleshootPage e2co_trobleshootpage;
+    E2CO_EnterprisePage e2co_enterprisepage;
+    E2CO_PoliciesPage e2co_policiespage;
     String dynamicUserName;
     int previousNumRow;
     int afterNumRow;
@@ -74,6 +78,16 @@ public class E2COTestSteps extends TestClass {
    String UpdateMaxValidity;
    String zoneid;
    String zoneidKS;
+   String artifactNameFrDelete;
+   String Latency;
+   String zone;
+   String componentid;
+   String Network;
+   String username;
+   String password;
+   String confirmpassword;
+   String sshkey;
+   String ephermalvolume;
 
     public E2COTestSteps(TestContext context) throws Exception {
         super();
@@ -85,6 +99,9 @@ public class E2COTestSteps extends TestClass {
         e2co_myapplication = testContext.getPageObjectManager().gete2co_myapplication();
         e2co_sdkpage = testContext.getPageObjectManager().gete2co_sdkpage();
         e2co_trobleshootpage=testContext.getPageObjectManager().gete2co_trobleshootpage();
+        e2co_enterprisepage=testContext.getPageObjectManager().gete2co_enterprise();
+        e2co_policiespage=testContext.getPageObjectManager().gete2co_policiespage();
+        
         ThreadContext.pop();
         ThreadContext.push(this.getClass().getSimpleName());
     }
@@ -480,83 +497,7 @@ public class E2COTestSteps extends TestClass {
 		System.out.println("Click on submit bttn");
 		
 	}
-//	//////////////////////////
-//	@And ("^user clicks on zone button$")
-//	public void clicksOnZoneIcon() {
-//		e2co_zonespage.clikZoneIcon();
-//		Assert.assertTrue(e2co_zonespage.isZonetitlePageDisplayed(),"Zone page is loaded.");
-//		//System.out.println("user is on zone page");
-//	}
-//	
-////	public void southzone() throws Exception {////////////////zone
-////		System.out.println("perform javascript");
-////		zonepage.zonelist();/////////////////south zone click
-////		
-////		System.out.println("print south result");
-////	}
-////	
-//	@Then("^verify zone list$")
-//	public void printZoneList() {
-//		e2co_zonespage.displayZonelist();
-//		System.out.println("print zonelist details-");
-//		
-//	}
-//	@Then ("^click on south zone$")
-//	public void clickOnSouthZone() throws Exception {
-//		e2co_zonespage.clickOnZoneName();
-//		Thread.sleep(2000);
-//		e2co_zonespage.clickOnZoneName();
-//		System.out.println("print which zone name clicked");
-//		e2co_zonespage.clickOnDropDowndots();
-//		System.out.println("dropdown clicked");
-//		
-//	}
-////	@Then ("^click on threedotsdropdown$")
-////	public void threeDotsClick() {
-////		zonepage.clickOnDropDowndots();
-////		System.out.println("three dots");
-////	}
-////	
-//	@When ("^user clicks on create new zone$")
-//	public void clickOnNewZonebttn() {
-//		
-//		e2co_zonespage.creatNewZone();
-//		
-//		//Assert.assertTrue(true);
-//		
-//		System.out.println("user is on createnew zone page");	
-//	}
-//	
-//	@And ("^user enter the details of new zone (.*), (.*)")
-//	public void entermandotarydetails(String SheetName, int RowNumber) throws IOException, Exception {
-//		ExcelReader reader = new ExcelReader();
-//    	List<Map<String,String>> testData =
-//    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
-//    	String zoneid = testData.get(RowNumber).get("zoneid");
-//    	String latitude = testData.get(RowNumber).get("latitude");
-//    	String longitude = testData.get(RowNumber).get("longitude");
-//    	String description = testData.get(RowNumber).get("description");
-//    	 
-//		e2co_zonespage.enterZoneName(zoneid);
-//		//e2co_zonespage.enterCountry(countryname);
-//		e2co_zonespage.enterLatitude(latitude);
-//		e2co_zonespage.enterLongitude(longitude);
-//		e2co_zonespage.enterDescription(description);
-//		
-//	}
-//	
-//	@Then ("^clicks on a submit$")
-//	public void clickOnSubmitbttn() throws Exception {
-//		e2co_zonespage.submitData();
-//		Assert.assertTrue(true);
-//		Thread.sleep(2000);
-//		System.out.println("result");
-//	}
-	
-//	@Then ("^user is clicks close icon$")
-//	public void clickClosebttn() {
-//		e2co_zonespage.closeIcon();
-//	}
+
 	//************************
 	@And("^user clicks on my application$")
 	public void clickOnMyApplication() throws Exception {
@@ -683,6 +624,8 @@ public class E2COTestSteps extends TestClass {
 	    	List<Map<String,String>> testData =
 	    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
 	    	 serviceFromUser = testData.get(RowNumber).get("service");
+	    	 artifactNameFrDelete = testData.get(RowNumber).get("artifactNameFrDelete");
+	    	 
 		 if(serviceFromUser.equals("container")) {
 			e2co_myapplication.selectContainer();
 			log.info("Container as service selected");
@@ -704,7 +647,7 @@ public class E2COTestSteps extends TestClass {
 	 
 	 @When("^user selects the artifactid for delete$")
 	 public void selectTheArtifactId() throws Exception {
-		 e2co_myapplication.deleteArtifactSelect();
+		 e2co_myapplication.deleteArtifactSelect(artifactNameFrDelete);
 		 
 	 }
 	 
@@ -736,9 +679,26 @@ public class E2COTestSteps extends TestClass {
 		    
 	 }
 	 
-	 @When("^user selects the artifactid$")
-	 public void selectArtifactIdForApplicationOnboard() throws Exception {
-		 e2co_myapplication.selectArtifactId();
+	 @When("^user selects the artifactid(.*), (.*)")
+	 public void selectArtifactIdForApplicationOnboard(String SheetName, int RowNumber) throws Exception {
+		 ExcelReader reader = new ExcelReader();
+	    	List<Map<String,String>> testData =
+	    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+	    	
+	    	String artifactNameFrOnboard = testData.get(RowNumber).get("artifactNameFrOnboard");
+		 appNameFromUser = testData.get(RowNumber).get("appName");
+	    	 Latency = testData.get(RowNumber).get("Latency");
+	    	 zone = testData.get(RowNumber).get("zone");
+	    	 componentid = testData.get(RowNumber).get("componentId");
+	    	 Network = testData.get(RowNumber).get("Network");
+	    	 username = testData.get(RowNumber).get("username");
+	    	 password = testData.get(RowNumber).get("password");
+	    	 confirmpassword = testData.get(RowNumber).get("confirmpassword");
+	    	 sshkey = testData.get(RowNumber).get("sshkey");
+	    	 ephermalvolume = testData.get(RowNumber).get("ephermalvolume");
+	    	 Thread.sleep(2000);
+	    	
+	    	 e2co_myapplication.selectArtifactId(artifactNameFrOnboard);
 	 }
 	 
 	 @Then("^user clicks on done button$")
@@ -773,33 +733,50 @@ public class E2COTestSteps extends TestClass {
 	    	Assert.assertTrue(e2co_myapplication.verifyUploadedDataIsFecthed(),"Uploaded data is displayed on the page");
 	    }
 	    
-	    @When("^update the details of application (.*), (.*)")
-	    public void detailsUpdating(String SheetName, int RowNumber) throws IOException, Exception {
+	    @When("^update the details of application$")
+	    public void detailsUpdating() throws  Exception {
 	    	//String s = new SimpleDateFormat("MMddmmssSSS").format(new Date());
 			//dynamicAppName = appName + s;
-	    	ExcelReader reader = new ExcelReader();
-	    	List<Map<String,String>> testData =
-	    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
-	    	 appNameFromUser = testData.get(RowNumber).get("appName");
-	    	String Latency = testData.get(RowNumber).get("Latency");
-	    	String zone = testData.get(RowNumber).get("zone");
-	    	String componentId = testData.get(RowNumber).get("componentId");
-	    	String Network = testData.get(RowNumber).get("Network");
 	    	
-	    	e2co_myapplication.updateAppName(appNameFromUser);
-	    	Thread.sleep(2000);
-	    	//e2co_myapplication.updateBandWidth(BandWidth);
-	    	e2co_myapplication.updateLatency(Latency);
-	    	Thread.sleep(2000);
-	    	e2co_myapplication.updateZone(zone);
-	    	Thread.sleep(2000);
-	    	e2co_myapplication.clickOnDeploymentEdit();
-	    	Thread.sleep(2000);
-	    	e2co_myapplication.updateComponentID(componentId);
-	    	Thread.sleep(2000);
-	    	e2co_myapplication.updateNetwork(Network);
-	    	Thread.sleep(2000);	
-	    }
+	    	if(serviceFromUser.equals("container")) {
+				e2co_myapplication.updateAppName(appNameFromUser);
+		    	Thread.sleep(2000);
+		    	//e2co_myapplication.updateBandWidth(BandWidth);
+		    	e2co_myapplication.updateLatency(Latency);
+		    	Thread.sleep(2000);
+		    	e2co_myapplication.updateZone(zone);
+		    	Thread.sleep(2000);
+		    	e2co_myapplication.clickOnDeploymentEdit();
+		    	Thread.sleep(2000);
+		    	e2co_myapplication.updateComponentID(componentid);
+		    	Thread.sleep(2000);
+		    	e2co_myapplication.updateNetwork(Network);
+		    	Thread.sleep(2000);	
+			 }else if (serviceFromUser.equals("VM")){
+				 e2co_myapplication.updateAppName(appNameFromUser);
+			    	Thread.sleep(2000);
+			    	//e2co_myapplication.updateBandWidth(BandWidth);
+			    	e2co_myapplication.updateLatency(Latency);
+			    	Thread.sleep(2000);
+			    	e2co_myapplication.updateZone(zone);
+			    	Thread.sleep(2000);
+			    	e2co_myapplication.clickOnDeploymentEdit();
+			    	Thread.sleep(2000);
+			    	e2co_myapplication.updateComponentID(componentId);
+			    	Thread.sleep(2000);
+			    	e2co_myapplication.enterUserName(username);
+			    	e2co_myapplication.enterPassword(password);
+			    	e2co_myapplication.enterConfirmPassword(confirmpassword);
+			    	e2co_myapplication.enterSSHKey(sshkey);
+			    	e2co_myapplication.selectVolume(ephermalvolume);
+			    	
+			}else {
+				
+						}
+				}
+	    	
+	    	
+	    
 	    
 	    @And("^Click on submit button$")
 	    public void clickOnSubmitButton() throws Exception {
@@ -1712,5 +1689,107 @@ public class E2COTestSteps extends TestClass {
     	Thread.sleep(2000);
 
     }
+    
+    //**************************
+    @And ("^user click on policy menu$")
+    public void ClickOnPolicyMenu() throws Exception {
+    	e2co_policiespage.ClickONPolicyMenu();
+    }
+    
+    @And ("^user click on edge policy option$")
+    public void ClickOnEdgePolicySection() {
+    	e2co_policiespage.ClickEdgePlicy();
+    }
+    @Then ("^Edge policy page is displayed$")
+    public void ValidatePolicyPageIsDisplayed() {
+    	Assert.assertTrue(e2co_policiespage.PolicyTitleDisplay(),"Policy page is display");
+    }
+    
+    @When ("^user select all policy related terms(.*),(.*)")
+    public void SelectAllPolicyParameter(String SheetName,int RowNumber) throws Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	
+    	 String SelectEdgeId = testData.get(RowNumber).get("SelectEdgeId");
+    	 String SelectPolicy = testData.get(RowNumber).get("SelectPolicy");
+    	 String SelectRule = testData.get(RowNumber).get("SelectRule");
+    	 String SelectOvercommit = testData.get(RowNumber).get("SelectOvercommit");
+
+    	 e2co_policiespage.SelectEdgeId(SelectEdgeId);
+    	 e2co_policiespage.SelectNewPolicy(SelectPolicy);
+    	 e2co_policiespage.SelectAnyRule(SelectRule);
+    	 e2co_policiespage.SelectOvercommitRange(SelectOvercommit);
+    }
+    
+    @Then ("^edge policy is successfully selected$")
+    public void ValidatePolicyApply() throws Exception {
+    	e2co_policiespage.ClickSubmitButton();
+    	e2co_policiespage.GetSuccessMsg();
+    	Assert.assertTrue(e2co_policiespage.SuccessfulPopMsg(),"Successfully updated pop up disaply");
+    }
+    
+    @And ("^user click on Application policy option$")
+    public void ClickOnAppMenu() {
+    	e2co_policiespage.ClickOnAppMenu();
+    }
+    
+    @Then ("^Application policy page is displayed$")
+    public void VerifyApplicationPageloaded() {
+    	Assert.assertTrue(e2co_policiespage. VerifyAppPage(),"App Policy page is display");
+    }
+    @When ("^user select Application all application related term(.*),(.*)")
+    public void EnterAllAppDetails(String SheetName,int RowNumber) throws Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	
+    	 String ApplicationField = testData.get(RowNumber).get("ApplicationField");
+    	 String AppPolicyField = testData.get(RowNumber).get("AppPolicyField");
+    	 String ApplicationRule = testData.get(RowNumber).get("ApplicationRule");
+    	 String DownloadLimit = testData.get(RowNumber).get("DownloadLimit");
+    	 
+    	
+    	 e2co_policiespage.SelectOneApp(ApplicationField);
+    	 e2co_policiespage.SelectAppPolicy(AppPolicyField);
+    	 e2co_policiespage.SelectAppRule(ApplicationRule);
+    	 e2co_policiespage.EntertDownloadLimit(DownloadLimit);
+    	 e2co_policiespage.SubmitOneDownloadLimit();
+    	
+    }
+    @Then ("^Application policy is successfully selected$")
+    public void ClickOnSubmitButton() throws Exception {
+    	e2co_policiespage.ClickSubmitButton();
+    	e2co_policiespage.VerifySuccessfulAppPolicy();
+    	e2co_policiespage.AppCloseButton();
+    	
+    }
+    
+    @And ("^user click on network policy option$")
+    public void ClickOnNetworkPolicyOption() throws Exception {
+    	e2co_policiespage.ClickOnNetworkPolicy();
+    }
+    
+    @Then ("^Network policy page is displayed$")
+    public void NetworkPolicyPageDisplayed() {
+    	Assert.assertTrue(e2co_policiespage. VerifyAppPage(),"Network Policy page is display");
+    }
+    
+    @When ("^user select all mandetory details(.*),(.*)")
+    public void SelectAllNetworkDetails(String SheetName,int RowNumber) throws Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	
+    	 String NetworkApp = testData.get(RowNumber).get("NetworkApp");  
+    	 e2co_policiespage.SelectAppForNextworkPolicy(NetworkApp);
+    }
+    
+    @Then ("^Network policy is successfully selected$")
+    public void ValidateNetworkDetails() {
+    	e2co_policiespage.GetNetworkSelectedDetails();
+    }
+
+    
 }
 

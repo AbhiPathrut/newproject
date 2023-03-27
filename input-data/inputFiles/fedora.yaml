@@ -12,7 +12,7 @@
         "latencyConstraints": "none",
         "regions": [
             {
-                "operator": "Vodafone",
+                "operator": "AirtelCorp",
                 "Country": "IN",
                 "zoneId": "SouthZone",
                 "isbarred": false,
@@ -22,7 +22,7 @@
         "bandwidth": "2"
     },
     "specifications": {
-        "accessToken": "652ZI9IU0BF8CB8",
+        "accessToken": "652zi9iu0bf8cb8",
         "artifactId": "632c770ca000010",
         "mobilityCapability": "Allowed",
         "visibility": "public",
@@ -35,7 +35,7 @@
             {
                 "serviceId": "vmliveservice",
                 "components": {
-                    "componentId": "fedoraimage",
+                    "componentId": "fedora",
                     "componentType": "docker",
                     "componentSource": {
                         "repo": "file",
