@@ -31,7 +31,7 @@ public class E2CO_SDKPage extends PageClass {
 	 @FindBy(xpath="//select[@id='floatingSelect']")
 	 private WebElement SelectLanguage;
 	 
-	 @FindBy(xpath="//input[@id='SDKVersion']")
+	 @FindBy(xpath="//input[@formcontrolname='sdkVersion']")
 	 private WebElement SelectVersion;
 	 
 	 @FindBy(xpath="//textarea[@id='floatingTextarea2']")

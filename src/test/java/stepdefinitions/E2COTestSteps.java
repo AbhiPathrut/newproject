@@ -114,9 +114,13 @@ public class E2COTestSteps extends TestClass {
     @Given("^user logs into MEC portal(.*)")
     public void login(String user) {
     	if(user.equals("Admin")) {
-    	e2co_loginpage.login(Web.UI_USERNAME, Web.UI_PASSWORD, Web.UI_DOMAINNAME);
-    	}else {
+    		e2co_loginpage.login(Web.UI_USERNAME, Web.UI_PASSWORD, Web.UI_DOMAINNAME);
+    	}else if(user.equals("Dev")) {
     		e2co_loginpage.login(Web.UI_Dev_USERNAME, Web.UI_Dev_PASSWORD, Web.UI_Dev_DOMAINNAME);
+    	}else if(user.equals("EntAdmin")) {
+    		e2co_loginpage.login(Web.UI_Ent_USERNAME, Web.UI_Ent_PASSWORD, Web.UI_Ent_DOMAINNAME);
+    	}else {
+    		e2co_loginpage.login(Web.UI_EntDev_USERNAME, Web.UI_EntDev_PASSWORD, Web.UI_EntDev_DOMAINNAME);
     	}
     	    }
     

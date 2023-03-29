@@ -25,6 +25,12 @@ public class AppConstants {
         public static final String UI_Dev_USERNAME = PropertyReader.getFieldValue("UI_DEVUSERNAME");
         public static final String UI_Dev_PASSWORD = PropertyReader.getFieldValue("UI_DEVPASSWORD");
         public static final String UI_Dev_DOMAINNAME = PropertyReader.getFieldValue("UI_DEVDOMAINNAME");
+        public static final String UI_Ent_USERNAME = PropertyReader.getFieldValue("UI_ENTUSERNAME");
+        public static final String UI_Ent_PASSWORD = PropertyReader.getFieldValue("UI_ENTPASSWORD");
+        public static final String UI_Ent_DOMAINNAME = PropertyReader.getFieldValue("UI_ENTDOMAINNAME");
+        public static final String UI_EntDev_USERNAME = PropertyReader.getFieldValue("UI_ENTDEVUSERNAME");
+        public static final String UI_EntDev_PASSWORD = PropertyReader.getFieldValue("UI_ENTDEVPASSWORD");
+        public static final String UI_EntDev_DOMAINNAME = PropertyReader.getFieldValue("UI_ENTDEVDOMAINNAME");
         public static final String SCREENSHOT_ENABLE = PropertyReader.getFieldValue("ScreenshotEnable");
 
         private Web() {

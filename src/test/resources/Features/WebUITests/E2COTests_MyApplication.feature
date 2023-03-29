@@ -21,6 +21,7 @@ Scenario Outline: Create new artifactId
 	Examples:
 		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    #| Dev | MyApplication | 1 |
     
 
 @MyApplication_02
@@ -41,6 +42,8 @@ Scenario Outline: user able to delete artifact
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    
+    
     
 
 @MyApplication_03
@@ -69,6 +72,7 @@ Scenario Outline: user able to onboard application
  		Examples:
  		| user | SheetName | RowNumber |
     | Admin | MyApplication | 0 |
+    #| Developer | MyApplication | 1 |
     
 
 @MyApplication_04
@@ -202,7 +206,7 @@ Scenario Outline: Create new artifactId for enterprise
  		Then user able to see created artifact
 	Examples:
 		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 |
     
 @MyApplication_09
 Scenario Outline: user able to delete artifact for enterprise
@@ -221,7 +225,7 @@ Scenario Outline: user able to delete artifact for enterprise
  		Then user is not able to find the deleted artifactId
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |  
+    | Enterprise | MyApplication | 0 |  
     
 @MyApplication_10
 Scenario Outline: user able to onboard application for enterprise
@@ -240,7 +244,7 @@ Scenario Outline: user able to onboard application for enterprise
  		Then user is able to see uploaded data on page
  		When user clicks on select artifact
  		Then user able to see artifacts uploaded
- 		When user selects the artifactid 
+ 		When user selects the artifactid<SheetName>, <RowNumber> 
  		Then user clicks on done button
  		When the details of application for enterprise<SheetName>, <RowNumber> 
  		And Click on submit button
@@ -248,7 +252,7 @@ Scenario Outline: user able to onboard application for enterprise
  		Then user is can see the application in a list for enterprise
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 | 
+    | Enterprise | MyApplication | 0 | 
  		
  		
 @MyApplication_11
@@ -266,7 +270,7 @@ Scenario Outline: user able to provision application for enterprise
  		Then user is able to see the application in running status for enterprise
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    | Enterprise | MyApplication | 0 |
     
 @MyApplication_12
 Scenario Outline: user able to deprovision application for enterprise
@@ -282,7 +286,7 @@ Scenario Outline: user able to deprovision application for enterprise
  		Then user able to see the app is deprovisioned for enterprise
 Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    | Enterprise | MyApplication | 0 |
     
 @MyApplication_13
 Scenario Outline: user able to deprovision application for enterprise
@@ -298,7 +302,7 @@ Scenario Outline: user able to deprovision application for enterprise
  		Then user is able to see the application is removed from the list for enterprise
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    | Enterprise | MyApplication | 0 |
  		
 @MyApplication_14
 Scenario Outline: Create new artifactId through manage artifact

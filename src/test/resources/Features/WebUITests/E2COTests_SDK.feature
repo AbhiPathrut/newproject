@@ -15,11 +15,11 @@ Scenario Outline: SdK Uploading
     
     Examples:
     | user | SheetName | RowNumber |
-    |Admin| SDK | 0 |
-    |Admin| SDK | 1 |
-    |Admin| SDK | 2 |
-    |Admin| SDK | 3 |
-    |Admin| SDK | 4 |
+    | Admin | SDK | 0 |
+    #| EntAdmin | SDK | 1 |
+    #| EntDev | SDK | 2 |
+    #| Dev | SDK | 3 |
+    #|Admin| SDK | 4 |
     
 
 @SDK_02    

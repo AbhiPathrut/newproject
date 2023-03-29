@@ -3,7 +3,7 @@ metadata:
   version: "1.0"
   category: GAME
   owner: admin
-  description: alpine app 1
+  description: nginx001
   appType: microservice
   appDescriptorType: MEC
 deploymentRequirements:
@@ -16,16 +16,16 @@ deploymentRequirements:
   deploymentSites: 3
   bandwidth: "2"
 specifications:
-  accessToken: 629952b52000010
+  accessToken: 1223344556sdfgg
   mobilityCapability: Allowed
   visibility: public
   tenancy: single
   enable: 'true'
 ComponentDetails:
   services:
-  - serviceId: alpinesvc1
+  - serviceId: nginx001
     components:
-      componentId: alpine1
+      componentId: ngnix
       componentType: docker
       componentEnvs:
       - name: COMPENV

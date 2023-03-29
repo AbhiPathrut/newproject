@@ -7,6 +7,7 @@ Scenario Outline: view running status of application in pods
     And user is on Dashboard page
    	When user cliks on enterprise menu
    	Then user is on enterprise page
+   	When user clicks on add new
    	
    
    
