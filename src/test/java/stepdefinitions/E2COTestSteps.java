@@ -1964,7 +1964,75 @@ public class E2COTestSteps extends TestClass {
 			e2co_reportspage.clickOnreset();
 		}
 
+		//********************************************
+		
+		@When("^user cliks on enterprise menu$")
+		public void clickOnEnterpriseMneu() {
+			e2co_enterprisepage.clickOnEnterpriseMenu();
+		}
+		
+		@Then("^user is on enterprise page$")
+		public void verifyUserIsOnEnterprisePage() {
+			Assert.assertTrue(e2co_enterprisepage.verifyEnterpriseMenuPageIsDispalyed(),"Enterprise Page is displayed.");
+		}
+		
+		@When("^user clicks on add new$")
+		public void clickOnAddNew() {
+			e2co_enterprisepage.clickOnAddNew();
+		}
+		
+		@Then("^onboarding new enterprise page is displayed$")
+		public void verifyUserIsOnNewEnterprisePage() {
+			
+		}
+		
+		@When("^ new onboarding enterprise details provide(.*), (.*)")
+		public void provideRequiredDetails(String SheetName, int RowNumber) throws IOException, Exception {
 
-    
+			ExcelReader reader = new ExcelReader();
+			List<Map<String,String>> testData =
+					reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+			String EnterpriseName = testData.get(RowNumber).get("EnterpriseName");
+			String DomainName = testData.get(RowNumber).get("DomainName");
+			String LoginID = testData.get(RowNumber).get("LoginID");
+			String Password = testData.get(RowNumber).get("Password");
+			String ConfirmPassword = testData.get(RowNumber).get("ConfirmPassword");
+			String Description = testData.get(RowNumber).get("Description");
+			String Zone = testData.get(RowNumber).get("Zone");
+			String CPU = testData.get(RowNumber).get("CPU");
+			String Memory = testData.get(RowNumber).get("Memory");
+			String Storage = testData.get(RowNumber).get("Storage");
+			
+			e2co_enterprisepage.enterEnterpriseName(EnterpriseName);
+			e2co_enterprisepage.enterDomainName(DomainName);
+			e2co_enterprisepage.enterLoginId(LoginID);
+			e2co_enterprisepage.enterPassword(Password);
+			e2co_enterprisepage.enterConfirmPassword(ConfirmPassword);
+			e2co_enterprisepage.eneterDescription(Description);
+			e2co_enterprisepage.selectZone(Zone);
+			e2co_enterprisepage.enterCPU(CPU);
+			e2co_enterprisepage.enterMemory(Memory);
+			e2co_enterprisepage.enterStorage(Storage);
+		}
+
+		@Then("^click on submit to create new enterprise$")
+		public void clickonsubmitBtn() {
+			e2co_enterprisepage.clickOnSubmitBtn();
+		}
+		
+		@When("^created new enterprise successful popup message is displayed$")
+		public void verifySuccessPopupMessageIsDisplayed() {
+			Assert.assertTrue(e2co_enterprisepage.verifySuccessPopupMessage(),"SuccessPopup Message Is Displayed.");
+		}
+		
+		@And("^click on close btn$")
+		public void clickOnCloseBtn() {
+			e2co_enterprisepage.clickOnCloseBtn();
+		}
+		
+		@Then("^user is able to see the created new enterprise in list with the onbarded status$")
+		public void verifyUserIsAbleToSeeEnterpriseOnboarded() {
+			
+		}
 }
 

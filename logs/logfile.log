@@ -26647,3 +26647,127 @@ Session ID: 502261e61b496e6d285b397815d0956a
 2023-03-29 12:21:32,193 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
 2023-03-29 12:21:32,193 [INFO] [LOCAL, E2COTestSteps] Clicked on close button
 2023-03-29 12:21:32,664 [INFO] [LOCAL, E2COTestSteps] Execution status is: PASSED
+2023-03-29 15:11:21,703 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:11:21,703 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-29 15:11:21,721 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-29 15:11:21,722 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-29 15:11:21,722 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-29 15:11:21,723 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-29 15:11:21,723 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-29 15:11:21,723 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-29 15:11:21,723 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-29 15:11:21,724 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-29 15:11:21,725 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTUSERNAME' = add01
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTUSERNAME' = add01
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTPASSWORD' = Admin@1234
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTPASSWORD' = Admin@1234
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTDOMAINNAME' = pune
+2023-03-29 15:11:21,726 [INFO] [qa.properties] Received parameter 'UI_ENTDOMAINNAME' = pune
+2023-03-29 15:11:21,727 [INFO] [qa.properties] Received parameter 'UI_ENTDEVUSERNAME' = deve08
+2023-03-29 15:11:21,727 [INFO] [qa.properties] Received parameter 'UI_ENTDEVUSERNAME' = deve08
+2023-03-29 15:11:21,727 [INFO] [qa.properties] Received parameter 'UI_ENTDEVPASSWORD' = Admin@1234
+2023-03-29 15:11:21,727 [INFO] [qa.properties] Received parameter 'UI_ENTDEVPASSWORD' = Admin@1234
+2023-03-29 15:11:21,728 [INFO] [qa.properties] Received parameter 'UI_ENTDEVDOMAINNAME' = anu1
+2023-03-29 15:11:21,728 [INFO] [qa.properties] Received parameter 'UI_ENTDEVDOMAINNAME' = anu1
+2023-03-29 15:11:21,728 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-29 15:11:21,728 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-29 15:11:21,730 [INFO] [qa.properties] Initializing self healing driver
+2023-03-29 15:11:21,730 [INFO] [qa.properties] Initializing self healing driver
+2023-03-29 15:11:27,375 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-29 15:11:27,375 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-29 15:11:30,267 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:11:30,267 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:11:30,280 [INFO] [LOCAL, CommonSteps] Scenario Name: onboarding new enterpsie
+2023-03-29 15:11:30,293 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:11:30,293 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:12:01,095 [ERROR] [LOCAL, E2COTestSteps] Failed to enter username.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id = 'Username']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-29 15:12:01,095 [ERROR] [LOCAL, E2COTestSteps] Failed to enter username.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id = 'Username']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-29 15:12:01,226 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-29 15:12:01,226 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-29 15:12:01,327 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-29 15:12:01,327 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-29 15:12:12,605 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
+2023-03-29 15:13:05,958 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:05,958 [INFO] [qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'ExecutionServer' = Local
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'InterfaceType' = Web
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-29 15:13:05,967 [INFO] [qa.properties] Received parameter 'AZURE_KEYVAULT_URL' = 
+2023-03-29 15:13:05,969 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-29 15:13:05,969 [INFO] [qa.properties] Received parameter 'TestBrowser' = chrome
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'GRID_HUB_PORT' = 4444
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-29 15:13:05,970 [INFO] [qa.properties] Received parameter 'GRID_HUB_IP' = localhost
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_USERNAME' = admin
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_PASSWORD' = Admin@1234
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-29 15:13:05,971 [INFO] [qa.properties] Received parameter 'UI_DOMAINNAME' = default
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVUSERNAME' = dev01
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVPASSWORD' = Admin@1234
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-29 15:13:05,972 [INFO] [qa.properties] Received parameter 'UI_DEVDOMAINNAME' = default
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTUSERNAME' = add01
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTUSERNAME' = add01
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTPASSWORD' = Admin@1234
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTPASSWORD' = Admin@1234
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTDOMAINNAME' = pune
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTDOMAINNAME' = pune
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTDEVUSERNAME' = deve08
+2023-03-29 15:13:05,973 [INFO] [qa.properties] Received parameter 'UI_ENTDEVUSERNAME' = deve08
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'UI_ENTDEVPASSWORD' = Admin@1234
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'UI_ENTDEVPASSWORD' = Admin@1234
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'UI_ENTDEVDOMAINNAME' = anu1
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'UI_ENTDEVDOMAINNAME' = anu1
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-29 15:13:05,974 [INFO] [qa.properties] Received parameter 'ScreenshotEnable' = true
+2023-03-29 15:13:05,976 [INFO] [qa.properties] Initializing self healing driver
+2023-03-29 15:13:05,976 [INFO] [qa.properties] Initializing self healing driver
+2023-03-29 15:13:09,776 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-29 15:13:09,776 [INFO] [LOCAL, CHROME] New driver instantiated.
+2023-03-29 15:13:12,177 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:12,177 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:12,180 [INFO] [LOCAL, CommonSteps] Scenario Name: onboarding new enterpsie
+2023-03-29 15:13:12,185 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:12,185 [INFO] [LOCAL, qa.properties] Received parameter 'TestEnvironment' = QA
+2023-03-29 15:13:42,900 [ERROR] [LOCAL, E2COTestSteps] Failed to enter username.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id = 'Username']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-29 15:13:42,900 [ERROR] [LOCAL, E2COTestSteps] Failed to enter username.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id = 'Username']' (tried for 20 second(s) with 500 milliseconds interval)
+2023-03-29 15:13:43,063 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-29 15:13:43,063 [INFO] [LOCAL, E2COTestSteps] Entered password
+2023-03-29 15:13:43,178 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-29 15:13:43,178 [INFO] [LOCAL, E2COTestSteps] Entered domain
+2023-03-29 15:13:54,505 [INFO] [LOCAL, E2COTestSteps] Execution status is: FAILED
