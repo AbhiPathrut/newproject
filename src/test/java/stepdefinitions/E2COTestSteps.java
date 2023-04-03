@@ -993,6 +993,43 @@ public class E2COTestSteps extends TestClass {
     	}
     }
     
+    @And ("^click on download option$")
+    public void SDkIsDownloaded() throws Exception {
+    	e2co_sdkpage.ClickonDownloadButton();
+    }
+    
+    @Then ("^file downloaded successfully$")
+    public void ValidationOfFileDownloading() {
+    	e2co_sdkpage.ValidateFileDownloaded();
+    }
+    
+    @Then ("user not able to upload duplicate sdk")
+    public void ValidateDuplicateSDKMSg() {
+    	e2co_sdkpage.DuplicateErrorMsgDisplay();
+    	Assert.assertTrue(e2co_sdkpage.ErrorMsgDisplayed(),"Error message is displayed");
+    }
+    
+    @And("^Enter all mandetory details for invalid file formate(.*),(.*)")
+    public void submitDetailsForInvakidFileFormateUpload(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String language = testData.get(RowNumber).get("language");
+    	 String version = testData.get(RowNumber).get("Version");
+    	String description = testData.get(RowNumber).get("description");	 
+    	e2co_sdkpage.SelectOneLanguage(language);
+//    	String s = new SimpleDateFormat("dssSS").format(new Date());
+//    	dynamicSDKVersion = Version + s;
+    	e2co_sdkpage.EnterSDKVersion(version);
+    	e2co_sdkpage.EnterSDKDescription(description);
+    	e2co_sdkpage.selectSDKFileInvalidFormat();
+    }
+    
+    @Then ("^user is not able to select invalid file format$")
+    public void ValidateFileErrorMsg() {
+    	e2co_sdkpage.ValidateErrorMessage();
+    	Assert.assertTrue(e2co_sdkpage.ValidateInvalidFileFormat(),"File format error message is displayed");
+    }
     //******************************
     
     @When("^user clicks on application(.*), (.*)")

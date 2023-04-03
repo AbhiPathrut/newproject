@@ -48,7 +48,7 @@ public class E2CO_EnterprisePage extends PageClass {
 	@FindBy(xpath = "//select[@formcontrolname='zone']")
 	private WebElement zoneId;
 	
-	@FindBy(xpath = "//button[contains(text(),'Enterprise')]")
+	@FindBy(xpath = "//div[contains(text(),'Enterprise')]")
 	private WebElement enterpriseTitle;
 	
 	@FindBy(xpath = "//button[@type='submit']")

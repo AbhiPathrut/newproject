@@ -1,8 +1,12 @@
 package com.sogeti.automation.test.pageFactory;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -67,6 +71,22 @@ public class E2CO_SDKPage extends PageClass {
 	 @FindBy(xpath = "//div[@class='sdk-details-body bg-white border-radius-5']")
 	 private WebElement deletedSDKinfo;
 	 
+//	 @FindBy(xpath="//td[normalize-space()='ec_client-sdk_Android_1.0.0.zip']")
+//	 private WebElement SelectUploadedSDK;
+
+	 @FindBy(xpath="//a[normalize-space()='Download']")
+	 private WebElement DownloadButton;
+	 
+	 @FindBy(xpath="//div[@class='danger-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	 private WebElement DuplicateErrorMsg;
+	 
+	 @FindBy(xpath="//div[@class='danger-text onboard-success-text-spacing ft-18 ft-wt-500']")
+	 private WebElement ErrorMessage;
+	 
+	 @FindBy(xpath="//span[normalize-space()='Only zip file format allowed !!']")
+	 private WebElement FileFormatError;
+
+	 
 	public E2CO_SDKPage(SelfHealingDriver driver) {
 		super(driver);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(FrameworkConstants.MEDIUM_WAIT));
@@ -106,6 +126,11 @@ public class E2CO_SDKPage extends PageClass {
 		 this.SelectFile.sendKeys(inputFile);
 	 }
 	 
+	 public void selectSDKFileInvalidFormat() {
+		 currentworkingDirectory = System.getProperty("user.dir");
+		 inputFile= currentworkingDirectory + "/input-data/inputFiles/alpine.yaml";
+		 this.SelectFile.sendKeys(inputFile);
+	 }
 	 public void SubmitCreatedSDK() {
 		 this.SubmitButton.click();
 		 log.info("SDK is submitted successfully");
@@ -177,6 +202,51 @@ public class E2CO_SDKPage extends PageClass {
 	 public void infoOfDeletedSdk() {
 		 String InfoOFSDK = this.deletedSDKinfo.getText();
 		 System.out.println(InfoOFSDK);
+	 }
+	 
+	 public void ClickonDownloadButton() throws Exception {
+		 this.DownloadButton.click();
+		 log.info("SdK is downloaded ");
+		 Thread.sleep(3000);
+	 }
+	 
+	 public void ValidateFileDownloaded() {
+		 String fileURL = objDriver.getCurrentUrl();
+		 String sourceLocation = DownloadButton.getAttribute("a");
+	        String fileName = fileURL.substring(fileURL.lastIndexOf('/') + 1);
+	        File downloadedFile = new File(System.getProperty("user.dir") + File.separator + fileName);
+	        
+	        try {
+	            URL url = new URL(fileURL);
+	            FileUtils.copyURLToFile(url, downloadedFile);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        
+	        objDriver.quit();
+}
+	 public void DuplicateErrorMsgDisplay() {
+		 String DuplicateError = this.DuplicateErrorMsg.getText();
+		 System.out.println(DuplicateError);
+	 }
+
+ 
+	 public boolean ErrorMsgDisplayed() {
+		 this.ErrorMessage.isDisplayed();
+		 log.info("Error message is displayed");
+		 return true;
+	 }
+	 
+	 public void ValidateErrorMessage() {
+		 String FileErrorMsg = this.FileFormatError.getText();
+		 System.out.println(FileErrorMsg);
+		 
+	 }
+	 
+	 public boolean ValidateInvalidFileFormat() {
+		 this.FileFormatError.isDisplayed();
+		 log.info("Validate error message");
+		 return true;
 	 }
 
 	  
