@@ -45,7 +45,7 @@ public class E2CO_EnterprisePage extends PageClass {
 	@FindBy(xpath = "//input[@formcontrolname='storage']")
 	private WebElement storage;
 	
-	@FindBy(xpath = "//select[@formcontrolname='zone']")
+	@FindBy(xpath = "//div[@formarrayname='operatorArray']//select[@class='form-select ft-14 ft-wt-400 border-radius-5 dropdown-select-text-color config-input-border ng-pristine ng-valid ng-touched']")
 	private WebElement zoneId;
 	
 	@FindBy(xpath = "//div[contains(text(),'Enterprise')]")
@@ -114,8 +114,8 @@ public class E2CO_EnterprisePage extends PageClass {
 	}
 	
 	public void selectZone(String zone) {
-		Select select1 = new Select(zoneId);
-        select1.selectByVisibleText(zone);
+		Select select = new Select(zoneId);
+        select.selectByVisibleText(zone);
         log.info("Zone selected");
 	}
 	

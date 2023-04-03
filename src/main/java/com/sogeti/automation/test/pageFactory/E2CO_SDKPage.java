@@ -1,12 +1,13 @@
 package com.sogeti.automation.test.pageFactory;
 
 import java.io.File;
-import java.io.IOException;
-import java.net.URL;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,7 @@ public class E2CO_SDKPage extends PageClass {
 	String inputFile;
 	SelfHealingDriver objDriver;
 	int row;
+	String SdkName;
 	
 	 @FindBy(xpath="//span[contains(text(),'folder_zip')]")
 	 private WebElement SdkMenu;
@@ -59,8 +61,8 @@ public class E2CO_SDKPage extends PageClass {
 	 @FindBy(xpath = "//button[contains(text(),'Close')]")
 	 private WebElement closebtn;
 	 
-	 @FindBy(xpath="//td[starts-with(text(),'ec_client-sdk_Android_')]")
-	 private WebElement SelectUploadedSDK;
+//	 @FindBy(xpath="//td[starts-with(text(),'ec_client-sdk_Android_')]")
+//	 private WebElement SelectUploadedSDK;
 	 
 	 @FindBy(xpath="//button[normalize-space()='Delete']")
 	 private WebElement DeleteButton;
@@ -74,7 +76,8 @@ public class E2CO_SDKPage extends PageClass {
 //	 @FindBy(xpath="//td[normalize-space()='ec_client-sdk_Android_1.0.0.zip']")
 //	 private WebElement SelectUploadedSDK;
 
-	 @FindBy(xpath="//a[normalize-space()='Download']")
+	// @FindBy(xpath="//a[normalize-space()='Download']")
+	 @FindBy(xpath = "//a[@class='primary-custom-bg-blue ft-14 ft-wt-400 sdk-details-download-btn border-0 text-white text-decoration-none']")
 	 private WebElement DownloadButton;
 	 
 	 @FindBy(xpath="//div[@class='danger-text onboard-success-text-spacing ft-18 ft-wt-500']")
@@ -175,8 +178,33 @@ public class E2CO_SDKPage extends PageClass {
 		 log.info("Clicked on close button");
 	 }
 	 
-	 public void SelectUploadedSDK(String version) {
-		 WebElement SelectUploadedSDK = objDriver.findElement(By.xpath("//td[contains(text(),"+version+")]"));
+	 public int rowNumber(String SDKName) {
+			WebElement table = objDriver.findElement(By.xpath("//table[@class ='table sdk-list-table']"));
+			List<WebElement> rows = table.findElements(By.tagName("tr"));
+			
+			int rowNumber = -1;
+			for (int i = 0; i < rows.size(); i++) {
+			    List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
+			    for (int j = 0; j < cells.size(); j++) {
+			        if (cells.get(j).getText().equals(SDKName)) {
+			            rowNumber = i;
+			            break;
+			        }
+			    }
+			    if (rowNumber != -1) {
+			        break;
+			    }
+			}
+			System.out.println("Row number: " + rowNumber);
+			return rowNumber;
+			
+		}
+	 public void SelectUploadedSDK(String SDKName) {
+		 int RowNum = rowNumber(SDKName);
+//		 WebElement SelectUploadedSDK = objDriver.findElement(By.xpath("//td[contains(text(),"+version+")]"));
+		 WebElement SelectUploadedSDK = objDriver.findElement(By.xpath("//table[@class ='table sdk-list-table']//tbody//tr["+ RowNum+"]//td[1]"));
+		 SdkName = SelectUploadedSDK.getText();
+		 System.out.println(SdkName);
 		 SelectUploadedSDK.click();
 		 log.info("User Click on uploaded SDK");
 	 }
@@ -205,26 +233,30 @@ public class E2CO_SDKPage extends PageClass {
 	 }
 	 
 	 public void ClickonDownloadButton() throws Exception {
-		 this.DownloadButton.click();
+		 DownloadButton.click();
+		// Thread.sleep(3000);
+		 Robot robot = new Robot();
+		    robot.keyPress(KeyEvent.VK_ENTER);
+		    robot.keyRelease(KeyEvent.VK_ENTER);
 		 log.info("SdK is downloaded ");
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
+		 String downloadFolder = System.getProperty("user.home") + "/Downloads";
+		 Path source = Paths.get(downloadFolder + "/"+SdkName);
+
+		 // Move the file to the working directory
+		 Path target = Paths.get(SdkName);
+		 Files.move(source, target.resolveSibling(source.getFileName()));
+
+		 // Verify that the file has been moved to the working directory
+		 File file = new File(SdkName);
+		 if (file.exists()) {
+		     System.out.println("File has been saved to the working directory");
+		 } else {
+		     System.out.println("Failed to save file to the working directory");
+		 }
+
 	 }
 	 
-	 public void ValidateFileDownloaded() {
-		 String fileURL = objDriver.getCurrentUrl();
-		 String sourceLocation = DownloadButton.getAttribute("a");
-	        String fileName = fileURL.substring(fileURL.lastIndexOf('/') + 1);
-	        File downloadedFile = new File(System.getProperty("user.dir") + File.separator + fileName);
-	        
-	        try {
-	            URL url = new URL(fileURL);
-	            FileUtils.copyURLToFile(url, downloadedFile);
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	        
-	        objDriver.quit();
-}
 	 public void DuplicateErrorMsgDisplay() {
 		 String DuplicateError = this.DuplicateErrorMsg.getText();
 		 System.out.println(DuplicateError);

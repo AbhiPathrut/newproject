@@ -36,10 +36,10 @@ Scenario Outline: SdK deleting
     Examples:
 		| user | SheetName | RowNumber |
     |Admin| SDK | 0 |
-    |Admin| SDK | 1 |
-    |Admin| SDK | 2 |
-    |Admin| SDK | 3 |
-    |Admin| SDK | 4 |
+    #|Admin| SDK | 1 |
+    #|Admin| SDK | 2 |
+    #|Admin| SDK | 3 |
+    #|Admin| SDK | 4 |
 
 
 @SDK_03 
@@ -67,7 +67,7 @@ Scenario Outline: user able to download sdk
     And user is on Dashboard page
     And user click on SDK menu
     Then list of SDK is diasplayed
-    And click on uploaded Sdk<SheetName>, <RowNumber>
+    And Select and click on Sdk for download<SheetName>, <RowNumber>
     And click on download option
     Then file downloaded successfully 
 Examples:

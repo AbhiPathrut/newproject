@@ -331,20 +331,23 @@ public class E2CO_UserManagement extends PageClass {
 	    }
 	
 	 
-	 public void deletebtn() {
-		 Random rand = new Random();
-		int randomNum = rand.nextInt(row);
-		if (randomNum==0){          
-			randomNum= randomNum+1;
-			}
-		System.out.println(randomNum);
-		WebElement userNameDeleted = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
+	 public void deletebtn(String username) {
+		 int RowNum = rowNumber(username);
+//		 Random rand = new Random();
+//		int randomNum = rand.nextInt(row);
+//		if (randomNum==0){          
+//			randomNum= randomNum+1;
+//			}
+		System.out.println(RowNum);
+		WebElement userNameDeleted = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ RowNum+"]//th[3]"));
 		DeletedUserName = userNameDeleted.getText();
-		 WebElement deletebtn= objDriver.findElement(By.xpath("(//div[@class='material-symbols-outlined cursor-pt'][normalize-space()='delete'])["+ randomNum +"]"));
+		 WebElement deletebtn= objDriver.findElement(By.xpath("(//div[@class='material-symbols-outlined cursor-pt'][normalize-space()='delete'])["+ RowNum +"]"));
 		 deletebtn.click();
 		 log.info("Clicked delete button");
 		 System.out.println(DeletedUserName);
 	 }
+	 
+	 
 	 
 	 
 	 
@@ -376,18 +379,19 @@ public class E2CO_UserManagement extends PageClass {
 	 } 
 	 
 	 
-	 public void lockbtn() {
-		 Random rand = new Random();
-			int randomNum = rand.nextInt(row);
-			if (randomNum==0){          
-				randomNum= randomNum+1;
-				}
-			System.out.println(randomNum);
-			WebElement UserNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
+	 public void lockbtn(String username) {
+		 int RowNum = rowNumber(username);
+//		 Random rand = new Random();
+//			int randomNum = rand.nextInt(row);
+//			if (randomNum==0){          
+//				randomNum= randomNum+1;
+//				}
+			System.out.println(RowNum);
+			WebElement UserNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ RowNum+"]//th[3]"));
 			 LockedUserName = UserNamelocked.getText();
-			 WebElement DomainNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[6]"));
+			 WebElement DomainNamelocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ RowNum+"]//th[6]"));
 			 LockedDomainName = DomainNamelocked.getText();
-			 WebElement lockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock')])["+randomNum+"]"));
+			 WebElement lockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock')])["+RowNum+"]"));
 			 lockbtn.click();
 			 log.info("Clicked locked button");
 			 System.out.println(LockedUserName); 
@@ -444,18 +448,19 @@ public class E2CO_UserManagement extends PageClass {
 		return rowInactiveUsers;
 	 }
 	 
-	 public void openlockbtn() {
-		 Random rand = new Random();
-			int randomNum = rand.nextInt(rowInactiveUsers);
-			if (randomNum==0){          
-				randomNum= randomNum+1;
-				}
-			System.out.println(randomNum);
-			WebElement UserNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[3]"));
+	 public void openlockbtn(String username) {
+		 int RowNum = rowNumber(username);
+//		 Random rand = new Random();
+//			int randomNum = rand.nextInt(rowInactiveUsers);
+//			if (randomNum==0){          
+//				randomNum= randomNum+1;
+//				}
+			System.out.println(RowNum);
+			WebElement UserNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ RowNum+"]//th[3]"));
 			 UnLockedUserName = UserNameUnlocked.getText();
-			 WebElement DomainNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ randomNum+"]//th[6]"));
+			 WebElement DomainNameUnlocked = objDriver.findElement(By.xpath("//table[@class='table custom-table-fixed-layout']//tbody//tr["+ RowNum+"]//th[6]"));
 			 UnLockedDomainName = DomainNameUnlocked.getText();
-			 WebElement openlockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock_open')])["+randomNum+"]"));
+			 WebElement openlockbtn= objDriver.findElement(By.xpath("(//div[contains(text(),'lock_open')])["+RowNum+"]"));
 			 openlockbtn.click();
 			 log.info("Clicked openlock button");
 			 System.out.println(UnLockedUserName); 

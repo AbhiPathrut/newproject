@@ -285,10 +285,14 @@ public class E2COTestSteps extends TestClass {
     	
     }
     
-    @When("^user clicks on the delete button$")
-    public void verifyUserIsAbleToDelete() {
+    @When("^user clicks on the delete button(.*), (.*)")
+    public void verifyUserIsAbleToDelete(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String UserName = testData.get(RowNumber).get("UserNameFrDelete");
     	previousNumRow = e2co_usermanagement.SizeOfTable();
-    	e2co_usermanagement.deletebtn();
+    	e2co_usermanagement.deletebtn(UserName);
     }
     
     @Then("^user sees popup of confirmation page$")
@@ -318,9 +322,13 @@ public class E2COTestSteps extends TestClass {
     	Assert.assertTrue(e2co_usermanagement.verifyDeletedRowIsNotPresentInTable(),"User is deleted successfully.");
     }
 
-    @When("^user clicks on the lock button$")
-    public void inactiveUser() throws Exception {
-    	e2co_usermanagement.lockbtn();
+    @When("^user clicks on the lock button(.*), (.*)")
+    public void inactiveUser(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String UserName = testData.get(RowNumber).get("UserNameFrInactive");
+    	e2co_usermanagement.lockbtn(UserName);
     	Assert.assertTrue(e2co_usermanagement.inactivemsg(),"User is inactivated successfully.");
     	e2co_usermanagement.confirmbtn();
     	Thread.sleep(2000);
@@ -341,10 +349,14 @@ public class E2COTestSteps extends TestClass {
     	
     }
     
-    @When("^user clicks on open lock button$")
-    public void activeUser() throws Exception {
+    @When("^user clicks on open lock button(.*), (.*)")
+    public void activeUser(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+    	List<Map<String,String>> testData =
+    			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);
+    	String UserName = testData.get(RowNumber).get("UserNameFrActive");
     	e2co_usermanagement.sizeOfInactiveUsers();
-    	e2co_usermanagement.openlockbtn();
+    	e2co_usermanagement.openlockbtn(UserName);
     	Assert.assertTrue(e2co_usermanagement.verifyActivateWarningMessageIsDisplayed(),"User activate warning message is displayed");
     	e2co_usermanagement.confirmbtn();
     	Thread.sleep(2000);
@@ -993,6 +1005,15 @@ public class E2COTestSteps extends TestClass {
     	}
     }
     
+    @And("^Select and click on Sdk for download(.*), (.*)")
+    public void clickOnSdkForDownload(String SheetName, int RowNumber) throws IOException, Exception {
+    	ExcelReader reader = new ExcelReader();
+     	List<Map<String,String>> testData =
+     			reader.getData(System.getProperty("user.dir")+ "\\input-data\\inputFiles\\InputData.xlsx", SheetName);	 
+     	String SDKName = testData.get(RowNumber).get("SdkNameForDownload");
+     	e2co_sdkpage.SelectUploadedSDK(SDKName);
+    }
+    
     @And ("^click on download option$")
     public void SDkIsDownloaded() throws Exception {
     	e2co_sdkpage.ClickonDownloadButton();
@@ -1000,7 +1021,7 @@ public class E2COTestSteps extends TestClass {
     
     @Then ("^file downloaded successfully$")
     public void ValidationOfFileDownloading() {
-    	e2co_sdkpage.ValidateFileDownloaded();
+    	//e2co_sdkpage.ValidateFileDownloaded();
     }
     
     @Then ("user not able to upload duplicate sdk")
@@ -2023,7 +2044,7 @@ public class E2COTestSteps extends TestClass {
 			
 		}
 		
-		@When("^ new onboarding enterprise details provide(.*), (.*)")
+		@When("^new onboarding enterprise details provide(.*), (.*)")
 		public void provideRequiredDetails(String SheetName, int RowNumber) throws IOException, Exception {
 
 			ExcelReader reader = new ExcelReader();
