@@ -234,12 +234,13 @@ public class E2CO_SDKPage extends PageClass {
 	 
 	 public void ClickonDownloadButton() throws Exception {
 		 DownloadButton.click();
-		// Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 Robot robot = new Robot();
 		    robot.keyPress(KeyEvent.VK_ENTER);
+		    Thread.sleep(1000);
 		    robot.keyRelease(KeyEvent.VK_ENTER);
 		 log.info("SdK is downloaded ");
-		 Thread.sleep(2000);
+		 Thread.sleep(5000);
 		 String downloadFolder = System.getProperty("user.home") + "/Downloads";
 		 Path source = Paths.get(downloadFolder + "/"+SdkName);
 
