@@ -125,7 +125,7 @@ Scenario Outline: user able to deboard the application
  		Then user is able to see the application is removed from the list
  		Examples:
  		| user | SheetName | RowNumber |
-    | dev | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
     
     
         

@@ -36,7 +36,7 @@ Scenario Outline: Deboard the edge
      Examples:
      | user | SheetName | RowNumber | 
      | Admin | Edges | 0 |
-     | Admin | Edges | 1 |
+     #| Admin | Edges | 1 |
      
      
      
@@ -141,7 +141,7 @@ Scenario Outline: changing edge status to onboard to faulty and vice-versa by ch
     Examples:
     | user | SheetName | RowNumber | 
     | Admin | Edges | 0 |
-    #| Admin | Edges | 1 |
+    | Admin | Edges | 1 |
      
     
  

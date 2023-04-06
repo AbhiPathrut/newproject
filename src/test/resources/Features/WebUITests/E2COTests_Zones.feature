@@ -33,7 +33,7 @@ Scenario Outline: Create new zone with enterprise dedicated zone
  		Then click on close button
  		Examples:
 		| user | SheetName | RowNumber |
-    | Admin | Zones | 0 |
+    | Admin | Zones | 1 |
  		
 @Zones_03
 Scenario Outline: Create new zone simple with kubernetes service
@@ -49,7 +49,7 @@ Scenario Outline: Create new zone simple with kubernetes service
  		Then click on close button
  		Examples:
 		| user | SheetName | RowNumber |
-    | Admin | Zones | 0 |	
+    | Admin | Zones | 2 |	
 
 @Zones_04    
 Scenario Outline: Create new zone with enterprise dedicated zone with kubernetes service 
