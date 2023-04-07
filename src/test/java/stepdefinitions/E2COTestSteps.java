@@ -808,15 +808,18 @@ public class E2COTestSteps extends TestClass {
 	    	e2co_myapplication.closeTheDialogBox();
 	    }
 
-	    @Then("^user is can see the application in a list$")
-	    public void verifyApplicationOnboardedIsDisplyaedInList() throws Exception {
+	    @Then("^user is can see the application in a list(.*)")
+	    public void verifyApplicationOnboardedIsDisplyaedInList(String user) throws Exception {
 	    	e2co_myapplication.SizeOfApplicationTable();
 	    	e2co_myapplication.verifyApplicationOnoardedIsDisplayed(appNameFromUser);
 	    	Thread.sleep(15000);
 	    	e2co_myapplication.refresHPageOfWeb();
 	    	Thread.sleep(10000);
+	    	if(user.equals("Admin")) {
 	    	e2co_myapplication.statusOfApplication(appNameFromUser);
-	    	
+	    	}else {
+	    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(appNameFromUser);
+	    	}
 	    	
 	    }
 	
@@ -1088,12 +1091,17 @@ public class E2COTestSteps extends TestClass {
     	e2co_myapplication.clickOncloseBtn();
     }
     
-    @Then("^user is able to see the application in running status$")
-    public void verifyApplicationIsInRunningStatus() throws Exception {
+    @Then("^user is able to see the application in running status(.*)")
+    public void verifyApplicationIsInRunningStatus(String user) throws Exception {
+    	
     	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
     	Thread.sleep(8000);
+    	if(user.equals("Admin")) {
     	e2co_myapplication.statusOfApplication(ApplicationNameFrProvision);
+    	}else {
+    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(ApplicationNameFrProvision);
+    	}
     }
     
     //**************************
@@ -1163,12 +1171,17 @@ public class E2COTestSteps extends TestClass {
     	
     }
     
-    @Then("^user able to see the app is deprovisioned$")
-    public void verifyAppIsDeprovisioned() throws Exception {
+    @Then("^user able to see the app is deprovisioned(.*)")
+    public void verifyAppIsDeprovisioned(String user) throws Exception {
     	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
     	Thread.sleep(8000);
+    	if(user.equals("Admin")) {
     	e2co_myapplication.statusOfApplication(ApplicationNameFrDeProvision);
+    	}else {
+    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(ApplicationNameFrDeProvision);
+    		
+    	}
     	
     }
     //*************************
@@ -1346,34 +1359,46 @@ public class E2COTestSteps extends TestClass {
     	Thread.sleep(2000);	
     }
     
-    @Then("^user is can see the application in a list for enterprise$")
-    public void applicationIsOnboardedOrNot() throws Exception {
+    @Then("^user can see application in a list for enterprise(.*)")
+    public void applicationIsOnboardedOrNot(String user) throws Exception {
     	e2co_myapplication.SizeOfApplicationTableFrEnterprise();
     	e2co_myapplication.verifyAppOnboardedIsDisplayedFrEnterprise(appNameFromUser);
     	Thread.sleep(15000);
     	e2co_myapplication.refresHPageOfWeb();
     	Thread.sleep(10000);
+    	if(user.equals("EntAdmin")) {
     	e2co_myapplication.statusOfApplicationFrEnterprise(appNameFromUser);
-    }
+    	}else {
+    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(appNameFromUser);
+    	}
+    	}
     
-    @Then("^user is able to see the application in running status for enterprise$")
-    public void verifyApplicationStatusIsRunningFrEnterprise() throws Exception {
+    @Then("^user able to see application in running status for enterprise(.*)")
+    public void verifyApplicationStatusIsRunningFrEnterprise(String user) throws Exception {
     	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
     	Thread.sleep(8000);
+    	if(user.equals("EntAdmin")) {
     	e2co_myapplication.statusOfApplicationFrEnterprise(ApplicationNameFrProvision);
+    	}else {
+    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(ApplicationNameFrProvision);
+    	}
     }
     
-    @Then("^user able to see the app is deprovisioned for enterprise$")
-    public void verifyApplicationIsDeprovisionedFrEnterprise() throws Exception {
+    @Then("^user able to see app is deprovisioned for enterprise(.*)")
+    public void verifyApplicationIsDeprovisionedFrEnterprise(String user) throws Exception {
     	Thread.sleep(10000);
     	e2co_myapplication.refresHPageOfWeb();
     	Thread.sleep(8000);
+    	if(user.equals("EntAdmin")) {
     	e2co_myapplication.statusOfApplicationFrEnterprise(ApplicationNameFrDeProvision);
+    	}else {
+    		e2co_myapplication.statusOfApplicationFrEnterpriseDev(ApplicationNameFrDeProvision);
+    	}
     	
     }
     
-    @Then("^user is able to see the application is removed from the list for enterprise$")
+    @Then("^user able to see application is removed from the list for enterprise$")
     public void verifyAppIsDeboardedFrEnterprise() throws Exception {
     	e2co_myapplication.clickOncloseBtn();
     	Thread.sleep(2000);

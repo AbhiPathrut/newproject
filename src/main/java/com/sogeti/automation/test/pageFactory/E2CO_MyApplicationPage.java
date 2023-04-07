@@ -208,7 +208,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	private WebElement artifactwindowClosedValidation;
 	
 	//@FindBy(xpath = "//a[@class='sidenav-nav-link d-flex align-items-center justify-content-center mb-0 w-100 active']")
-	@FindBy(xpath = "//a[@href='/MEC/enterprise/applications']")
+	@FindBy(xpath = "//a[@href='/MEC/my-apps']")
 	private WebElement myapplicationfrEnterprise;
 	
 	@FindBy(xpath = "//input[@id='vmApplication']")
@@ -857,7 +857,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 	}
 	
 	public int rowNumberFrEnterprise(String appName) {
-		WebElement table = driver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']"));
+		WebElement table = driver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']"));
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
 		
 		int rowNumber = -1;
@@ -903,7 +903,26 @@ public class E2CO_MyApplicationPage extends PageClass {
 	public void statusOfApplicationFrEnterprise(String appName) throws Exception {
 		int RowNum = rowNumberFrEnterprise(appName);
 		Thread.sleep(2000);
-		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class='table mb-0 entrp-app-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']//tbody//tr["+RowNum+"]//td[10]"));
+		Thread.sleep(2000);
+		String StatusOfApplication = StatusOfApp.getText();
+		System.out.println("Status of "+appName+": "+StatusOfApplication);
+		if(StatusOfApplication.contains("Onboarded")) {
+			log.info("App is onboarded or deprovisioned successfully.");
+		}else if(StatusOfApplication.contains("Onboardpending")) {
+			log.info("App onboarding process is initiated.");
+		}else if(StatusOfApplication.contains("Failed")) {
+			log.info("Application onboarding failed.");
+		}
+		else {
+			log.info("App is provisioned.");
+		}
+	}
+	//Below code for developer status 
+	public void statusOfApplicationFrEnterpriseDev(String appName) throws Exception {
+		int RowNum = rowNumberFrEnterprise(appName);
+		Thread.sleep(2000);
+		WebElement StatusOfApp = objDriver.findElement(By.xpath("//table[@class ='table mb-0 my-app-body-list-app-row']//tbody//tr["+RowNum+"]//td[6]"));
 		Thread.sleep(2000);
 		String StatusOfApplication = StatusOfApp.getText();
 		System.out.println("Status of "+appName+": "+StatusOfApplication);

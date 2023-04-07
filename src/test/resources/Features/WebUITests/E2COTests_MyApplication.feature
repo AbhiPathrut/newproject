@@ -20,8 +20,8 @@ Scenario Outline: Create new artifactId
  		Then user able to see created artifact
 	Examples:
 		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
-    #| Dev | MyApplication | 1 |
+    #| Admin | MyApplication | 0 |
+    | Dev | MyApplication | 0 |
     
 
 @MyApplication_02
@@ -63,16 +63,16 @@ Scenario Outline: user able to onboard application
  		Then user is able to see uploaded data on page
  		When user clicks on select artifact
  		Then user able to see artifacts uploaded
- 		When user selects the artifactid<SheetName>, <RowNumber> 
+ 		When user selects the artifactid<SheetName>, <RowNumber>
  		Then user clicks on done button
  		When update the details of application 
  		And Click on submit button
  		And user is able to see successful message for application onboard
- 		Then user is can see the application in a list
+ 		Then user is can see the application in a list<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
-    #| Developer | MyApplication | 1 |
+    #| Admin | MyApplication | 0 |
+    | Dev | MyApplication | 0 |
     
 
 @MyApplication_04
@@ -87,10 +87,11 @@ Scenario Outline: user able to provision the application
  		And user click on provision buttton
  		Then user is able to see successful message for request
  		When user click on close button
- 		Then user is able to see the application in running status
+ 		Then user is able to see the application in running status<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    #| Admin | MyApplication | 0 |
+    | Dev | MyApplication | 0 |
     
     
 @MyApplication_05
@@ -104,10 +105,11 @@ Scenario Outline: user able to provision the application
  		When user clicks on deprovision button
  		Then user able to see warning message for deprovision
  		When user clicks on confirm button
- 		Then user able to see the app is deprovisioned
+ 		Then user able to see the app is deprovisioned<user>
 Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    #| Admin | MyApplication | 0 |
+    | Dev | MyApplication | 0 |
     
  		
 
@@ -125,7 +127,7 @@ Scenario Outline: user able to deboard the application
  		Then user is able to see the application is removed from the list
  		Examples:
  		| user | SheetName | RowNumber |
-    | Admin | MyApplication | 0 |
+    | EntAdmin | MyApplication | 0 |
     
     
         
@@ -206,6 +208,7 @@ Scenario Outline: Create new artifactId for enterprise
  		Then user able to see created artifact
 	Examples:
 		| user | SheetName | RowNumber |
+#		| EntAdmin | MyApplication | 0 |
     | EntDev | MyApplication | 0 |
     
 @MyApplication_09
@@ -225,7 +228,8 @@ Scenario Outline: user able to delete artifact for enterprise
  		Then user is not able to find the deleted artifactId
  		Examples:
  		| user | SheetName | RowNumber |
-    | Enterprise | MyApplication | 0 |  
+ #		| EntAdmin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 |  
     
 @MyApplication_10
 Scenario Outline: user able to onboard application for enterprise
@@ -249,10 +253,11 @@ Scenario Outline: user able to onboard application for enterprise
  		When the details of application for enterprise<SheetName>, <RowNumber> 
  		And Click on submit button
  		And user is able to see successful message for application onboard
- 		Then user is can see the application in a list for enterprise
+ 		Then user is can see the application in a list for enterprise<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    | Enterprise | MyApplication | 0 | 
+ #		| EntAdmin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 | 
  		
  		
 @MyApplication_11
@@ -267,10 +272,11 @@ Scenario Outline: user able to provision application for enterprise
  		And user click on provision buttton
  		Then user is able to see successful message for request
  		When user click on close button
- 		Then user is able to see the application in running status for enterprise
+ 		Then user able to see application in running status for enterprise<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    | Enterprise | MyApplication | 0 |
+    #| EntAdmin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 | 
     
 @MyApplication_12
 Scenario Outline: user able to deprovision application for enterprise
@@ -283,13 +289,14 @@ Scenario Outline: user able to deprovision application for enterprise
  		When user clicks on deprovision button
  		Then user able to see warning message for deprovision
  		When user clicks on confirm button
- 		Then user able to see the app is deprovisioned for enterprise
+ 		Then user able to see app is deprovisioned for enterprise<user>
 Examples:
  		| user | SheetName | RowNumber |
-    | Enterprise | MyApplication | 0 |
+    #| EntAdmin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 | 
     
 @MyApplication_13
-Scenario Outline: user able to deprovision application for enterprise
+Scenario Outline: user able to deboard application for enterprise
  		When user logs into MEC portal<user>
  		And user is on Dashboard page
  		And user clicks on my application for enterprise
@@ -299,10 +306,11 @@ Scenario Outline: user able to deprovision application for enterprise
  		When user click on Deboarding button
  		Then user is able to see deboarding warning poupup messg 		
  		When user clicks on confirm button
- 		Then user is able to see the application is removed from the list for enterprise
+ 		Then user able to see application is removed from the list for enterprise
  		Examples:
  		| user | SheetName | RowNumber |
-    | Enterprise | MyApplication | 0 |
+    #| EntAdmin | MyApplication | 0 |
+    | EntDev | MyApplication | 0 | 
  		
 @MyApplication_14
 Scenario Outline: Create new artifactId through manage artifact
