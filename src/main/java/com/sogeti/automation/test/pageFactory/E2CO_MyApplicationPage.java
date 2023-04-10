@@ -1,7 +1,6 @@
 package com.sogeti.automation.test.pageFactory;
 
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import org.openqa.selenium.By;
@@ -141,6 +140,9 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//input[@placeholder=' Enter Component ID']")
 	private WebElement componentID;
 	
+	@FindBy(xpath = "//input[@id='componentId']")
+	private WebElement VMID;
+	
 	@FindBy(xpath = "//input[@placeholder='Enter network Name']")
 	private WebElement network;
 	
@@ -153,8 +155,8 @@ public class E2CO_MyApplicationPage extends PageClass {
 	@FindBy(xpath = "//div[@class='flex-grow-1 ft-20 ft-wt-400']")
 	private WebElement FileUploadPage;
 	
-	//@FindBy(xpath = "//div[normalize-space()='Artifact']")
-	@FindBy(xpath = "//label[@for='repoTypeDocker']")
+	@FindBy(xpath = "//div[normalize-space()='Artifact']")
+	//@FindBy(xpath = "//label[@for='repoTypeDocker']")
 	private WebElement artifactIsDisplaying;
 	
 	@FindBy(xpath = "//div[contains(text(),'Onboarding Request Accepted !')]")
@@ -285,8 +287,9 @@ public class E2CO_MyApplicationPage extends PageClass {
 	//div[@class='provision-app-instance-meta-geograpics-container mb-4 d-flex bg-white border-radius-5 pb-2']
 	private WebElement InstanceDetails;
 
-
-	
+	@FindBy(xpath = "//button[@class='e2co-submit-btn ml-15']")
+	//@FindBy(xpath = "//button[contains(text();' Save')]")
+	private WebElement saveBtn;
 	
 	
 	
@@ -550,6 +553,13 @@ public class E2CO_MyApplicationPage extends PageClass {
 		log.info("YAML file is imported");	
 	}
 	
+	public void uploadYAMLFileForVM() {
+		currentworkingDirectory = System.getProperty("user.dir");
+		inputFile= currentworkingDirectory + "/input-data/inputFiles/fedora.yaml";
+		this.fileUpload.sendKeys(inputFile);
+		log.info("YAML file is imported");	
+	}
+	
 	public boolean verifyUploadPageIsVisible() {
 		this.FileUploadPage.isDisplayed();
 		log.info("Upload Your File ! is displayed");
@@ -616,6 +626,13 @@ public class E2CO_MyApplicationPage extends PageClass {
 		this.componentID.clear();
         this.componentID.sendKeys(ComponentID);
         log.info("Updated componenet ID");
+	}
+	
+	public void updateVMID(String vmID) throws Exception {
+		Thread.sleep(2000);
+		this.VMID.clear();
+        this.VMID.sendKeys(vmID);
+        log.info("Updated VM ID");
 	}
 		
 	public void updateNetwork(String Network) {
@@ -890,7 +907,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 		System.out.println("Status of "+appName+": "+StatusOfApplication);
 		if(StatusOfApplication.contains("Onboarded")) {
 			log.info("App is onboarded or deprovisioned successfully.");
-		}else if(StatusOfApplication.contains("Onboardpending")) {
+		}else if(StatusOfApplication.contains("Pending")) {
 			log.info("App onboarding process is initiated.");
 		}else if(StatusOfApplication.contains("Failed")) {
 			log.info("Application onboarding failed.");
@@ -909,7 +926,7 @@ public class E2CO_MyApplicationPage extends PageClass {
 		System.out.println("Status of "+appName+": "+StatusOfApplication);
 		if(StatusOfApplication.contains("Onboarded")) {
 			log.info("App is onboarded or deprovisioned successfully.");
-		}else if(StatusOfApplication.contains("Onboardpending")) {
+		}else if(StatusOfApplication.contains("Pending")) {
 			log.info("App onboarding process is initiated.");
 		}else if(StatusOfApplication.contains("Failed")) {
 			log.info("Application onboarding failed.");
@@ -1095,12 +1112,21 @@ public class E2CO_MyApplicationPage extends PageClass {
 	}
 	
 	public void selectVolume(String Volume) {
+			selectVolume.click();
 			Select select1 = new Select(selectVolume);
 	        select1.selectByVisibleText(Volume);
-	        log.info("Zone selected");
+	        log.info("EphermalVolume selected");
 		}
 	
-	
+	public void clickOnSaveButton() throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor)objDriver;
+		js.executeScript("arguments[0].scrollIntoView()",saveBtn);
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click()",saveBtn);
+		Thread.sleep(2000);
+		log.info("Clicked on save button.");
+	}
+		
 	public void ClickApplicationMenu() throws Exception {
 		this.ApplicationMenu.click();
 		log.info("user clicks on application menu");

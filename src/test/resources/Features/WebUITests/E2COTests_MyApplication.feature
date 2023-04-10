@@ -20,8 +20,8 @@ Scenario Outline: Create new artifactId
  		Then user able to see created artifact
 	Examples:
 		| user | SheetName | RowNumber |
-    #| Admin | MyApplication | 0 |
-    | Dev | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
+    #| Dev | MyApplication | 0 |
     
 
 @MyApplication_02
@@ -71,8 +71,8 @@ Scenario Outline: user able to onboard application
  		Then user is can see the application in a list<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    #| Admin | MyApplication | 0 |
-    | Dev | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
+    #| Dev | MyApplication | 0 |
     
 
 @MyApplication_04
@@ -90,8 +90,8 @@ Scenario Outline: user able to provision the application
  		Then user is able to see the application in running status<user>
  		Examples:
  		| user | SheetName | RowNumber |
-    #| Admin | MyApplication | 0 |
-    | Dev | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
+    #| Dev | MyApplication | 0 |
     
     
 @MyApplication_05
@@ -108,8 +108,8 @@ Scenario Outline: user able to provision the application
  		Then user able to see the app is deprovisioned<user>
 Examples:
  		| user | SheetName | RowNumber |
-    #| Admin | MyApplication | 0 |
-    | Dev | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
+    #| Dev | MyApplication | 0 |
     
  		
 
@@ -127,7 +127,7 @@ Scenario Outline: user able to deboard the application
  		Then user is able to see the application is removed from the list
  		Examples:
  		| user | SheetName | RowNumber |
-    | EntAdmin | MyApplication | 0 |
+    | Admin | MyApplication | 0 |
     
     
         

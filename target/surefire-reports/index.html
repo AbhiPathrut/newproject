@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;user able to deboard application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("user able to deboard application for enterprise", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,22 +104,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;user able to deprovision application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("user able to deprovision application for enterprise", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;user able to provision application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("user able to provision application for enterprise", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;user able to onboard application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("user able to onboard application for enterprise", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Create new artifactId for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("Create new artifactId for enterprise", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;user able to deboard the application&quot;, &quot;Optional[My Application Feature]&quot;)">runScenario("user able to deboard the application", "Optional[My Application Feature]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -148,44 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">runner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;user able to deboard application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">
-                  </a> <!-- runScenario("user able to deboard application for enterprise", "Optional[My Application Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("user able to deboard application for enterprise", "Optional[My Application Feature]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user able to see application is removed from the list for enterprise&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then(&quot;user able to see application is removed from the list for enterprise&quot;)
-public void user_able_to_see_application_is_removed_from_the_list_for_enterprise() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -194,40 +127,10 @@ public void user_able_to_see_application_is_removed_from_the_list_for_enterprise
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;user able to deprovision application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">
-                  </a> <!-- runScenario("user able to deprovision application for enterprise", "Optional[My Application Feature]") -->
+                  <a name="runScenario(&quot;user able to deboard the application&quot;, &quot;Optional[My Application Feature]&quot;)">
+                  </a> <!-- runScenario("user able to deboard the application", "Optional[My Application Feature]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("user able to deprovision application for enterprise", "Optional[My Application Feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;user able to provision application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">
-                  </a> <!-- runScenario("user able to provision application for enterprise", "Optional[My Application Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("user able to provision application for enterprise", "Optional[My Application Feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;user able to onboard application for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">
-                  </a> <!-- runScenario("user able to onboard application for enterprise", "Optional[My Application Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("user able to onboard application for enterprise", "Optional[My Application Feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Create new artifactId for enterprise&quot;, &quot;Optional[My Application Feature]&quot;)">
-                  </a> <!-- runScenario("Create new artifactId for enterprise", "Optional[My Application Feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create new artifactId for enterprise", "Optional[My Application Feature]")</span>
+                  <span class="parameters">("user able to deboard the application", "Optional[My Application Feature]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -293,32 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 117420);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 50030);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runner.TestRunner')
-data.setCell(2, 3, 49842);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'runner.TestRunner')
-data.setCell(3, 3, 42234);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'runner.TestRunner')
-data.setCell(4, 3, 14419);
+data.setCell(0, 3, 21211);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -330,93 +217,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("user able to deprovision application for enterprise", "Optional[My Application Feature]")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Initializing self healing driver| </span>
-                <span class="reporter-method-output">| New driver instantiated.| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: user able to deprovision application for enterprise| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Entered username| </span>
-                <span class="reporter-method-output">| Entered password| </span>
-                <span class="reporter-method-output">| Entered domain| </span>
-                <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked on my application menu for enterprise.| </span>
-                <span class="reporter-method-output">| Clicked on application which is running| </span>
-                <span class="reporter-method-output">| Runnig app details page is opned| </span>
-                <span class="reporter-method-output">| Clicked on deprovision button| </span>
-                <span class="reporter-method-output">| Warning popup message is dispalyed| </span>
-                <span class="reporter-method-output">| Clicked on confirm button| </span>
-                <span class="reporter-method-output">| Page is refreshed| </span>
-                <span class="reporter-method-output">| App is onboarded or deprovisioned successfully.| </span>
-                <span class="reporter-method-output">| Execution status is: PASSED| </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("user able to provision application for enterprise", "Optional[My Application Feature]")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Initializing self healing driver| </span>
-                <span class="reporter-method-output">| New driver instantiated.| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: user able to provision application for enterprise| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Entered username| </span>
-                <span class="reporter-method-output">| Entered password| </span>
-                <span class="reporter-method-output">| Entered domain| </span>
-                <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked on my application menu for enterprise.| </span>
-                <span class="reporter-method-output">| Clicked on application for provision| </span>
-                <span class="reporter-method-output">| User is on application provision page| </span>
-                <span class="reporter-method-output">| Zone selected| </span>
-                <span class="reporter-method-output">| Clicked on provision button| </span>
-                <span class="reporter-method-output">| Request accepted message is displayed| </span>
-                <span class="reporter-method-output">| Page is refreshed| </span>
-                <span class="reporter-method-output">| App is provisioned.| </span>
-                <span class="reporter-method-output">| Execution status is: PASSED| </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("user able to onboard application for enterprise", "Optional[My Application Feature]")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Initializing self healing driver| </span>
-                <span class="reporter-method-output">| New driver instantiated.| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: user able to onboard application for enterprise| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Entered username| </span>
-                <span class="reporter-method-output">| Entered password| </span>
-                <span class="reporter-method-output">| Entered domain| </span>
-                <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked on my application menu for enterprise.| </span>
-                <span class="reporter-method-output">| Selected container| </span>
-                <span class="reporter-method-output">| Container as service selected| </span>
-                <span class="reporter-method-output">| Clicked on import button| </span>
-                <span class="reporter-method-output">| Upload Your File ! is displayed| </span>
-                <span class="reporter-method-output">| YAML file is imported| </span>
-                <span class="reporter-method-output">| Clicked on submit button| </span>
-                <span class="reporter-method-output">| Imported data is displaying on the page| </span>
-                <span class="reporter-method-output">| Clicked on select artifact| </span>
-                <span class="reporter-method-output">| Artifact List is displayed| </span>
-                <span class="reporter-method-output">| Clicked on done button| </span>
-                <span class="reporter-method-output">| Updated app name| </span>
-                <span class="reporter-method-output">| Latency selected| </span>
-                <span class="reporter-method-output">| Zone selected| </span>
-                <span class="reporter-method-output">| Updated componenet ID| </span>
-                <span class="reporter-method-output">| Updated network| </span>
-                <span class="reporter-method-output">| Clicked on submit button| </span>
-                <span class="reporter-method-output">| Onboarding request accepted is message displayed| </span>
-                <span class="reporter-method-output">| Clicked on close| </span>
-                <span class="reporter-method-output">| Application is displayed| </span>
-                <span class="reporter-method-output">| Page is refreshed| </span>
-                <span class="reporter-method-output">| App is onboarded or deprovisioned successfully.| </span>
-                <span class="reporter-method-output">| Execution status is: PASSED| </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Create new artifactId for enterprise", "Optional[My Application Feature]")</span>
+              <span class="reporter-method-name">runScenario("user able to deboard the application", "Optional[My Application Feature]")</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
                 <span class="reporter-method-output">| Received parameter 'ExecutionServer' = Local| </span>
@@ -424,7 +225,7 @@ return data;
                 <span class="reporter-method-output">| Received parameter 'DefaultDownloadPath' = ./src/test/resources/Downloads| </span>
                 <span class="reporter-method-output">| Received parameter 'AZURE_KEYVAULT_URL' = | </span>
                 <span class="reporter-method-output">| Received parameter 'TestBrowser' = chrome| </span>
-                <span class="reporter-method-output">| Received parameter 'UI_BASE_URL' = https://10.139.9.14:31012/MEC/login| </span>
+                <span class="reporter-method-output">| Received parameter 'UI_BASE_URL' = https://10.139.9.3:31012/MEC/login| </span>
                 <span class="reporter-method-output">| Received parameter 'GRID_HUB_PORT' = 4444| </span>
                 <span class="reporter-method-output">| Received parameter 'GRID_HUB_IP' = localhost| </span>
                 <span class="reporter-method-output">| Received parameter 'UI_USERNAME' = admin| </span>
@@ -443,48 +244,21 @@ return data;
                 <span class="reporter-method-output">| Initializing self healing driver| </span>
                 <span class="reporter-method-output">| New driver instantiated.| </span>
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: Create new artifactId for enterprise| </span>
+                <span class="reporter-method-output">| Scenario Name: user able to deboard the application| </span>
                 <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
                 <span class="reporter-method-output">| Entered username| </span>
                 <span class="reporter-method-output">| Entered password| </span>
                 <span class="reporter-method-output">| Entered domain| </span>
                 <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked on my application menu for enterprise.| </span>
-                <span class="reporter-method-output">| Selected container| </span>
-                <span class="reporter-method-output">| Container as service selected| </span>
-                <span class="reporter-method-output">| Clicked on create new artifact| </span>
-                <span class="reporter-method-output">| Entered artifact name| </span>
-                <span class="reporter-method-output">| Enetered componenetID| </span>
-                <span class="reporter-method-output">| Entered componenet image name| </span>
-                <span class="reporter-method-output">| zip file is imported| </span>
-                <span class="reporter-method-output">| Clicked on submit button| </span>
-                <span class="reporter-method-output">| Artifact created successfully| </span>
-                <span class="reporter-method-output">| Clicked on close| </span>
-                <span class="reporter-method-output">| Clicked on select artifact| </span>
-                <span class="reporter-method-output">| Artifact is displayed| </span>
-                <span class="reporter-method-output">| Execution status is: PASSED| </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("user able to deboard application for enterprise", "Optional[My Application Feature]")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Initializing self healing driver| </span>
-                <span class="reporter-method-output">| New driver instantiated.| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Scenario Name: user able to deboard application for enterprise| </span>
-                <span class="reporter-method-output">| Received parameter 'TestEnvironment' = QA| </span>
-                <span class="reporter-method-output">| Entered username| </span>
-                <span class="reporter-method-output">| Entered password| </span>
-                <span class="reporter-method-output">| Entered domain| </span>
-                <span class="reporter-method-output">| User icon is displayed.| </span>
-                <span class="reporter-method-output">| Clicked on my application menu for enterprise.| </span>
+                <span class="reporter-method-output">| Clicked on my application menu| </span>
                 <span class="reporter-method-output">| Clicked on application which is onboarded or onboardingpending| </span>
                 <span class="reporter-method-output">| User is on application provision page| </span>
                 <span class="reporter-method-output">| Click on deboarding button| </span>
                 <span class="reporter-method-output">| Deboarding warning popup message is displayed| </span>
                 <span class="reporter-method-output">| Clicked on confirm button| </span>
-                <span class="reporter-method-output">| Execution status is: UNDEFINED| </span>
+                <span class="reporter-method-output">| App is successfully deboarded| </span>
+                <span class="reporter-method-output">| App is successfully deboarded| </span>
+                <span class="reporter-method-output">| Execution status is: PASSED| </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -504,34 +278,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@26f07261)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@46fa2a7e)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Create new artifactId for enterprise", "Optional[My Application Feature]")</span>
-                <span class="method-start">789 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("user able to onboard application for enterprise", "Optional[My Application Feature]")</span>
-                <span class="method-start">43026 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("user able to provision application for enterprise", "Optional[My Application Feature]")</span>
-                <span class="method-start">160446 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("user able to deprovision application for enterprise", "Optional[My Application Feature]")</span>
-                <span class="method-start">210288 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("user able to deboard application for enterprise", "Optional[My Application Feature]")</span>
-                <span class="method-start">260318 ms</span>
+                <span class="method-name">runScenario("user able to deboard the application", "Optional[My Application Feature]")</span>
+                <span class="method-start">898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">274742 ms</span>
+                <span class="method-start">22111 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

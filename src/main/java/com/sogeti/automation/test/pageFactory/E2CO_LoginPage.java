@@ -18,6 +18,7 @@ import java.time.Duration;
 public class E2CO_LoginPage extends PageClass {
 	
 	SelfHealingDriver objDriver;
+	
 
     @FindBy(xpath = "//input[@id = 'Username']")
     private WebElement txtUserName;
@@ -179,4 +180,6 @@ public class E2CO_LoginPage extends PageClass {
     	this.close.click();
     	log.info("Clicked on close button");
     }
+    
+    
 }
